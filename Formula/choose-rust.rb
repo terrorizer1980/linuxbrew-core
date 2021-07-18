@@ -10,7 +10,7 @@ class ChooseRust < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b9d899b01f98077348581963c4580663f02548a5feef617fe5cec5c12be20d3d"
     sha256 cellar: :any_skip_relocation, catalina:      "ece9bf8ad73141a5577d68a896efc36ae6c4761359e05136a556a763e273cd26"
     sha256 cellar: :any_skip_relocation, mojave:        "fa56904f7112494b4956719fb17918dcf050352a444655c007584b9d21c3f970"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "816a811970a989846cb20c7ff9b760436392e2a51d53ce2d12ffd21bf816b2f1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "816a811970a989846cb20c7ff9b760436392e2a51d53ce2d12ffd21bf816b2f1" # linuxbrew-core
   end
 
   depends_on "rust" => :build

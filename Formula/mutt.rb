@@ -19,7 +19,7 @@ class Mutt < Formula
     sha256 big_sur:       "b8fab1c1cf96feaacb9f5bdc438b3f2c7a708a43483af486df8f70818a54ce01"
     sha256 catalina:      "f20ad44d5be6501d86b2a72d5cfafe77c66bb81112113bdd069d497a2de5d295"
     sha256 mojave:        "e3f19993195fd4e2a19ebcf0d9ddac147b9a6ea27886cfbac9141c4e6ab1d744"
-    sha256 x86_64_linux:  "5fe2e9e7849ac63e261e93e0670d0cbb3655bcc2dfa8a464f208b789e97fc5f0"
+    sha256 x86_64_linux:  "5fe2e9e7849ac63e261e93e0670d0cbb3655bcc2dfa8a464f208b789e97fc5f0" # linuxbrew-core
   end
 
   head do
