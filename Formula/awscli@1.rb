@@ -4,8 +4,8 @@ class AwscliAT1 < Formula
   desc "Official Amazon AWS command-line interface"
   homepage "https://aws.amazon.com/cli/"
   # awscli should only be updated every 10 releases on multiples of 10
-  url "https://github.com/aws/aws-cli/archive/1.19.100.tar.gz"
-  sha256 "e8e46f1573b9a668c7b0329bacc3530b7c70764e7896ec898b62d23bf5a3ee2f"
+  url "https://github.com/aws/aws-cli/archive/1.19.110.tar.gz"
+  sha256 "c2674f4323a239bd44544f5b413ef79430f5dca5071a8843ff80e2ac754c9e07"
   license "Apache-2.0"
 
   livecheck do
@@ -14,11 +14,10 @@ class AwscliAT1 < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "aaa64cbcc2700b8925ff96eec1190e3fa5cbb4d9b99b80f6f2a92b04a7f1ab74"
-    sha256 cellar: :any_skip_relocation, big_sur:       "42ac73057de7687a31cf220b18c8eabac4cb7d431b3b247f3e54486bdc8b134d"
-    sha256 cellar: :any_skip_relocation, catalina:      "e5ea21ff85261f415a52029640cf90693ab1df11043b90af9e145d3dbe85f471"
-    sha256 cellar: :any_skip_relocation, mojave:        "999a9d989515774d691f965a932adc0340141b5187cebf60f499f172d0039b38"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ed92711fd7baa30e29ea4154096aa34fa668e8497d49ad0280f27d29eb681833" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "ef5a92549930c491d9c1c4239ae8db32562deff68ddb2b45186de2c07cc5211c"
+    sha256 cellar: :any_skip_relocation, big_sur:       "b4f5d80260e3bb3c68cb046301a43a8bab7dc441cb37b91ba99ca8e3ab517d09"
+    sha256 cellar: :any_skip_relocation, catalina:      "6fc7616201634dd898b64f9d4eea29c409a158ef8cc263a79b6f1f248f80c4a9"
+    sha256 cellar: :any_skip_relocation, mojave:        "13e55b110d2894d925bbd2d232b000b82ace082e12c75b105d8e2d5c4e2946f1"
   end
 
   keg_only :versioned_formula
