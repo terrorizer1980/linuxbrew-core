@@ -1,17 +1,16 @@
 class Opa < Formula
   desc "Open source, general-purpose policy engine"
   homepage "https://www.openpolicyagent.org"
-  url "https://github.com/open-policy-agent/opa/archive/v0.30.1.tar.gz"
-  sha256 "7cd76febc88708896098828c20442e6569df5b84f604793381e28b90d53655f2"
+  url "https://github.com/open-policy-agent/opa/archive/v0.30.2.tar.gz"
+  sha256 "d3a9f68c980b56f84a18e1a476d210696c3fc907a3b2c090be9391fe5c7e3eaf"
   license "Apache-2.0"
   head "https://github.com/open-policy-agent/opa.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "eeb63d08f1d1f1d01cb9cfd5e85b082cceb2674fa4ef06ca18ede03a0c83490c"
-    sha256 cellar: :any_skip_relocation, big_sur:       "13071f269a9ba686a6780c7cb1befec5ed8246c6536542c2358c083cf0621bf0"
-    sha256 cellar: :any_skip_relocation, catalina:      "360292793a0eb634893e5c91c05c96744ebbefa2d50ceedb4cd1afc54243456d"
-    sha256 cellar: :any_skip_relocation, mojave:        "96aeb97862d790e0a1ac3b6196af444bd253ac2658300e682fcc743b3b358394"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "872ab089d0b85e1a7faad5f99ab1cfe59d7c79f4b309a758e5a327f9707d3f05" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c30db9772d245f63b2932774b10278960ef25ab0032a6566df305f569853e0f9"
+    sha256 cellar: :any_skip_relocation, big_sur:       "52589290661146910c2f860d2ffb05c0c3f220708f16280409108307914bcfcd"
+    sha256 cellar: :any_skip_relocation, catalina:      "5f2e9400f78aa5a6619844dd8a12ab3f4b9ad1cefd598eb3d4912769ff649f1a"
+    sha256 cellar: :any_skip_relocation, mojave:        "bb8303eb0b07c74437d47afbbb07ca152172b3c2c2caf35cf89b72c1f5cbaeca"
   end
 
   depends_on "go" => :build
