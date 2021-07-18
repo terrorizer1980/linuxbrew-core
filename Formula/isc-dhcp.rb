@@ -15,7 +15,7 @@ class IscDhcp < Formula
     sha256 big_sur:       "5a7fa9501471abcbcfa6b16fdea099147b7c4540d3e75a91deba3c4385d4a897"
     sha256 catalina:      "e2e473a84b9aa792d7f69be63c53cd32977fd9382346c4065edc60fafecef2cc"
     sha256 mojave:        "1f4db32d6c086309ec633241b3106bfcf3cb13902eb529318b7f7b881258024a"
-    sha256 x86_64_linux:  "b514c4dda929f53b34078c59e804c9ba01309c80b86a92a4539a41195b3c4d23"
+    sha256 x86_64_linux:  "b514c4dda929f53b34078c59e804c9ba01309c80b86a92a4539a41195b3c4d23" # linuxbrew-core
   end
 
   def install

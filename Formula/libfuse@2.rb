@@ -6,7 +6,7 @@ class LibfuseAT2 < Formula
   license any_of: ["LGPL-2.1-only", "GPL-2.0-only"]
 
   bottle do
-    sha256 x86_64_linux: "b13b4780fa7d33cd2e6fb7f55d44e693579264923381f934d417d108c0a246cc"
+    sha256 x86_64_linux: "b13b4780fa7d33cd2e6fb7f55d44e693579264923381f934d417d108c0a246cc" # linuxbrew-core
   end
 
   keg_only :versioned_formula

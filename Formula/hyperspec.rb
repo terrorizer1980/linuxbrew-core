@@ -14,7 +14,7 @@ class Hyperspec < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4c7fdfee29fd4e726c9ec8aa42bb0b23d19024a86c04c2edde0e48bc51dfcdb4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4c7fdfee29fd4e726c9ec8aa42bb0b23d19024a86c04c2edde0e48bc51dfcdb4" # linuxbrew-core
   end
 
   def install
