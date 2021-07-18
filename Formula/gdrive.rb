@@ -11,6 +11,7 @@ class Gdrive < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3d96fff9fcee61b32a8185cae41d1f5b21f36dd22f235852f283b46fcd3b066e"
     sha256 cellar: :any_skip_relocation, catalina:      "08947085778a3414d976c4dbda157b58704c60700621348f621d74a589c68149"
     sha256 cellar: :any_skip_relocation, mojave:        "a1f4a672700f4348173b184e04aa6da8196ad93d44efbd5122aa304c88d0cce1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2d687e4d537911f156c2f5cfd0a88fe8c44793eef89c497849e2130ab138d70e"
   end
 
   depends_on "go" => :build
