@@ -11,6 +11,7 @@ class Kepubify < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "da252af2e0a3f53a8716f2792276c2822f1c62a2025d10284b8967311dac5981"
     sha256 cellar: :any_skip_relocation, catalina:      "e210cb3bbcc242dd29e8c7849384a9d504b4f36ed40afcff50332a47cacac7ab"
     sha256 cellar: :any_skip_relocation, mojave:        "4c284abb8cb04ed19761df43c53dc35c8520f49f37b2bc1f8191fbaa643364de"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4218bde58556e4b2eb0c657d2610189f4849fe7d2e98e2b2b8696a78b3d8c09c"
   end
 
   depends_on "go" => :build
