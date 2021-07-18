@@ -2,7 +2,6 @@ class IscDhcp < Formula
   desc "Production-grade DHCP solution"
   homepage "https://www.isc.org/dhcp"
   url "https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz"
-  version "4.4.2-P1"
   sha256 "b05e04337539545a8faa0d6ac518defc61a07e5aec66a857f455e7f218c85a1a"
   license "MPL-2.0"
 
