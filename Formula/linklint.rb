@@ -9,6 +9,10 @@ class Linklint < Formula
     regex(/href=.*?linklint[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b3e69e9293cd50a460e6ac8ca468ffbb08f9e91bee792b6dd4297c6c77df0127"
+  end
+
   def install
     mv "READ_ME.txt", "README"
 
