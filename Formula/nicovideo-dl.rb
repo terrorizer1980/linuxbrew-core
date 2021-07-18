@@ -13,6 +13,10 @@ class NicovideoDl < Formula
     regex(%r{value=.*?/rel/nicovideo-dl/v?(\d+(?:\.\d+)+)["']}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "df91f21b1000cfe99ea4b2e28663b4e0555fdb191844879e98eaa317270ced88"
+  end
+
   depends_on "python@3.9"
 
   def install
