@@ -11,6 +11,10 @@ class AntAT19 < Formula
     regex(/href=.*?apache-ant[._-]v?(1\.9(?:\.\d+)*)(?:-bin)?\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "96384f1368821fc86be27930352c4cfe7b1cb9b833324c73951f9cf23a944b2c"
+  end
+
   keg_only :versioned_formula
 
   depends_on "openjdk"
