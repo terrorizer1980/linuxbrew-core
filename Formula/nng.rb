@@ -15,7 +15,7 @@ class Nng < Formula
     sha256 cellar: :any,                 big_sur:       "589abea5f8ba1c541582fe61559743b428b37674ff61ddfe0848903c6dd6ed77"
     sha256 cellar: :any,                 catalina:      "c447a6e93b03585ccf3aea04c47c462a511909887f71cbd41181ed637e2f6d14"
     sha256 cellar: :any,                 mojave:        "b4c6e981cc319d9e0039fd64cdeb2a9c7f2a1573229de71eb792000eca09553f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "491d6c5dde3b75fccc9181bf5e84941b5d7ffe2d90db376fc8c6a659a28e6922"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "491d6c5dde3b75fccc9181bf5e84941b5d7ffe2d90db376fc8c6a659a28e6922" # linuxbrew-core
   end
 
   depends_on "asciidoctor" => :build

@@ -12,7 +12,7 @@ class AntAT19 < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "96384f1368821fc86be27930352c4cfe7b1cb9b833324c73951f9cf23a944b2c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "96384f1368821fc86be27930352c4cfe7b1cb9b833324c73951f9cf23a944b2c" # linuxbrew-core
   end
 
   keg_only :versioned_formula
