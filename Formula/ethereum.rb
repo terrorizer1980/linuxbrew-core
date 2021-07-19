@@ -1,8 +1,8 @@
 class Ethereum < Formula
   desc "Official Go implementation of the Ethereum protocol"
   homepage "https://geth.ethereum.org/"
-  url "https://github.com/ethereum/go-ethereum/archive/v1.10.4.tar.gz"
-  sha256 "68bf82e8c93e139ca2500a30d432623b3f56e76006c0b0262d88caae5ef5064d"
+  url "https://github.com/ethereum/go-ethereum/archive/v1.10.5.tar.gz"
+  sha256 "6f17e0b4a41d321f1017ed6510ab35b447c951b9b1d0d400bfb7a980fac19692"
   license "LGPL-3.0-or-later"
   head "https://github.com/ethereum/go-ethereum.git"
 
@@ -12,11 +12,10 @@ class Ethereum < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d0467086a3569b816e3a2d1c2da528ed0908baddaaef62f5bc8e147a646ee8dc"
-    sha256 cellar: :any_skip_relocation, big_sur:       "01d544f89bebb693be7519984e72bf42be29a62d9679a1d7c3dce1514a69f7a8"
-    sha256 cellar: :any_skip_relocation, catalina:      "e6c347ca332fd6a87546a5ce0227947356bc509747dca328a3b92727108d6428"
-    sha256 cellar: :any_skip_relocation, mojave:        "f64c21cbe6ec70640573006de81fd093dbf34d22e5a7269fcd9c0025f4e959d5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "19502b5f40109ba23a01e4ba6aae9d9d07ed034c8721cabdea9921a26f13bbbc" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c4c249151395ab6d3f0fcad0e13c47d1c00cf3a2d45c1dd4d2813cbad2069174"
+    sha256 cellar: :any_skip_relocation, big_sur:       "a124affe0295da28a8c8c3f03dbc886a144d8dc265f99ecec918baeec3614275"
+    sha256 cellar: :any_skip_relocation, catalina:      "50c6e07967696ddce58d71daaac4149065d3a585087201ebac0cf150cdb43920"
+    sha256 cellar: :any_skip_relocation, mojave:        "4007b8a99d95530ec16717e51a0b10d4198f5b5ecc5e1f861d89e6bbd357cd9d"
   end
 
   depends_on "go" => :build

@@ -3,17 +3,16 @@ class VowpalWabbit < Formula
   homepage "https://github.com/VowpalWabbit/vowpal_wabbit"
   # pull from git tag to get submodules
   url "https://github.com/VowpalWabbit/vowpal_wabbit.git",
-      tag:      "8.10.2",
-      revision: "32cd2f33a7097bd57f5562faec5809a17723bdba"
+      tag:      "8.11.0",
+      revision: "96ed8316de4391b77f4f29af69f885552a644769"
   license "BSD-3-Clause"
   head "https://github.com/VowpalWabbit/vowpal_wabbit.git"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "d72d964be09126d0da196b54284565551de2dab15cdc034f1e82236f7b1f4424"
-    sha256 cellar: :any,                 big_sur:       "c9040a40269203be6517b4c6bdd64f452ac3716f02c7e0d1ab45bbdd871d61e6"
-    sha256 cellar: :any,                 catalina:      "3b1134b577bd4f6f7e7fb0fb61ed39f0b99fcd3bd229aebb40d7c34cd5d53397"
-    sha256 cellar: :any,                 mojave:        "1f1ba6ecd06e4317fec9b732a15237ad5e2d798053cad91fbd2c004449bcf93c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b3d1369f91ff9dc80b3db69d3ad7e9be2de21932780bc7b36e31124fa7110bbd" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "eed7c4185db5a634bb326b85ee88379efbf33802505c8692d15c70ee401a2bb1"
+    sha256 cellar: :any, big_sur:       "94dc4151d4fe21f8f6c1e57214812ba3b5d3aa219e0dd41930ee3c257015a566"
+    sha256 cellar: :any, catalina:      "4ff893bdf11e44be76c70adf46dbaaa6823c40134c5fb98328211fb30d293dc9"
+    sha256 cellar: :any, mojave:        "d0f2c7e3de9c1a3ae3cc8c590a8b94b4d887c77cd477893c16a6c4ec53904f03"
   end
 
   depends_on "cmake" => :build
@@ -40,7 +39,6 @@ class VowpalWabbit < Formula
     end
     bin.install Dir["utl/*"]
     rm bin/"active_interactor.py"
-    rm bin/"new_version"
     rm bin/"vw-validate.html"
     rm bin/"clang-format"
     rm_r bin/"flatbuffer"
