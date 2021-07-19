@@ -11,6 +11,7 @@ class Flarectl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4d9645e8cda9639823c37036cfb2bb930edeb524e1b551d94020033146491c6d"
     sha256 cellar: :any_skip_relocation, catalina:      "0c8765e93fcebe45e3c4b8eb7c118013fa5f9325396932115951b5f3228b59e4"
     sha256 cellar: :any_skip_relocation, mojave:        "31cc48e6267377eb496350cbb8b8b6e3f1b6801cb1a4b1855a861bb8be3107e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2629f46b3b892920ef4252bc4fc8f931c8327f47c9676665a826df50b83470be"
   end
 
   depends_on "go" => :build
