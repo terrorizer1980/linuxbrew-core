@@ -2,6 +2,7 @@ class Julia < Formula
   desc "Fast, Dynamic Programming Language"
   homepage "https://julialang.org/"
   license all_of: ["MIT", "BSD-3-Clause", "Apache-2.0", "BSL-1.0"]
+  revision 1
   head "https://github.com/JuliaLang/julia.git"
 
   stable do
@@ -17,9 +18,9 @@ class Julia < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "d010756c2b3e9bdc72edda8e27078399d779f3b56a2b1c78b28c47f89f269559"
-    sha256 cellar: :any,                 catalina:     "750cec427377d71a4f8b537a19976e2a63df820216244a0d7d9a8f0a913266f0"
-    sha256 cellar: :any,                 mojave:       "b5e9f67413ecebdbc92fec00940b84c032ec0f25f1f0a4c1398fad4ed591ef1f"
+    sha256 cellar: :any,                 big_sur:      "ecc5c3aa351f04d9913161989f8d436fb6f5ead00d47b5076e26cc330f23d770"
+    sha256 cellar: :any,                 catalina:     "cb2a854ae03cc12780c5a86e12d715fd197395fadc3f3233b112d915bbbf1e42"
+    sha256 cellar: :any,                 mojave:       "349dfd4726c9459906a953c368f81b40a67c678d48257053a5c5f37e9c007f6e"
   end
 
   depends_on "python@3.9" => :build
@@ -163,5 +164,11 @@ class Julia < Formula
   test do
     assert_equal "4", shell_output("#{bin}/julia -E '2 + 2'").chomp
     system bin/"julia", "-e", 'Base.runtests("core")'
+
+    (lib/"julia").children.each do |so|
+      next unless so.symlink?
+
+      assert_predicate so, :exist?, "Broken linkage with #{so.basename}"
+    end
   end
 end
