@@ -17,6 +17,7 @@ class Scummvm < Formula
     sha256 big_sur:       "f1e3edd576feee9c8360d2276a4ec1821826f32f31675c2d6f3fbe4f3dc4e594"
     sha256 catalina:      "fa569b125a50401242cdc26b27b1c01edde13555aa3018eeb81bc5cb910581e9"
     sha256 mojave:        "ad5d75fffe9d076923c42bc813b43db5a2088270f5c21266ce8850dfaa67d4d8"
+    sha256 x86_64_linux:  "9cc4435ce3c736ebe9c179f63d6abf39d9c6f47ba4f49b53d5aa3fec04307bbf"
   end
 
   depends_on "a52dec"
