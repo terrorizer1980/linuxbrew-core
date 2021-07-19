@@ -11,7 +11,6 @@ class Hcl2json < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9b5fcea7928871e1f18fc048f103fc8be8e3564856c869155d16d41160a1515d"
     sha256 cellar: :any_skip_relocation, catalina:      "9b5fcea7928871e1f18fc048f103fc8be8e3564856c869155d16d41160a1515d"
     sha256 cellar: :any_skip_relocation, mojave:        "9b5fcea7928871e1f18fc048f103fc8be8e3564856c869155d16d41160a1515d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b1b2da82eecafa95be718e656620b460e6a36bbb5acd8259bc66e41341b32ae0"
   end
 
   depends_on "go" => :build
