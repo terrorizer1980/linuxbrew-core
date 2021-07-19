@@ -11,6 +11,7 @@ class Nutcracker < Formula
     sha256 cellar: :any,                 big_sur:       "ea277cd62fb6eacc902dbffafa0d05ac3b7ef30c118bbaa164c5112c2dc4838e"
     sha256 cellar: :any,                 catalina:      "a0f29dfef521df43e6fe73cda13cadf95aab2ccd88a006d29eb91272fcb87deb"
     sha256 cellar: :any,                 mojave:        "e725be8c70ed22541146d804adb0fc0cc748a0152effd2565bdbc7a45655aeff"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cfc6c7d6529e63fc4b1d2843d8b0d928ab2cd7aa11dbcfe3b449e81b2af92f51"
   end
 
   depends_on "autoconf" => :build
