@@ -1,8 +1,8 @@
 class Tfsec < Formula
   desc "Static analysis security scanner for your terraform code"
   homepage "https://tfsec.dev/"
-  url "https://github.com/aquasecurity/tfsec/archive/v0.45.8.tar.gz"
-  sha256 "496dde6d46883125d59af4b8871a8a9451503bb711199303ba9b6134d138036d"
+  url "https://github.com/aquasecurity/tfsec/archive/v0.47.0.tar.gz"
+  sha256 "160d9cef72c7d1d77c7a1975eba0ed9577953ba22d7696da5c8e67ddb80b6e82"
   license "MIT"
   head "https://github.com/aquasecurity/tfsec.git"
 
@@ -12,11 +12,10 @@ class Tfsec < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6bccb07138b8d83d4450ce126cf1d4caa4cf054a94ab21de690569d3190b2dc3"
-    sha256 cellar: :any_skip_relocation, big_sur:       "eb7fb341561765b037c1a3761ffa99d00e6a3f3f2bc5bb02a74883790262a06a"
-    sha256 cellar: :any_skip_relocation, catalina:      "70972903a211fdcefc94f57fa8ff90eaf55bec08febf465242d41ed5f3552077"
-    sha256 cellar: :any_skip_relocation, mojave:        "d923de81e7948db14b249bbe2d6bca50d72abb85da57b5b3e8eb28471cc45181"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3b8e75bb1153748f50292c60451290d26c0eab0b681cf3c2ef3498ddb79effa5" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4dcc2e4db70abef2e3fa98d5ebe9a090b3bd0ac22b8dfa858a1fef042593f6e3"
+    sha256 cellar: :any_skip_relocation, big_sur:       "47648c927b28b2d801bd2be81c54c2625f6ff3577a2947a99b6d2f8012e7a6e2"
+    sha256 cellar: :any_skip_relocation, catalina:      "f4df4875d9afc07cafdcc5f0f77941a1f9ca91a327964f30231dd4347f7e871d"
+    sha256 cellar: :any_skip_relocation, mojave:        "ae7827b841033c500e214fc82e4125eed4c92544f1041ed742f066c037bcf519"
   end
 
   depends_on "go" => :build
@@ -44,6 +43,6 @@ class Tfsec < Formula
     good_output = shell_output("#{bin}/tfsec #{testpath}/good")
     assert_match "No problems detected!", good_output
     bad_output = shell_output("#{bin}/tfsec #{testpath}/bad 2>&1", 1)
-    assert_match "WARNING", bad_output
+    assert_match "1 potential problems detected.", bad_output
   end
 end
