@@ -25,6 +25,10 @@ class Awscli < Formula
   end
 
   def install
+    # Pin botocore deendency,
+    # should be updated on every release
+    inreplace "requirements.txt", "/v2", "/253d303b536eace7103731b8aa8a2b37cc118f0a"
+
     venv = virtualenv_create(libexec, "python3")
     system libexec/"bin/pip", "install", "-v", "-r", "requirements.txt",
                               "--ignore-installed", buildpath
