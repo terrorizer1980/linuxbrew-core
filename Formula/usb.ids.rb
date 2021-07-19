@@ -11,7 +11,7 @@ class UsbIds < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d6ff2df52461a6b5a0155874a544c3bd33ec02ca8a729ad547676c3eeb3d8d44"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d6ff2df52461a6b5a0155874a544c3bd33ec02ca8a729ad547676c3eeb3d8d44" # linuxbrew-core
   end
 
   def install

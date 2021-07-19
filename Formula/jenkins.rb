@@ -11,7 +11,7 @@ class Jenkins < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e41b3d5e196dfae6b5f96a8c05c61a54b06514189972ffa11f9ec5e85cd4ede8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e41b3d5e196dfae6b5f96a8c05c61a54b06514189972ffa11f9ec5e85cd4ede8" # linuxbrew-core
   end
 
   head do
