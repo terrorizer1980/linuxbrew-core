@@ -16,6 +16,7 @@ class Ethereum < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a124affe0295da28a8c8c3f03dbc886a144d8dc265f99ecec918baeec3614275"
     sha256 cellar: :any_skip_relocation, catalina:      "50c6e07967696ddce58d71daaac4149065d3a585087201ebac0cf150cdb43920"
     sha256 cellar: :any_skip_relocation, mojave:        "4007b8a99d95530ec16717e51a0b10d4198f5b5ecc5e1f861d89e6bbd357cd9d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ddd7631a7cc1cd26dbad9851f153fdcdf85ef40f1aceb07e240b7d8f61186002"
   end
 
   depends_on "go" => :build
