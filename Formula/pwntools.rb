@@ -13,6 +13,7 @@ class Pwntools < Formula
     sha256 cellar: :any,                 big_sur:       "e6bc7620c4f2effbbf96b82b894c8a1de9628c9dec20abe8df92547832d6e293"
     sha256 cellar: :any,                 catalina:      "a5d932617fce6b54e2abacea43f45e783d267612c5299efdf12c35e9ceb2794a"
     sha256 cellar: :any,                 mojave:        "5c871e9dbf5f1b85ac5ada15472d56b3c49250e629028152ef2b0bfc8319f512"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ace9b0265d6d55fc39c3e9bd6980b7322233e64914447294d2c9eb6f0d0770d4"
   end
 
   depends_on "rust" => :build
