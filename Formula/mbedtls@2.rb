@@ -11,6 +11,10 @@ class MbedtlsAT2 < Formula
     regex(/^v?(2(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8f5a8deee6c0d667e6b229939d7b205ec5cccf30b20ac195f412e164594f6e18"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
