@@ -15,6 +15,7 @@ class Htslib < Formula
     sha256 cellar: :any,                 big_sur:       "1c18fea212fa8c79639aa73283277a9f38451d8c27b63942ae1d27082f86a712"
     sha256 cellar: :any,                 catalina:      "f063c7ecbbace5ca9c5110ace1e45ad3629323108bfbd77b3d0cdfbeca7979c5"
     sha256 cellar: :any,                 mojave:        "291e64099d31bffc8c3151e28702e611a5adf83d47aa123a53a4149a3374ad3a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "38e217917f15baa38f80d718e658b04786c648904a2293a19042489c630deb6a"
   end
 
   depends_on "xz"
