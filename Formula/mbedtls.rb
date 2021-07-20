@@ -13,11 +13,10 @@ class Mbedtls < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "9cc96f2c4c654cc565556a4ac9f111aebf6b406886998b728c6c0e6827ffc37a"
-    sha256 cellar: :any,                 big_sur:       "84ac67a7a41cafde712cec80c31120c5f1bb896ce9d212da6d132f1c24fdb2de"
-    sha256 cellar: :any,                 catalina:      "f848fa5209380ec469d00a9422101fdb2e5f57b9b588c9cadc4a35ec6fca5c23"
-    sha256 cellar: :any,                 mojave:        "78827838bf19bec7b526320b8156005bfbdd92b1dd83cf8611f0abc2633f98a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06d8433f2fef8828858388b4381ae618acf4731f53f8c89c9010435408a97d78" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "b5b96186a91ef95346dbc7b3ecdcc5e9b063e16ca2a8cc5901af228d5f16a909"
+    sha256 cellar: :any,                 big_sur:       "7dcd77c125f32c7285190070bbe933156f1e7c667a29bf673e851ed6ebb64064"
+    sha256 cellar: :any,                 catalina:      "3d1334aadcb984922eda762c5fcf607bec7d3dc7a095077cb46b6611a86fcad3"
+    sha256 cellar: :any,                 mojave:        "4966455e9853dae759dd194e881ca075049490dfc0a05e9d4b64abe59d7a4392"
   end
 
   depends_on "cmake" => :build
