@@ -13,6 +13,7 @@ class Virtualenv < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8fa087b2c11e648541c10fe1b73893837a8ef07d733e77a0a991bdbee515b010"
     sha256 cellar: :any_skip_relocation, catalina:      "a4184e76ba9cc1c4fe683fc975c587cc591dc875f498a4180e6a20c3b55166c5"
     sha256 cellar: :any_skip_relocation, mojave:        "7e591fedd53816e1180007101c889ee84eb90a0aa5c36f973c3f8a85508711dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d76120a2d22a9c9fa86add111e3dc0a1ff3c299c03424e1d17cec9a8dda75a96"
   end
 
   depends_on "python@3.9"
