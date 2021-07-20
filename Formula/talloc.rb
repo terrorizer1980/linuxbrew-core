@@ -15,6 +15,7 @@ class Talloc < Formula
     sha256 cellar: :any,                 big_sur:       "a99376ed4ddbe1ae05d843fc473c8eade0603c729f16fc880fe6e95e597b94bf"
     sha256 cellar: :any,                 catalina:      "41b41189b1177004fab7ab3764b607fd78844228d30182305dd81e33a85d388c"
     sha256 cellar: :any,                 mojave:        "da663459e3bf1cdaf72935823451b382bd3dee84cb151553f599921edb589d3d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "801236dc8f98f2e0d466ffc4ee0783ff66c78dff53f58b0905d9fe34a1725628"
   end
 
   depends_on "python@3.9" => :build
