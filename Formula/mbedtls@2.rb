@@ -1,30 +1,23 @@
-class Mbedtls < Formula
+class MbedtlsAT2 < Formula
   desc "Cryptographic & SSL/TLS library"
   homepage "https://tls.mbed.org/"
-  url "https://github.com/ARMmbed/mbedtls/archive/mbedtls-3.0.0.tar.gz"
-  sha256 "377d376919be19f07c7e7adeeded088a525be40353f6d938a78e4f986bce2ae0"
+  url "https://github.com/ARMmbed/mbedtls/archive/mbedtls-2.27.0.tar.gz"
+  sha256 "4f6a43f06ded62aa20ef582436a39b65902e1126cbbe2fb17f394e9e9a552767"
   license "Apache-2.0"
-  head "https://github.com/ARMmbed/mbedtls.git", branch: "development"
+  head "https://github.com/ARMmbed/mbedtls.git", branch: "development_2.x"
 
   livecheck do
     url :stable
-    strategy :github_latest
-    regex(%r{href=.*?/tag/(?:mbedtls[._-])?v?(\d+(?:\.\d+)+)["' >]}i)
+    regex(/^v?(2(?:\.\d+)+)$/i)
   end
 
-  bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "9cc96f2c4c654cc565556a4ac9f111aebf6b406886998b728c6c0e6827ffc37a"
-    sha256 cellar: :any,                 big_sur:       "84ac67a7a41cafde712cec80c31120c5f1bb896ce9d212da6d132f1c24fdb2de"
-    sha256 cellar: :any,                 catalina:      "f848fa5209380ec469d00a9422101fdb2e5f57b9b588c9cadc4a35ec6fca5c23"
-    sha256 cellar: :any,                 mojave:        "78827838bf19bec7b526320b8156005bfbdd92b1dd83cf8611f0abc2633f98a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06d8433f2fef8828858388b4381ae618acf4731f53f8c89c9010435408a97d78" # linuxbrew-core
-  end
+  keg_only :versioned_formula
 
   depends_on "cmake" => :build
   depends_on "python@3.9" => :build
 
   def install
-    inreplace "include/mbedtls/mbedtls_config.h" do |s|
+    inreplace "include/mbedtls/config.h" do |s|
       # enable pthread mutexes
       s.gsub! "//#define MBEDTLS_THREADING_PTHREAD", "#define MBEDTLS_THREADING_PTHREAD"
       # allow use of mutexes within mbed TLS
@@ -33,7 +26,6 @@ class Mbedtls < Formula
 
     system "cmake", "-DUSE_SHARED_MBEDTLS_LIBRARY=On",
                     "-DPython3_EXECUTABLE=#{Formula["python@3.9"].opt_bin}/python3",
-                    "-DCMAKE_INSTALL_RPATH=#{rpath}",
                     *std_cmake_args
     system "make"
     system "make", "install"
