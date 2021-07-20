@@ -17,7 +17,7 @@ class Bcftools < Formula
     sha256                               big_sur:       "102cc97a217c3ddb65c4fb6ac8471d900288e7dc84659e2f926cca4ff0411cad"
     sha256                               catalina:      "276a5614f196d3a7784b1e2457de527044a05641b4db1166aead51c8b924e6b3"
     sha256                               mojave:        "59084bd2c8618ed243a3cd3800a9c65303ddcfd35fabaa226eb018d3ee8f7584"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f8b1f45c4fb09670fd9c89e476e7154840b6d29786748755cbc4c050116c1f6b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f8b1f45c4fb09670fd9c89e476e7154840b6d29786748755cbc4c050116c1f6b" # linuxbrew-core
   end
 
   depends_on "gsl"

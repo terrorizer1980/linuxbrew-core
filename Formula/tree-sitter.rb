@@ -14,7 +14,7 @@ class TreeSitter < Formula
     sha256 cellar: :any,                 big_sur:       "bca73c6fabacffbfb96a5b953096e81fca5a0a24a55d545baa5da0aebb9657cc"
     sha256 cellar: :any,                 catalina:      "e161adbd53340e764920272a32ae14fb116ffd42b5933b442a9e5b0b1695ed58"
     sha256 cellar: :any,                 mojave:        "7a8114f4d71105d93fb63db37ea3dc557e09993d66862eeadd36b1d0c8277ace"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ca15341a70466b4d1547c2246c2becfdf57fe0251c78017bb8a97fe7b429dea9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ca15341a70466b4d1547c2246c2becfdf57fe0251c78017bb8a97fe7b429dea9" # linuxbrew-core
   end
 
   depends_on "emscripten" => [:build, :test]

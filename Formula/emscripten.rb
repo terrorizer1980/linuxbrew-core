@@ -23,7 +23,7 @@ class Emscripten < Formula
     sha256 cellar: :any,                 big_sur:       "2b2d943774633fcfe7861412bd494737f6c47f27b9fe014742340a697fb5baa6"
     sha256 cellar: :any,                 catalina:      "0990c34409b769cd68c8bad4c0b5dbc3e3cb815da925d973f67fc0e3b68c4241"
     sha256 cellar: :any,                 mojave:        "c82caf9b0e0cb7269a7f02370bd19cd0f1433674119a2a2d95ed08da07bf88c3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c25cc1cf5d9585e86792d45bf184fae56be704b32e79478491f791518d25131c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c25cc1cf5d9585e86792d45bf184fae56be704b32e79478491f791518d25131c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

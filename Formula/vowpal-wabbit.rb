@@ -13,7 +13,7 @@ class VowpalWabbit < Formula
     sha256 cellar: :any,                 big_sur:       "94dc4151d4fe21f8f6c1e57214812ba3b5d3aa219e0dd41930ee3c257015a566"
     sha256 cellar: :any,                 catalina:      "4ff893bdf11e44be76c70adf46dbaaa6823c40134c5fb98328211fb30d293dc9"
     sha256 cellar: :any,                 mojave:        "d0f2c7e3de9c1a3ae3cc8c590a8b94b4d887c77cd477893c16a6c4ec53904f03"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "980d14f6a8664abdfdf29b5237480392cd1550d3e3667cabd9b63ca2f73c75d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "980d14f6a8664abdfdf29b5237480392cd1550d3e3667cabd9b63ca2f73c75d1" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
