@@ -12,6 +12,7 @@ class Ccache < Formula
     sha256 cellar: :any,                 big_sur:       "083ebd7ddc08f386a9005df99d8c83f6f6b271068ae5b95fc548e4505ab5051b"
     sha256 cellar: :any,                 catalina:      "3a0183557da0fdf94eae62c26ed84e26bd82c31f46198a7efd86ab439521f949"
     sha256 cellar: :any,                 mojave:        "3a5a580f257f28e80bb501f487b2f9f0f8a72114b0039edc0fbe87e1e5e638d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "13ec2be19284a368b18b1df9b5e9437f33e6ba2629b55b7c6022b806defd6cb4"
   end
 
   depends_on "cmake" => :build
