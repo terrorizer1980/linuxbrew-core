@@ -10,6 +10,7 @@ class Putty < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "75e23ad8100002d5ade0acf3745f4f40a9add28a25ea4814caafd0cb37be7cb8"
     sha256 cellar: :any_skip_relocation, catalina:      "ab58a1de02894bd5364c31e4a5b864acb81cbc0160814d048f98077bfe01a4b1"
     sha256 cellar: :any_skip_relocation, mojave:        "4aab22d3d6867678be1d1be95edb5fe41fcd7d807892b00b83d0280b6f356f46"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51689b0cb6c740349175dad1786ac7786b639e78f5e5b3765272ae83162009d4"
   end
 
   head do
