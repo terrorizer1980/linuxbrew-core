@@ -9,7 +9,7 @@ class H3 < Formula
     sha256 cellar: :any,                 big_sur:      "2f85bec4f86968b06974f875db8c92b6cd3514905d58833c703563e3e74315f8"
     sha256 cellar: :any,                 catalina:     "5658314536778f29b20326170d3d9a97d1fbf4b9fccca0cb8a7443a2f0588e01"
     sha256 cellar: :any,                 mojave:       "ba14e992f20afca2dcbbed18319c7c93a0d58b347c294dc6e9384bced47e9989"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2924d57a18701365a6c3ffc6965858ab506f4a3e66c7fe9ce5034685805179e6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2924d57a18701365a6c3ffc6965858ab506f4a3e66c7fe9ce5034685805179e6" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
