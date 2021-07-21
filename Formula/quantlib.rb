@@ -10,7 +10,7 @@ class Quantlib < Formula
     sha256 cellar: :any,                 big_sur:       "c4becabc004ec62661e971d66f2e018b47ef1cdca1b95b86f88704129a251364"
     sha256 cellar: :any,                 catalina:      "aad302b508044d894983888ed931c358ad3b0c059321a2f981432dbf635dd0f8"
     sha256 cellar: :any,                 mojave:        "cb305d0e8b8d137856bfcac3579d4f9e2ff3e1c621d62719375362a29f679620"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3d28d98e74c4067b244c61ca862a88df814ff595623eed63af0263154baa9a43"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3d28d98e74c4067b244c61ca862a88df814ff595623eed63af0263154baa9a43" # linuxbrew-core
   end
 
   head do
