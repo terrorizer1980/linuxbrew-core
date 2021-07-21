@@ -4,8 +4,8 @@ class Semgrep < Formula
   desc "Easily detect and prevent bugs and anti-patterns in your codebase"
   homepage "https://semgrep.dev"
   url "https://github.com/returntocorp/semgrep.git",
-      tag:      "v0.58.0",
-      revision: "983be5441d8afbe57160214430b11e70dc7731f5"
+      tag:      "v0.58.2",
+      revision: "c96ba366b2eae27e8a06c910ac3103a384e3d5cf"
   license "LGPL-2.1-only"
   head "https://github.com/returntocorp/semgrep.git", branch: "develop"
 
@@ -15,11 +15,10 @@ class Semgrep < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "2e64c6f3e1415f01e9aa4fc907b5bb095b0e8e9a74abaaec58a72a83222629a3"
-    sha256 cellar: :any, big_sur:       "6f663000f2966463120e816f4fa26e6647469b9233b569832a13e9bdb1522033"
-    sha256 cellar: :any, catalina:      "c7811b5b58a01cce69cdb240cb573c7cebcc116b259c3c88763c87bc1c3b304c"
-    sha256 cellar: :any, mojave:        "5168e224a461a286c27d32abb2ee2e5b3993644fc362f869d40346cd5164501e"
-    sha256               x86_64_linux:  "737b7c8611cb311e2b5fbc8f54197e6f42e5e85e2f8db02bdfd1e4f309b490dc" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "35a5cd61b7c9477e891c95c49eef9c508cdd48d534a2e6d8dfccf63d268e1a3b"
+    sha256 cellar: :any, big_sur:       "131d35dac7fdb53d97803384cdf683d3fe9592aa3e37b01e5d160a21d44435d1"
+    sha256 cellar: :any, catalina:      "c474195dad3f2c489dc9b580c8aa4a8f07fa3e9268d7140807a2dec7c72ff83c"
+    sha256 cellar: :any, mojave:        "fd6b2da12950e9f468c9a6f4215ce609a8b7aa3ba31490132485014ab2ee0ed1"
   end
 
   depends_on "cmake" => :build
@@ -147,11 +146,7 @@ class Semgrep < Formula
       ENV["SETUPTOOLS_USE_DISTUTILS"] = "stdlib"
 
       system "opam", "init", "--no-setup", "--disable-sandboxing"
-      ENV.deparallelize { system "opam", "switch", "create", "ocaml-base-compiler.4.10.2" }
-
-      # Delete OCaml version file since it conflicts with C++20 version header
-      # This can be removed once semgrep upgrades to ocaml 4.12.0
-      rm "#{opamroot}/ocaml-base-compiler.4.10.2/lib/ocaml/VERSION"
+      ENV.deparallelize { system "opam", "switch", "create", "ocaml-base-compiler.4.12.0" }
 
       # Manually run steps from `opam exec -- make setup` to link Homebrew's tree-sitter
       system "opam", "update", "-y"
