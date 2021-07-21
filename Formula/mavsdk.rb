@@ -15,10 +15,10 @@ class Mavsdk < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "3a76b7fa7ef52858785f4008e7f358d8e51bb428d8e6f9b4c17993d3808e1cd3"
-    sha256 cellar: :any, big_sur:       "b2772bfb28f6cd559c03f14703ed7d07e757c55add4f2d1fe3284dd0a47e1098"
-    sha256 cellar: :any, catalina:      "483d928413d71b0728df5205a8cf12294184a8803c9c432757297eed3edeb31e"
-    sha256 cellar: :any, mojave:        "17262be3d5a81e442b11d6ee71329f480fa6507d5e6f7b5fcfae2cdf698ac337"
+    sha256 cellar: :any,                 arm64_big_sur: "3a76b7fa7ef52858785f4008e7f358d8e51bb428d8e6f9b4c17993d3808e1cd3"
+    sha256 cellar: :any,                 big_sur:       "b2772bfb28f6cd559c03f14703ed7d07e757c55add4f2d1fe3284dd0a47e1098"
+    sha256 cellar: :any,                 catalina:      "483d928413d71b0728df5205a8cf12294184a8803c9c432757297eed3edeb31e"
+    sha256 cellar: :any,                 mojave:        "17262be3d5a81e442b11d6ee71329f480fa6507d5e6f7b5fcfae2cdf698ac337"
   end
 
   depends_on "cmake" => :build
@@ -40,6 +40,10 @@ class Mavsdk < Formula
     depends_on "llvm" if DevelopmentTools.clang_build_version <= 1100
   end
 
+  on_linux do
+    depends_on "gcc"
+  end
+
   fails_with :clang do
     build 1100
     cause <<-EOS
@@ -47,6 +51,8 @@ class Mavsdk < Formula
         "std::__1::__fs::filesystem::__status(std::__1::__fs::filesystem::path const&, std::__1::error_code*)"
     EOS
   end
+
+  fails_with gcc: "5"
 
   # To update the resources, use homebrew-pypi-poet on the PyPI package `protoc-gen-mavsdk`.
   # These resources are needed to install protoc-gen-mavsdk, which we use to regenerate protobuf headers.
@@ -76,9 +82,7 @@ class Mavsdk < Formula
     # Install protoc-gen-mavsdk deps
     venv_dir = buildpath/"bootstrap"
     venv = virtualenv_create(venv_dir, "python3")
-    %w[Jinja2 MarkupSafe].each do |r|
-      venv.pip_install resource(r)
-    end
+    venv.pip_install resources
 
     # Install protoc-gen-mavsdk
     venv.pip_install "proto/pb_plugins"
@@ -86,7 +90,6 @@ class Mavsdk < Formula
     # Run generator script in an emulated virtual env.
     with_env(
       VIRTUAL_ENV: venv_dir,
-      PYTHONPATH:  Formula["six"].opt_prefix/Language::Python.site_packages("python3"),
       PATH:        "#{venv_dir}/bin:#{ENV["PATH"]}",
     ) do
       system "tools/generate_from_protos.sh"
