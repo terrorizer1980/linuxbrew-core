@@ -16,7 +16,7 @@ class NodeExporter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "661b7f371988c70cefe9cf852b4541e61581c558d2d0cc3eef09661d0f9211fb"
     sha256 cellar: :any_skip_relocation, catalina:      "0ea107911c1a5c5537ed4c4e9b762615380baff2be4bafcfdd9596ccaa911a22"
     sha256 cellar: :any_skip_relocation, mojave:        "9ab5a47bacb3f65b457030995ebd6579490931516fe3b8b86b5583e76d1cda67"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "acbcdf3ac39fb1596159f043cd6fe8dd6f5bb41e37f0bba3207d404dd1b5f85b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "acbcdf3ac39fb1596159f043cd6fe8dd6f5bb41e37f0bba3207d404dd1b5f85b" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -10,7 +10,7 @@ class Ipv6calc < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ee4ad9470fc4e89698937c724f1124d393289f6c3022a397cb3525562843fc53"
     sha256 cellar: :any_skip_relocation, catalina:      "032973accb1642b43fcf7320e8dd76e621c8024f3b6b0caf2fb24e69d90429d7"
     sha256 cellar: :any_skip_relocation, mojave:        "4a83aadc45974b755d94b59f2fd4e8fb4637139d527e4474122983a229731cb5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "748772297ce211e30da123ccab4c9204738703e62cfe1ab90238dac434d9fb70"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "748772297ce211e30da123ccab4c9204738703e62cfe1ab90238dac434d9fb70" # linuxbrew-core
   end
 
   def install

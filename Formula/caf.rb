@@ -12,7 +12,7 @@ class Caf < Formula
     sha256 cellar: :any,                 big_sur:       "804cec1ee5419983767ced84f1eaa357ea1d96676725be2f0db85245625c4a17"
     sha256 cellar: :any,                 catalina:      "8f11ac81d1c3efdd0b4813478336c5e215df2d44d0bd04e770d04bddd598b02e"
     sha256 cellar: :any,                 mojave:        "ef6ea69f637a890f191b6f584167f9cb9fbe990e040ccce147f64331d305bfda"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "322c908a028144fc5773c4a3f3e51f9c908f20beaa25fa49495f994e332c4062"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "322c908a028144fc5773c4a3f3e51f9c908f20beaa25fa49495f994e332c4062" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
