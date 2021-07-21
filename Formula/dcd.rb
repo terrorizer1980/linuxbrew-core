@@ -11,6 +11,7 @@ class Dcd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "80150a1144639d87e282d8bbae2586a9530ed9aea22d71ba87b693a753947481"
     sha256 cellar: :any_skip_relocation, catalina:     "f8410040eb2862fe4e4eb1c81db06e771f2264975a0b3a1aab86a3afaf862203"
     sha256 cellar: :any_skip_relocation, mojave:       "06741cfea8cacf2c13ed861fdef7b5db9e9500fd2b309f7286b92eb1b1974f42"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "34913330c31cb88538f60e7463e3c147747385ca8a79e64cc48ea68742d6e35e"
   end
 
   depends_on "dmd" => :build
