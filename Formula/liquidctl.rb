@@ -3,16 +3,16 @@ class Liquidctl < Formula
 
   desc "Cross-platform tool and drivers for liquid coolers and other devices"
   homepage "https://github.com/jonasmalacofilho/liquidctl"
-  url "https://files.pythonhosted.org/packages/3c/98/df8a6481d5b7dee73c12327acb0ec18364275ba85b1e6d3faa29c45463a9/liquidctl-1.7.0.tar.gz"
-  sha256 "053675aca9ba9a3c14d8ef24d1a2e75c592c55a1b8ba494447bc13d3ae523d6f"
+  url "https://files.pythonhosted.org/packages/cb/53/6edf9da254d2e80580b116c45a7c50edaf055917bf6d771185a5adf52d2a/liquidctl-1.7.1.tar.gz"
+  sha256 "10f650b9486ddac184330940550433685ae0abc70b66fe92d994042491aab356"
   license "GPL-3.0-or-later"
   head "https://github.com/jonasmalacofilho/liquidctl.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "bf3bec6b1f8be19d0de4e4ef7bb9af2051934a15495bb6e45bc0b63ec0087abf"
-    sha256 cellar: :any_skip_relocation, big_sur:       "a089eb2685330ac3bf1322eb906d47c6177e3e5a77b364ad0816bd7cb9649017"
-    sha256 cellar: :any_skip_relocation, catalina:      "eedcdcf5295a3f17a13ab6d6036d450084d2d4d68630869446fab21e31be43ba"
-    sha256 cellar: :any_skip_relocation, mojave:        "5e99343a6a073c75bb90bc9fa648742375e55cf8429a16aaa6a367a2479baeab"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "bdb9efa7b382210874c57fe35f67213f3f6ec1355aae12d5190c1b39dd412814"
+    sha256 cellar: :any_skip_relocation, big_sur:       "2cdcae7267fc4c05a9a0b5eee169119c2855079902999c478993dddee9978a03"
+    sha256 cellar: :any_skip_relocation, catalina:      "fd8b5434525b5beda15e6fe1eea5c3259f1c8551a2727f5067803aed5d36aecb"
+    sha256 cellar: :any_skip_relocation, mojave:        "183f8183b103bab0039f9fc4e6037fba950551ffbf66ce770a4231538c520e75"
   end
 
   depends_on "libusb"
@@ -34,8 +34,8 @@ class Liquidctl < Formula
   end
 
   resource "pyusb" do
-    url "https://files.pythonhosted.org/packages/b8/5a/d5d54813eb18ca8d0a03c51c5248c8564d422b4c35a9b7b0fd1b4f1b8154/pyusb-1.2.0.tar.gz"
-    sha256 "d68597d2cf7df766bdf816b1a337b72ab8233c19825e170ae18714f16b838cbc"
+    url "https://files.pythonhosted.org/packages/d9/6e/433a5614132576289b8643fe598dd5d51b16e130fd591564be952e15bb45/pyusb-1.2.1.tar.gz"
+    sha256 "a4cc7404a203144754164b8b40994e2849fde1cfff06b08492f12fff9d9de7b9"
   end
 
   def install

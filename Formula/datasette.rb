@@ -2,17 +2,16 @@ class Datasette < Formula
   include Language::Python::Virtualenv
   desc "Open source multi-tool for exploring and publishing data"
   homepage "https://docs.datasette.io/en/stable/"
-  url "https://files.pythonhosted.org/packages/7b/60/6666a31cac4e8fad4b7b2d83f09884b7cb58fb7a077c1e04c5f380810437/datasette-0.58.tar.gz"
-  sha256 "406f329ae1072294affb9975be31d69d6f779d9d46affdacc956531a3ec8eef6"
+  url "https://files.pythonhosted.org/packages/4b/9a/37a1ee041ffdbd2b25793bfe487e71d7def794adf3bb17d0bc82742814e4/datasette-0.58.1.tar.gz"
+  sha256 "6a798cd11d15bfaa9cd25c3ccee8ef4b6a1ad91dda517a1dd9b39bbb6b727896"
   license "Apache-2.0"
   head "https://github.com/simonw/datasette.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "af6adb2cfbdc8c2b5d967efea9734b06cdbf6d6ced9fdf203a63e2f387118d67"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1afd7b2c5e9a928c482a797977470775b7926e22bf1494b81ad08383482f9b11"
-    sha256 cellar: :any_skip_relocation, catalina:      "0b0a84c2f35f395d94152313bf3934ffd1fe2fbef2cc9755ea3e0c240dbb156b"
-    sha256 cellar: :any_skip_relocation, mojave:        "e166799b0819cb17c231b65d8db659a5032805417fd53fca0eb81acb90e259a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "71568816db776750a05f2177b59dfb59a9b9d05999621c09896c6c7669b49a47" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "1a883bea045b09df9e1685bb352da634623c1c141276bb9f5ead838d502c7c28"
+    sha256 cellar: :any_skip_relocation, big_sur:       "deec3abf47d1d83edfe7834f34de60e2644bf678381aa54d9b7a705c86a753f5"
+    sha256 cellar: :any_skip_relocation, catalina:      "a7bc1c9e5958a1307dd7932f388ca77c7ca8ea6bfc5e44dc9c544383a9a99710"
+    sha256 cellar: :any_skip_relocation, mojave:        "5f7db2aa8d9d095d2d3113f2a47ffbc9b502ecb2f69148491a529360eb453e34"
   end
 
   depends_on "python@3.9"
