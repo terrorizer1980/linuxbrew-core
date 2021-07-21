@@ -7,6 +7,10 @@ class Ncc < Formula
   sha256 "bb78145a780dbcd5cbe720b10f4023bb2fcfde977847d09162e40f62766a2f39"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "80d4e9c2aca27f9892eda13f3c75e90afbf41cebe15df62c88609e2d29dc109e"
+  end
+
   depends_on "node"
 
   def install
