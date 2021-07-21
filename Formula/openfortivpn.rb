@@ -10,6 +10,7 @@ class Openfortivpn < Formula
     sha256 big_sur:       "15cc82983644ac3e9abac3c5886877cf8cb434c9bfc5eb2c0fdac89844c06bd5"
     sha256 catalina:      "ad40158d78850d26983abe3d87550aacd5f06f48480338a74202dbb1c0b8b7fe"
     sha256 mojave:        "1de4a819a55e66ab4d90d738b1b8ee644949fa184683583201a423a2a8cc0bf8"
+    sha256 x86_64_linux:  "74c86dcb84898ec512231e13f3d96047de42b6b693c4fd57b3ac9ff8c042f599"
   end
 
   depends_on "autoconf" => :build
