@@ -10,6 +10,7 @@ class Flow < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "221c2b193607e01b91e9412c844ca1881c4e1d556d40f55e363971d25e84b8c3"
     sha256 cellar: :any_skip_relocation, catalina:     "7545ac181f725ec8a9a99b3100c6b094943f90b003b5098647d61759102636d0"
     sha256 cellar: :any_skip_relocation, mojave:       "28abc0358c09040042064f3b0824157a7f4b78e1242d616e9de97337d2048cf6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b8b314a8f3ff755719b0a4e7d21ec05a7f294c9a662b2ed9af4c6c976f97b44b"
   end
 
   depends_on "ocaml" => :build
