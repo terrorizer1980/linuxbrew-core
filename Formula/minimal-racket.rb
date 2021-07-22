@@ -19,6 +19,7 @@ class MinimalRacket < Formula
     sha256 big_sur:       "2549795768caa35126b4464af7dd15bd4d3f11755f9853ffc3f248d061e7b457"
     sha256 catalina:      "a79ff7f036256aae9159f89897e32629641d889b4bd37c98e91b216a7f3085f5"
     sha256 mojave:        "56d2c05a1f17765404dad099fa7565883447be394f2ecbe2b74a19c13d6b7ded"
+    sha256 x86_64_linux:  "70a56fd19d77bc33b78ac0893130e68166ed28801a2cf16cc66bc32dd9aba4cb"
   end
 
   depends_on "openssl@1.1"
