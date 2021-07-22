@@ -3,17 +3,16 @@ class Regipy < Formula
 
   desc "Offline registry hive parsing tool"
   homepage "https://github.com/mkorman90/regipy"
-  url "https://files.pythonhosted.org/packages/68/d9/44a939a5e32e706d904cb7ebdc099964cdc4b677a3ebac6db2477f6ef908/regipy-1.9.3.tar.gz"
-  sha256 "86cdd32eb1148273fd0ac621ddb7dafc494b7f67cd4e9df27ed11a985464fc7a"
+  url "https://files.pythonhosted.org/packages/72/23/ae827829df2e2feab60c44fd3cf81eee17edc3cec3dea280edc4b777256e/regipy-1.9.4.tar.gz"
+  sha256 "86de2da57ccd95fc08ea51fa7e4bef6ed8aa0ab37c4286124bed126bf178c448"
   license "MIT"
   head "https://github.com/mkorman90/regipy.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7f91cc571ae419b6a56e10c3a649a53992362c7376f37e177b309130eabc682f"
-    sha256 cellar: :any_skip_relocation, big_sur:       "f102e1bebbdce2d4c43782795827fe83c76d46480499838be7f0f699ce20c476"
-    sha256 cellar: :any_skip_relocation, catalina:      "40f37eaee0d0ac2142d97c17f070ac443fe72ac4d5cdd3008b3cbf04f84205c9"
-    sha256 cellar: :any_skip_relocation, mojave:        "32315d4acb3745ff42ec792575db3abd04c2ae3fabeeb36557b7038e1bce8752"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b6d73afeec0bbc4ce2d4c2d2504ded9293e18eefef8f46361188406f4860cb03" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fac10e536db0d02edf78e62cd142affa66796fa1efdbed6c9440a82fcdce92d6"
+    sha256 cellar: :any_skip_relocation, big_sur:       "e227c5846d46a6e394d435a5a595b5cfca14a490d57a55f96fbc4f62745a6239"
+    sha256 cellar: :any_skip_relocation, catalina:      "c4cc7ee70d0302df12ea9566b6a584467b04420dd694ea8198dad5fdb25ac550"
+    sha256 cellar: :any_skip_relocation, mojave:        "b3530f14c3006c16b91f1da7e488b93e4e07c97665f76aa8fdcd6039450914b1"
   end
 
   depends_on "python-tabulate"
@@ -52,11 +51,6 @@ class Regipy < Formula
   resource "pytz" do
     url "https://files.pythonhosted.org/packages/b0/61/eddc6eb2c682ea6fd97a7e1018a6294be80dba08fa28e7a3570148b4612d/pytz-2021.1.tar.gz"
     sha256 "83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"
-  end
-
-  resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/0d/dd/78f7e080d3bfc87fc19bed54513b430659d38efb2d9ea6e3ad815a665a02/tqdm-4.61.2.tar.gz"
-    sha256 "8bb94db0d4468fea27d004a0f1d1c02da3cdedc00fe491c0de986b76a04d6b0a"
   end
 
   resource "test_hive" do

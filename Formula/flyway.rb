@@ -11,13 +11,14 @@ class Flyway < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "84f863f9463d51c31a09d049d946ad25e5291a78d5b3cf34938c274e8b55ea7b" # linuxbrew-core
+    rebuild 1
   end
 
   depends_on "openjdk"
 
   def install
     rm Dir["*.cmd"]
+    chmod "g+x", "flyway"
     libexec.install Dir["*"]
     (bin/"flyway").write_env_script libexec/"flyway", JAVA_HOME: Formula["openjdk"].opt_prefix
   end
