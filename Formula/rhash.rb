@@ -11,7 +11,7 @@ class Rhash < Formula
     sha256 big_sur:       "e0325aa039f0feac8cac2ad248d779b2c9d1252f42a53a277a8eba829e7a4896"
     sha256 catalina:      "f2cc20409751b415bc077ddd017620e96f6be9e79f71266bf5f1d2c55a4f6c16"
     sha256 mojave:        "715b183831b9c80eaf69153d144e38cd908bd05a0a37ced6bd6e2f25ac45b8ef"
-    sha256 x86_64_linux:  "9e3e320d2103007aa387d1710d4db67d7399b3341aa02770dc6d9b2c7dff9805"
+    sha256 x86_64_linux:  "9e3e320d2103007aa387d1710d4db67d7399b3341aa02770dc6d9b2c7dff9805" # linuxbrew-core
   end
 
   # configure: fix clang detection on macOS

@@ -10,7 +10,7 @@ class Zet < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4515a47a131a1cf5f99a142985563c852115ab85eb9930d763331295bc001c0c"
     sha256 cellar: :any_skip_relocation, catalina:      "27a2d603392d8f3eb4334524a9806b8138c1ce6016be87c4c17536861e1b1343"
     sha256 cellar: :any_skip_relocation, mojave:        "4aa63c78cb8fe11496f62fbbc3a8877640273c8171c28fa44be0fd0325b06a76"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23e781f7009f4eb495eecfc67dd7f61c1e059aaae494d62fbd9bae5a61abb783"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23e781f7009f4eb495eecfc67dd7f61c1e059aaae494d62fbd9bae5a61abb783" # linuxbrew-core
   end
 
   depends_on "rust" => :build

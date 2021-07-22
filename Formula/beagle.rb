@@ -17,7 +17,7 @@ class Beagle < Formula
     sha256 cellar: :any,                 big_sur:       "88810a46fa5631d6bc10262ad334dc6039c93045442836fc690b2dc277513690"
     sha256 cellar: :any,                 catalina:      "a7f09cd317d3bf0bb3993ce46cfe862d92427aedce3c1a68ca60dd3954ae7475"
     sha256 cellar: :any,                 mojave:        "29c47e508a3e39bce6891219f6ad223b8d8579bd1554ce1382b7dfe3e370e139"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7dc61a98bfc6861fed1330fbf276e97b07dd4ece8d86c0ca5c866b155017de40"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7dc61a98bfc6861fed1330fbf276e97b07dd4ece8d86c0ca5c866b155017de40" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

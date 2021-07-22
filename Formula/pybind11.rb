@@ -10,7 +10,7 @@ class Pybind11 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "16a7225caa88105dcc5738bc448b044a6b55271eae1d39e26e53125f12e7863a"
     sha256 cellar: :any_skip_relocation, catalina:      "3388b6d611d3b92c3f74c45e698172e2369837bbabc898612e61ab93c1736e23"
     sha256 cellar: :any_skip_relocation, mojave:        "106e9718a698498a9a779598c49914a8dca16118ebf4e3c54832ac050578be27"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "250826c31d2873116a37e01c6aff39af736e398fa6f1307b2b7c0bdd91c9ee84"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "250826c31d2873116a37e01c6aff39af736e398fa6f1307b2b7c0bdd91c9ee84" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
