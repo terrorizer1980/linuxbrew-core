@@ -18,6 +18,7 @@ class Heimdal < Formula
     sha256 big_sur:       "8908f59611a4a8140e47e938019691611c5e2c168ae0df3060e3729f941dceab"
     sha256 catalina:      "dc1ffe6fcbf8522c3c1720c44311fb6f183dfc2cf566a7a5ce0bc7064efa5db5"
     sha256 mojave:        "8458b10c77f8db149e1c6853aa709c65551b2c00033ddc447e67b8d90665faad"
+    sha256 x86_64_linux:  "db6037dab528e5dd42ac37d9fe535b42f9b0dfe6ec0ad304a1252a090055ced7"
   end
 
   keg_only "conflicts with Kerberos"
