@@ -5,7 +5,7 @@ class Binutils < Formula
   mirror "https://ftpmirror.gnu.org/binutils/binutils-2.36.1.tar.xz"
   sha256 "e81d9edf373f193af428a0f256674aea62a9d74dfe93f65192d4eae030b0f3b0"
   license all_of: ["GPL-2.0-or-later", "GPL-3.0-or-later", "LGPL-2.0-or-later", "LGPL-3.0-only"]
-  
+
   bottle do
     sha256 arm64_big_sur: "f0c23d8672a107f94bb46eec9cae654b1a9abf663e6d25ec82467f0dfa45dff1"
     sha256 big_sur:       "993ab1e0149a47224c4e7063be178ff5d551b2ea6d2a79805f03ca40cd5f1279"
@@ -13,7 +13,6 @@ class Binutils < Formula
     sha256 mojave:        "06de25d200fd389ee4157a278abe261e20c18f8f6ad28d9519a4a4001b5b027e"
     sha256 x86_64_linux:  "d13d509bb08d3221982d69c2f2a766c535c858de379dd0e10d4d6f2309d6f597" # linuxbrew-core
   end
-  
 
   keg_only :shadowed_by_macos, "Apple's CLT provides the same tools"
 
