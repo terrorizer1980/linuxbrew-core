@@ -11,7 +11,7 @@ class ArmLinuxGnueabihfBinutils < Formula
     sha256 big_sur:       "6fae8a0bdc7ef15c1f6dcfac0ae2a8bd533f0e5cbbdb44e857f48c5412b90a0c"
     sha256 catalina:      "1ab534b59889553b9880a283d78800e5a334e3b883d896879f2f2a8d0f2e9531"
     sha256 mojave:        "3d2a120a2968b69da655591646fe673023631e237e197c00e8e6301bcc1a6dad"
-    sha256 x86_64_linux:  "8d75311051fcd313c68ff04c1bdef32d740177f259dad09dc4fdea83584e706b"
+    sha256 x86_64_linux:  "8d75311051fcd313c68ff04c1bdef32d740177f259dad09dc4fdea83584e706b" # linuxbrew-core
   end
 
   uses_from_macos "texinfo"

@@ -16,7 +16,7 @@ class MingwW64 < Formula
     sha256 big_sur:       "5510a29f4338144f00112d8ec11ef8f0156a2191abac0aabde51e5732d7b044b"
     sha256 catalina:      "d4e7cc59c42c6e5bbac5322818e065f100d35825fb057cf8decfc5a8b89075ff"
     sha256 mojave:        "757261757b700650c6e1ac65fab2e6d3a748f720265c46c7c2e4c1db92192444"
-    sha256 x86_64_linux:  "2e8b1606f84577c1dce0c018c68037d7e38e5781885bc50c0cca2b8d6aabad66"
+    sha256 x86_64_linux:  "2e8b1606f84577c1dce0c018c68037d7e38e5781885bc50c0cca2b8d6aabad66" # linuxbrew-core
   end
 
   # Apple's makeinfo is old and has bugs
