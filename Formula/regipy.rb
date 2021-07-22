@@ -13,6 +13,7 @@ class Regipy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e227c5846d46a6e394d435a5a595b5cfca14a490d57a55f96fbc4f62745a6239"
     sha256 cellar: :any_skip_relocation, catalina:      "c4cc7ee70d0302df12ea9566b6a584467b04420dd694ea8198dad5fdb25ac550"
     sha256 cellar: :any_skip_relocation, mojave:        "b3530f14c3006c16b91f1da7e488b93e4e07c97665f76aa8fdcd6039450914b1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f9252056044e881d5c3ec6e61db46da20bdb8a52940598ea9cda6365e8754c7"
   end
 
   depends_on "python-tabulate"
