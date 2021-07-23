@@ -7,10 +7,12 @@ class Binutils < Formula
   license all_of: ["GPL-2.0-or-later", "GPL-3.0-or-later", "LGPL-2.0-or-later", "LGPL-3.0-only"]
 
   bottle do
+    root_url "https://ghcr.io/v2/linuxbrew/core"
     sha256 arm64_big_sur: "2bf192cb717e8e107e61899218d8d25db92d8c07d164b2dea9c50a3d41b0dca9"
     sha256 big_sur:       "9757e5cac1e7fd0046d02671d31f608e57c2398a2d3a0042518707a5fe6fb30c"
     sha256 catalina:      "0c90a75475fc973066ace915f8f58f83bf5009181e42c9c8140dc72453d53d0f"
     sha256 mojave:        "58bf91ff243d080224bd9f7170307788d4319ccdd96d17e7afbf0f326a639f97"
+    sha256 x86_64_linux:  "719fb08218906d67d42eaca5ade0b8deaec6dbb03184a9e968214187d7f04bfa"
   end
 
   keg_only :shadowed_by_macos, "Apple's CLT provides the same tools"
