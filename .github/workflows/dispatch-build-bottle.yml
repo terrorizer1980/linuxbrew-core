@@ -56,9 +56,6 @@ jobs:
           if [ "$RUNNER_OS" = 'macOS' ]; then
             echo 'PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin' >> $GITHUB_ENV
             echo 'GITHUB_ACTIONS_HOMEBREW_MACOS_SELF_HOSTED=1' >> $GITHUB_ENV
-          else
-            # No PATH needed on Linux as set by Docker
-            echo 'HOMEBREW_ON_DEBIAN7=1' >> $GITHUB_ENV
           fi
 
       - name: Run Docker container
