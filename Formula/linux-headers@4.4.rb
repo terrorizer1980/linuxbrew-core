@@ -1,13 +1,9 @@
-class LinuxHeaders < Formula
+class LinuxHeadersAT44 < Formula
   desc "Header files of the Linux kernel"
   homepage "https://kernel.org/"
   url "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.80.tar.gz"
   sha256 "291d844619b5e7c43bd5aa0b2c286274fc5ffe31494ba475f167a21157e88186"
   license "GPL-2.0-only"
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b9d7edb2760ec070372d6dd37f2dff85c34221cf77d124d4732092447ac2cf9f" # linuxbrew-core
-  end
 
   depends_on :linux
 
