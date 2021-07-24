@@ -11,6 +11,7 @@ class Maturin < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2fcd4a193a7356d43647969bd54bc6504305ebbde84b493a2644e3cc5fdc1bc6"
     sha256 cellar: :any_skip_relocation, catalina:      "8558b7555fd7200a9843645d957633bd9b513a19c4f122f05ad4024fa657d426"
     sha256 cellar: :any_skip_relocation, mojave:        "e13ce6649031fb1388293570bae38374056ea82c3a6e1f9e917939ad14f60540"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a1224c41032659f415fa4d21f77c3ac7b252a518bd680d1545d21b178587391b"
   end
 
   depends_on "python@3.9" => :test
