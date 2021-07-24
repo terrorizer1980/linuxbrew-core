@@ -4,8 +4,8 @@ class Semgrep < Formula
   desc "Easily detect and prevent bugs and anti-patterns in your codebase"
   homepage "https://semgrep.dev"
   url "https://github.com/returntocorp/semgrep.git",
-      tag:      "v0.58.2",
-      revision: "c96ba366b2eae27e8a06c910ac3103a384e3d5cf"
+      tag:      "v0.59.0",
+      revision: "15abd182fc83f5557c8e327956271236fe569d41"
   license "LGPL-2.1-only"
   head "https://github.com/returntocorp/semgrep.git", branch: "develop"
 
@@ -15,11 +15,10 @@ class Semgrep < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "35a5cd61b7c9477e891c95c49eef9c508cdd48d534a2e6d8dfccf63d268e1a3b"
-    sha256 cellar: :any, big_sur:       "131d35dac7fdb53d97803384cdf683d3fe9592aa3e37b01e5d160a21d44435d1"
-    sha256 cellar: :any, catalina:      "c474195dad3f2c489dc9b580c8aa4a8f07fa3e9268d7140807a2dec7c72ff83c"
-    sha256 cellar: :any, mojave:        "fd6b2da12950e9f468c9a6f4215ce609a8b7aa3ba31490132485014ab2ee0ed1"
-    sha256               x86_64_linux:  "54a2d6241b11792074cd6fc48507fc60b9dac7075a01189b4b1e7e5e05cf12a7" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "46cd55a4775c9a415a4841ede024fb46173792744415e19edd086b0fbe7d5057"
+    sha256 cellar: :any, big_sur:       "640bd2d7c808b07e7b6cc93a84bdd3f63c86929e445bbb96778a79bce19810c4"
+    sha256 cellar: :any, catalina:      "d713a986b978f8506c4b3b50f56017303cb2745466a31943a3a0f88e4c259cd3"
+    sha256 cellar: :any, mojave:        "4068942693e4c7215d48dc4cd4fe1870f6427cde74365a803297a59f409259f7"
   end
 
   depends_on "cmake" => :build
@@ -64,8 +63,8 @@ class Semgrep < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/45/ab/74c77cf4590dfc846c101aee617f390ae679500630dd806b07f1a8e27b7b/charset-normalizer-2.0.1.tar.gz"
-    sha256 "ad0da505736fc7e716a8da15bf19a985db21ac6415c26b34d2fafd3beb3d927e"
+    url "https://files.pythonhosted.org/packages/37/fd/05a04d7e14548474d30d90ad0db5d90ee2ba55cd967511a354cf88b534f1/charset-normalizer-2.0.3.tar.gz"
+    sha256 "c46c3ace2d744cfbdebceaa3c19ae691f53ae621b39fd7570f59d14fb7f2fd12"
   end
 
   resource "colorama" do
@@ -86,6 +85,11 @@ class Semgrep < Formula
   resource "packaging" do
     url "https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz"
     sha256 "7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7"
+  end
+
+  resource "peewee" do
+    url "https://files.pythonhosted.org/packages/c9/51/3b2ded25a1cd51d1096bda8e0d1474712fe71efd374ae39b86c73a83d648/peewee-3.14.4.tar.gz"
+    sha256 "9e356b327c2eaec6dd42ecea6f4ddded025793dba906a3d065a0452e726c51a2"
   end
 
   resource "pyparsing" do
