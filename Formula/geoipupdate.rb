@@ -11,6 +11,7 @@ class Geoipupdate < Formula
     sha256 big_sur:       "100e9ece8f4563fc6ed597be8cbb39c4fd4299067917234d72354df56f9a34bc"
     sha256 catalina:      "ebffdddea99838681cdb84804386668ec9f8b2ed74895ad65bae09820a8da2df"
     sha256 mojave:        "7842336aef38b28f567dd3b9d9379764f5725837eda91242aa26cfab8b2521c9"
+    sha256 x86_64_linux:  "d4939ac1314c021d1947cba23c840820aca5675fc234084122a0ae4862edb994"
   end
 
   depends_on "go" => :build
