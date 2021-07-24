@@ -3,17 +3,16 @@ class OciCli < Formula
 
   desc "Oracle Cloud Infrastructure CLI"
   homepage "https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm"
-  url "https://files.pythonhosted.org/packages/8c/b2/a43fb7988d66e0f6d91b2d2baf94103af3ad75d92e2da365ad16ffe182bb/oci-cli-2.26.2.tar.gz"
-  sha256 "8833d08f66f843223ff6716999255df792ee96f4e9236b99a344d5dbe11afed6"
+  url "https://files.pythonhosted.org/packages/25/9d/02566aa3cdde16fe9a874fcacf302cfdc95375a30e6fef346b38976b87bc/oci-cli-2.26.3.tar.gz"
+  sha256 "14d9cb20ce267d9110352a13974abc01e5dcbcd4091ed310268ff59c48a17123"
   license any_of: ["UPL-1.0", "Apache-2.0"]
   head "https://github.com/oracle/oci-cli.git"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "8a1721315bbcb90baa35f403c79fede19f516c9c73ce293456bb3b906418af5c"
-    sha256 cellar: :any,                 big_sur:       "eda914bd85c31c2e39db9b911a173e2d51eafb9bc5e7e661cc45f76426f90381"
-    sha256 cellar: :any,                 catalina:      "68571e1f39cec3a36497b405dd77c9522bf5eb942bdb393012c04b60db01be00"
-    sha256 cellar: :any,                 mojave:        "8bab8e2a94d679331a81f8c3ca3a7ff75fda80e433694faea01638568c86317a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7f5e57490cc5b0fd7fe4e44c9a0c26c3c8b375e61a03c1b3feb3fd08c65d3b28" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "2b5774f04d79cf85b27d41ce6f2c86579a47da04275f0fcc6b9c5fcf47a3774e"
+    sha256 cellar: :any,                 big_sur:       "9154de32c5851fe3bf873a532144a653e2d0a332bf050a91f3fd9ca40ee1c81a"
+    sha256 cellar: :any,                 catalina:      "39b09f744d0f9e04d114b7e949e6cf764c454b264e9b765dd68540d1abf11b67"
+    sha256 cellar: :any,                 mojave:        "d0ef70d88a94f15980a0c77b3ad5641e8e3ff57bfd780402622630b517b3618a"
   end
 
   depends_on "rust" => :build
@@ -55,8 +54,8 @@ class OciCli < Formula
   end
 
   resource "oci" do
-    url "https://files.pythonhosted.org/packages/f6/8f/47cd445ca1f9b9d6e72824ed02fcd222f52a7da03b0eab2c3bb40cc63407/oci-2.42.0.tar.gz"
-    sha256 "51d50a5463044475001381676b5c72c7a5b90ae269fb213876176f13fa752657"
+    url "https://files.pythonhosted.org/packages/27/12/9a5f9d4c650a84bf76fc78986b7917eb2ee631be38bde92fd3a089672244/oci-2.43.0.tar.gz"
+    sha256 "a2f3aeb913e512687a25b2ed7afd01ab392c3a357a2ac5c8e2e8cb501438f107"
   end
 
   resource "pycparser" do
@@ -70,8 +69,8 @@ class OciCli < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8e0/python-dateutil-2.8.1.tar.gz"
-    sha256 "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
+    url "https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz"
+    sha256 "0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"
   end
 
   resource "pytz" do
