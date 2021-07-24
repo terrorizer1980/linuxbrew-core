@@ -6,11 +6,10 @@ class Ns3 < Formula
   license "GPL-2.0-only"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "fd95713bcbe8aed7dbf18ad8331eb5008e9701795f625049ba8a9d19b5fe70e2"
-    sha256 cellar: :any,                 big_sur:       "fc184536dfacb01cf9293483168462d7dcf3eaf568c34eef015af49c0346bd93"
-    sha256 cellar: :any,                 catalina:      "c0dcd1239ea1897664ff798bc3c940828469121859cb8fa1aa8c6973974dc8f2"
-    sha256 cellar: :any,                 mojave:        "998ffc954790eb1e4870117b8fd06c44875578f0520e23d19cc07867cdb5cc68"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f7d2d4dbeaf9749639f2015b6c19f36d00906dea01cf82a75475992752cd705c"
+    sha256 cellar: :any, arm64_big_sur: "fd95713bcbe8aed7dbf18ad8331eb5008e9701795f625049ba8a9d19b5fe70e2"
+    sha256 cellar: :any, big_sur:       "fc184536dfacb01cf9293483168462d7dcf3eaf568c34eef015af49c0346bd93"
+    sha256 cellar: :any, catalina:      "c0dcd1239ea1897664ff798bc3c940828469121859cb8fa1aa8c6973974dc8f2"
+    sha256 cellar: :any, mojave:        "998ffc954790eb1e4870117b8fd06c44875578f0520e23d19cc07867cdb5cc68"
   end
 
   depends_on "boost" => :build
