@@ -6,7 +6,7 @@ class LinuxHeadersAT44 < Formula
   license "GPL-2.0-only"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b3821c05a871c143c38d75b7494380f8f7a5725090528d849d2c066956a93344"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b3821c05a871c143c38d75b7494380f8f7a5725090528d849d2c066956a93344" # linuxbrew-core
   end
 
   depends_on :linux

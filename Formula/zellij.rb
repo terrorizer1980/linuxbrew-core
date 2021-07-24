@@ -10,7 +10,7 @@ class Zellij < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e64343d119216285d1bb140833d2338eb80ee3647698385e7c9891e3defd6648"
     sha256 cellar: :any_skip_relocation, catalina:      "5c73240ff871ff33ac392a9226ad04af741bce6b3ca7564b2e504d45b45e26d7"
     sha256 cellar: :any_skip_relocation, mojave:        "581dfcfd32ee0e13586a727034edd662840bfa2083c45bbe54c0adfda692751a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e3120d32fb7c8b61788664b237abccc50afd0dd1b18a0a1055dccf04700f545"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e3120d32fb7c8b61788664b237abccc50afd0dd1b18a0a1055dccf04700f545" # linuxbrew-core
   end
 
   depends_on "rust" => :build
