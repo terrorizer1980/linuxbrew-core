@@ -11,7 +11,7 @@ class Pspg < Formula
     sha256 cellar: :any,                 big_sur:       "a4ea2ac806a5a9edcc1a9913440c0ffdef74c6e73aeefa87c06186445fa5c843"
     sha256 cellar: :any,                 catalina:      "26b66e17fa47c6f60771a19af1e276461b4019eb556067bdce12d8b1e00ba9ad"
     sha256 cellar: :any,                 mojave:        "4c12af31b3009a098de71235ff1f8896dd62cefdde34f1891097ecb2acd8f853"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0885bbcd6ee24a753ebe3f9d8c04b04b2dcc938bd51e3dfc61992371e4c8c367"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0885bbcd6ee24a753ebe3f9d8c04b04b2dcc938bd51e3dfc61992371e4c8c367" # linuxbrew-core
   end
 
   depends_on "libpq"
