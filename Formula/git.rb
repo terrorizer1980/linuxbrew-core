@@ -29,7 +29,7 @@ class Git < Formula
   uses_from_macos "zlib"
 
   on_linux do
-    depends_on "linux-headers"
+    depends_on "linux-headers@4.4"
   end
 
   resource "html" do
