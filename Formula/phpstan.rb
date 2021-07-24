@@ -10,6 +10,7 @@ class Phpstan < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "00be2413cfa16c2a2a1ae4eef3b9be5b49ce2000d081fb85e456b30ed36ad3ef"
     sha256 cellar: :any_skip_relocation, catalina:      "00be2413cfa16c2a2a1ae4eef3b9be5b49ce2000d081fb85e456b30ed36ad3ef"
     sha256 cellar: :any_skip_relocation, mojave:        "00be2413cfa16c2a2a1ae4eef3b9be5b49ce2000d081fb85e456b30ed36ad3ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b537c335364b0b4fd401341c96827e989c2e11fff8de267ead317b5f65ff3257"
   end
 
   # Keg-relocation breaks the formula when it replaces `/usr/local` with a non-default prefix
