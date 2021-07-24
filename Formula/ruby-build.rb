@@ -6,6 +6,10 @@ class RubyBuild < Formula
   license "MIT"
   head "https://github.com/rbenv/ruby-build.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "679feeb52f6c470ecbe70a786f44103cd352c9cad9ef0284776790777ab6ba6b"
+  end
+
   depends_on "autoconf"
   depends_on "pkg-config"
   depends_on "readline"
