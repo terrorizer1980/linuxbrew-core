@@ -15,6 +15,7 @@ class Fcp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5e60b6a0d189ab71e4411a719ebdb2a7d8e15db7bc54c5a74ff47b2676a09cca"
     sha256 cellar: :any_skip_relocation, catalina:      "890ab9d94808f3b3534a9f2610f9502ac35a57ff827f9b12363ec9a5de52d50f"
     sha256 cellar: :any_skip_relocation, mojave:        "e54a5a79e09a561e2693dcef311856bfac90ae9221ebd30452d2812637fcea63"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "881d26ab6cf417e9ae55fb7a0ee78ac35f6dc41de898d9ee38dd18f06c8a557b"
   end
 
   depends_on "rust" => :build
