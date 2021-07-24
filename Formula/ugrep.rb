@@ -10,6 +10,7 @@ class Ugrep < Formula
     sha256 big_sur:       "bb1ad96936d0e3116be7f55416a6dbb0e4ad8083c1b3bb11a3354648f54b9847"
     sha256 catalina:      "2b7f50075586b2219220d19a3d9be44f24dbdf6a8c815ade21229653e0af16c6"
     sha256 mojave:        "ca7464f172875ff0f6b10b3e18495bdd34ec95b2f945f45d64e9591545acce2f"
+    sha256 x86_64_linux:  "6fbe537ed3b96973b5ae80f99528d2eabf161e363d073702a06430dafd86167e"
   end
 
   depends_on "pcre2"
