@@ -11,6 +11,7 @@ class GoMd2man < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ec0e280e3b7f68c5f0c7415aab6bf202f18080ff87750584a446be1a5636fa97"
     sha256 cellar: :any_skip_relocation, catalina:      "ec0e280e3b7f68c5f0c7415aab6bf202f18080ff87750584a446be1a5636fa97"
     sha256 cellar: :any_skip_relocation, mojave:        "ec0e280e3b7f68c5f0c7415aab6bf202f18080ff87750584a446be1a5636fa97"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b39e17cacacb31eecfc3412dd251b536c717384c4634fe252691a1e0f305706"
   end
 
   depends_on "go" => :build
