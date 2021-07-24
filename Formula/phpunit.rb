@@ -11,7 +11,7 @@ class Phpunit < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "07dc7f44553f38589f8d00ba251c975a0ef6c67423a429d048d338ec6fc39fca"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "07dc7f44553f38589f8d00ba251c975a0ef6c67423a429d048d338ec6fc39fca" # linuxbrew-core
   end
 
   depends_on "php" => :test

@@ -11,7 +11,7 @@ class Nbsdgames < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d30a3395191ecada03c1c7c18b0c82e6833a35fdf47f5a4c98fb708e89eede2a"
     sha256 cellar: :any_skip_relocation, catalina:      "6fc7bda5fa3519d9a4c241396a0ea512e252dc43e06289059b52e8017adef885"
     sha256 cellar: :any_skip_relocation, mojave:        "88cebe1f55579632df4606eb0f9e86f4488dee8cc2b108e97a0f3bd90a6c3f90"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0323c032e3636a122be2af5faca46694b70a6072e334a42996068abccde6fb7c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0323c032e3636a122be2af5faca46694b70a6072e334a42996068abccde6fb7c" # linuxbrew-core
   end
 
   uses_from_macos "ncurses"

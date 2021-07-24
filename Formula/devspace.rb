@@ -17,7 +17,7 @@ class Devspace < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "86e068503bf9244e5231a02488688fd0feb1d8d02b7cf1829a640c6fade9f50e"
     sha256 cellar: :any_skip_relocation, catalina:      "b0a18eb68488bd199ee6d15a3456d2745f599d9e6ff7c28b8c5cb1c801d5a291"
     sha256 cellar: :any_skip_relocation, mojave:        "e983105d9568bc128938fb5734e0ed821cb1a9c05003b3a74e183c012797e94c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d2bce25551844cbf8b9a847a22a2c83828bea9982442d4465be0799a8240655b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d2bce25551844cbf8b9a847a22a2c83828bea9982442d4465be0799a8240655b" # linuxbrew-core
   end
 
   depends_on "go" => :build

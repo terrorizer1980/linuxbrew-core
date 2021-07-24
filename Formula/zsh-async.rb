@@ -7,7 +7,7 @@ class ZshAsync < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f120012d4d9940d9ef0560f4b623de7729af50d1b6e688fccff0663ce3c3da1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f120012d4d9940d9ef0560f4b623de7729af50d1b6e688fccff0663ce3c3da1a" # linuxbrew-core
   end
 
   uses_from_macos "zsh"

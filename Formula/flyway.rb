@@ -11,7 +11,7 @@ class Flyway < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "68c1f57966699b7725b05cb0519b3eca529780afeb0ba384fd15b51ff6189f21"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "68c1f57966699b7725b05cb0519b3eca529780afeb0ba384fd15b51ff6189f21" # linuxbrew-core
   end
 
   depends_on "openjdk"

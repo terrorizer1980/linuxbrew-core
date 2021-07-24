@@ -7,7 +7,7 @@ class NetTools < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e08cb177a10583b6af76c29fa3c49c930d057aaa759946b72a579205d3fc093f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e08cb177a10583b6af76c29fa3c49c930d057aaa759946b72a579205d3fc093f" # linuxbrew-core
   end
 
   depends_on "libdnet"

@@ -11,7 +11,7 @@ class Pandoc < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "27e30c0b56e5005f792e13e1f2c3a92f7ed7b30b04a1f21a8dc7306dcc81d0f9"
     sha256 cellar: :any_skip_relocation, catalina:      "08c9812e82e075c44dbc691f4cdfdafd5265500bdc03c47835c9be4e5fd46950"
     sha256 cellar: :any_skip_relocation, mojave:        "790cad386bfbfaa3c972c04b4ea0bfcb6a7de3e01f8f41211e9e940ff5a143e9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d97de8004ecbff63172d078c22598de26e25683bca16c108d3b21f9d34b1c12"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d97de8004ecbff63172d078c22598de26e25683bca16c108d3b21f9d34b1c12" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build

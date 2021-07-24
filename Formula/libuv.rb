@@ -11,7 +11,7 @@ class Libuv < Formula
     sha256 cellar: :any,                 big_sur:       "b11e3f74f2caca70d334f8d1172c50ac06d9d53018b959d8fbd0310783c05652"
     sha256 cellar: :any,                 catalina:      "98fb2b7b02c165f7a652be5a9a2d012887ca583fc27eb4ee84b61cbfae9801ac"
     sha256 cellar: :any,                 mojave:        "80f10e3328caec6ffcb667226cecd4d3bf699e1886c6a6e0915671278fd48493"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a43766cfe240a62321678b85556fcca67604d899cd6f93b800107feb11d5a202"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a43766cfe240a62321678b85556fcca67604d899cd6f93b800107feb11d5a202" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
