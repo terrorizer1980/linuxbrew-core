@@ -13,6 +13,7 @@ class Osc < Formula
     sha256 cellar: :any,                 big_sur:       "ee1547c7ef76a888a2a4f46d1880b3b3761be549be7bb93cfe803ae4e5eb2e42"
     sha256 cellar: :any,                 catalina:      "8c62deae5e597d7171b97ac60240d1d4ff7d40bb65bb454aae52cd2371ee8aeb"
     sha256 cellar: :any,                 mojave:        "924fb9bb84421ee725308f4fe541e3ba6a0699897a2c4c600c35a9a69ec4b2ff"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bef577131d3490a67fd640c1c239026b598c8667309d8f83db28f3a578d3b8a3"
   end
 
   depends_on "swig" => :build
