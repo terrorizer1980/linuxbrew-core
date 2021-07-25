@@ -10,6 +10,10 @@ class UsbIds < Formula
     regex(/href=.*?usb\.ids[._-]v?(\d+(?:\.\d+)+)\.orig\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "062cf6ad3c89be759bd58fbaf5fd2f237a643bd2a3a5672919355cf5c8a1a718"
+  end
+
   def install
     (share/"misc").install "usb.ids"
   end
