@@ -23,12 +23,14 @@ class Sysdig < Formula
   depends_on "jsoncpp"
   depends_on "luajit"
   depends_on "tbb"
-  unless OS.mac?
-    depends_on "c-ares"
-    depends_on "curl"
+
+  uses_from_macos "curl"
+
+  on_linux do
     depends_on "elfutils"
     depends_on "grpc"
     depends_on "jq"
+    depends_on "libb64"
     depends_on "protobuf"
   end
 
@@ -39,13 +41,15 @@ class Sysdig < Formula
   end
 
   def install
+    args = std_cmake_args + %W[
+      -DSYSDIG_VERSION=#{version}
+      -DUSE_BUNDLED_DEPS=OFF
+      -DCREATE_TEST_TARGETS=OFF
+    ]
+    on_linux { args << "-DBUILD_DRIVER=OFF" }
+
     mkdir "build" do
-      system "cmake", "..", "-DSYSDIG_VERSION=#{version}",
-                            "-DUSE_BUNDLED_DEPS=OFF",
-                            "-DCREATE_TEST_TARGETS=OFF",
-                            ("-DUSE_BUNDLED_B64=ON" unless OS.mac?),
-                            ("-DBUILD_DRIVER=OFF" unless OS.mac?),
-                            *std_cmake_args
+      system "cmake", "..", *args
       system "make"
       system "make", "install"
     end

@@ -2,17 +2,16 @@ class Vim < Formula
   desc "Vi 'workalike' with many additional features"
   homepage "https://www.vim.org/"
   # vim should only be updated every 25 releases on multiples of 25
-  url "https://github.com/vim/vim/archive/v8.2.3175.tar.gz"
-  sha256 "a135657d6bb39f126281ee654d5a90aefb41fdc8a763e2e4f29cf350718b7cd6"
+  url "https://github.com/vim/vim/archive/v8.2.3200.tar.gz"
+  sha256 "8b12de4d5f6fa236e3fe360763e55f0f363436ac346a5ecb7107fb2c109b5d49"
   license "Vim"
   head "https://github.com/vim/vim.git"
 
   bottle do
-    sha256 arm64_big_sur: "ad6c0772bd4d699d5d21fd3e83418e2b062ef2034760edc121c2f1fe7f6a2d4a"
-    sha256 big_sur:       "c146d3ba4da3dfe873b670e0c5f396a7ecdffbe0befce600855561f04a1f8665"
-    sha256 catalina:      "d1c777e31ebc4dbf27f92818c89b337da49b2bca4e55891389249ce675921b54"
-    sha256 mojave:        "96b40ec7cf156202a23a1991d420fb6cfdbac247ab19d23e87cbd992c1eb7dbe"
-    sha256 x86_64_linux:  "1b82794dd871b0ce7aac28e249cd93e02c4e30c262f6f613498f2ed612d8d13a" # linuxbrew-core
+    sha256 arm64_big_sur: "6fa66e80b46d8daebc20f8c78e480fa3869d40f3c7590fe92ea696d99dcb0c23"
+    sha256 big_sur:       "918ecbbe138aca9e152ebe11c554e9ef03b8b6646a4abfe30fb5d85e98ef507b"
+    sha256 catalina:      "15b82a10f4f35a159145e206ecc9f7a016cf2fc58a15b645a4a1d3971fe9ad96"
+    sha256 mojave:        "ebe6782fa5c96932368d30f8f61d792c37bfc22d6929261dd72c1cbcbe423899"
   end
 
   depends_on "gettext"
