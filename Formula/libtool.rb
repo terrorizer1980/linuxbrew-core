@@ -12,6 +12,7 @@ class Libtool < Formula
     sha256 cellar: :any,                 big_sur:       "dfb94265706b7204b346e3e5d48e149d7c7870063740f0c4ab2d6ec971260517"
     sha256 cellar: :any,                 catalina:      "ad541ac37b9a8042f998fb3640fe60f70d38483fa6a0784953d880190e9cc762"
     sha256 cellar: :any,                 mojave:        "35c8d3e024a2507d7d3244bcebdb0ccc61c25ae292e6df6025f78c7342a9799d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "70ae665f4ba2a3402d9501cf01895e2fcbdf6dc68276a35bab4bb7a3428f23f0"
   end
 
   depends_on "m4"
