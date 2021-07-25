@@ -40,9 +40,6 @@ class Screen < Formula
       system "./autogen.sh"
     end
 
-    # Fix error: dereferencing pointer to incomplete type 'struct utmp'
-    ENV.append_to_cflags "-include utmp.h" unless OS.mac?
-
     # With parallel build, it fails
     # because of trying to compile files which depend osdef.h
     # before osdef.sh script generates it.
