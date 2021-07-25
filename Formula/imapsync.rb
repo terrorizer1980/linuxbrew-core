@@ -1,11 +1,10 @@
 class Imapsync < Formula
   desc "Migrate or backup IMAP mail accounts"
   homepage "https://imapsync.lamiral.info/"
-  url "https://imapsync.lamiral.info/dist2/imapsync-1.977.tgz"
+  url "https://imapsync.lamiral.info/dist2/imapsync-2.140.tgz"
   # NOTE: The mirror will return 404 until the version becomes outdated.
-  sha256 "1ce601150568a6b13a5d8730bee07fdc05b35f3f4e35775f1b471ba221940c2a"
+  sha256 "faebfa61bffdb33c845fe53707be09761d96d717b75706b3ca927990654e7551"
   license "NLPL"
-  revision 1
   head "https://github.com/imapsync/imapsync.git"
 
   livecheck do
@@ -14,10 +13,10 @@ class Imapsync < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e14410815c60a8df645e24fe6b2ae0549ff16e189ae7cb62ff76e94957028799"
-    sha256 cellar: :any_skip_relocation, big_sur:       "2080287d17a3a513a3e0ce872dfc4eb76b5a0323c6bd397179e5e5225fb6d9c3"
-    sha256 cellar: :any_skip_relocation, catalina:      "9654bda14b00c6c0f0f12c58dcd918618d761ea4c70b4d79ff0916aebb175128"
-    sha256 cellar: :any_skip_relocation, mojave:        "e031d2a41ab746c91045945a0aea0b2dd0e34317a79e17b4205afa41fe98a011"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "f9ecf98890a33032f33265c911706a0e0cba29ad4cbc06f63bcabc31a7cbc4f6"
+    sha256 cellar: :any_skip_relocation, big_sur:       "292fd066f1f52cc748bf30395cc117b32c0e3ee62d4646e8d5aa4c9d620ba34e"
+    sha256 cellar: :any_skip_relocation, catalina:      "ec79e8b2d77dea4bcf156ae5566f7c9ec3bed6157b62fc7543b93ca276e98b94"
+    sha256 cellar: :any_skip_relocation, mojave:        "231ad4b8c618aea36959211b811e678ab9979afb483eb5f6508ffc3bd2a9f42f"
   end
 
   depends_on "pod2man" => :build
@@ -35,8 +34,8 @@ class Imapsync < Formula
   end
 
   resource "File::Copy::Recursive" do
-    url "https://cpan.metacpan.org/authors/id/D/DM/DMUEY/File-Copy-Recursive-0.44.tar.gz"
-    sha256 "ae19a0b58dc1b3cded9ba9cfb109288d8973d474c0b4bfd28b27cf60e8ca6ee4"
+    url "https://cpan.metacpan.org/authors/id/D/DM/DMUEY/File-Copy-Recursive-0.45.tar.gz"
+    sha256 "d3971cf78a8345e38042b208bb7b39cb695080386af629f4a04ffd6549df1157"
   end
 
   resource "Authen::NTLM" do
@@ -45,13 +44,13 @@ class Imapsync < Formula
   end
 
   resource "Mail::IMAPClient" do
-    url "https://cpan.metacpan.org/authors/id/P/PL/PLOBBES/Mail-IMAPClient-3.42.tar.gz"
-    sha256 "1c2264d50c54c839a3e38ce2f8edda3d24f30cc607940d7574beab19cb00ce7e"
+    url "https://cpan.metacpan.org/authors/id/P/PL/PLOBBES/Mail-IMAPClient-3.43.tar.gz"
+    sha256 "093c97fac15b47a8fe4d2936ef2df377abf77cc8ab74092d2128bb945d1fb46f"
   end
 
   resource "IO::Tee" do
-    url "https://cpan.metacpan.org/authors/id/N/NE/NEILB/IO-Tee-0.65.tar.gz"
-    sha256 "c63dcd109b268962f867407da2654282e3c85113dc7e9655fe8a62331d490c12"
+    url "https://cpan.metacpan.org/authors/id/N/NE/NEILB/IO-Tee-0.66.tar.gz"
+    sha256 "2d9ce7206516f9c30863a367aa1c2b9b35702e369b0abaa15f99fb2cc08552e0"
   end
 
   resource "Data::Uniqid" do
@@ -60,13 +59,20 @@ class Imapsync < Formula
   end
 
   resource "JSON" do
-    url "https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.02.tar.gz"
-    sha256 "444a88755a89ffa2a5424ab4ed1d11dca61808ebef57e81243424619a9e8627c"
+    url "https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.03.tar.gz"
+    sha256 "e41f8761a5e7b9b27af26fe5780d44550d7a6a66bf3078e337d676d07a699941"
   end
 
   resource "Test::MockObject" do
-    url "https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Test-MockObject-1.20180705.tar.gz"
-    sha256 "4516058d5d511155c1c462dab4027d762d6a474b99f73bf7da20b5ffbd024518"
+    url "https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Test-MockObject-1.20200122.tar.gz"
+    sha256 "2b7f80da87f5a6fe0360d9ee521051053017442c3a26e85db68dfac9f8307623"
+  end
+
+  if MacOS.version <= :catalina
+    resource "Module::Build" do
+      url "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4231.tar.gz"
+      sha256 "7e0f4c692c1740c1ac84ea14d7ea3d8bc798b2fb26c09877229e04f430b2b717"
+    end
   end
 
   resource "JSON::WebToken" do
@@ -133,14 +139,14 @@ class Imapsync < Formula
   end
 
   resource "IO::Socket::IP" do
-    url "https://cpan.metacpan.org/authors/id/P/PE/PEVANS/IO-Socket-IP-0.39.tar.gz"
-    sha256 "11950da7636cb786efd3bfb5891da4c820975276bce43175214391e5c32b7b96"
+    url "https://cpan.metacpan.org/authors/id/P/PE/PEVANS/IO-Socket-IP-0.41.tar.gz"
+    sha256 "849a45a238f8392588b97722c850382c4e6d157cd08a822ddcb9073c73bf1446"
   end
 
   def install
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
 
-    build_pl = ["JSON::WebToken", "Module::Build::Tiny", "Readonly"]
+    build_pl = ["Module::Build", "JSON::WebToken", "Module::Build::Tiny", "Readonly", "IO::Socket::IP"]
 
     resources.each do |r|
       r.stage do
@@ -151,6 +157,9 @@ class Imapsync < Formula
         system "make", "install"
       end
     end
+
+    # Big Sur has a sufficiently new Module::Build
+    build_pl.shift if MacOS.version >= :big_sur
 
     build_pl.each do |name|
       resource(name).stage do

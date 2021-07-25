@@ -1,15 +1,15 @@
 class Arangodb < Formula
   desc "Multi-Model NoSQL Database"
   homepage "https://www.arangodb.com/"
-  url "https://download.arangodb.com/Source/ArangoDB-3.7.12.tar.gz"
-  sha256 "c59340f57c0096c010126d2f08dc7ab48bc024fb96adf332b24eebcf680d4345"
+  url "https://download.arangodb.com/Source/ArangoDB-3.7.13.tar.gz"
+  sha256 "3869f30dd6214d2f40d2734982fa152d1ac9c27887dcd6dca6eb4b4f8bf86fa8"
   license "Apache-2.0"
   head "https://github.com/arangodb/arangodb.git", branch: "devel"
 
   bottle do
-    sha256 big_sur:  "c26f312e0bf7f3e91d7d29d65c3ccca39149164e70b3d128373ee9b5a194d02c"
-    sha256 catalina: "5d3a07342eaf5eaba075f42cad77e87c3b19f3afb5d6b926a1a5695060273b60"
-    sha256 mojave:   "56e53d405de58b9784d89cbadda06e04e6b4aa78c65d1fed29777553d942e72b"
+    sha256 big_sur:  "eae46bfeb3a5d13945725685e43529f337b3050f1c46a174de19fbd5486fa52b"
+    sha256 catalina: "d21cbcf6f1e3bdeeb630259a1ce3c7250d30260c300c813435023497a69492f3"
+    sha256 mojave:   "e7267c0ed1bc1670f7ad731daf7710742d4c293c89fcafdd979cce442f977ebb"
   end
 
   depends_on "ccache" => :build
@@ -27,8 +27,8 @@ class Arangodb < Formula
   # with a unified CLI
   resource "starter" do
     url "https://github.com/arangodb-helper/arangodb.git",
-        tag:      "0.15.0",
-        revision: "74b0760828c3b84b63267184ec8eb8492cdf4c6b"
+        tag:      "0.15.0-1",
+        revision: "df06cb77c7eaf3f232fcf01e04cb871cece07e28"
   end
 
   def install
