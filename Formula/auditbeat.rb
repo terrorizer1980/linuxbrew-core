@@ -12,6 +12,7 @@ class Auditbeat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "dfca3a3795e58330637afba0733d016d4d4b51a168fddb9192bc91e265fb8f33"
     sha256 cellar: :any_skip_relocation, catalina:      "455cfc084407dfc9b1404abebc99a1eb76b41ba522e82b3a1b9e2b8b50f188a0"
     sha256 cellar: :any_skip_relocation, mojave:        "88d80c0391620dd0f4d19e7f75be77212d4b4db9cb2ef4356caa704f78a61e1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f12916ba46aecc0e84168090cea8b18da187653e1fb7e92fc5f3c2f4672d826f"
   end
 
   depends_on "go" => :build
