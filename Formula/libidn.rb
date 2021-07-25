@@ -11,6 +11,7 @@ class Libidn < Formula
     sha256 cellar: :any, big_sur:       "edf0fcd338457708fb6ee986f85c380b744d7ea7b9e03df1bec892959d2a9e0d"
     sha256 cellar: :any, catalina:      "ce069c2b604d6dd0194541bc510a43d0e1eecacd816dfa4d2f537dde7de3cd5f"
     sha256 cellar: :any, mojave:        "1e5c4afc066727df497031e2cefbd012fc7b5b4e4cee793cd4b84f68bf9ff3de"
+    sha256               x86_64_linux:  "cdebd0a0f73d6fe29f8ef539aa1be4a8f576245aa07697de123bf436bfdd24d0"
   end
 
   depends_on "pkg-config" => :build
