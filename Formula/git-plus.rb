@@ -13,6 +13,7 @@ class GitPlus < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "243b9a0bf17f0e8ae3abe57100618440aa785f5f087d214e45732b48bb998dc1"
     sha256 cellar: :any_skip_relocation, catalina:      "243b9a0bf17f0e8ae3abe57100618440aa785f5f087d214e45732b48bb998dc1"
     sha256 cellar: :any_skip_relocation, mojave:        "243b9a0bf17f0e8ae3abe57100618440aa785f5f087d214e45732b48bb998dc1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a07a67c06fac3c4de1c84960b38dda0bd3b06476c48e12eaddf0a03f25f7e214"
   end
 
   depends_on "python@3.9"
