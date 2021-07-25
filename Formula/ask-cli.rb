@@ -12,6 +12,7 @@ class AskCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "704b45ace777d3c93537ca97399ac9a90d5e9d79f3d83ff6bed0a8e9524fdea9"
     sha256 cellar: :any_skip_relocation, catalina:      "3443c0f15a4314bf5753b4472c971ba9536fda8c524205a4733d0c7ffd03c42c"
     sha256 cellar: :any_skip_relocation, mojave:        "49a324c1b0898ca06636ac992772a8aafcd907d02a16738b61f601485cbef502"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "82f7c651f26293c4361cc592494f98f768607950460f019fcab9a93ab633860d"
   end
 
   depends_on "node"
