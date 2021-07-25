@@ -15,6 +15,7 @@ class Libphonenumber < Formula
     sha256 cellar: :any,                 big_sur:       "17e9cce7894b23045fd4d6de35b0a9c5cfb7cce15789ac5f12c6f9bea2533bdf"
     sha256 cellar: :any,                 catalina:      "27cac582549d1e939f4293b887926678e166b744fcc6ed177c38137d4bd76262"
     sha256 cellar: :any,                 mojave:        "d880a469075be587378c2e14ecdcc4328e0220737543f65ead28b437346b2c06"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c319c46a60c46d10f2bef5edd629400de2504ccb41fde7c091168ad803fc1534"
   end
 
   depends_on "cmake" => :build
