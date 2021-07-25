@@ -15,7 +15,7 @@ class Lynis < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f22d1062214334e29b63165f7246ee32c64e9981ddc2ef15c9610f40da7e457c"
     sha256 cellar: :any_skip_relocation, catalina:      "f22d1062214334e29b63165f7246ee32c64e9981ddc2ef15c9610f40da7e457c"
     sha256 cellar: :any_skip_relocation, mojave:        "f22d1062214334e29b63165f7246ee32c64e9981ddc2ef15c9610f40da7e457c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fc0a9524b52fc385fe438af0ec82772adffd8eb80fe8e54207130cb2945b1102"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fc0a9524b52fc385fe438af0ec82772adffd8eb80fe8e54207130cb2945b1102" # linuxbrew-core
   end
 
   def install

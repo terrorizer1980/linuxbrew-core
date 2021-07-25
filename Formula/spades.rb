@@ -17,7 +17,7 @@ class Spades < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "1709900ba50cdaec70d864c3b7f6c68eaa4e7396055abc6fe540e3529296d84b"
     sha256 cellar: :any_skip_relocation, catalina:     "07c4724e3a1236f19f6c9a7899077035c17501f1581838428849fc9ec8d25d78"
     sha256 cellar: :any_skip_relocation, mojave:       "6efc26bfefb204c0ed9370b2d46a2ec0e12c999b6f150d3e2a22c2d38e15d93d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e271eab91aa4ba04b9f291b6cce079796e28d424a0e536c30788569146ac96f1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e271eab91aa4ba04b9f291b6cce079796e28d424a0e536c30788569146ac96f1" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

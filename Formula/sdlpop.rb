@@ -10,7 +10,7 @@ class Sdlpop < Formula
     sha256 cellar: :any,                 big_sur:       "2c3a47b467b2bdd321d1b7f2d73ad7f40859319b2ae6b51ef0009c2274c2581b"
     sha256 cellar: :any,                 catalina:      "4c2307714ee64456baac5c4b758e48c8aca6747a0daa92b8bc31fd1597663250"
     sha256 cellar: :any,                 mojave:        "d304d506f73fec8e98b223eb0f8cfd087dd7a15a144fd0b46522f7a2b78261b9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0f0fb2d039d5e9d70aed935ad790888eb514431ca9fa6e15859ad90003e06fa2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0f0fb2d039d5e9d70aed935ad790888eb514431ca9fa6e15859ad90003e06fa2" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
