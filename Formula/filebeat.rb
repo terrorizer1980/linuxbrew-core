@@ -14,7 +14,7 @@ class Filebeat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a2ebe3f52e2037eb851e60f9aba3736010a77b0f6f205e7284a83dd4834cb8d3"
     sha256 cellar: :any_skip_relocation, catalina:      "3212458e18020086adca80615e443f400d16c6a05f711d165795066fda8ca9ad"
     sha256 cellar: :any_skip_relocation, mojave:        "a46ed6aca2fde30c8c4c7692b213dc4ffdb125dc62e0ba90f1ce1053a48c47d5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5610269d9d2307628b4fba78a2c05888060cba95cffaa92b651e9b13e585ecb8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5610269d9d2307628b4fba78a2c05888060cba95cffaa92b651e9b13e585ecb8" # linuxbrew-core
   end
 
   depends_on "go" => :build

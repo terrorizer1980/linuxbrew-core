@@ -11,7 +11,7 @@ class Ilmbase < Formula
     sha256 cellar: :any,                 big_sur:       "71c8e6cedb938d2c5ec99fea9343805f293013b070ad561e2fa652194f84a59c"
     sha256 cellar: :any,                 catalina:      "e505a83ecb7ab3aee3f5cb38973612a559ec106a96d7142bc0f245556512a670"
     sha256 cellar: :any,                 mojave:        "a3416415f8a68fc12922080e36e24481833343d89a06aad74ad57034b2200eb0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "da0eefc8bb7843f74af05c36641d23819f7cc117804cab57567ecaefb60e6197"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "da0eefc8bb7843f74af05c36641d23819f7cc117804cab57567ecaefb60e6197" # linuxbrew-core
   end
 
   keg_only "ilmbase conflicts with `openexr` and `imath`"

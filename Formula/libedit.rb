@@ -16,7 +16,7 @@ class Libedit < Formula
     sha256 cellar: :any,                 big_sur:       "75d0b470e0478010fbaa2708db5eefba895d71d32efe79bc3eee389e26375bb7"
     sha256 cellar: :any,                 catalina:      "b28c79aa687f372834237a8a13ff274ff91bbb378aaa7bdd055411a0817427a7"
     sha256 cellar: :any,                 mojave:        "b011a5735eee4db2740abc9cc25703e9dcf89da5f79e5d210a3a1e8609f9205e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "08fede13bbc6910dbb2cc33aac6d4846b933713118e19503e09490f2404d3994"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "08fede13bbc6910dbb2cc33aac6d4846b933713118e19503e09490f2404d3994" # linuxbrew-core
   end
 
   keg_only :provided_by_macos

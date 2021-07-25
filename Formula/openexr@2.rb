@@ -11,7 +11,7 @@ class OpenexrAT2 < Formula
     sha256 cellar: :any,                 big_sur:       "428f7841d12c75fdcf614c636aaf078a079ae16fce6f40510c5c0b3494814e06"
     sha256 cellar: :any,                 catalina:      "514fa634d8cb6fe9d677526ccfa29001765bb1fe7bdd96e03f59dad14bea2c57"
     sha256 cellar: :any,                 mojave:        "4c4fb29b1ba3789441448da68276d373838cff0e72424ac7ea4cb4dbcaed88a1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "18bf077029c9987a71340e02a71916d80bf8afdb9738f16fb861f4171ca7af0d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "18bf077029c9987a71340e02a71916d80bf8afdb9738f16fb861f4171ca7af0d" # linuxbrew-core
   end
 
   keg_only :versioned_formula

@@ -13,7 +13,7 @@ class Circleci < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "70db6bff4b012cbc42b9899221a11259b3f25538dec336f95302ea20f5761437"
     sha256 cellar: :any_skip_relocation, catalina:      "b958a7688c02c083b8f2c7e18b933a790063611fa05bdda00e8bda10301c93b5"
     sha256 cellar: :any_skip_relocation, mojave:        "cbc6ecc841ed1f2fd53157d22358c1f3cedc6f319c95f123ac9cf4328e03d928"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "73bc72db49fa2ad0d751a9256b7300241845c78b152957d3e272701db7c3c5eb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "73bc72db49fa2ad0d751a9256b7300241845c78b152957d3e272701db7c3c5eb" # linuxbrew-core
   end
 
   depends_on "go" => :build
