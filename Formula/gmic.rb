@@ -16,6 +16,7 @@ class Gmic < Formula
     sha256 cellar: :any,                 big_sur:       "aaf9c8289fca869eb689a3c8df531c88d06a7f20e66834476040b28bda1d8f27"
     sha256 cellar: :any,                 catalina:      "2393fee531477a0737818b367e8a7fd1bf5b2d1834c9f71d0424d9fdfe35289d"
     sha256 cellar: :any,                 mojave:        "06c829f95058ad32cd4c851fef13238008215252775cd35218428d440b8d3eb7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5a575f45f76d9652e38f78982d5a5edb053191f99a4125805971f7cc2441332c"
   end
 
   depends_on "cmake" => :build
