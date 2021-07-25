@@ -3,23 +3,36 @@ require "language/node"
 class AskCli < Formula
   desc "CLI tool for Alexa Skill Kit"
   homepage "https://www.npmjs.com/package/ask-cli"
-  url "https://registry.npmjs.org/ask-cli/-/ask-cli-2.22.4.tgz"
-  sha256 "9661eea17000fa5a6d3fd088546175d38ed4da55be7ab723f04e84eb2f7e97ca"
+  url "https://registry.npmjs.org/ask-cli/-/ask-cli-2.23.0.tgz"
+  sha256 "37bb7e8921f3c54a19e4b576746c12c49b287917a0d2705b7bc4a2d83945a79d"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "188b7e276246c8084ed5e9c9e35e80aceb05b5c4c6ddfba5b4d3c4681ae0aba3"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d294fde163d254091d70290b044ef203a8845936a368eb049ebd825b5b875fd9"
-    sha256 cellar: :any_skip_relocation, catalina:      "1e9dc2f8c69bb0dfe2bfd78b78f724427d26f0f01e79b7cfe1c3c360e880aa85"
-    sha256 cellar: :any_skip_relocation, mojave:        "30a69e559f02cf7fd6bb4f7190bd71703c18885a826eb9c13f7c71777c124193"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ad51150496f0b74c29af9e763703f6a48047cd3af1566636bd685c3bba7fbd54" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "de55a9862cce781d0e593dba6379ec3bb1d1766dc8f4ef2d78633909b139ed5e"
+    sha256 cellar: :any_skip_relocation, big_sur:       "704b45ace777d3c93537ca97399ac9a90d5e9d79f3d83ff6bed0a8e9524fdea9"
+    sha256 cellar: :any_skip_relocation, catalina:      "3443c0f15a4314bf5753b4472c971ba9536fda8c524205a4733d0c7ffd03c42c"
+    sha256 cellar: :any_skip_relocation, mojave:        "49a324c1b0898ca06636ac992772a8aafcd907d02a16738b61f601485cbef502"
   end
 
   depends_on "node"
 
+  on_macos do
+    depends_on "macos-term-size"
+  end
+
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
     bin.write_exec_script libexec/"bin/ask"
+
+    term_size_vendor_dir = libexec/"lib/node_modules/#{name}/node_modules/term-size/vendor"
+    term_size_vendor_dir.rmtree # remove pre-built binaries
+
+    on_macos do
+      macos_dir = term_size_vendor_dir/"macos"
+      macos_dir.mkpath
+      # Replace the vendored pre-built term-size with one we build ourselves
+      ln_sf (Formula["macos-term-size"].opt_bin/"term-size").relative_path_from(macos_dir), macos_dir
+    end
   end
 
   test do

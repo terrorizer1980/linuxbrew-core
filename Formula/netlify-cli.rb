@@ -3,26 +3,39 @@ require "language/node"
 class NetlifyCli < Formula
   desc "Netlify command-line tool"
   homepage "https://www.netlify.com/docs/cli"
-  url "https://registry.npmjs.org/netlify-cli/-/netlify-cli-4.4.0.tgz"
-  sha256 "817283a7be1b45d67d7eeb3b5d69b13450e33bb3de3c9f1d141803299ccd7767"
+  url "https://registry.npmjs.org/netlify-cli/-/netlify-cli-5.1.0.tgz"
+  sha256 "bf7af06f89515e7849e7e7f15bc94d6a2ce7105804dfd370d416e3d2412b16df"
   license "MIT"
   head "https://github.com/netlify/cli.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4ea1eb56648a4f92f3695fcc60c51bb2fcc32c3118df18d5091bedfb3124cd65"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1df1662e6b1a9a7011c6b106caa8b57cbe940f08d9cf7bb23740f952256f96c1"
-    sha256 cellar: :any_skip_relocation, catalina:      "1df1662e6b1a9a7011c6b106caa8b57cbe940f08d9cf7bb23740f952256f96c1"
-    sha256 cellar: :any_skip_relocation, mojave:        "1df1662e6b1a9a7011c6b106caa8b57cbe940f08d9cf7bb23740f952256f96c1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2146e1816a723a469ae84845fde063e0ce014ae08522ad0475e5949aad4b8443" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "1ee2ee21bea0cdf4cf519254f150ef0ff19f325ecdaa501c9aae8152e0315859"
+    sha256 cellar: :any_skip_relocation, big_sur:       "afbd21084ce4a63f872dfe8d52d61dd3f9b31aea3d74c4eeb3ec4abc76626d31"
+    sha256 cellar: :any_skip_relocation, catalina:      "afbd21084ce4a63f872dfe8d52d61dd3f9b31aea3d74c4eeb3ec4abc76626d31"
+    sha256 cellar: :any_skip_relocation, mojave:        "afbd21084ce4a63f872dfe8d52d61dd3f9b31aea3d74c4eeb3ec4abc76626d31"
   end
 
   depends_on "node"
 
   uses_from_macos "expect" => :test
 
+  on_macos do
+    depends_on "macos-term-size"
+  end
+
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
     bin.install_symlink Dir["#{libexec}/bin/*"]
+
+    term_size_vendor_dir = libexec/"lib/node_modules/#{name}/node_modules/term-size/vendor"
+    term_size_vendor_dir.rmtree # remove pre-built binaries
+
+    on_macos do
+      macos_dir = term_size_vendor_dir/"macos"
+      macos_dir.mkpath
+      # Replace the vendored pre-built term-size with one we build ourselves
+      ln_sf (Formula["macos-term-size"].opt_bin/"term-size").relative_path_from(macos_dir), macos_dir
+    end
   end
 
   test do
