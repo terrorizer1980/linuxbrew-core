@@ -14,7 +14,7 @@ class Cfitsio < Formula
     sha256 cellar: :any,                 big_sur:       "bfc9fd29dd3909123ab1ee9d1c0fa36543bfc4a330690826b8a94c545544888c"
     sha256 cellar: :any,                 catalina:      "63e9df9a5660a778941cc264639547715cd2f264cba7c57731ffe399c2586ec1"
     sha256 cellar: :any,                 mojave:        "d98bbd662f25cc6d961a8ba28c3c743474e0c05aaa8ea83b710c9469669de424"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3c0e76dd62d49e3aa80004128ac6eb9c8f84cc3139efe3d07eed740b17a31ebe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3c0e76dd62d49e3aa80004128ac6eb9c8f84cc3139efe3d07eed740b17a31ebe" # linuxbrew-core
   end
 
   uses_from_macos "zlib"

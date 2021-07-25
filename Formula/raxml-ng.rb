@@ -10,7 +10,7 @@ class RaxmlNg < Formula
     sha256 cellar: :any,                 big_sur:      "53b34f6c99ec604321d1314e5e6b94c559347c168e1702f0a23f93fc8a75c0e7"
     sha256 cellar: :any,                 catalina:     "365081db70aff0f633a8af24cc85b222b06ae3eb73fbadabd9c8c292e388a6b8"
     sha256 cellar: :any,                 mojave:       "05bfd69c3d218af9a44cbcf2f2d7e007d431aa8e45519a7ead14b67945df3666"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e8a4362c880bf927c4e282800080a7bea5a707b53599b965f717e482b32a5e24"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e8a4362c880bf927c4e282800080a7bea5a707b53599b965f717e482b32a5e24" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

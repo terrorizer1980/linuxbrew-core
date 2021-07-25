@@ -10,7 +10,7 @@ class Libmwaw < Formula
     sha256 cellar: :any,                 big_sur:       "d01b3328f59d9bae2b955b955825af7521ed97713735d2143e687367cf3b00e3"
     sha256 cellar: :any,                 catalina:      "8f25e345c0fd4a4025d3bdcbcedb6325919d2c231de2f7a586440f3e95f18714"
     sha256 cellar: :any,                 mojave:        "eac21b3e50dbac8d892fdfd629ae111a105c12b7b16d6397f535e202ea30f367"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c008567a02de1819e5aa7cf0bcb75c0c8d324cfcff934ff82012b8d209a0a49"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c008567a02de1819e5aa7cf0bcb75c0c8d324cfcff934ff82012b8d209a0a49" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

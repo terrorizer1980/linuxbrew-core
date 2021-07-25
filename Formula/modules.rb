@@ -15,7 +15,7 @@ class Modules < Formula
     sha256                               big_sur:       "f7db523c25f10422709babd29da071fb844fb8207ccd0c8e0ba54948e4119cd3"
     sha256 cellar: :any,                 catalina:      "ad84ed490ed2640a32799c5fb3ca7d815c45989f90bf246e087354e60ae23537"
     sha256 cellar: :any,                 mojave:        "92b00fca6d79e453bf2231d10783912342aa45c7c9ef926998c2ff39e2cc3160"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "976d2d481a1d93d231e2f829bfc02e3d81811a41025325862808669f0b70e148"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "976d2d481a1d93d231e2f829bfc02e3d81811a41025325862808669f0b70e148" # linuxbrew-core
   end
 
   depends_on "less" unless OS.mac?
