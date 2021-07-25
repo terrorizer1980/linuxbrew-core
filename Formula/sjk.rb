@@ -5,6 +5,10 @@ class Sjk < Formula
   sha256 "f1504271eba4783473aade3e929df0049a380b0ed1aeb0c997ddc0506acbc912"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "778dca74dec8162c31b676da9186cbf9233a4dfcbd6719bfa85f3ed00f1764f5"
+  end
+
   depends_on "openjdk"
 
   def install
