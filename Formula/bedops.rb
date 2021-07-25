@@ -10,6 +10,7 @@ class Bedops < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "482e258a5cf522bb43a81e52aa6ddc4056e8b4d6eb78ba4f2d1ac69d40ac90e8"
     sha256 cellar: :any_skip_relocation, catalina:      "d323de7c11c4e6819791549973179ce17beff5006808b12de853d883b8b53a90"
     sha256 cellar: :any_skip_relocation, mojave:        "b7b27454dfe6f064522553830932b00d51b26fda6ab1eab61d067e7bab10bd6a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ecf447d33b766ceeecab97f1f5591bd8742881da9537359ac4c573593867801"
   end
 
   def install
