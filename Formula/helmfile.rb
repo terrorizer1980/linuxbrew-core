@@ -10,6 +10,7 @@ class Helmfile < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d21bff06163a257a7fc32023d55232f420fabefef75aeb00bcb8f4bb86e4077f"
     sha256 cellar: :any_skip_relocation, catalina:      "92f418b8fc4b88291e293e89c94e57120af3934f50c9d71593b95cc377fd22bc"
     sha256 cellar: :any_skip_relocation, mojave:        "44eaa0961efc1e65ef4056d70b3c61a1e1c085f71b9180abc79f997020e12488"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "da06a807541b432f31783af469cca42cd454e765e71d2280818bb50dba3aadf1"
   end
 
   depends_on "go" => :build
