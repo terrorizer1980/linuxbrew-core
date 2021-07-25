@@ -25,7 +25,6 @@ class GccAT5 < Formula
 
   depends_on maximum_macos: [:high_sierra, :build]
 
-  depends_on "glibc" if !OS.mac? && (OS::Linux::Glibc.system_version < Formula["glibc"].version)
   depends_on "gmp"
   depends_on "isl@0.18"
   depends_on "libmpc"
