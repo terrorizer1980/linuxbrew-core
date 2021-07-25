@@ -2,17 +2,16 @@ class Tile38 < Formula
   desc "In-memory geolocation data store, spatial index, and realtime geofence"
   homepage "https://tile38.com/"
   url "https://github.com/tidwall/tile38.git",
-      tag:      "1.25.0",
-      revision: "d9164f3efc273f6627f3e3e01a252b641fced1cf"
+      tag:      "1.25.1",
+      revision: "6e52e3a7eb49266b5c91d31debf44d2038892ebf"
   license "MIT"
   head "https://github.com/tidwall/tile38.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "56b7a1a92358f582383655f0677ace0916fc9cee202e8c365444fc918f5f89c1"
-    sha256 cellar: :any_skip_relocation, big_sur:       "5543bb2cb6d2f53f4472aa0fac65c885a3a1169d431c2d00ebe6b6c020e8307e"
-    sha256 cellar: :any_skip_relocation, catalina:      "6e1ea4135dd7441ce7807013535fa60ebc779566998f3f0081cee1f7ed159618"
-    sha256 cellar: :any_skip_relocation, mojave:        "f84929bab43edfdcea870378bb04ddda9b77f6e3dbc10a17df3c3003cecce1b7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "40a297e53a7552c62b85573c5f684e7b9a3db7609d039b1e0f0237428ce46d32" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "f885a351d2b12fb8088ef34f744cbfbfcd44964be0072e8cd8ad8c828f1d6017"
+    sha256 cellar: :any_skip_relocation, big_sur:       "6a03ec1ecd38ffe545f48d940dc7c0d048e368d3af4209baa5b20f652a0d85ae"
+    sha256 cellar: :any_skip_relocation, catalina:      "5bbbf9482a19c252cbf5a275e608fbda0fb2c92651e41fcbfd2f351aa326b757"
+    sha256 cellar: :any_skip_relocation, mojave:        "261862ae6a512b7abb448afdb7ff99a8ee3d407d4969461ad85f75a4f4686597"
   end
 
   depends_on "go" => :build
