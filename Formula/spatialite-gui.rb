@@ -16,7 +16,7 @@ class SpatialiteGui < Formula
     sha256 cellar: :any,                 big_sur:       "04e3fce9bfefa6945a34adef96ccacd6c66bcaad8a1607bc9de447677580bda8"
     sha256 cellar: :any,                 catalina:      "670a668e9560d58127746708338d809a59f4961af89f917affc60ba8c32633e9"
     sha256 cellar: :any,                 mojave:        "3a3678ffccb6de1b99a2bf2f1f4a0b918a854bbf39d415b6e6e1c6971274c8ab"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3ec2a26e83e966f207cc694dab91470d8215dcc650f50866f59ea20834a465c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3ec2a26e83e966f207cc694dab91470d8215dcc650f50866f59ea20834a465c" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

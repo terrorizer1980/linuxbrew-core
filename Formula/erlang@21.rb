@@ -16,7 +16,7 @@ class ErlangAT21 < Formula
     sha256 cellar: :any,                 big_sur:      "f05c014c491877da25d19f775a576803a25c36c5d57309548711c253b90711c8"
     sha256 cellar: :any,                 catalina:     "042070fc8af915df870a67f1eaa43e87beacd3bcf4c8cde8d78bbe1e195cf133"
     sha256 cellar: :any,                 mojave:       "03315a212e5e5ddcb5bf37d45faacd0ce075d6a2503217f42f5eda083ebacec5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "20fb63856a77812d3d69c8a061bb62ea8011548ba0001559ebfcd0c018b555dc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "20fb63856a77812d3d69c8a061bb62ea8011548ba0001559ebfcd0c018b555dc" # linuxbrew-core
   end
 
   keg_only :versioned_formula

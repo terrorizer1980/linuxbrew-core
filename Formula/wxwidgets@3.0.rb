@@ -15,7 +15,7 @@ class WxwidgetsAT30 < Formula
     sha256 cellar: :any,                 big_sur:       "97868208219470f640f070daed1ac46216c978022c2737f18dbe23416c19507e"
     sha256 cellar: :any,                 catalina:      "7ada4feb4da76da10e744e6e93e666461bcbb577a7cba23ec1a74e258854c537"
     sha256 cellar: :any,                 mojave:        "0e571023defb572ab776ff364914ce379beede94bb3ea05f0817c89aebe93fec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5fe3b08a9b7fd75230bf61cd26121134e3b1bdcfc44c36410347c20c81ca6f7c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5fe3b08a9b7fd75230bf61cd26121134e3b1bdcfc44c36410347c20c81ca6f7c" # linuxbrew-core
   end
 
   depends_on "jpeg"

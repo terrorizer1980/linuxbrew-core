@@ -12,7 +12,7 @@ class Homeworlds < Formula
     sha256 cellar: :any,                 big_sur:       "81327f370fe9de62e68197c054d5929788aa4b32731769b053d4ab893f0aa631"
     sha256 cellar: :any,                 catalina:      "b7bf80945586bd38e4f2a7a888d55ab46dd6210a069d327d536713fb20e985c3"
     sha256 cellar: :any,                 mojave:        "34c292eab868e7e49b00653f1f8022e8636370ee2510e50e44720b37c6774bba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3766f96986bd5604d0d4cefd0a07f3a6e527fdf6f70e70d3e22dac01198a2879"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3766f96986bd5604d0d4cefd0a07f3a6e527fdf6f70e70d3e22dac01198a2879" # linuxbrew-core
   end
 
   depends_on "wxwidgets"
