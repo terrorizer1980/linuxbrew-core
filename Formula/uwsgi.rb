@@ -43,7 +43,7 @@ class Uwsgi < Formula
   def install
     # Fix file not found errors for /usr/lib/system/libsystem_symptoms.dylib and
     # /usr/lib/system/libsystem_darwin.dylib on 10.11 and 10.12, respectively
-    ENV["SDKROOT"] = MacOS.sdk_path if OS.mac? && MacOS.version <= :sierra
+    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version <= :sierra
 
     openssl = Formula["openssl@1.1"]
     ENV.prepend "CFLAGS", "-I#{openssl.opt_include}"
