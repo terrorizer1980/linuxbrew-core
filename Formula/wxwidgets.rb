@@ -16,6 +16,7 @@ class Wxwidgets < Formula
     sha256 cellar: :any,                 big_sur:       "b75599c4bb938ce01b3ddcce13c8cea3d7f329db85a1a63672eca1266621e857"
     sha256 cellar: :any,                 catalina:      "a9de66ca781fe633b958a0a7745b47fecd4ffb3fc9d7302757b057ded6c88e22"
     sha256 cellar: :any,                 mojave:        "974046c7307cca6cb5eec6ef6b06c57817f42782ef1cfa03ff1f4bb4a97190bd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dd805918ad61d94ac85cd49b09077b08c4dcfee053d75a77eff82dea80b58db0"
   end
 
   depends_on "jpeg"
