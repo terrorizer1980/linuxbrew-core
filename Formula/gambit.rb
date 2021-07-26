@@ -11,6 +11,7 @@ class Gambit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c99a930bc6bd33cd8ccd07602c472c9a64006b8a6ca2a846081c0faecaf39bf7"
     sha256 cellar: :any_skip_relocation, catalina:      "ca119805ce3e9aa8a02d91362ba8cab410762b34e84c67616c78006acebd7d44"
     sha256 cellar: :any_skip_relocation, mojave:        "0ed6547bd2c50529879b3f1d19dcd1afa685dcc3ed030866d6cbd104c6402dc6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "946f395529bd8d582781d198adac36c2617b0636db95b8b7b5337d0542f0f7eb"
   end
 
   depends_on "autoconf" => :build
