@@ -48,11 +48,6 @@ class SuiteSparse < Formula
     ]
 
     system "make", "library", *args
-    unless OS.mac?
-      args << "INSTALL_LIB=#{lib}"
-      args << "INSTALL_INCLUDE=#{include}"
-      args << "DESTDIR=#{prefix}"
-    end
     system "make", "install", *args
     lib.install Dir["**/*.a"]
     pkgshare.install "KLU/Demo/klu_simple.c"
