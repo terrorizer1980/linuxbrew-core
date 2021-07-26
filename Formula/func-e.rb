@@ -9,6 +9,7 @@ class FuncE < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "8ae211ca3d4d4fd50639739296063159ca13dc3fa360b217a2f63f1a194bc589"
     sha256 cellar: :any_skip_relocation, catalina:     "241862609747afe310a5f5808df369b934a7f50e49cdcae99734a03377a0b0e2"
     sha256 cellar: :any_skip_relocation, mojave:       "515a5d570cedfe8e1098db431193d3d5e5e9b5a6f0acc1763ffbea6355408309"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a84ccff7c0ccef38b8ad9c8473ca111360345134eb5a0900f1ff4fbb0ff10bd3"
   end
 
   depends_on "go" => :build
