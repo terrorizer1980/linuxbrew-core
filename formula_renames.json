@@ -148,5 +148,7 @@
   "weboob": "woob",
   "wires": "geckodriver",
   "wpcli-completion": "wp-cli-completion",
+  "wxmac": "wxwidgets",
+  "wxmac@3.0": "wxwidgets@3.0",
   "xu4": "scummvm"
 }
