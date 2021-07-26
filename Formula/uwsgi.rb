@@ -23,6 +23,7 @@ class Uwsgi < Formula
     sha256 big_sur:       "379fad46d657ee6d6f89deae451dae6df69f4399278c64f0291325bc2356b356"
     sha256 catalina:      "c54696e57c31eacac203eb8406e08910aec9482438e3a17a43faac38ce0d12c5"
     sha256 mojave:        "78deea4386ab0f5acaa40d0caa5f30b41fa58abbdcfbb52de337e2b4e2da2c48"
+    sha256 x86_64_linux:  "8526ad575ffdcb6dfd7bbc9c594b8b4752e1c19cf726e1b408fe4f27994c7964"
   end
 
   depends_on "pkg-config" => :build
