@@ -13,7 +13,7 @@ class YelpTools < Formula
     sha256 cellar: :any,                 big_sur:       "10ba9813e3d96f6a4350b4d0fe92bde1ab9be7f871cca7a9b45139027e02cc05"
     sha256 cellar: :any,                 catalina:      "1fee7bdc0cb753d08c14bf9e0136f5088532345e093fb7ede23db66ffadfe9af"
     sha256 cellar: :any,                 mojave:        "194957f1bf5b821459ba59d5f2df603c2e0da4afcd491b1154f861681bd17b3b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8b94b048a17e0d5b9641ee47935ee05d8b6b781998d6b60c955ea7b8edf3662"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8b94b048a17e0d5b9641ee47935ee05d8b6b781998d6b60c955ea7b8edf3662" # linuxbrew-core
   end
 
   depends_on "gettext" => :build
