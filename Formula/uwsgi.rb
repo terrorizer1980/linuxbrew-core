@@ -18,11 +18,11 @@ class Uwsgi < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "59e4770011029a82e5f7e1c89e61909dcfc0909f4c450378b688b1e941c7e463"
-    sha256 big_sur:       "fa9547b417d0a9d2deaf55cf8ebad966798b81252d160921053ce21ca8aa5999"
-    sha256 catalina:      "22eff54752a60c52e2b21fd541f86a0e4949f6a16e6cc308052ae5d6d5b463bb"
-    sha256 mojave:        "eddfcd8b7114e8a8a68eeb9dc837475184799cd01712b318dd5950015964eabb"
-    sha256 x86_64_linux:  "1d7f19b2bb973e6694a336c6ab555c8528a2bccf8b8b84fa565e2cc69c8f5762" # linuxbrew-core
+    rebuild 1
+    sha256 arm64_big_sur: "594a86025625f7fe80acb6d45274305c9f1bc2d1fcfb11726a23c02e1f52312f"
+    sha256 big_sur:       "379fad46d657ee6d6f89deae451dae6df69f4399278c64f0291325bc2356b356"
+    sha256 catalina:      "c54696e57c31eacac203eb8406e08910aec9482438e3a17a43faac38ce0d12c5"
+    sha256 mojave:        "78deea4386ab0f5acaa40d0caa5f30b41fa58abbdcfbb52de337e2b4e2da2c48"
   end
 
   depends_on "pkg-config" => :build
@@ -78,7 +78,9 @@ class Uwsgi < Formula
                  transformation_chunked transformation_gzip
                  transformation_offload transformation_tofile
                  transformation_toupper ugreen webdav zergpool]
-    plugins << "alarm_speech" if OS.mac?
+    on_macos do
+      plugins << "alarm_speech"
+    end
 
     (libexec/"uwsgi").mkpath
     plugins.each do |plugin|
