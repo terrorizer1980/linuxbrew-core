@@ -11,6 +11,7 @@ class Mdbook < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "da73f15b2b1c33597848b3d03e7738ae84991509ee3d253d70ec5a384d960e8b"
     sha256 cellar: :any_skip_relocation, catalina:      "88cfc520285edcdb8dc39ddca990a5935556ef41ba6eff3f7e74ea4fef0d7967"
     sha256 cellar: :any_skip_relocation, mojave:        "bc7d5edec9d4828f00964e5c95eb3de83c684713eaacd79cebdffb00769cb678"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ef20470f330839654de32bcd9151c8b4bfb986179af7e43f9befb31b4f141b36"
   end
 
   depends_on "rust" => :build
