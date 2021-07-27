@@ -11,6 +11,7 @@ class Automake < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c1f2f46b26a2ffa42f86165e0421d80728b6f97c6b42b61c9ff1e57199f36f64"
     sha256 cellar: :any_skip_relocation, catalina:      "c1f2f46b26a2ffa42f86165e0421d80728b6f97c6b42b61c9ff1e57199f36f64"
     sha256 cellar: :any_skip_relocation, mojave:        "c1f2f46b26a2ffa42f86165e0421d80728b6f97c6b42b61c9ff1e57199f36f64"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d4df29c31b1e8b00c289aa857bf70dfd6eb189e7959864a8047aaaf4f4d8d699"
   end
 
   depends_on "autoconf"
