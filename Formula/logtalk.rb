@@ -15,6 +15,7 @@ class Logtalk < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "8a31defbd0313db67bba438a7f8aa24d49161ed85ad5c74776e404bbcd841aab"
     sha256 cellar: :any_skip_relocation, catalina:     "1170859ece42694cf9ae64b33c52120c41be01b523af90a02e7929bb1278a08e"
     sha256 cellar: :any_skip_relocation, mojave:       "c7e94bba3b8987abcf1d29ee4490e6319398d0dc75828401a918ec8101f44ff8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6ba07063aa348e0f01bce4e78952ed7acce288eef1aad4faf6fa5be29026ff6"
   end
 
   depends_on "gnu-prolog"
