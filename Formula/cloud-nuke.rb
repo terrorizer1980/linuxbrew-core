@@ -11,6 +11,7 @@ class CloudNuke < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a9cfc97d98c8aed64662f8d4cf7981f701a46b70919a06a5fa651bd6f33d58be"
     sha256 cellar: :any_skip_relocation, catalina:      "dfcb3e982dced216ec225edff2a29e8d4eb3d1d2b55ec8105af43f1eab42f443"
     sha256 cellar: :any_skip_relocation, mojave:        "0273736dec55fc74114c34ab650a4bad25f70a6fdb04f08749d4a8dd52ddc679"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "52c21a7bb29a70a2b485d483d41869c70731702a9d198176e3567b48a943f6a7"
   end
 
   depends_on "go" => :build
