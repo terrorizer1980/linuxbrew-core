@@ -10,6 +10,7 @@ class Makensis < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7a677ad617fbb58ca25a087f0fbd1463c794796029dd244cb005698799ca83af"
     sha256 cellar: :any_skip_relocation, catalina:      "60ed29983ad57340f1eed7556a844bbb09781da190bd27bb16c59aeb5ba8a2b2"
     sha256 cellar: :any_skip_relocation, mojave:        "6295b3cfb71161a0642636a711a2ca2b691f2c0e317caaa014f17484eebfa603"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8aa50401f56ef67140d2538187216bb1af05483af0eb96494e82e7ce79cd1700"
   end
 
   depends_on "mingw-w64" => :build
