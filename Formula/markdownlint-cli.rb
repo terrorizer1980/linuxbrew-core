@@ -7,6 +7,10 @@ class MarkdownlintCli < Formula
   sha256 "1a7a6170da3d2efabdfdf7bcc35873723733e40223aef6180bf2b8257308574c"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "aef43dde992da295db35a12094a40a5be61e2daea48f23026776fab7089215ce"
+  end
+
   depends_on "node"
 
   def install
