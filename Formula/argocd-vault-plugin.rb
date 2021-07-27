@@ -2,15 +2,15 @@ class ArgocdVaultPlugin < Formula
   desc "Argo CD plugin to retrieve secrets from Secret Management tools"
   homepage "https://github.com/IBM/argocd-vault-plugin"
   url "https://github.com/IBM/argocd-vault-plugin.git",
-      tag:      "v1.1.2",
-      revision: "b91d267dfcc69e8a0f029ca5afed585456f537a3"
+      tag:      "v1.1.3",
+      revision: "69065ff6f430edc34fdcb8423d6a8c1df51f0ab9"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3c1f229027655bc91b7c5cadf3eb3cdb1dff17ec835f98481a3d4c894b250cba"
-    sha256 cellar: :any_skip_relocation, big_sur:       "6b227a3932306434c932a256007d4c66a8e95372f23ecc1bed558f03ca0bb1cc"
-    sha256 cellar: :any_skip_relocation, catalina:      "c76fcba6af93bfd340c357d2a8aeb852da8f60e86423db24f1be01cfcf5f8621"
-    sha256 cellar: :any_skip_relocation, mojave:        "60bd0b9b5584a128339323a7fbe26064c65f4aab718885e83959df00a92be09e"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "518d929fab4a8802813aa4982acf523107a54a38d0fd9bb30afe5e145be6b4c5"
+    sha256 cellar: :any_skip_relocation, big_sur:       "b599fcd9410c691d8762f4d7c5caeaf767f7538f259edf2364acd477aaebcc48"
+    sha256 cellar: :any_skip_relocation, catalina:      "b599fcd9410c691d8762f4d7c5caeaf767f7538f259edf2364acd477aaebcc48"
+    sha256 cellar: :any_skip_relocation, mojave:        "b599fcd9410c691d8762f4d7c5caeaf767f7538f259edf2364acd477aaebcc48"
   end
 
   depends_on "go" => :build
