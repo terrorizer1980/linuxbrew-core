@@ -6,7 +6,7 @@ class BatsCore < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "483259b5fb07dab08336816777a08467303bf3da7828f2ff75a7d08ccf9cfc73"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "483259b5fb07dab08336816777a08467303bf3da7828f2ff75a7d08ccf9cfc73" # linuxbrew-core
   end
 
   depends_on "coreutils"

@@ -12,7 +12,7 @@ class Borgmatic < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ca79c0dda4fcf79f6b7cdb1a3f132b2be646d50b286b5c2a79f614a2736c252d"
     sha256 cellar: :any_skip_relocation, catalina:      "b2437eee8d09e3b6d67e598581a31f9d2d6c08d66c339c06dbde5af7f34184ad"
     sha256 cellar: :any_skip_relocation, mojave:        "7ddd53f15c041691625077c42e11e9bf4f06db6474d9a8a5f61243ff3f4bb962"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c2a18e8c631f23f6b590b70065f6ab667ed58ed963952587907f4d3e52d4126"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c2a18e8c631f23f6b590b70065f6ab667ed58ed963952587907f4d3e52d4126" # linuxbrew-core
   end
 
   depends_on "libyaml"

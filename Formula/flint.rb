@@ -11,7 +11,7 @@ class Flint < Formula
     sha256 cellar: :any,                 big_sur:       "ec2e3cd85a3ad16d78e96d9389c40a61e14efb2656d07c38f260a11c73c9c80e"
     sha256 cellar: :any,                 catalina:      "b9493593bead69bf91df54b1432da6e333143cde6550f0bb19f412464efa6a82"
     sha256 cellar: :any,                 mojave:        "4fe70d7fbf3d9d7e0ba26bd1773870b1e85418385e55046ae9a1eca21707502c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9770df8d1e3843a4c47c2835fd266315de1e16801043d57e003f68fa273c343"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9770df8d1e3843a4c47c2835fd266315de1e16801043d57e003f68fa273c343" # linuxbrew-core
   end
 
   depends_on "gmp"
