@@ -33,8 +33,6 @@ class Openjdk < Formula
   depends_on "autoconf" => :build
   depends_on xcode: :build if Hardware::CPU.arm?
 
-  ignore_missing_libraries "libjvm.so" if OS.linux?
-
   on_linux do
     depends_on "pkg-config" => :build
     depends_on "alsa-lib"
