@@ -3,17 +3,16 @@ class Grokmirror < Formula
 
   desc "Framework to smartly mirror git repositories"
   homepage "https://github.com/mricon/grokmirror"
-  url "https://files.pythonhosted.org/packages/c0/b1/36ae8acf7c9ec4a6afc5383e7dc0fed47596f51d8725ff367161523215bb/grokmirror-2.0.9.tar.gz"
-  sha256 "d6a45827f47ee66322a96462458bf9d285eb00be22d1a9ac7156fd056a2314af"
+  url "https://files.pythonhosted.org/packages/10/1f/cf5a4d8c45dfb0dd0c7e362681c0c68174104370847f116af1a3cb842234/grokmirror-2.0.10.tar.gz"
+  sha256 "43acdb4d84438a9954df230e1c43c1ecff6b7e2f7fb1ed5fc5721ca53ea0768a"
   license "GPL-3.0-or-later"
   head "https://github.com/mricon/grokmirror.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e467d1b7970d20f0790e9493520e8d3eafe1330dc6c168bdec1ebc49baeaa05c"
-    sha256 cellar: :any_skip_relocation, big_sur:       "c19426f48eebc2b4e47c14103c3f56be3b3ad9211d3b74617d90dcf6d71e9d31"
-    sha256 cellar: :any_skip_relocation, catalina:      "c19426f48eebc2b4e47c14103c3f56be3b3ad9211d3b74617d90dcf6d71e9d31"
-    sha256 cellar: :any_skip_relocation, mojave:        "c19426f48eebc2b4e47c14103c3f56be3b3ad9211d3b74617d90dcf6d71e9d31"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32f494f5f062c5dbffae737551beeaa80ff9b5b69134b5d820617ac901f0008d" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c4b2e1aff367555f7b7a349aaa323972a089ea1a8c0337239f186710732e9a3d"
+    sha256 cellar: :any_skip_relocation, big_sur:       "8031f6c7437aeae82e44fd5178f608a0b75c7d29c3fa51968d1c48384b660b84"
+    sha256 cellar: :any_skip_relocation, catalina:      "8031f6c7437aeae82e44fd5178f608a0b75c7d29c3fa51968d1c48384b660b84"
+    sha256 cellar: :any_skip_relocation, mojave:        "8031f6c7437aeae82e44fd5178f608a0b75c7d29c3fa51968d1c48384b660b84"
   end
 
   depends_on "python@3.9"
@@ -24,8 +23,8 @@ class Grokmirror < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/45/ab/74c77cf4590dfc846c101aee617f390ae679500630dd806b07f1a8e27b7b/charset-normalizer-2.0.1.tar.gz"
-    sha256 "ad0da505736fc7e716a8da15bf19a985db21ac6415c26b34d2fafd3beb3d927e"
+    url "https://files.pythonhosted.org/packages/37/fd/05a04d7e14548474d30d90ad0db5d90ee2ba55cd967511a354cf88b534f1/charset-normalizer-2.0.3.tar.gz"
+    sha256 "c46c3ace2d744cfbdebceaa3c19ae691f53ae621b39fd7570f59d14fb7f2fd12"
   end
 
   resource "idna" do
