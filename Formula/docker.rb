@@ -46,7 +46,6 @@ class Docker < Formula
 
   test do
     assert_match "Docker version #{version}", shell_output("#{bin}/docker --version")
-    # Fails on CI: WARNING: No swap limit support
-    assert_match "ERROR: Cannot connect to the Docker daemon", shell_output("#{bin}/docker info", 1) if OS.mac?
+    assert_match "ERROR: Cannot connect to the Docker daemon", shell_output("#{bin}/docker info", 1)
   end
 end
