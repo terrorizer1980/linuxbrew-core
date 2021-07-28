@@ -27,6 +27,7 @@ class Dmd < Formula
     sha256 big_sur:      "31043106abf94b9ee581e388fb61ca4e3f81c25c0c68bb00134e2deda6071d87"
     sha256 catalina:     "0b12360c4563ae7a18ea833d87d0146596db23eda5f56de0f9e9b5d5eccc6ee5"
     sha256 mojave:       "3acad55b161b467343944cc4bb909c9ecc49766d08f31aef65ae44f4099b8507"
+    sha256 x86_64_linux: "224dde917875a46b440c29b8b0b68bcb6b68b02d95e646dd1f2532aa80dc6458"
   end
 
   head do
