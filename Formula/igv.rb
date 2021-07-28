@@ -10,6 +10,10 @@ class Igv < Formula
     regex(/href=.*?IGV[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "80baf0f386a44cac67aa36fe0af631acec129ead954ac0e13b2389fca276e481"
+  end
+
   depends_on "openjdk"
 
   def install
