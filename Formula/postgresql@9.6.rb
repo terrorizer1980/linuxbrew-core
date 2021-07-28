@@ -50,6 +50,7 @@ class PostgresqlAT96 < Formula
       --sysconfdir=#{prefix}/etc
       --docdir=#{doc}
       --enable-thread-safety
+      --with-bonjour
       --with-gssapi
       --with-ldap
       --with-openssl
@@ -57,14 +58,9 @@ class PostgresqlAT96 < Formula
       --with-libxml
       --with-libxslt
       --with-perl
+      --with-tcl
       --with-uuid=e2fs
     ]
-    if OS.mac?
-      args += %w[
-        --with-bonjour
-        --with-tcl
-      ]
-    end
 
     # PostgreSQL by default uses xcodebuild internally to determine this,
     # which does not work on CLT-only installs.
@@ -89,12 +85,6 @@ class PostgresqlAT96 < Formula
       system "make", "install", "all", *dirs
     else
       system "make", "install-world", *dirs
-    end
-
-    unless OS.mac?
-      inreplace lib/"pgxs/src/Makefile.global",
-                "LD = #{HOMEBREW_PREFIX}/Homebrew/Library/Homebrew/shims/linux/super/ld",
-                "LD = #{HOMEBREW_PREFIX}/bin/ld"
     end
   end
 
