@@ -14,6 +14,7 @@ class Ccfits < Formula
     sha256 cellar: :any,                 big_sur:       "504f3e52451e700b4562dd91e5017587ebe829aa25421600bb8cb01ee2faa571"
     sha256 cellar: :any,                 catalina:      "fb2b7a32b1c881c91191aee126e556879184b2ac23a7c4dc62b88eb1328007af"
     sha256 cellar: :any,                 mojave:        "d7111f916b0ee822f04fe233d00c5e66c151bd821a9ba8fc52365c2270e37fa7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ec9d494a486df7902b5848cfcc17479f3daa752fd164b0424ca15f0cb7e6c32"
   end
 
   depends_on "cfitsio"
