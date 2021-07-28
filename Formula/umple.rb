@@ -11,7 +11,7 @@ class Umple < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bd41188baf2192be2d75e098a45efa7a7d83e7c8a76daad5b059bdff6f859071"
     sha256 cellar: :any_skip_relocation, catalina:      "bd41188baf2192be2d75e098a45efa7a7d83e7c8a76daad5b059bdff6f859071"
     sha256 cellar: :any_skip_relocation, mojave:        "bd41188baf2192be2d75e098a45efa7a7d83e7c8a76daad5b059bdff6f859071"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c80a927eb6c67b19974ded86bca1daca1e2ad6d41e6e0a5c56b8f2e409b89730"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c80a927eb6c67b19974ded86bca1daca1e2ad6d41e6e0a5c56b8f2e409b89730" # linuxbrew-core
   end
 
   depends_on "ant"

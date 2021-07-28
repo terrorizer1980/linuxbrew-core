@@ -10,7 +10,7 @@ class Driftctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c7376fbebbbf5fc5a4855e5f42363206879e9f047d955d415db82cb0c9ff2080"
     sha256 cellar: :any_skip_relocation, catalina:      "c7376fbebbbf5fc5a4855e5f42363206879e9f047d955d415db82cb0c9ff2080"
     sha256 cellar: :any_skip_relocation, mojave:        "c7376fbebbbf5fc5a4855e5f42363206879e9f047d955d415db82cb0c9ff2080"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "56cbf929571bc513936abeac9c2c87fd3d2c09fbbd778c59b8275faafcc8a24a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "56cbf929571bc513936abeac9c2c87fd3d2c09fbbd778c59b8275faafcc8a24a" # linuxbrew-core
   end
 
   depends_on "go" => :build
