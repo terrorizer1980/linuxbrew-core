@@ -13,6 +13,7 @@ class ArchiSteamFarm < Formula
     strategy :github_latest
   end
 
+  depends_on arch: :x86_64 # dotnet does not support ARM
   depends_on "dotnet"
 
   def install
