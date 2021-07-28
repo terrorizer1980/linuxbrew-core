@@ -3,17 +3,16 @@ class Regipy < Formula
 
   desc "Offline registry hive parsing tool"
   homepage "https://github.com/mkorman90/regipy"
-  url "https://files.pythonhosted.org/packages/72/23/ae827829df2e2feab60c44fd3cf81eee17edc3cec3dea280edc4b777256e/regipy-1.9.4.tar.gz"
-  sha256 "86de2da57ccd95fc08ea51fa7e4bef6ed8aa0ab37c4286124bed126bf178c448"
+  url "https://files.pythonhosted.org/packages/67/62/7e8d11a473382c69fb91e33a621bcadebab87a0815d0f84306822a266984/regipy-2.0.1.tar.gz"
+  sha256 "3e68dc4c48c21aa23dab21fc83dea209fb1113194690001effbbd77f86d3b033"
   license "MIT"
   head "https://github.com/mkorman90/regipy.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fac10e536db0d02edf78e62cd142affa66796fa1efdbed6c9440a82fcdce92d6"
-    sha256 cellar: :any_skip_relocation, big_sur:       "e227c5846d46a6e394d435a5a595b5cfca14a490d57a55f96fbc4f62745a6239"
-    sha256 cellar: :any_skip_relocation, catalina:      "c4cc7ee70d0302df12ea9566b6a584467b04420dd694ea8198dad5fdb25ac550"
-    sha256 cellar: :any_skip_relocation, mojave:        "b3530f14c3006c16b91f1da7e488b93e4e07c97665f76aa8fdcd6039450914b1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f9252056044e881d5c3ec6e61db46da20bdb8a52940598ea9cda6365e8754c7" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d59e8295ab8152b3b22a4189221cf982b9a59aa24cd198cd70f64d7849d9668d"
+    sha256 cellar: :any_skip_relocation, big_sur:       "022d6f300929b3708d180b13dee570e03078c83bf11378cc18273fb6b00f331d"
+    sha256 cellar: :any_skip_relocation, catalina:      "61a4fa5be157c4deaeda41be30c7801c749412735681df349bb5391c3a4f4710"
+    sha256 cellar: :any_skip_relocation, mojave:        "0932af08a98792024fbbdef177c0888649dfcf5f182b54be84678c0ed945f2cb"
   end
 
   depends_on "python-tabulate"
@@ -39,16 +38,6 @@ class Regipy < Formula
     sha256 "1a29730d366e996aaacffb2f1f1cb9593dc38e2ddd30c91250c6dde09ea9b417"
   end
 
-  resource "jsonlines" do
-    url "https://files.pythonhosted.org/packages/bf/40/a1b1810a09e3e85567c17831fcc2fc8e48ad9a1d3b02e8be940c43b908a8/jsonlines-2.0.0.tar.gz"
-    sha256 "6fdd03104c9a421a1ba587a121aaac743bf02d8f87fa9cdaa3b852249a241fe8"
-  end
-
-  resource "Logbook" do
-    url "https://files.pythonhosted.org/packages/2f/d9/16ac346f7c0102835814cc9e5b684aaadea101560bb932a2403bd26b2320/Logbook-1.5.3.tar.gz"
-    sha256 "66f454ada0f56eae43066f604a222b09893f98c1adc18df169710761b8f32fe8"
-  end
-
   resource "pytz" do
     url "https://files.pythonhosted.org/packages/b0/61/eddc6eb2c682ea6fd97a7e1018a6294be80dba08fa28e7a3570148b4612d/pytz-2021.1.tar.gz"
     sha256 "83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"
@@ -57,6 +46,12 @@ class Regipy < Formula
   resource "test_hive" do
     url "https://raw.githubusercontent.com/mkorman90/regipy/71acd6a65bdee11ff776dbd44870adad4632404c/regipy_tests/data/SYSTEM.xz"
     sha256 "b1582ab413f089e746da0528c2394f077d6f53dd4e68b877ffb2667bd027b0b0"
+  end
+
+  # Remove for next release
+  patch do
+    url "https://github.com/mkorman90/regipy/commit/655addc9069a25fae01baef4eb3fff87bca1a467.patch?full_index=1"
+    sha256 "cbcdf5f613cbbe30460172b034c1ac8427c61e2fba4f37819cbb0aea5995a567"
   end
 
   def install
