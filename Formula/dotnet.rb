@@ -15,6 +15,7 @@ class Dotnet < Formula
     sha256 cellar: :any,                 big_sur:      "506a88b54fd7728c722c7824055458df93c271d87298b81979257457646dec08"
     sha256 cellar: :any,                 catalina:     "01b623ce85fb1e0bcf78de25193f3778956d62f601b233509999c1d08c1a4c57"
     sha256 cellar: :any,                 mojave:       "6bc5fad76c9f9f3523c3a77d9a03f86ffd25d34c48f54a86b12ae075ab0bca7b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0e08d5485b1b9b8edaa1c2a863eac281d5dee0359687f1440c0dbf86ce017f80"
   end
 
   depends_on "cmake" => :build
