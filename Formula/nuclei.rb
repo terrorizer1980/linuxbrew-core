@@ -11,7 +11,7 @@ class Nuclei < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e44b70f479aeb656608e57715b990d9a1b86df4f072e5120959f457448662cf0"
     sha256 cellar: :any_skip_relocation, catalina:      "69c808b122008847f06a2f98e2a9ea302202f1a4c6b051eb63620fbeb2038917"
     sha256 cellar: :any_skip_relocation, mojave:        "a6827455a294840c24dca0ac0a154c5f927e2fcef4718934793a6c99890e7e14"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "857d57f6f7e42def95a9a082f7b7e87ac4f549885901466803c7ad4ea6c4aea3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "857d57f6f7e42def95a9a082f7b7e87ac4f549885901466803c7ad4ea6c4aea3" # linuxbrew-core
   end
 
   depends_on "go" => :build

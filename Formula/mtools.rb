@@ -11,7 +11,7 @@ class Mtools < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6b788824e4d9a861db566caae41dc0d7290232db79f434ca63c871bdd637913b"
     sha256 cellar: :any_skip_relocation, catalina:      "bbf3f0335de4eb86bc042691965bd8a494cbb828701c760a620d2e3b1c945900"
     sha256 cellar: :any_skip_relocation, mojave:        "ff61db59edf8286c99b002480db699fcdce81ae5f3570470fe59dbed24847ed4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "29c75e28e06f1ccac38e687e1b7885544e105bc3e7f674a87c92d241771b9ca3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "29c75e28e06f1ccac38e687e1b7885544e105bc3e7f674a87c92d241771b9ca3" # linuxbrew-core
   end
 
   conflicts_with "multimarkdown", because: "both install `mmd` binaries"
