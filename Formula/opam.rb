@@ -11,6 +11,7 @@ class Opam < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c7f5790fcae38c515645b01d5220bc72a871d0757826b0b0ef00f15394779edc"
     sha256 cellar: :any_skip_relocation, catalina:      "de234d72d049fa6451a558ea84dec3361a16119a7df5184d9d683e59ddd1ca21"
     sha256 cellar: :any_skip_relocation, mojave:        "d3c5435c5af63e34d72b9fc8bc73087c973f4dc8273d8f5f6567608fea1a4284"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6e9114692f00d2456e2ac48da6eb3185339c44e052c8c43e84ca45ea6a958404"
   end
 
   depends_on "ocaml" => [:build, :test]
