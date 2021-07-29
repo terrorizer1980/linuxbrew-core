@@ -16,7 +16,7 @@ class Vapoursynth < Formula
     sha256 cellar: :any,                 big_sur:       "4c69d45c71838171fba6d4c2e9a95eff286767266d41f836459c9c5fd5ecc1b4"
     sha256 cellar: :any,                 catalina:      "39aa1f2a6b6d761deeda877ebc140b4f71036ba1b6e59e4a891ac6b9b035fb51"
     sha256 cellar: :any,                 mojave:        "231df154fd7cb7d282ba9ac35e15e15f1045d290e0791cd11023735534d5052f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ff863d1d5ac1684c53467d1360fdc330f22bdecc48ac43992ef7f59e040f3bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ff863d1d5ac1684c53467d1360fdc330f22bdecc48ac43992ef7f59e040f3bb" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
