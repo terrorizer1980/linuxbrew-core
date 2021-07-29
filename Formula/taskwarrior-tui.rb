@@ -16,6 +16,7 @@ class TaskwarriorTui < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "dbd737595be382b6e5e0369dd986b4d7ce084649a46712522f58f7471b3c4e98"
     sha256 cellar: :any_skip_relocation, catalina:      "da8366e0156b9c38283b15a8721cc7c5387fcce435d8759de1c1425fe9a05669"
     sha256 cellar: :any_skip_relocation, mojave:        "12e8871d117f4024c982f0c00d7d09083ac57ce325fb329c2d356ee0b9b8acbe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0d6dc01d1c8908203e6fb57e24e67371e77fa74c5fc2248e58747f1032bb69e3"
   end
 
   depends_on "pandoc" => :build
