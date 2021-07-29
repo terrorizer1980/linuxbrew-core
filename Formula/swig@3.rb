@@ -44,20 +44,25 @@ class SwigAT3 < Formula
       puts Test.add(1, 1)
     EOS
     system "#{bin}/swig", "-ruby", "test.i"
-    if OS.mac?
+    on_macos do
       system ENV.cc, "-c", "test.c"
       system ENV.cc, "-c", "test_wrap.c",
              "-I#{MacOS.sdk_path}/System/Library/Frameworks/Ruby.framework/Headers/"
       system ENV.cc, "-bundle", "-undefined", "dynamic_lookup", "test.o",
              "test_wrap.o", "-o", "test.bundle"
-      assert_equal "2", shell_output("/usr/bin/ruby run.rb").strip
-    else
+    end
+    on_linux do
+      ruby = Formula["ruby"]
+      args = Utils.safe_popen_read(
+        ruby.opt_bin/"ruby", "-e", "'puts RbConfig::CONFIG[\"LIBRUBYARG\"]'"
+      ).chomp
       system ENV.cc, "-c", "-fPIC", "test.c"
       system ENV.cc, "-c", "-fPIC", "test_wrap.c",
-             "-I#{RbConfig::CONFIG["rubyhdrdir"]}", "-I#{RbConfig::CONFIG["rubyarchhdrdir"]}"
+             "-I#{ruby.opt_include}/ruby-#{ruby.version.major_minor}.0",
+             "-I#{ruby.opt_include}/ruby-#{ruby.version.major_minor}.0/x86_64-linux/"
       system ENV.cc, "-shared", "test.o", "test_wrap.o", "-o", "test.so",
-             *RbConfig::CONFIG["LIBRUBYARG"].delete("'").split
-      assert_equal "2", shell_output("ruby run.rb").strip
+             *args.delete("'").split
     end
+    assert_equal "2", shell_output("ruby run.rb").strip
   end
 end
