@@ -10,7 +10,7 @@ class Dav1d < Formula
     sha256 cellar: :any,                 big_sur:       "816f72fd14b4f4825a758c404c3ae2407de73084fc4196d51eb7ac4c2fb7911d"
     sha256 cellar: :any,                 catalina:      "49d2f02c9b3114fe75cc9f47d74f4fcafadf51b863101bdfd8a00474f0d7b657"
     sha256 cellar: :any,                 mojave:        "10d39319ef14d61efe30a236478dfc73da4cffb9deaf8d9c90d25047737e5739"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5bf500cb1256e0f4e29a85b4c26c5dda7c1d8f3d51fef51988d5bc885ed14a9c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5bf500cb1256e0f4e29a85b4c26c5dda7c1d8f3d51fef51988d5bc885ed14a9c" # linuxbrew-core
   end
 
   depends_on "meson" => :build
