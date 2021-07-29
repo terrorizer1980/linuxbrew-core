@@ -6,6 +6,10 @@ class DiffSoFancy < Formula
   license "MIT"
   head "https://github.com/so-fancy/diff-so-fancy.git", branch: "next"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f92baad816aa7902f5fc7e4166f6234b37f8cf800d58546b79a070d5134e857c"
+  end
+
   def install
     libexec.install "diff-so-fancy", "lib"
     bin.install_symlink libexec/"diff-so-fancy"
