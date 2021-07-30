@@ -11,6 +11,7 @@ class Tm < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "97a35e359354f4a509ce7a050a3f9748b61c4cce6b47d02ac5bbf485e2b7cb8c"
     sha256 cellar: :any_skip_relocation, catalina:      "51889f38a8d5a166c3e26804f8c53a1279cdd406bdc82a688eacad25fd460d87"
     sha256 cellar: :any_skip_relocation, mojave:        "0ee5d6783bc66be56ae9d4f2ab1cfda7dc4c46c49904c174a7ef145841087791"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e81140d7724a339041f4b0523b7b652de67fbc5f2acec70263560983fa663ed"
   end
 
   depends_on "go" => :build
