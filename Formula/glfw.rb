@@ -16,13 +16,9 @@ class Glfw < Formula
 
   depends_on "cmake" => :build
 
-  unless OS.mac?
+  on_linux do
     depends_on "freeglut"
-    depends_on "libx11"
     depends_on "libxcursor"
-    depends_on "libxi"
-    depends_on "libxinerama"
-    depends_on "libxrandr"
     depends_on "mesa"
   end
 
