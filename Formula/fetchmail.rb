@@ -21,7 +21,7 @@ class Fetchmail < Formula
     sha256 cellar: :any, big_sur:       "491611eaf26f74f9138776790aa15208dffb96733a172e9ef74359929ce61703"
     sha256 cellar: :any, catalina:      "722059ec140e9e2a900b74075f722c19c982b5e0f2dd7469539655a4604df712"
     sha256 cellar: :any, mojave:        "d70dd69dacff5496c9d1e902b8d58af8197f1351991b7e8932b047ac623cd0ed"
-    sha256               x86_64_linux:  "a46374aaf211fbf7114713efed6325e0f27d5c3b6888dd66f2bdeadcde99c506"
+    sha256               x86_64_linux:  "a46374aaf211fbf7114713efed6325e0f27d5c3b6888dd66f2bdeadcde99c506" # linuxbrew-core
   end
 
   depends_on "openssl@1.1"
