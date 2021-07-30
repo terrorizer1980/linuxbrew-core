@@ -1,18 +1,14 @@
 class NodeBuild < Formula
   desc "Install NodeJS versions"
   homepage "https://github.com/nodenv/node-build"
-  url "https://github.com/nodenv/node-build/archive/v4.9.47.tar.gz"
-  sha256 "f266547ec6eb4dc23dc70ca80501cb62b0efe60bb5e1a450fe4f9326ef5c294b"
+  url "https://github.com/nodenv/node-build/archive/v4.9.48.tar.gz"
+  sha256 "ec4e82ea222154f5281bd33a6aa19473d84107ed9cf762fb744dc743d7e1618f"
   license "MIT"
   head "https://github.com/nodenv/node-build.git"
 
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b4621c6fafc4cf99b33f95da6efd4d19e5b42d51e1c863911e733e6b35e52e4a" # linuxbrew-core
   end
 
   depends_on "autoconf"
