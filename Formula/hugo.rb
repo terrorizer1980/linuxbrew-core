@@ -11,6 +11,7 @@ class Hugo < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e0b1c3ddd69334c8fdca66f81ca6d3fdedd615d43bec2ac89adaec226a640cee"
     sha256 cellar: :any_skip_relocation, catalina:      "c9167f1383b6fa3868f08326d58f43764a86ed039f79484d6e65fc9addcea1dc"
     sha256 cellar: :any_skip_relocation, mojave:        "5c57a59a45acc9ae9e68e9fb13552accd760c53c7cb3a2f4e859d0d85eb13a0d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f1d1ca8dafcf4709295f770394c408a2252500807c341efa6cd3aea0a54cc0ae"
   end
 
   depends_on "go" => :build
