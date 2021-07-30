@@ -5,6 +5,10 @@ class Catch2 < Formula
   sha256 "3cdb4138a072e4c0290034fe22d9f0a80d3bcfb8d7a8a5c49ad75d3a5da24fae"
   license "BSL-1.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f58d2e15949c5af35e53cae90f88307881de8eca4100e0c2ad986950ea57217a"
+  end
+
   depends_on "cmake" => :build
 
   def install
