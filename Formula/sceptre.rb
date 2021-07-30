@@ -12,6 +12,7 @@ class Sceptre < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e7b3cda306329cdc188c7397f5932e2ff31bcee7922b0842e24287fe6f1e2862"
     sha256 cellar: :any_skip_relocation, catalina:      "51a8c4cae265944db3597585001bfc6b1559aeddecef5d9e00676507e8c7ed57"
     sha256 cellar: :any_skip_relocation, mojave:        "bfea43fba41ef6147798a8e03e40dbaacdce3d7494bd56adf626f4249ddf3deb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c96366545d1f1654717048a02a42894579b62aa9d346f488a3b3b691b6ac3194"
   end
 
   depends_on "python@3.9"
