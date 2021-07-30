@@ -5,7 +5,7 @@ class Influxdb < Formula
       tag:      "v2.0.7",
       revision: "2a45f0c0375a7d5615835afa6f81a53444df9cea"
   license "MIT"
-  revision 2
+  revision 3
   head "https://github.com/influxdata/influxdb.git"
 
   # The regex below omits a rogue `v9.9.9` tag that breaks version comparison.
@@ -15,10 +15,10 @@ class Influxdb < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c61b51f445a245622aa88758fb4fefa61d8c23e0d01860273dba9c30e3648759"
-    sha256 cellar: :any_skip_relocation, big_sur:       "aa01e8b516ec70cfa0e7ff88dfba05b119388801169aa0f025d716ef3e7a2ed1"
-    sha256 cellar: :any_skip_relocation, catalina:      "29faac45df752b3ae7eaf3270591d613b42b5febd91be652c7340fbbcaba072b"
-    sha256 cellar: :any_skip_relocation, mojave:        "5740adbc10167d950cb7fc000856e5ae402154415c0e61bcb230a9dec1dce1e1"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a35dbb44a58fd7dcea3149c7f626756f7c24d5cd170e98d9e1da7176eac8fa81"
+    sha256 cellar: :any_skip_relocation, big_sur:       "c3b06b8d4bd823ac64796b6ae41bba75d17ef45005789b619823fff46139b61b"
+    sha256 cellar: :any_skip_relocation, catalina:      "03d0371fedd5f3d1b45b7abe9cd21724d4942b3fa9aeb4c109a95f09bb498b77"
+    sha256 cellar: :any_skip_relocation, mojave:        "3d7a2fe931bfa00cc12d241cce97123544920b1e38fd52e18bb47896d299b7e1"
   end
 
   depends_on "bazaar" => :build
@@ -26,6 +26,7 @@ class Influxdb < Formula
   depends_on "pkg-config" => :build
   depends_on "protobuf" => :build
   depends_on "rust" => :build
+  depends_on "influxdb-cli"
 
   # NOTE: The version here is specified in the go.mod of influxdb.
   # If you're upgrading to a newer influxdb version, check to see if this needs upgraded too.
@@ -55,7 +56,7 @@ class Influxdb < Formula
     # Embed UI files into the Go source code.
     system "make", "generate"
 
-    # Build the CLI and server.
+    # Build the server.
     ldflags = %W[
       -s
       -w
@@ -64,8 +65,6 @@ class Influxdb < Formula
       -X main.date=#{time.iso8601}
     ].join(" ")
 
-    system "go", "build", *std_go_args(ldflags: ldflags),
-           "-o", bin/"influx", "./cmd/influx"
     system "go", "build", *std_go_args(ldflags: ldflags),
            "-tags", "assets", "-o", bin/"influxd", "./cmd/influxd"
 
@@ -118,9 +117,6 @@ class Influxdb < Formula
   end
 
   test do
-    ENV["INFLUXD_BOLT_PATH"] = "#{testpath}/influxd.bolt"
-    ENV["INFLUXD_ENGINE_PATH"] = "#{testpath}/engine"
-
     influxd_port = free_port
     influx_host = "http://localhost:#{influxd_port}"
     ENV["INFLUX_HOST"] = influx_host
@@ -131,10 +127,10 @@ class Influxdb < Formula
                              "--http-bind-address=:#{influxd_port}",
                              "--log-level=error"
     end
-    sleep 20
+    sleep 30
 
     # Check that the CLI works and can talk to the server.
-    assert_match "OK", shell_output("#{bin}/influx ping")
+    assert_match "OK", shell_output("influx ping")
 
     # Check that the server has properly bundled UI assets and serves them as HTML.
     curl_output = shell_output("curl --silent --head #{influx_host}")
