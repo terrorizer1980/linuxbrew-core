@@ -6,6 +6,10 @@ class Inja < Formula
   license "MIT"
   head "https://github.com/pantor/inja.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "173097b1702c4d03d7f6010dba26a9163cde204d021762cc8108cb171a6e27b2"
+  end
+
   depends_on "cmake" => :build
   depends_on "nlohmann-json"
 
