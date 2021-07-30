@@ -38,9 +38,6 @@ class Glfw < Formula
   end
 
   test do
-    # glfw doesn't work in headless mode
-    return if !OS.mac? && ENV["HOMEBREW_GITHUB_ACTIONS"]
-
     (testpath/"test.c").write <<~EOS
       #define GLFW_INCLUDE_GLU
       #include <GLFW/glfw3.h>
