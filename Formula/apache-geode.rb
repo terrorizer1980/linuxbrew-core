@@ -7,6 +7,10 @@ class ApacheGeode < Formula
   sha256 "2a3eea3a45444a2e5082e0e79411cd8e76dac59fd7ac88e8165225f5569ee4df"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1d97207b9414b5a96c352612ebe7d45a0a9014caa673a63b4f060eee418a3337"
+  end
+
   depends_on "openjdk@11"
 
   def install
