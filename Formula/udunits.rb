@@ -21,13 +21,6 @@ class Udunits < Formula
   uses_from_macos "flex"
   uses_from_macos "texinfo"
 
-  unless OS.mac?
-    patch :p1 do
-      url "https://github.com/Unidata/UDUNITS-2/commit/0bb56200221ad960bc2da11fc0b4a70ec3c5d7c9.patch?full_index=1"
-      sha256 "8b84fabe21d2da252e6bdd2dd514230d73579ca034d4d83e42f40527dc72fe0c"
-    end
-  end
-
   on_linux do
     patch :p1 do
       url "https://github.com/Unidata/UDUNITS-2/commit/0bb56200221ad960bc2da11fc0b4a70ec3c5d7c9.patch?full_index=1"
