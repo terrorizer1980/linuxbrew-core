@@ -59,7 +59,7 @@ class Mutt < Formula
       --enable-sidebar
       --enable-smtp
       --with-gss
-      #{OS.mac? ? "--with-sasl" : "--with-sasl2"}
+      --with-sasl
       --with-ssl=#{Formula["openssl@1.1"].opt_prefix}
       --with-tokyocabinet
       --enable-gpgme
