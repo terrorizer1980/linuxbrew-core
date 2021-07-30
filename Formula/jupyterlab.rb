@@ -3,16 +3,15 @@ class Jupyterlab < Formula
 
   desc "Interactive environments for writing and running code"
   homepage "https://jupyter.org/"
-  url "https://files.pythonhosted.org/packages/08/b6/b1ec18582a4fa2ee13bc5b2b4210f41f789c60d07ddf4136fd5bde3497be/jupyterlab-3.1.0.tar.gz"
-  sha256 "5a020e5940ef32a9e6e1a43f7c794f542869576a30c5083799c7d97df34e9cf3"
+  url "https://files.pythonhosted.org/packages/41/b0/4901465d86a586cc9d824d88a2c84a5bc60262b2ac064041f6d635b5bac9/jupyterlab-3.1.1.tar.gz"
+  sha256 "f6b04b5cfbe1fab79dbcecd58c941cbc73b0da5e1ccc5d4333a36860d37789b0"
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "2cf258895815d31ff873dd3e4926552de76b6079a41985da45492f1636af700a"
-    sha256 cellar: :any,                 big_sur:       "1d2f5bda05efe585098245fb2b19a51866b9629ea66401bf966d7fe0083b11c0"
-    sha256 cellar: :any,                 catalina:      "647abc8d01147c17344ee04ff9ca808db2d2fd9ad8458ab1218a65b3103d72f9"
-    sha256 cellar: :any,                 mojave:        "97ae29dda7b8ad80e8c8d4bf0f708f56ea41564b38da77383da16ef4676c9081"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e8c83c92f19693c6bf3ec2bc7797c13b00136108597b2903dd7323e1c139c986" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "b22a3837881127ea2d3bf71456e669a95162fe74221d1add6b3adf861b63a03c"
+    sha256 cellar: :any, big_sur:       "60ed4f5a9c2a52fb2d27867565139f1a3d1d1552ed3da15432cddebd150c31c3"
+    sha256 cellar: :any, catalina:      "e30bf7c9f5574bd562528d4670a6ab332cd953789c23b78b7948da0a06632891"
+    sha256 cellar: :any, mojave:        "7aeab1f30895cd33720e1c50c3a2986d8f47797fef9a2fe8cd90c5cae4fbaf8f"
   end
 
   depends_on "ipython"
