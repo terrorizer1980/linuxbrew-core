@@ -13,7 +13,7 @@ class Awscli < Formula
     sha256                               big_sur:       "0ee58694234b376005995a4407f0e7be3b9016ed2e28d42cc2e0960e718571ef"
     sha256                               catalina:      "f481bcdf700d85a7281a6cd43b289f08f711880b549f16c3cbdea5493e5b08a0"
     sha256                               mojave:        "829ebc5de2bef5085a56a44c138582e10be067b16a8d399f761d81d9be07941e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5f8ef5187cd9e1ac9b1490fae55856700efd2303cc219190fff7befe9b46c854"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5f8ef5187cd9e1ac9b1490fae55856700efd2303cc219190fff7befe9b46c854" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

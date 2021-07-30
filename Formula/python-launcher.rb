@@ -11,7 +11,7 @@ class PythonLauncher < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0060ddf0b4825662923bb18ea5ba45ed8de79d7adc343ca50e955ee56d371d32"
     sha256 cellar: :any_skip_relocation, catalina:      "91522804817f69fc416e17ef61c02f7d0727472e89148042afd4f52b4b65d926"
     sha256 cellar: :any_skip_relocation, mojave:        "2be4b95b5e33a6e1035bb19f07257941407351428b7a29efaa4a8429379be1da"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8e595608af839cf8c50112ec315e6222b0809b5f7ab6f1543da48f993a5ea95a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8e595608af839cf8c50112ec315e6222b0809b5f7ab6f1543da48f993a5ea95a" # linuxbrew-core
   end
 
   depends_on "rust" => :build

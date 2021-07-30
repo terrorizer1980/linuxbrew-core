@@ -12,7 +12,7 @@ class ApacheArrowGlib < Formula
     sha256 cellar: :any, big_sur:       "feb4e5e5d8257e0ab042fe905f999ff425cf219641d64bb98e5b6f4226104436"
     sha256 cellar: :any, catalina:      "5017136d50cb3b2159370f6c2f2d2824607504e6e7f317b5a7c55a7f02437884"
     sha256 cellar: :any, mojave:        "40980b2ef3e926109475f08522df24aa409f7d40252738ee7f5d2fd32a8b0bd9"
-    sha256               x86_64_linux:  "33465b50670d9af82147a01a3cd54eaed169296decb64ad2785cf5a46e3cb726"
+    sha256               x86_64_linux:  "33465b50670d9af82147a01a3cd54eaed169296decb64ad2785cf5a46e3cb726" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build
