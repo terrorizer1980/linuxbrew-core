@@ -6,7 +6,7 @@ class Catch2 < Formula
   license "BSL-1.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f58d2e15949c5af35e53cae90f88307881de8eca4100e0c2ad986950ea57217a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f58d2e15949c5af35e53cae90f88307881de8eca4100e0c2ad986950ea57217a" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

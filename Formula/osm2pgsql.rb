@@ -11,7 +11,7 @@ class Osm2pgsql < Formula
     sha256 big_sur:       "3b55656f6199e13de0705586978e4fd6bbc24b8a4125d0380f7331ac171f5a2f"
     sha256 catalina:      "f400b7edec6fcd957360a69c43212868a3a7a0dcd3b8c0a96a9cd1d3b725ec90"
     sha256 mojave:        "e9b3b5a2cac886bb1afbfb9586cdda65c01a50248727a04c5e93ca2bd7e686f7"
-    sha256 x86_64_linux:  "bb9666b44020e017f3867c7a2d71d739988f0953a12eca0200c65955db994f5c"
+    sha256 x86_64_linux:  "bb9666b44020e017f3867c7a2d71d739988f0953a12eca0200c65955db994f5c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
