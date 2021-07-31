@@ -6,7 +6,7 @@ class Phive < Formula
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "acc459cd355ad9cfbece1263871399d7d319447038848cb83571e47682d60d5a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "acc459cd355ad9cfbece1263871399d7d319447038848cb83571e47682d60d5a" # linuxbrew-core
   end
 
   depends_on "php"

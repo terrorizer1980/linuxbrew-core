@@ -11,7 +11,7 @@ class TerraformInventory < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ab56b7c132afc5508e5e10cfa21b784aa2f84fa8a23d9985b7b45eb04c8bdae1"
     sha256 cellar: :any_skip_relocation, catalina:      "ab56b7c132afc5508e5e10cfa21b784aa2f84fa8a23d9985b7b45eb04c8bdae1"
     sha256 cellar: :any_skip_relocation, mojave:        "ab56b7c132afc5508e5e10cfa21b784aa2f84fa8a23d9985b7b45eb04c8bdae1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "853cf36916d4bb9834f0f6b491e347a109a2930d350a1a31b8e7b8233720c20b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "853cf36916d4bb9834f0f6b491e347a109a2930d350a1a31b8e7b8233720c20b" # linuxbrew-core
   end
 
   depends_on "go" => :build
