@@ -7,8 +7,8 @@ class Envoy < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, big_sur:  "ff325521cbdf6b990e33924fe345d55a1fc65286db0b1484557f02a10e0954c0"
-    sha256 cellar: :any_skip_relocation, catalina: "b0db4468a8794a6a7de0132b64029504921fd8eee9c7f3b224f4461bc5e515f7"
+    sha256 cellar: :any_skip_relocation, big_sur:      "ff325521cbdf6b990e33924fe345d55a1fc65286db0b1484557f02a10e0954c0"
+    sha256 cellar: :any_skip_relocation, catalina:     "b0db4468a8794a6a7de0132b64029504921fd8eee9c7f3b224f4461bc5e515f7"
   end
 
   depends_on "automake" => :build
