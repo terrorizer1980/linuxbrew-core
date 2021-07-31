@@ -5,6 +5,10 @@ class Typedb < Formula
   sha256 "59a8e5e0c7395ddf8e9fa5278e5005da937816894942a282f602f9a71aa8c58c"
   license "AGPL-3.0-or-later"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "be9d65ed56b574868f80b354cfceadee2f86fcba59f2aac7106fabd819895c1a"
+  end
+
   depends_on "openjdk@11"
 
   def install
