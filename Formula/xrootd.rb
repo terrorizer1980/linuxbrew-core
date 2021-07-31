@@ -16,6 +16,7 @@ class Xrootd < Formula
     sha256 cellar: :any,                 big_sur:       "c3a2b3d0e6078523c33a8256461615bde15c5444ce44da8ffba50ce6184db70e"
     sha256 cellar: :any,                 catalina:      "60141a86efe1880508a94a9aa935d7eeea4708d710fb1d32c39b84b4a3cac779"
     sha256 cellar: :any,                 mojave:        "402b1697b621101b2952acbbc9aae36d0b953b3a20acb1dbabc2ef9910e4734c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bb57b28cc96a28f83c5ecd0f36c4cc5ee623f96cb58c9a278c821bb32903abab"
   end
 
   depends_on "cmake" => :build
