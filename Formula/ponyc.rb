@@ -20,8 +20,8 @@ class Ponyc < Formula
   def install
     ENV.cxx11
 
-    unless OS.mac?
-      inreplace "CMakeLists.txt", "PONY_COMPILER=\"${CMAKE_C_COMPILER}\"", "PONY_COMPILER=\"/usr/bin/gcc\""
+    on_linux do
+      inreplace "CMakeLists.txt", "PONY_COMPILER=\"${CMAKE_C_COMPILER}\"", "PONY_COMPILER=\"#{ENV.cc}\""
     end
 
     ENV["MAKEFLAGS"] = "build_flags=-j#{ENV.make_jobs}"

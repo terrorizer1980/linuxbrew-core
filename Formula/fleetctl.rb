@@ -24,6 +24,7 @@ class Fleetctl < Formula
 
   def install
     ENV["GOPATH"] = buildpath
+    ENV["GO111MODULE"] = "auto"
     system "./build"
     bin.install "bin/fleetctl"
   end
