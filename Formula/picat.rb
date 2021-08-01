@@ -16,6 +16,7 @@ class Picat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "7e44278692b3be42b8e016595ea1c50e5a8cbd2d62cd729f98179bdf1a602d25"
     sha256 cellar: :any_skip_relocation, catalina:     "1aac88c44c248917b484c85e8d0cebbd015fc95133948b40d728d6e96d6a7cc2"
     sha256 cellar: :any_skip_relocation, mojave:       "42eda2841fcdf3d5b6b1e7db6c15818cb6548d567779a88cb58e9e9286291689"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d5567ae2a20c22c4f1d329181d189c1bdbe16d03bc9110c83b20eaf0e8f76e8d"
   end
 
   def install
