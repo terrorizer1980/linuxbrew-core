@@ -5,6 +5,10 @@ class Gitbucket < Formula
   sha256 "e836955d504ab5b347c29e76f46218b3d2390fee53b834d54c11f4c67c8558f5"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d66ac992d7868e18152a813bc1dc8baa436aa6befab5a81b1d8b9534b5df335f"
+  end
+
   head do
     url "https://github.com/gitbucket/gitbucket.git"
     depends_on "ant" => :build
