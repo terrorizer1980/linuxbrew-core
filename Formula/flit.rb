@@ -13,7 +13,7 @@ class Flit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1ccecd0a72b34fa8d728bb8caa9dbcb8a9baafd8fb58c83b48e753db9518282b"
     sha256 cellar: :any_skip_relocation, catalina:      "8453c6efbd221b343c8344d0257555b78dc56d8b903a7c330eca78b4acef0e03"
     sha256 cellar: :any_skip_relocation, mojave:        "a33f9ac32913dc9aa323910fa747f783d49b00686cf5a38df85f0b7f8296b241"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ed5dad40c5c2e81364693d989dcb10fddb6c5a7bd2ba7cf905538b60bde00f6b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ed5dad40c5c2e81364693d989dcb10fddb6c5a7bd2ba7cf905538b60bde00f6b" # linuxbrew-core
   end
 
   depends_on "python@3.9"

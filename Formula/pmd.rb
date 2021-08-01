@@ -6,7 +6,7 @@ class Pmd < Formula
   license "BSD-4-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff32a67acd1acf8e6ddec41a1a47984488472901b050c6631b6785554626ea8f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff32a67acd1acf8e6ddec41a1a47984488472901b050c6631b6785554626ea8f" # linuxbrew-core
   end
 
   depends_on "openjdk"
