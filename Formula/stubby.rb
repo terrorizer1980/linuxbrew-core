@@ -12,6 +12,7 @@ class Stubby < Formula
     sha256 big_sur:       "435174729967fbf5bb4dc87a8e2ef440f6cec7e56c46a5373dfe6f5a6a6ec96c"
     sha256 catalina:      "df3b7e64116093724ab01d7a6f3abee725e9ffebfd030a1255d9f6c8467101f2"
     sha256 mojave:        "21530780a842976f9dbd45777c85900b841e15a063ab522d5c8d30f4bba74eec"
+    sha256 x86_64_linux:  "9e714d6c7b77449a65f7185ea9a86489a8b9019950ec11160987d5e9fa848b7a"
   end
 
   depends_on "cmake" => :build
