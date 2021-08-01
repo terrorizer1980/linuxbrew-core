@@ -14,6 +14,10 @@ class Geoserver < Formula
     regex(%r{href=(?:["']|.*?GeoServer/)?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "69ac372ed01efbe9fbfa69f21576eddbce2d05169eacbe4951c5af01edbe801c"
+  end
+
   def install
     libexec.install Dir["*"]
     (bin/"geoserver").write <<~EOS
