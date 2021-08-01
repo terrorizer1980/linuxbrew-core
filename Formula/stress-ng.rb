@@ -18,11 +18,9 @@ class StressNg < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "6eb14d32d4ae388c22940577238b3e3f5b7a70fe27ae2526ac890e33124f957f" # linuxbrew-core
   end
 
-  uses_from_macos "zlib"
+  depends_on macos: :sierra
 
-  on_macos do
-    depends_on macos: :sierra
-  end
+  uses_from_macos "zlib"
 
   def install
     inreplace "Makefile", "/usr", prefix
