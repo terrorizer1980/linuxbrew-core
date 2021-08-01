@@ -8,6 +8,10 @@ class Pyright < Formula
   license "MIT"
   head "https://github.com/microsoft/pyright.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "aac678152017942fe3405be8a721a8bbfcb5db85eab576c31bc6cafe386db0e2"
+  end
+
   depends_on "node"
 
   def install
