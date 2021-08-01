@@ -5,6 +5,10 @@ class Pmd < Formula
   sha256 "6cd7a1340861e099170bd1b5f90fa85814c18a62ed1b358ef4ff295e97f0f521"
   license "BSD-4-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff32a67acd1acf8e6ddec41a1a47984488472901b050c6631b6785554626ea8f"
+  end
+
   depends_on "openjdk"
 
   def install
