@@ -5,6 +5,10 @@ class Xsimd < Formula
   sha256 "eaf47f1a316ef6c3287b266161eeafc5aa61226ce5ac6c13502546435b790252"
   license "BSD-3-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1e2613474367727ff71ebff4dbeb109866b256874493ab09d903c71d8b320892"
+  end
+
   depends_on "cmake" => :build
 
   def install
