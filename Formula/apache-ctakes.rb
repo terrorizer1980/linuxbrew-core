@@ -10,7 +10,7 @@ class ApacheCtakes < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "99b42543678adc7a3d3ae931e52130a48fda2f46df7b5de143f7efb708de31ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "99b42543678adc7a3d3ae931e52130a48fda2f46df7b5de143f7efb708de31ef" # linuxbrew-core
   end
 
   depends_on "openjdk"

@@ -13,7 +13,7 @@ class Etl < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c0fc90df73ee839198d5da179f2a23a274ef2ed0161d0c74b3536fd06604ac94"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c0fc90df73ee839198d5da179f2a23a274ef2ed0161d0c74b3536fd06604ac94" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

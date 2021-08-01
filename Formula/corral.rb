@@ -10,7 +10,7 @@ class Corral < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "8bf55316637ccd844945fb01255fd17adc6c32450468ce0f4fa6419c3fb721d7"
     sha256 cellar: :any_skip_relocation, catalina:     "01fe7de9d69e7a37b2c1a246efc666c0ebc472e50e541dfd5f998861b9abd808"
     sha256 cellar: :any_skip_relocation, mojave:       "89f5021d6f6ac5a1b92a6c622788dabe904fd16d631ae6546540171eafd2b671"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "281953bed3cf1d7a956e52529718a24ef8fd7142f386b8295c1f502b92904e8f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "281953bed3cf1d7a956e52529718a24ef8fd7142f386b8295c1f502b92904e8f" # linuxbrew-core
   end
 
   depends_on "ponyc"
