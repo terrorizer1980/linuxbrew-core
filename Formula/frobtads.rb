@@ -15,7 +15,8 @@ class Frobtads < Formula
     sha256 x86_64_linux:  "159a06d3a2af0fa484998319a7430adcc57faea74a8524c7f7b5a7d441eca6ba" # linuxbrew-core
   end
 
-  uses_from_macos "curl" => :build
+  uses_from_macos "curl"
+  uses_from_macos "ncurses"
 
   def install
     system "./configure", "--disable-dependency-tracking",
