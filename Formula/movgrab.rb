@@ -30,6 +30,10 @@ class Movgrab < Formula
     sha256 "d77c6661386f1a6d361c32f375b05bfdb4ac42804076922a4c0748da891367c2"
   end
 
+  # Backport fix for GCC linker library search order
+  # Upstream ref: https://github.com/ColumPaget/Movgrab/commit/fab3c87bc44d6ce47f91ded430c3512ebcf7501b
+  patch :DATA
+
   def install
     # Can you believe this? A forgotten semicolon! Probably got missed because it's
     # behind a conditional #ifdef.
@@ -55,3 +59,19 @@ class Movgrab < Formula
     system "#{bin}/movgrab", "--version"
   end
 end
+
+
+__END__
+diff --git a/Makefile.in b/Makefile.in
+index 04ea67d..5516051 100755
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -11,7 +11,7 @@ OBJ=common.o settings.o containerfiles.o outputfiles.o servicetypes.o extract_te
+ 
+ all: $(OBJ)
+ 	@cd libUseful-2.8; $(MAKE)
+-	$(CC) $(FLAGS) -o movgrab main.c $(LIBS) $(OBJ) libUseful-2.8/libUseful-2.8.a
++	$(CC) $(FLAGS) -o movgrab main.c $(OBJ) libUseful-2.8/libUseful-2.8.a $(LIBS)
+ 
+ clean:
+ 	@rm -f movgrab *.o libUseful-2.8/*.o libUseful-2.8/*.a libUseful-2.8/*.so config.log config.status
