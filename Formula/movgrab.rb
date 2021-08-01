@@ -3,7 +3,7 @@ class Movgrab < Formula
   homepage "https://sites.google.com/site/columscode/home/movgrab"
   url "https://github.com/ColumPaget/Movgrab/archive/3.1.2.tar.gz"
   sha256 "30be6057ddbd9ac32f6e3d5456145b09526cc6bd5e3f3fb3999cc05283457529"
-  license "GPL-3.0"
+  license "GPL-3.0-or-later"
   revision 2
 
   bottle do
@@ -17,6 +17,8 @@ class Movgrab < Formula
 
   depends_on "pkg-config" => :build
   depends_on "openssl@1.1"
+
+  uses_from_macos "zlib"
 
   # Fixes an incompatibility between Linux's getxattr and macOS's.
   # Reported upstream; half of this is already committed, and there's
