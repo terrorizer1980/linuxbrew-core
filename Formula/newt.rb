@@ -43,8 +43,6 @@ class Newt < Formula
       end
     end
 
-    inreplace "configure", "/usr/include/python", "#{HOMEBREW_PREFIX}/include/python" unless OS.mac?
-
     system "./configure", *args
     system "make", "install"
   end
