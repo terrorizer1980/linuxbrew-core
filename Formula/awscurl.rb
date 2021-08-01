@@ -13,6 +13,7 @@ class Awscurl < Formula
     sha256 cellar: :any,                 big_sur:       "a350c60b20a1dc88c929ecae6481c4e4e3bf84a7e3938035d22ea6f56a0df590"
     sha256 cellar: :any,                 catalina:      "0f39410104d050c7a2063e03a172dd20534082b13ade4839c754e37b837df693"
     sha256 cellar: :any,                 mojave:        "a97fdbf33c8cf3e98917ee32eaba8db79f28f69f89510c1326499c8ca19f456b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "22c6eaf6f4c4f93bc41ac0e8e206c040d352b8b3ca0b685d4355290f424a0dbb"
   end
 
   depends_on "rust" => :build
