@@ -37,10 +37,6 @@ class Cmake < Formula
   # For the GUI application please instead use `brew install --cask cmake`.
 
   def install
-    on_linux do
-      ENV.cxx11
-    end
-
     args = %W[
       --prefix=#{prefix}
       --no-system-libs
