@@ -18,7 +18,7 @@ class Cppad < Formula
     sha256 cellar: :any,                 big_sur:       "eab7dd0a3f58038b0155a5df0c2fa8a5c9e39aa7b9857c8a5ec47015361ec704"
     sha256 cellar: :any,                 catalina:      "dd91794216d8f4a4220fb1d475c8f95a5b57aa00bcf8302dd230610413b8598a"
     sha256 cellar: :any,                 mojave:        "9d2e240bec486c5c9a91a65ef3acda2dd4e4d8da646b7b03977b37e0ba53d9bd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6902bef10ffc4ef7d128b9c6d6c35f91a68a9695c08a8ec6ee84e1b86ea0f50e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6902bef10ffc4ef7d128b9c6d6c35f91a68a9695c08a8ec6ee84e1b86ea0f50e" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
