@@ -2,18 +2,14 @@ class Etl < Formula
   desc "Extensible Template Library"
   homepage "https://synfig.org"
   # NOTE: Please keep these values in sync with synfig.rb when updating.
-  url "https://downloads.sourceforge.net/project/synfig/releases/1.4.1/ETL-1.4.1.tar.gz"
-  mirror "https://github.com/synfig/synfig/releases/download/v1.4.1/ETL-1.4.1.tar.gz"
-  sha256 "ecb61942da60dca8e623af8ad03656897d10b03296e8907dd3c6c296390a074c"
+  url "https://downloads.sourceforge.net/project/synfig/releases/1.4.2/ETL-1.4.2.tar.gz"
+  mirror "https://github.com/synfig/synfig/releases/download/v1.4.2/ETL-1.4.2.tar.gz"
+  sha256 "e54192d284df16305ddfdfcc5bdfe93e139e6db5bc283dd4bab2413ebbead7c7"
   license "GPL-2.0-or-later"
 
   livecheck do
     url :stable
     regex(%r{url=.*?/releases/.+?/ETL[._-]v?(\d+(?:\.\d+)+)\.t}i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e4ddce5b48c3102446302318b8d19895fc4ed310da33f5dcdbf70308daf197cb" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
