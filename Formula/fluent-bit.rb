@@ -1,8 +1,8 @@
 class FluentBit < Formula
   desc "Data Collector for IoT"
   homepage "https://github.com/fluent/fluent-bit"
-  url "https://github.com/fluent/fluent-bit/archive/v1.8.1.tar.gz"
-  sha256 "a284d803ec9203be69b7c4ff9febb33b8c938b640f0cc7cbcf6f9223e5de4fb5"
+  url "https://github.com/fluent/fluent-bit/archive/v1.8.2.tar.gz"
+  sha256 "6f35e4eb1942b90a9d21171ae73fe39face38e150c487566879cfa4f1cd4180d"
   license "Apache-2.0"
   head "https://github.com/fluent/fluent-bit.git"
 
@@ -12,10 +12,10 @@ class FluentBit < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "9e509c9fbbec4da171f7ce2b8a8c7d48a12cf18b1717438a94011f2f68773d9f"
-    sha256 cellar: :any,                 big_sur:       "7bf2cd14575c8b1f537395e9f71c1166158f8996268b3118434868c657168d4c"
-    sha256 cellar: :any,                 catalina:      "a93ac767c26eee5290ff6e2d15197faf1b8419dedefc375bee9f0eee4aaae621"
-    sha256 cellar: :any,                 mojave:        "91fbae2a767d0a0ac6eae0fafcdb39a28bc3b5079de4d808051735da93a85998"
+    sha256 cellar: :any,                 arm64_big_sur: "7621b72d6d2d201158119428b43ec4e957070f1f74304ad02ed80ee2a78a0d72"
+    sha256 cellar: :any,                 big_sur:       "2589a055669f5918c4a818f5ddd6caca152719c74b58d9487b47ae852c5a2074"
+    sha256 cellar: :any,                 catalina:      "85b92766b81c93065d300b5e3c33765207b6d91ed6b8f7df19137b5c2bd67351"
+    sha256 cellar: :any,                 mojave:        "027dd1600bccfd50c469c5f5b6bb8db6e0aae94b5d9056b6b02196238885e2b2"
   end
 
   depends_on "bison" => :build
@@ -62,7 +62,7 @@ index 0671542a..67f1c368 100644
 +++ b/lib/cmetrics/src/cmt_time.c
 @@ -20,7 +20,7 @@
  #include <cmetrics/cmt_info.h>
- 
+
  /* MacOS */
 -#ifdef FLB_HAVE_CLOCK_GET_TIME
 +#ifdef CMT_HAVE_CLOCK_GET_TIME
@@ -87,7 +87,7 @@ index f6654506..fe117172 100644
 @@ -434,27 +434,6 @@ if(FLB_BINARY)
        DESTINATION "${FLB_INSTALL_BINDIR}")
    endif()
- 
+
 -  # Detect init system, install upstart, systemd or init.d script
 -  if(IS_DIRECTORY /lib/systemd/system)
 -    set(FLB_SYSTEMD_SCRIPT "${PROJECT_SOURCE_DIR}/init/${FLB_OUT_NAME}.service")
