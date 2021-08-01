@@ -68,10 +68,11 @@ class PerconaServer < Formula
   end
 
   def install
+    # -DINSTALL_* are relative to `CMAKE_INSTALL_PREFIX` (`prefix`)
     args = %W[
       -DFORCE_INSOURCE_BUILD=1
       -DCOMPILATION_COMMENT=Homebrew
-      -DDEFAULT_CHARSET=utf8
+      -DDEFAULT_CHARSET=utf8mb4
       -DDEFAULT_COLLATION=utf8mb4_0900_ai_ci
       -DINSTALL_DOCDIR=share/doc/#{name}
       -DINSTALL_INCLUDEDIR=include/mysql
@@ -94,7 +95,6 @@ class PerconaServer < Formula
       -DWITH_ZLIB=system
       -DWITH_ZSTD=system
     ]
-    args << "-DWITH_EDITLINE=system" if OS.mac?
 
     # MySQL >5.7.x mandates Boost as a requirement to build & has a strict
     # version check in place to ensure it only builds against expected release.
@@ -121,7 +121,6 @@ class PerconaServer < Formula
       on_linux { test_args << "--nowarnings" }
       system "./mysql-test-run.pl", "status", *test_args
     end
-    # Test is disabled on Linux as it is currently failing
 
     on_macos do
       # Remove libssl copies as the binaries use the keg anyway and they create problems for other applications
@@ -232,11 +231,11 @@ __END__
 --- a/plugin/auth_ldap/CMakeLists.txt
 +++ b/plugin/auth_ldap/CMakeLists.txt
 @@ -36,7 +36,7 @@ IF(WITH_LDAP)
-
+ 
    # libler?
    MYSQL_ADD_PLUGIN(authentication_ldap_simple ${ALP_SOURCES_SIMPLE}
 -    LINK_LIBRARIES ldap_r MODULE_ONLY MODULE_OUTPUT_NAME "authentication_ldap_simple")
 +    LINK_LIBRARIES ldap MODULE_ONLY MODULE_OUTPUT_NAME "authentication_ldap_simple")
-
+ 
    IF(UNIX)
      IF(INSTALL_MYSQLTESTDIR)
