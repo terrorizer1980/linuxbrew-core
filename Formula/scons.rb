@@ -12,6 +12,7 @@ class Scons < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "09a2320d3cc8fa3d720507cb06e8e7eafe0e6d582c18fb4832e8d7a5491b961a"
     sha256 cellar: :any_skip_relocation, catalina:      "09a2320d3cc8fa3d720507cb06e8e7eafe0e6d582c18fb4832e8d7a5491b961a"
     sha256 cellar: :any_skip_relocation, mojave:        "09a2320d3cc8fa3d720507cb06e8e7eafe0e6d582c18fb4832e8d7a5491b961a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "87be85481d3a954f2e7ac8a838fe0032dc5d0ff88bbf9db2a6f3b9c004957732"
   end
 
   depends_on "python@3.9"
