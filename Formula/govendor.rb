@@ -20,6 +20,7 @@ class Govendor < Formula
 
   def install
     ENV["GOPATH"] = buildpath
+    ENV["GO111MODULE"] = "auto"
 
     (buildpath/"src/github.com/kardianos/").mkpath
     ln_sf buildpath, buildpath/"src/github.com/kardianos/govendor"
