@@ -15,6 +15,7 @@ class Otf2 < Formula
     sha256 big_sur:       "95502a9bcfe892e2d14c0915f81f1b1b80351496f31d049741b793b3de1343ef"
     sha256 catalina:      "5d0dee1bdd5512982dc5aab82faf3f3d620e2d223c8e0924d6cebb345e054554"
     sha256 mojave:        "6b6c453bf295b0c846a30341ab449e4584a5530c36a11092cf280d0722e86305"
+    sha256 x86_64_linux:  "64dccbab78e7b812f56d9634b8728f836a4ede0bc095308c794780d098c27e02"
   end
 
   depends_on "sphinx-doc" => :build
