@@ -12,7 +12,7 @@ class Jrnl < Formula
     sha256 cellar: :any,                 big_sur:       "e8b1bc3d530ee445010c3c06b6e28918ccb4e163632a4cb396199a3c66d8fc94"
     sha256 cellar: :any,                 catalina:      "495fa86f26e9b548a526e9c80822a40fd74addcfcdefcb0217796b025ce1fe37"
     sha256 cellar: :any,                 mojave:        "eb0616878a7bd05560ad6dea5aa53c2ba7d7f486ba61411a977c55ef027a4c81"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1f2d437648f5a2367f58f14c0d8e3c2ea35eb4beac61f78843fe5c76f84ae702"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1f2d437648f5a2367f58f14c0d8e3c2ea35eb4beac61f78843fe5c76f84ae702" # linuxbrew-core
   end
 
   depends_on "rust" => :build
