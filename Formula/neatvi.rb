@@ -12,6 +12,7 @@ class Neatvi < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bc951c1348db9da286bf7cd1652f2aabe3b98757a834145c61fcf4de30a28b2c"
     sha256 cellar: :any_skip_relocation, catalina:      "dbfe05d495b19a8ea91806f6894c43502464d422cd4acc178da2e0aa7a824d3e"
     sha256 cellar: :any_skip_relocation, mojave:        "9e52be034eb7fdc6f6be1ac2bc307791aae1cdb83220783a511e7e3fb0ad6915"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8ae4df608e893ab8f0f0cb74df40081685d51a0c238b7a90f2b50e9afc6911f1"
   end
 
   def install
