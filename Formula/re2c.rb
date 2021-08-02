@@ -10,6 +10,7 @@ class Re2c < Formula
     sha256 big_sur:       "622c04bf38ad6f7ff7f9ca272cf9dcbde186f0b16e3e51eed1ffc108db56adb7"
     sha256 catalina:      "8dd19c7d8532026141d42d6893faf18e86b97053fd113f9f30a1271662108e25"
     sha256 mojave:        "7092db76fdd568e0c162ffe2066e8318ec4102aab85b361098908ca49f535a0e"
+    sha256 x86_64_linux:  "f8ae38af6e0ef9a4131174fc66750498c1a3cca66e896ef2392632ef16a0e9a4"
   end
 
   def install
