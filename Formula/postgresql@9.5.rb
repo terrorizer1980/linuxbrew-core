@@ -12,7 +12,7 @@ class PostgresqlAT95 < Formula
     sha256 big_sur:       "b6e7f2c53abe33e98e76f91226060b907a4eab3392c64573846ae649b668a924"
     sha256 catalina:      "d26af40f35158c68fb779e61ffdf91d185c4c287249622b4a3dddd05d14a738c"
     sha256 mojave:        "be39a1cdcd44fbebdd13ddbf0ec41bd2e32bb30d3c45d492da4d38e88c525f91"
-    sha256 x86_64_linux:  "4165ef4bb8f0d31dcab72de37083913bb226a8b3e3a913583c2949bb7c302b5b"
+    sha256 x86_64_linux:  "4165ef4bb8f0d31dcab72de37083913bb226a8b3e3a913583c2949bb7c302b5b" # linuxbrew-core
   end
 
   keg_only :versioned_formula

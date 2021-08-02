@@ -11,7 +11,7 @@ class Angband < Formula
     sha256 big_sur:       "3f6aee791649219ab05f70d1c9170e09137d23ee31fcfdd3862c242dd2165771"
     sha256 catalina:      "c983b2033647d198120ae6295302f812fc7f35fc5d43e4bb430ff63f1fd89c31"
     sha256 mojave:        "6eb8682054143520fbf931cac520aa8b1c3e8776db5d8e13c374698563fba23e"
-    sha256 x86_64_linux:  "c846da0bf2b065f0867cf114896938c321c5a86de031dfd0ec7bd94913425ac0"
+    sha256 x86_64_linux:  "c846da0bf2b065f0867cf114896938c321c5a86de031dfd0ec7bd94913425ac0" # linuxbrew-core
   end
 
   def install
