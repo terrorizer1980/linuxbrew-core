@@ -7,6 +7,10 @@ class Functionalplus < Formula
   license "BSL-1.0"
   head "https://github.com/Dobiasd/FunctionalPlus.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab75da7d297b2258e1e906027bd3d5abe6b7464339288730eae5fec22b931715"
+  end
+
   depends_on "cmake" => :build
 
   def install
