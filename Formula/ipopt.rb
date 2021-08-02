@@ -24,14 +24,14 @@ class Ipopt < Formula
     url "http://mumps.enseeiht.fr/MUMPS_5.4.0.tar.gz"
     sha256 "c613414683e462da7c152c131cebf34f937e79b30571424060dd673368bbf627"
 
-    if OS.mac?
+    patch do
       # MUMPS does not provide a Makefile.inc customized for macOS.
-      patch do
+      on_macos do
         url "https://raw.githubusercontent.com/Homebrew/formula-patches/ab96a8b8e510a8a022808a9be77174179ac79e85/ipopt/mumps-makefile-inc-generic-seq.patch"
         sha256 "0c570ee41299073ec2232ad089d8ee10a2010e6dfc9edc28f66912dae6999d75"
       end
-    else
-      patch do
+
+      on_linux do
         url "https://gist.githubusercontent.com/dawidd6/09f831daf608eb6e07cc80286b483030/raw/b5ab689dea5772e9b6a8b6d88676e8d76224c0cc/mumps-homebrew-linux.patch"
         sha256 "13125be766a22aec395166bf015973f5e4d82cd3329c87895646f0aefda9e78e"
       end
@@ -50,8 +50,9 @@ class Ipopt < Formula
 
     resource("mumps").stage do
       cp "Make.inc/Makefile.inc.generic.SEQ", "Makefile.inc"
-      inreplace "Makefile.inc", "@rpath/", "#{opt_lib}/" if OS.mac?
+      on_macos { inreplace "Makefile.inc", "@rpath/", "#{opt_lib}/" }
 
+      # Fix for GCC 10
       inreplace "Makefile.inc", "OPTF    = -fPIC",
                 "OPTF    = -fPIC -fallow-argument-mismatch"
 

@@ -3,15 +3,15 @@ class Ocrmypdf < Formula
 
   desc "Adds an OCR text layer to scanned PDF files"
   homepage "https://github.com/jbarlow83/OCRmyPDF"
-  url "https://files.pythonhosted.org/packages/5d/e5/b815d5b47dd3e41c753eb8f1cf52b5056ac271f359678bf4bfe5f0cfaf3c/ocrmypdf-12.3.0.tar.gz"
-  sha256 "bc0e583ba6097217623581922775ed5295a61ea650c097218e4f3dcecac494c0"
+  url "https://files.pythonhosted.org/packages/8b/75/c820a6a1b6058367ead92303f2a834a1db1fea61413a55669670362bc390/ocrmypdf-12.3.1.tar.gz"
+  sha256 "68a882ebb50b55fd164ba0e80918ab97961cfce4613e6426dc76951687f2e08f"
   license "MPL-2.0"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "b3bd88e2356f0f8e88b987edd08c74ae6518986aae0117cf7e30dcbe6f0a141c"
-    sha256 cellar: :any, big_sur:       "a3888f23e434fc72f9fca87315f142ea4f6907b0a8b531ca4c048387f6c923d0"
-    sha256 cellar: :any, catalina:      "eafb2b4b1403b07cfed3d916f894c53d341d9943a0ccd55267b049da9695f4df"
-    sha256 cellar: :any, mojave:        "7acc2d749752af6b8f5b903128eae12c517e23ea900d442dcccfbef20bda7c61"
+    sha256 cellar: :any, arm64_big_sur: "4cee946ca4fddb8523f3e53cbd607a5fe8055825522e6646a75b1a2da4ef35f1"
+    sha256 cellar: :any, big_sur:       "bee421150f64b88ff036b4f6ce795e3d82ef50344d933dca4df6fa1ab5ccacf3"
+    sha256 cellar: :any, catalina:      "f03e31f8efeb92d0803e61519ee43a225dadc84e90a7f0ac4bd4eb6f8032467b"
+    sha256 cellar: :any, mojave:        "4b6341c48015fdb529b737f4f676257e2b678c4e67d7806341827c1a444cf6fb"
   end
 
   depends_on "pkg-config" => :build
@@ -80,8 +80,8 @@ class Ocrmypdf < Formula
   end
 
   resource "pikepdf" do
-    url "https://files.pythonhosted.org/packages/f4/72/8fb625a17f548bc67ef103a830962d0c4af6a45edff8f4d22534b84d44fd/pikepdf-2.15.0.tar.gz"
-    sha256 "a33f3b52840ceae3fd64f0a18da307cda4a55549eb64177fc716547636fc37ae"
+    url "https://files.pythonhosted.org/packages/d0/ef/fa6757e307049680f23ac03cc9f677354b4839302459b5d60198f72d89a4/pikepdf-2.16.1.tar.gz"
+    sha256 "e24dff6af31f1eb732fcb5db4678835d1f312643996fdcd9dbeb8aca52bc0dde"
   end
 
   resource "pluggy" do
@@ -105,8 +105,8 @@ class Ocrmypdf < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/0d/dd/78f7e080d3bfc87fc19bed54513b430659d38efb2d9ea6e3ad815a665a02/tqdm-4.61.2.tar.gz"
-    sha256 "8bb94db0d4468fea27d004a0f1d1c02da3cdedc00fe491c0de986b76a04d6b0a"
+    url "https://files.pythonhosted.org/packages/7f/e6/23e3f15ff29970dd64065a9a27bc809b1df727f7f9f6dfa3e36cf7975e58/tqdm-4.62.0.tar.gz"
+    sha256 "3642d483b558eec80d3c831e23953582c34d7e4540db86d9e5ed9dad238dabc6"
   end
 
   def install
