@@ -11,7 +11,7 @@ class Rabbitmq < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "bce40affa97c6111c72b1d82753f18da788a500523fc8a6c79d38ab849c5d1d2" # linuxbrew-core
+    rebuild 1
   end
 
   depends_on "python@3.9" => :build
@@ -76,37 +76,13 @@ class Rabbitmq < Formula
     EOS
   end
 
-  plist_options manual: "rabbitmq-server"
-
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
-      "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>Program</key>
-          <string>#{opt_sbin}/rabbitmq-server</string>
-          <key>RunAtLoad</key>
-          <true/>
-          <key>EnvironmentVariables</key>
-          <dict>
-            <!-- need erl in the path -->
-            <key>PATH</key>
-            <string>#{HOMEBREW_PREFIX}/sbin:/usr/sbin:/usr/bin:/bin:#{HOMEBREW_PREFIX}/bin</string>
-            <!-- specify the path to the rabbitmq-env.conf file -->
-            <key>CONF_ENV_FILE</key>
-            <string>#{etc}/rabbitmq/rabbitmq-env.conf</string>
-          </dict>
-          <key>StandardErrorPath</key>
-          <string>#{var}/log/rabbitmq/std_error.log</string>
-          <key>StandardOutPath</key>
-          <string>#{var}/log/rabbitmq/std_out.log</string>
-        </dict>
-      </plist>
-    EOS
+  service do
+    run opt_sbin/"rabbitmq-server"
+    log_path var/"log/rabbitmq/std_out.log"
+    error_log_path var/"log/rabbitmq/std_error.log"
+    # need erl in PATH
+    environment_variables PATH:          "#{HOMEBREW_PREFIX}/sbin:/usr/sbin:/usr/bin:/bin:#{HOMEBREW_PREFIX}/bin",
+                          CONF_ENV_FILE: etc/"rabbitmq/rabbitmq-env.conf"
   end
 
   test do
