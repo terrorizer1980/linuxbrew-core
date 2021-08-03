@@ -12,7 +12,7 @@ class Rabbitmq < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2ac6bcff71bfe5df88bf0f92d64d43a48d8af4a5b23670684e992e4dee3ce8a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2ac6bcff71bfe5df88bf0f92d64d43a48d8af4a5b23670684e992e4dee3ce8a5" # linuxbrew-core
   end
 
   depends_on "python@3.9" => :build
