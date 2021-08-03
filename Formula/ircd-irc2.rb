@@ -11,6 +11,7 @@ class IrcdIrc2 < Formula
     sha256 big_sur:       "855bb8b0254ee0f410d6bdf3ad8479900f39f0ad120145485d9bdbe146f7a399"
     sha256 catalina:      "35ae4defa513772b1e1b5b0400976d49cb213818a2272a9760a3da3a7e8c0765"
     sha256 mojave:        "e0522b8f4eb95b0d60527e136e69474b4e9fe6f2b77a12919d5a6dd76bb2a4fa"
+    sha256 x86_64_linux:  "0e9df9d4035289f08ec4c856aca8ac20ca0b2cc100a916f3b5eab3959306c5d7"
   end
 
   def default_ircd_conf
