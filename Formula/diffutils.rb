@@ -11,6 +11,7 @@ class Diffutils < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "43ed975b1f8cd9c8aedc16848691972950c2c95405395bc646650fbf8e3d60c5"
     sha256 cellar: :any_skip_relocation, catalina:      "c0a2132f021243dc25d19e6638eea2a423e09957d2c6c11582fc134301fffefd"
     sha256 cellar: :any_skip_relocation, mojave:        "20cf9f34754b7c6c84ff790fe2240e072705a074a2af81f1ca25796801de2780"
+    sha256                               x86_64_linux:  "54486cec2842e69ad311ec74cdba142385784d00d3f8cb79fd745864a19c2d7f"
   end
 
   def install
