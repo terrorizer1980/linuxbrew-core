@@ -9,7 +9,7 @@ class Frobtads < Formula
     sha256 big_sur:       "b58665483ecdcaa4ebca91dc048884c6168dfc9d0265bd7bb62bc7a57f1814ed"
     sha256 catalina:      "9f7593c956b859ba6592f85e9741e04c2092e13ab4d689548bf5d4d92042501f"
     sha256 mojave:        "944c0aabe26e083c818100225920aa3c2d967bf07bf8a59d58455c92b99f61d6"
-    sha256 x86_64_linux:  "1874c9c656d5e4a542300baca25b3d28f6e841f3fed9b123acbd958417874495"
+    sha256 x86_64_linux:  "1874c9c656d5e4a542300baca25b3d28f6e841f3fed9b123acbd958417874495" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

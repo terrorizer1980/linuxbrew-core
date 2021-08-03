@@ -21,7 +21,7 @@ class Mu < Formula
     sha256 cellar: :any,                 big_sur:       "d3108fd5a22eeb006e6cf06fbc6f080be238abfedeb836d0a7baec31cf10f168"
     sha256 cellar: :any,                 catalina:      "df8cd2e0b7ee1b83a01a2eb6aea828f58846344a0ed8c54b99872fe5d66f5e50"
     sha256 cellar: :any,                 mojave:        "f17db67ad593debad20757ed641f8c9aea99867cb17ee55346aa47f4e4bd6e2d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f6f458f938d5692bbad25db5aa6ef9ce876cfbe6a4b38f54e7ec48b91b360b9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f6f458f938d5692bbad25db5aa6ef9ce876cfbe6a4b38f54e7ec48b91b360b9" # linuxbrew-core
   end
 
   head do

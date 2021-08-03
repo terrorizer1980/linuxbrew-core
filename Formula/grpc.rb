@@ -18,7 +18,7 @@ class Grpc < Formula
     sha256 cellar: :any,                 big_sur:       "574e4fa01505690ae5a35592db7c7a06f61b58e67bb3d1e9fcc03ecca74bb3c4"
     sha256 cellar: :any,                 catalina:      "8ff2e5e48a7ca86fd2beb3e0663548a1e9363e40488daf263592b4feb058f283"
     sha256 cellar: :any,                 mojave:        "e2c9e11bfac3fce3e69d4dea813066655975a6b4b4e1d3d1be1f500c23fe6910"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ab0345d225078db974a5c440671f1decb746ac8be636b2e8f102aca88a05b3f7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ab0345d225078db974a5c440671f1decb746ac8be636b2e8f102aca88a05b3f7" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
