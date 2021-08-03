@@ -11,6 +11,7 @@ class Openexr < Formula
     sha256 cellar: :any,                 big_sur:       "92108b32e13d57e30e48d5bfa4adbe360b303cc19e78b7b7cb8df7865d66c449"
     sha256 cellar: :any,                 catalina:      "40d2ebcc43006954145c03e9636b471484aaf613a48adb8558f3d3f005a22c80"
     sha256 cellar: :any,                 mojave:        "3261656535c6449dd4b1d4a4a52d91c571127bc58ab40374510d2891cdea2cbe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cec4acd795568e0a14583ff82f4a4633a40c7e3671ac339074fbc39442517f2c"
   end
 
   depends_on "cmake" => :build
