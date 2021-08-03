@@ -5,6 +5,10 @@ class Riemann < Formula
   sha256 "fa2e22b712ed53144bf3319a418a3cd502ed00fa8e6bcb50443039a2664ee643"
   license "EPL-1.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7fc93a614414c28e1f2d726b8a1c786806596095bb42f72cc1d64606033c21c"
+  end
+
   depends_on "openjdk"
 
   def install
