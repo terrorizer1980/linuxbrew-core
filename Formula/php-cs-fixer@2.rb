@@ -5,6 +5,10 @@ class PhpCsFixerAT2 < Formula
   sha256 "5a7328acec7a62a7c61dd5da066267381ff42afcffd19b2543d50b06ab297a2a"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b389a0049dda2320d6b837959eb4758dc86404774dcee4f2b43febce740e067b"
+  end
+
   keg_only :versioned_formula
   uses_from_macos "php", since: :el_capitan
 
