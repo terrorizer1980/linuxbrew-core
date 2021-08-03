@@ -16,6 +16,7 @@ class Uftp < Formula
     sha256 cellar: :any,                 big_sur:       "6ea6e3b9e53d1040ebc6f1a25b58247ebe5972e1479002100e6b5d167b2c5e54"
     sha256 cellar: :any,                 catalina:      "ef74aa1112e9f5b325bb1403de71fa604532806dadfd97368e778be187ddee13"
     sha256 cellar: :any,                 mojave:        "17253bb38570db26a53eab4cc75d809b32bff3db8ecdf48d9dfb03b453866ac0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2d550e280c49503b83b5bc2f30092dedc67e8b0ff0937dcbc487e475c0f1ee02"
   end
 
   depends_on "openssl@1.1"
