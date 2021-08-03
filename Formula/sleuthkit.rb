@@ -16,6 +16,7 @@ class Sleuthkit < Formula
     sha256 cellar: :any,                 big_sur:       "30758d782ad89676473e292682b9ec78dfef75e3ad974cde8154cc99e3f2386b"
     sha256 cellar: :any,                 catalina:      "3e0ffa38afd90e47d953c8462df5a20408151ca0da75f2c03da333302d3a797d"
     sha256 cellar: :any,                 mojave:        "6cc145c75c073678a80e07acdb0b7543917c39117b27ef6f7ed9f62fc0b533fd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "88aaa092256e707e3ee81d93a998f49b00cfb50b0a37cd54abb74a24d724b735"
   end
 
   depends_on "ant" => :build
