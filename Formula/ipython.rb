@@ -13,6 +13,7 @@ class Ipython < Formula
     sha256 cellar: :any,                 big_sur:       "ff41c2ded028647f5e1c62dba1540cedcc72336dd8040062afabc02bd5514d4b"
     sha256 cellar: :any,                 catalina:      "ab8fea8d9a3ca1751b91476b6318cb892540fc2495392569fd0265128ae45695"
     sha256 cellar: :any,                 mojave:        "1de20fd81cf3e023290b4f0d29a50e06ecf13634823fa800107821e679756d2f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8bb64903cdb730b1f9c0e85a28d201d788469e364b3ffa370a97b1a4c50c9d75"
   end
 
   depends_on "python@3.9"
