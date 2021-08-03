@@ -16,11 +16,8 @@ class Arangodb < Formula
   depends_on "cmake" => :build
   depends_on "go@1.13" => :build
   depends_on "python@3.9" => :build
+  depends_on macos: :mojave
   depends_on "openssl@1.1"
-
-  on_macos do
-    depends_on macos: :mojave
-  end
 
   # the ArangoStarter is in a separate github repository;
   # it is used to easily start single server and clusters
