@@ -19,7 +19,6 @@ class Pari < Formula
 
   depends_on "gmp"
   depends_on "readline"
-  depends_on "texlive" => :build unless OS.mac?
 
   def install
     readline = Formula["readline"].opt_prefix
