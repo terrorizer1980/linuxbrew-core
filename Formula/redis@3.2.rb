@@ -10,6 +10,7 @@ class RedisAT32 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "ebf02c105c998bee699b3cdd3a22f123d45b731303f579cc5c4eebb8d31cd4f1"
     sha256 cellar: :any_skip_relocation, catalina:     "ab55e1c85d04427647265baa073ca34e994ce5e6199efc2d4ba9e9c9cb6699f5"
     sha256 cellar: :any_skip_relocation, mojave:       "6437dda1d4ea2fa65609fa585a44cdf1a26e218ef35b3c47c80b6e2850b36d3b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e0d6f2a772d5de36416e5e200c409e330bb575f7192d15de33be09a7ca977614"
   end
 
   keg_only :versioned_formula
