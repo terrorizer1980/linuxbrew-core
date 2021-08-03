@@ -12,7 +12,7 @@ class TomcatAT8 < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f4cc617c4fff3908f63cb84a93dff830b164cd6d1c52dd258edb3be144b556bd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f4cc617c4fff3908f63cb84a93dff830b164cd6d1c52dd258edb3be144b556bd" # linuxbrew-core
   end
 
   keg_only :versioned_formula

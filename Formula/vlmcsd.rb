@@ -18,7 +18,7 @@ class Vlmcsd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4e7ff7a7b2b24f12671783aba5e87a444576418ec0220d037dbe25d5f1e2ff71"
     sha256 cellar: :any_skip_relocation, catalina:      "1b6375150a6cbd27eb386f0fae0bcbbccdfc9b3079dc6cfb5a9ce633029d5484"
     sha256 cellar: :any_skip_relocation, mojave:        "d2b0cccd86ab053118aebc1885b362130b7c7e0f73f3b60c768e4907532254cb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd8a888df62c032836e16a43e4e756f97c7b6cbf77ff5b5ee41edf97652acf62"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd8a888df62c032836e16a43e4e756f97c7b6cbf77ff5b5ee41edf97652acf62" # linuxbrew-core
   end
 
   uses_from_macos "llvm" => :build

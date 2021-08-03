@@ -11,7 +11,7 @@ class SqliteUtils < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2d2804d87b5ab39f05eea0c6b5f142e5b158d9ff57ddc39ca9dd9e1de5bb8fd6"
     sha256 cellar: :any_skip_relocation, catalina:      "c8fb15db2c2c5e29a9e9c654b51bbe186b34f48bf869563482dcab0360426ab5"
     sha256 cellar: :any_skip_relocation, mojave:        "e992ab048e3f13a45a411a8934e4f4307888cd78bbbf70fa857bce16006b3361"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "adb4e84023ccd78b6ff9da4a13571319ffb60b3528c5a9e0f1bccc73515a77ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "adb4e84023ccd78b6ff9da4a13571319ffb60b3528c5a9e0f1bccc73515a77ee" # linuxbrew-core
   end
 
   depends_on "python-tabulate"

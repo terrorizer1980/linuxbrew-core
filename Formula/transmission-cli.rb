@@ -17,7 +17,7 @@ class TransmissionCli < Formula
     sha256 big_sur:       "d536f415cf27818d83062e693c8ebde50057fbe36d120b81cda3bbb32e5396b7"
     sha256 catalina:      "7640fdff8a0840356ea2d43d3ab0efe1d5da5c2840d9fe555deed3c9957705c1"
     sha256 mojave:        "db2aa6896d89884e15d5dda0b35c152a96cd028703c69f7f8bd9288d0d61a838"
-    sha256 x86_64_linux:  "178d05964e9efd8d4541cf5589f4772ccdc59b8de83158f96b8ad7ffeff6b8d2"
+    sha256 x86_64_linux:  "178d05964e9efd8d4541cf5589f4772ccdc59b8de83158f96b8ad7ffeff6b8d2" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

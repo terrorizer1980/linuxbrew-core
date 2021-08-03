@@ -17,7 +17,7 @@ class Vsftpd < Formula
     sha256 big_sur:       "337d1f3d213f9ce424bc2b714f4f4279a0cfb6ff9c7f17837f4ba14a346f8896"
     sha256 catalina:      "d34baa041fa451af6d2e1f065259a1f2333d666506b8ee75edbaf4ce585a4152"
     sha256 mojave:        "477a576822bccca0faac9c8fa2483bfb2b3be704c89680cd6fc563198725f79a"
-    sha256 x86_64_linux:  "183b1d0636592778feac38382af55560cb4013f7d1743f798479329d5f247b29"
+    sha256 x86_64_linux:  "183b1d0636592778feac38382af55560cb4013f7d1743f798479329d5f247b29" # linuxbrew-core
   end
 
   uses_from_macos "perl" => :build

@@ -8,7 +8,7 @@ class Twoping < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5da1355d4aa2d6c8729362449bd49b8a726e1daa7d908e68c410818f7a439dfe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5da1355d4aa2d6c8729362449bd49b8a726e1daa7d908e68c410818f7a439dfe" # linuxbrew-core
   end
 
   depends_on "python@3.9"

@@ -23,7 +23,7 @@ class Uwsgi < Formula
     sha256 big_sur:       "dd093fa094a07dba5ac53f040eaed23a9b61adc80b6cc50de246d160fcff0a34"
     sha256 catalina:      "8194d4a365e0ce4d3ee5fd9764d008c6d0aabf6c804414d5a6b0733295f9d101"
     sha256 mojave:        "2def48a9cc74853449722f5dc51a0224956d21906d8ff35e73a45fab3fc3faef"
-    sha256 x86_64_linux:  "d8ebd68650bd17cc9b1f34c31cb37a67c23da906a50ae9d2e8bc3b879297ee8b"
+    sha256 x86_64_linux:  "d8ebd68650bd17cc9b1f34c31cb37a67c23da906a50ae9d2e8bc3b879297ee8b" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

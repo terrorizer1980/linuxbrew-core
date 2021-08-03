@@ -17,7 +17,7 @@ class Udpxy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b1d8d0bd1886d80ff73bc3b79988b09da3b2b16f00279f2eebad8c57dae24cdf"
     sha256 cellar: :any_skip_relocation, catalina:      "96010937851dc29d03c5cc24f8f5f06ec348ce598f2f8156ce53e7e6b5e69fa7"
     sha256 cellar: :any_skip_relocation, mojave:        "4688df2c4fd1ce7749d6d032f77cdae700129fa42284d9fc5ce1792ae9121151"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd123b142b4fa0ceb6a8d078a307499332c0911634be090bce60dfd8cf42d7dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd123b142b4fa0ceb6a8d078a307499332c0911634be090bce60dfd8cf42d7dd" # linuxbrew-core
   end
 
   def install

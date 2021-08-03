@@ -8,7 +8,7 @@ class Tomcat < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ed00b3528330cdb4cd48c61d9172420dd08807f6ba99d21b1780c054d7856b11"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ed00b3528330cdb4cd48c61d9172420dd08807f6ba99d21b1780c054d7856b11" # linuxbrew-core
   end
 
   depends_on "openjdk"
