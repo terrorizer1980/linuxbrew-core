@@ -17,6 +17,7 @@ class Telegraf < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4ece6b8ddbb5508f4e05445385d057e01e15ea7de235cdc535ef5d4d8a322d7e"
     sha256 cellar: :any_skip_relocation, catalina:      "b625daf3fac433733d784cc12627a9a85967fb28f25731aacfe0b99856563801"
     sha256 cellar: :any_skip_relocation, mojave:        "ff9aa4a395bfade5554d3a98931407f8c55693ebfdde8443d74f286bd0b2b5bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "564b60c8bcedcca22635a848d37958a1563fe23c3d536af8d7114b3128a812aa"
   end
 
   depends_on "go" => :build
