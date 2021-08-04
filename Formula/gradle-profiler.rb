@@ -6,6 +6,11 @@ class GradleProfiler < Formula
   license "Apache-2.0"
   revision 1
 
+  livecheck do
+    url "https://repo.gradle.org/ui/api/v1/download?repoKey=ext-releases-local&path=org%252Fgradle%252Fprofiler%252Fgradle-profiler%252Fmaven-metadata.xml"
+    regex(%r{<version>\s*v?(\d+(?:\.\d+)+)\s*</version>}i)
+  end
+
   # gradle currently does not support Java 17 (ARM)
   # gradle@6 is still default gradle-version, but does not support Java 16
   # Switch to `openjdk` once above situations are no longer true

@@ -6,6 +6,11 @@ class Onedpl < Formula
   # Apache License Version 2.0 with LLVM exceptions
   license "Apache-2.0" => { with: "LLVM-exception" }
 
+  livecheck do
+    url :stable
+    regex(/^oneDPL[._-](\d+(?:\.\d+)+)(?:[._-]release)?$/i)
+  end
+
   depends_on "cmake" => :build
 
   depends_on "tbb"
