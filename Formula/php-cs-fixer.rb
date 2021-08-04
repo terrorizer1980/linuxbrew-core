@@ -6,7 +6,7 @@ class PhpCsFixer < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "55ad84360d69308bb45ef97379294f8bc8baff1dd0eec59adf97800448503c28"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "55ad84360d69308bb45ef97379294f8bc8baff1dd0eec59adf97800448503c28" # linuxbrew-core
   end
 
   uses_from_macos "php", since: :mojave

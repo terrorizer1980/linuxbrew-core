@@ -15,7 +15,7 @@ class Byacc < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8b73aab07380cbf30d6efe2f71577477dcdc24847e1d83b3d553cabb78781d35"
     sha256 cellar: :any_skip_relocation, catalina:      "531d8afaefc34573ad9232398af0743a3e5460a5464078a58722152415067c04"
     sha256 cellar: :any_skip_relocation, mojave:        "827930c2fa9df9256ae838ea5b3d1d8ef5ce6263bf52b10b7e8ed7a591418660"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c285779596bcf30ef79f0f64ca95fa7f4a57d6e9cb5d91e1c5a938257dab6e5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c285779596bcf30ef79f0f64ca95fa7f4a57d6e9cb5d91e1c5a938257dab6e5" # linuxbrew-core
   end
 
   def install
