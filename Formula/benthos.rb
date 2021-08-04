@@ -10,7 +10,7 @@ class Benthos < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0615cf7a6a61d75331dedcbc59321408d9d7a861f744d5b9bf70b76f38511571"
     sha256 cellar: :any_skip_relocation, catalina:      "7eaa697c2edf1921defcbd6a629bfc5bbf21626134225361c7a6f1861a9817c6"
     sha256 cellar: :any_skip_relocation, mojave:        "deaac1c160b4da0a430d60d5bed4fe61396e394091800eda30cdce7b551c3818"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e34440b665279c03c8ddaff1b85d694f43bfa4e86d928e3db245d704f6dd3638"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e34440b665279c03c8ddaff1b85d694f43bfa4e86d928e3db245d704f6dd3638" # linuxbrew-core
   end
 
   depends_on "go" => :build
