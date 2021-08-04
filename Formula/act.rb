@@ -11,6 +11,7 @@ class Act < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "dda88098e1615b3d69ea03a8edefde476ea2128427ee12915ef5913b3adde8c4"
     sha256 cellar: :any_skip_relocation, catalina:      "91b2522b430fc0a8045ef844633903b651432a4f355ce2e1b142ab35e55254bf"
     sha256 cellar: :any_skip_relocation, mojave:        "20e5acc8fe34351772ffee1367febe509045cf7abea85e24112040043b9399c7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "31c801af23235a89a1284cd8ba7120b5b0381d12c7226c3ccae451f7e5ea541d"
   end
 
   depends_on "go" => :build
