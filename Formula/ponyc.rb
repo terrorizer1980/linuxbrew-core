@@ -10,6 +10,7 @@ class Ponyc < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "86d30578e51e294be0d6b20e4b145ec138a8234555771e675d7d5ae123d3a431"
     sha256 cellar: :any_skip_relocation, catalina:     "4c167edc07f753e2a118575d4cc3146949fe907993e26fd30ddf0a3ba3d1a8f7"
     sha256 cellar: :any_skip_relocation, mojave:       "b4a829497a0e202e44640ec71f96ddea2358f518359c95cfabce33a6a0195fa2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a91ad9abb90626b48eec66e79479090c7d42620683e31f6dfc8f2e06fbe53a8c"
   end
 
   depends_on "cmake" => :build
