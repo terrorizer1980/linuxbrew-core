@@ -10,6 +10,7 @@ class Rbspy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "569bb211d59c916dee39ef09682bcac9f018bb6798f10df1b0b4c7adca0e2eb0"
     sha256 cellar: :any_skip_relocation, catalina:      "29d02e56c40eabe356016d1fc1ac5540d5ec9424050f304ca36af1a407ee276a"
     sha256 cellar: :any_skip_relocation, mojave:        "5a58cc5bbd4b797bd7fc1708ad7dc6ebdcd046bffce7b14c16f3d0f21fee71d8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "accfbb3564439b80cd09a339fe3fca011c3dd9336480c8649e8cdd416860d1e9"
   end
 
   depends_on "rust" => :build
