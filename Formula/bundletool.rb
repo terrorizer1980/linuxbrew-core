@@ -5,6 +5,10 @@ class Bundletool < Formula
   sha256 "72d930df2b692347abcfa787d2dcfe4d08c19812ab7aedbc8db5546aa4fcb7a2"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "012e8d21309a97933f6265e6fd065c1a17b2a4afaa8e61cc615b0bbfca666460"
+  end
+
   depends_on "openjdk"
 
   resource "bundle" do
