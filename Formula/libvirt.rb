@@ -11,11 +11,11 @@ class Libvirt < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "2d35581db44f347458d588a7f66e6f04e93023a57db76205de42b2688be7b16c"
-    sha256 big_sur:       "d0221fdc668c681e90b05927aa673f92aaf33f9ae652d3a80b5d44a3d8f530eb"
-    sha256 catalina:      "cabe6aaa0c3f97a8dc99a6aeb9b56f203eea426da36057da468b4286379ceeeb"
-    sha256 mojave:        "9f47bbc044be74817652bd36e761d3418450d08bc9d01906995251bb4d1e794e"
-    sha256 x86_64_linux:  "c1eea605867e6bb49cfd3120ad4d7338afc91d443c00d22900c7142499ab3a37" # linuxbrew-core
+    rebuild 1
+    sha256 arm64_big_sur: "8f86ccc81d09112ce826c382bfefb74880c9dabfe186b9c83bf6d935eba1611d"
+    sha256 big_sur:       "5bd53310057ed0d72695cb176005bc8ad1bb320f4cb67c9b74cb1a2582631103"
+    sha256 catalina:      "dd979706fd043654f4393ee331607c325df0ca0012b3eecc8579223cbbd53bfd"
+    sha256 mojave:        "ba7df55e6bcb315e6ab46111a1e4a0824ab72c44888cd01f2d4821860f163dd3"
   end
 
   head do
@@ -64,34 +64,10 @@ class Libvirt < Formula
     end
   end
 
-  plist_options manual: "libvirtd"
-
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>EnvironmentVariables</key>
-          <dict>
-            <key>PATH</key>
-            <string>#{HOMEBREW_PREFIX}/bin</string>
-          </dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>ProgramArguments</key>
-          <array>
-            <string>#{sbin}/libvirtd</string>
-            <string>-f</string>
-            <string>#{etc}/libvirt/libvirtd.conf</string>
-          </array>
-          <key>KeepAlive</key>
-          <true/>
-          <key>RunAtLoad</key>
-          <true/>
-        </dict>
-      </plist>
-    EOS
+  service do
+    run [opt_sbin/"libvirtd", "-f", etc/"libvirt/libvirtd.conf"]
+    keep_alive true
+    environment_variables PATH: HOMEBREW_PREFIX/"bin"
   end
 
   test do

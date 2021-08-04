@@ -4,16 +4,15 @@ class Checkov < Formula
   desc "Prevent cloud misconfigurations during build-time for IaC tools"
   homepage "https://www.checkov.io/"
   # checkov should only be updated every 15 releases on multiples of 15
-  url "https://files.pythonhosted.org/packages/53/ac/1a1d6bbda59126dd12ab6464b5a2a3f36356ed1cb701afccb772fc80ca85/checkov-2.0.315.tar.gz"
-  sha256 "191608d032c0958c1109c877b83dd8085239fdf7f76ef262dd25657dc5398017"
+  url "https://files.pythonhosted.org/packages/ea/d2/ab888c6e689cc701acc033c5dab129e81474c06765cb4dc4e97a3a1d1bc8/checkov-2.0.330.tar.gz"
+  sha256 "d59ed481a0f6d976baa5cbd0d671463ba89466a3a42174b4ed1e5c2087ee9e3a"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "cd12ca566d00e018009b9e7c6b5a067b01709fb3178186386e130a39cb8452e9"
-    sha256 cellar: :any_skip_relocation, big_sur:       "19c7eba97ac94b31b1f7f1fc9e581c51f1b49bba6824ac4c37cd29f1b8708f86"
-    sha256 cellar: :any_skip_relocation, catalina:      "bf0b0549a41c64cc3fceb0863f9c085800c7eeda9e3ec2f9034ac7831e26a590"
-    sha256 cellar: :any_skip_relocation, mojave:        "1bd92701e26c28253a15773a1408e6c8a0d9efc89ee0c2fbbf79db6832d13dfe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b66d778da273e113c49e17dd5ab72a5c3604ab4e53638678559c8c7cb68af5e4" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b0f24616405127b7ca5f6b139497e3f7ecd6d76fe1d7bf564121541bd52bb72f"
+    sha256 cellar: :any_skip_relocation, big_sur:       "01e63d859016402d13c3165125f58215a78994c0e8cae287ae2e628413ec2bc1"
+    sha256 cellar: :any_skip_relocation, catalina:      "91e39150c42c8359705c40b9e3c3bca9e57f1d493a11c22d71ba52cb0d55aeb1"
+    sha256 cellar: :any_skip_relocation, mojave:        "066adab9008eab23394e6f019ffa6b1bf94f1ec006ef71a301f35ea686ef1ac4"
   end
 
   depends_on "python-tabulate"
