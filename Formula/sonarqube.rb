@@ -14,7 +14,7 @@ class Sonarqube < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "25ed99650ddba6303a40c641d9a63d235ed69d159688c158195924743fdcd3c0"
     sha256 cellar: :any_skip_relocation, catalina:     "25ed99650ddba6303a40c641d9a63d235ed69d159688c158195924743fdcd3c0"
     sha256 cellar: :any_skip_relocation, mojave:       "c0b6fb89e3a481c89fcc5f67bdfa59898530831de4937833424a79a4c8ababe5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "22f5ad737ec068adbb0653a92209adaf193bcfec395fa496c879fffbc08de56d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "22f5ad737ec068adbb0653a92209adaf193bcfec395fa496c879fffbc08de56d" # linuxbrew-core
   end
 
   # sonarqube ships pre-built x86_64 binaries
