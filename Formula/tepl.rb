@@ -98,7 +98,6 @@ class Tepl < Formula
       -L#{gtkx3.opt_lib}
       -L#{lib}
       -L#{pango.opt_lib}
-      -l#{amtklib}
       -latk-1.0
       -lamtk-5
       -lcairo
