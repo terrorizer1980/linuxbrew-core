@@ -19,7 +19,6 @@ class Udunits < Formula
   uses_from_macos "texinfo" => :build
   uses_from_macos "expat"
   uses_from_macos "flex"
-  uses_from_macos "texinfo"
 
   on_linux do
     patch :p1 do
