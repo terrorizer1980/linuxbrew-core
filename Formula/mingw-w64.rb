@@ -4,7 +4,7 @@ class MingwW64 < Formula
   url "https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v9.0.0.tar.bz2"
   sha256 "1929b94b402f5ff4d7d37a9fe88daa9cc55515a6134805c104d1794ae22a4181"
   license "ZPL-2.1"
-  revision 1
+  revision 2
 
   livecheck do
     url :stable
@@ -12,11 +12,10 @@ class MingwW64 < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "9ee8560b85e00feec5e5a994ed7f9bb92a871d973c186313eb1d6f687bb2842b"
-    sha256 big_sur:       "5510a29f4338144f00112d8ec11ef8f0156a2191abac0aabde51e5732d7b044b"
-    sha256 catalina:      "d4e7cc59c42c6e5bbac5322818e065f100d35825fb057cf8decfc5a8b89075ff"
-    sha256 mojave:        "757261757b700650c6e1ac65fab2e6d3a748f720265c46c7c2e4c1db92192444"
-    sha256 x86_64_linux:  "2e8b1606f84577c1dce0c018c68037d7e38e5781885bc50c0cca2b8d6aabad66" # linuxbrew-core
+    sha256 arm64_big_sur: "6a226bcd216aa4689fb1426c3459caeaa7ee6a2403276c124956f222e9bdc6c9"
+    sha256 big_sur:       "0a48943bac581260148704b796a27aafc21d7650a0dd7b60c9d64dbec148be93"
+    sha256 catalina:      "780144a43e99c22058a07d76668e83107a2bb5e89b651d694c1756174ca65ca3"
+    sha256 mojave:        "55243318eb8179bb7f962c83cb0a35a03fa728e9e444848f4948e82f4e0039c8"
   end
 
   # Apple's makeinfo is old and has bugs
@@ -34,9 +33,9 @@ class MingwW64 < Formula
   end
 
   resource "gcc" do
-    url "https://ftp.gnu.org/gnu/gcc/gcc-11.1.0/gcc-11.1.0.tar.xz"
-    mirror "https://ftpmirror.gnu.org/gcc/gcc-11.1.0/gcc-11.1.0.tar.xz"
-    sha256 "4c4a6fb8a8396059241c2e674b85b351c26a5d678274007f076957afa1cc9ddf"
+    url "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz"
+    mirror "https://ftpmirror.gnu.org/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz"
+    sha256 "d08edc536b54c372a1010ff6619dd274c0f1603aa49212ba20f7aa2cda36fa8b"
 
     # Remove when upstream has Apple Silicon support
     if Hardware::CPU.arm?
