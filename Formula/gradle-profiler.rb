@@ -11,6 +11,10 @@ class GradleProfiler < Formula
     regex(%r{<version>\s*v?(\d+(?:\.\d+)+)\s*</version>}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fde9b86d78fee57a3edbeb3ee226c7b941e6c630013b204873b0b8287f94d4e7"
+  end
+
   # gradle currently does not support Java 17 (ARM)
   # gradle@6 is still default gradle-version, but does not support Java 16
   # Switch to `openjdk` once above situations are no longer true
