@@ -5,6 +5,10 @@ class Pacapt < Formula
   sha256 "3f62e211fcabfe951a1369bef684996fda65faceafcd2ceeb4b738cf43622c4d"
   license "Fair"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "376eb885dea7254cd900e0f2ca415283b0f42c762c9bc4c332bbfb6f02084cbb"
+  end
+
   def install
     bin.mkpath
     system "make", "install", "BINDIR=#{bin}", "VERSION=#{version}"
