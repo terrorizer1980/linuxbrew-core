@@ -13,7 +13,7 @@ class Certbot < Formula
     sha256 cellar: :any,                 big_sur:       "12c58b953afe52eaad7fc677891cd470429482e3843a2bc6db9911a147eaeea7"
     sha256 cellar: :any,                 catalina:      "aa0351343176306ca5c4ef553b5f7d47703d0a6b58ae282addf1cd3fe98febf8"
     sha256 cellar: :any,                 mojave:        "f37e12bbc9eaf9323466f20abd6de667f451fe6f51c2c8305f921d29a234e9fa"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c27c017d71773e550d30ec0855bc8f1671f2d1e529d1c911ade92487c87f27e6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c27c017d71773e550d30ec0855bc8f1671f2d1e529d1c911ade92487c87f27e6" # linuxbrew-core
   end
 
   depends_on "rust" => :build # for cryptography

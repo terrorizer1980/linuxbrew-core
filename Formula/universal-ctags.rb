@@ -17,7 +17,7 @@ class UniversalCtags < Formula
     sha256 cellar: :any,                 big_sur:       "73de142ba12e183df82bcc1021c2f72df55ffa14cfb6eeca8437773a84cc8794"
     sha256 cellar: :any,                 catalina:      "9e963df4bfc0f1150e1ffa8b56c9615888cacbfe88190aa5cf6fbec88f5f89cf"
     sha256 cellar: :any,                 mojave:        "3357ab44cedf0448b2deabff900e1e133cb998e3d48f85ef72a213fb57fec3ae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "25f45d1fc938be7f20fe11e53e2d418666bc714f5433ae6b01cfcf305ba7e25d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "25f45d1fc938be7f20fe11e53e2d418666bc714f5433ae6b01cfcf305ba7e25d" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

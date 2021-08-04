@@ -6,7 +6,7 @@ class Pacapt < Formula
   license "Fair"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "376eb885dea7254cd900e0f2ca415283b0f42c762c9bc4c332bbfb6f02084cbb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "376eb885dea7254cd900e0f2ca415283b0f42c762c9bc4c332bbfb6f02084cbb" # linuxbrew-core
   end
 
   def install

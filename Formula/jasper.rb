@@ -15,7 +15,7 @@ class Jasper < Formula
     sha256 cellar: :any,                 big_sur:       "7462315306489ccf06bddad20b9ba97b5872574f8155dfa7f5d316d905da76b8"
     sha256 cellar: :any,                 catalina:      "7c7ae386ed0221d5b04f50b0258afddda977ec8e968f3dcb1e099a1826bb30d7"
     sha256 cellar: :any,                 mojave:        "4c6c520094341ba62068984ed5ee928c992c942d3040956818a92c6a43f26724"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9266b2b381ec8b6a2e8b100e4b994772b4f458ab73b8e8d53ae77e4645d1f4ea"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9266b2b381ec8b6a2e8b100e4b994772b4f458ab73b8e8d53ae77e4645d1f4ea" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

@@ -18,7 +18,7 @@ class Juju < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d2a31dc2d3cf85b30beb23d40c0886f11e3a5bc8bf7e0c217c44a7d2e216b2b6"
     sha256 cellar: :any_skip_relocation, catalina:      "42a2f8416dfbfb05626fb9f14b73d23cdc3ec020f92411a0b6a5a6119644ec87"
     sha256 cellar: :any_skip_relocation, mojave:        "d885027147c758dcd56c948f5aa7191009f2842d6bbbdee3d2217d8444ec321c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5a6d5e9bb71e1686bc82d232df3836846a539ea27e6588fdbc8b1da53eb23d8a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5a6d5e9bb71e1686bc82d232df3836846a539ea27e6588fdbc8b1da53eb23d8a" # linuxbrew-core
   end
 
   depends_on "go" => :build
