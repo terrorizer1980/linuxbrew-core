@@ -11,6 +11,7 @@ class X8664ElfGcc < Formula
     sha256 big_sur:       "549b28626170548e9def8448a09f4bb1854900652ef802672a30f691a9b44a3e"
     sha256 catalina:      "6435d295ad77d012c577005b1758b3be3ae11b51f0f5d257c0f59f79e227575e"
     sha256 mojave:        "74ed5acd47ee9fa82ba79c276eb996adf6f49dbb17e917dc02bec3e348cf7cd8"
+    sha256 x86_64_linux:  "a327e41ea7ba94ff7b738abf6b060b3ce72bad23de327e91785443d8e512b377"
   end
 
   depends_on "gmp"
