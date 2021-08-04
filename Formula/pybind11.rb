@@ -5,6 +5,10 @@ class Pybind11 < Formula
   sha256 "616d1c42e4cf14fa27b2a4ff759d7d7b33006fdc5ad8fd603bb2c22622f27020"
   license "BSD-3-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d9c44c2b8b6a47806ba3a6cd8d338434cecb7c634faf88cc84e0c390e4fe85be"
+  end
+
   depends_on "cmake" => :build
   depends_on "python@3.9"
 
