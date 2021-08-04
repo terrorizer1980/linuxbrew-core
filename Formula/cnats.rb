@@ -10,6 +10,7 @@ class Cnats < Formula
     sha256 cellar: :any,                 big_sur:       "fccb529efbab63b3b7f93d4a561a924a3ac62748e6a1b2622b7f4b47d30935c6"
     sha256 cellar: :any,                 catalina:      "5b4f43ce3b3ec45d4886d5e66ed99df4c0878421628140eae4c140c0d4d65a2e"
     sha256 cellar: :any,                 mojave:        "0cde1cbe2fb54e18964a7ccfe48ada464044496a32fc75cfa4a1a01611a759a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f461fadddd8a519140a1cd4f21098c9e80da124a975cb096fbfd2cad97490b74"
   end
 
   depends_on "cmake" => :build
