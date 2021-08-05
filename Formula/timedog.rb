@@ -8,8 +8,6 @@ class Timedog < Formula
 
   depends_on :macos
 
-  depends_on :macos
-
   def install
     bin.install "timedog"
   end
