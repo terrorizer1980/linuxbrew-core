@@ -17,9 +17,7 @@ class Mdcat < Formula
   depends_on "rust" => :build
 
   on_linux do
-    depends_on "llvm" => :build
     depends_on "pkg-config" => :build
-    depends_on "openssl@1.1"
   end
 
   def install
