@@ -12,7 +12,7 @@ class JenkinsLts < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b7e32a6357740488c50a1721be3225ea8d5141ed317e0d4b8db17fe8c72746d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b7e32a6357740488c50a1721be3225ea8d5141ed317e0d4b8db17fe8c72746d2" # linuxbrew-core
   end
 
   depends_on "openjdk@11"

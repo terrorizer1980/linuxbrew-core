@@ -11,7 +11,7 @@ class TmuxMemCpuLoad < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "026c86f3e7a4d2bc843228e82589f1c3dbd722f2bdddd04f04984ef726343bf9"
     sha256 cellar: :any_skip_relocation, catalina:      "03918a0cdaa2a2f270632b5bf91a778a9c393efe0d70f422142246489a5a320b"
     sha256 cellar: :any_skip_relocation, mojave:        "27f3e497ef98401b7e5212e2f3ed4a255b37fd6f404b7f77c6e93a9f49201d04"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a15d09da7dc4d4a50735f9e37006a754279140aa366781d5915c0774e2a7e398"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a15d09da7dc4d4a50735f9e37006a754279140aa366781d5915c0774e2a7e398" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

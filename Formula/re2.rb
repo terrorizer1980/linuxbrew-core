@@ -23,7 +23,7 @@ class Re2 < Formula
     sha256 cellar: :any,                 big_sur:       "d02415b9f89466ecba729540c2a0a4aba73b6d2c93795ed9688958e5fd8d2483"
     sha256 cellar: :any,                 catalina:      "43fd15aaa2999e110b460b4503c7437b11fe7d92f681056f2d36b508026715b5"
     sha256 cellar: :any,                 mojave:        "97101f6e275debb9544d1b7dbfe7b5be28160bc1197ef3f7c0d340e834748dff"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4cea7841856a65b10e9a202bdfcec0136d40a1901777ec6a99d83edfba1c3e3e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4cea7841856a65b10e9a202bdfcec0136d40a1901777ec6a99d83edfba1c3e3e" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
