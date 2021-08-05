@@ -11,7 +11,7 @@ class BoostMpi < Formula
     sha256                               big_sur:       "76544350ace536b0af831854f3ce18a5c101155a132001685bcfa3ea411bbb94"
     sha256                               catalina:      "d3e1dfd88b6d683581efb1c0d732076eaa634d42d6e8d3de05ebec949f512740"
     sha256                               mojave:        "fc0b30274d5d1eaf5f66b7c733e8c516ddfc864beddc0932eb6ee3ddd2457e6c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a84f08dc165cded720c03e4ecb6c2665a6048f6f719e1f90b4c97d55cc0ba0a4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a84f08dc165cded720c03e4ecb6c2665a6048f6f719e1f90b4c97d55cc0ba0a4" # linuxbrew-core
   end
 
   # Test with cmake to avoid issues like:
