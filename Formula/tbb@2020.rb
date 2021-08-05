@@ -11,7 +11,7 @@ class TbbAT2020 < Formula
     sha256 cellar: :any,                 big_sur:       "596f3f92c1765f24b9dc9cd866e8068c505428c9dcb9941df7b5f0ea4e10cde9"
     sha256 cellar: :any,                 catalina:      "65adefc9242c9bcadfa22eeb8fbe67c8ac750d59107b7ea69da3715d1c2cbd78"
     sha256 cellar: :any,                 mojave:        "7016ea351af4cab641ab86faa3f0cd50a3cc9f262ea4afdcc70b058e3d467e99"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23f0b69996c2ce8d0ff5e101488376f70460894cee9a84ad170cc682384d7720"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23f0b69996c2ce8d0ff5e101488376f70460894cee9a84ad170cc682384d7720" # linuxbrew-core
   end
 
   keg_only :versioned_formula
