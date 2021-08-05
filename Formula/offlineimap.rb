@@ -13,9 +13,6 @@ class Offlineimap < Formula
     sha256 cellar: :any_skip_relocation, mojave:        "8bad1b2782ecd2d85bb388c616d57ad98f10886384711dbf36447269d076f0d9"
   end
 
-  depends_on "asciidoc" => :build
-  depends_on "docbook-xsl" => :build
-  depends_on "sphinx-doc" => :build
   depends_on :macos # Due to Python 2 (Will never support Python 3)
   # https://github.com/OfflineIMAP/offlineimap/issues/616#issuecomment-491003691
 
