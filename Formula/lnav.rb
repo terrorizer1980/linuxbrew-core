@@ -32,9 +32,6 @@ class Lnav < Formula
   depends_on "sqlite"
 
   def install
-    # Fix errors such as "use of undeclared identifier 'sqlite3_value_subtype'"
-    ENV.delete("SDKROOT")
-
     system "./autogen.sh" if build.head?
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
