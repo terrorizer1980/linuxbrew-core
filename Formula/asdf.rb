@@ -7,6 +7,10 @@ class Asdf < Formula
   revision 1
   head "https://github.com/asdf-vm/asdf.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "075bbc7db5d24b81f3f171b2dcd5afaf47842f46371ff48aae58740c3358a20e"
+  end
+
   depends_on "autoconf"
   depends_on "automake"
   depends_on "coreutils"
