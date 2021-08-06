@@ -32,7 +32,6 @@ class ClangFormat < Formula
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
-  depends_on "subversion" => :build
 
   uses_from_macos "libxml2"
   uses_from_macos "ncurses"
