@@ -69,7 +69,6 @@ class Neko < Formula
   end
 
   def install
-    args = std_cmake_args
     inreplace "libs/mysql/CMakeLists.txt",
               %r{https://downloads.mariadb.org/f/},
               "https://downloads.mariadb.com/Connectors/c/"
