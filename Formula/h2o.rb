@@ -12,7 +12,7 @@ class H2o < Formula
     sha256 big_sur:       "44af35463fd8c70fa3cd4014dd8ec92c93e33b96a3dde07aa5e8c532f4ba15d3"
     sha256 catalina:      "c3a59a760f51a19c8a6e946a49d7f689b81bef8f80d9157c9be5af628b6b2a1a"
     sha256 mojave:        "7aa27f5811da60d7c51e4124ed8f54f102496c5e29585007fb2fe9cfee646bbe"
-    sha256 x86_64_linux:  "f6e300e2fe0b381a6eb40ff7889412b463dc6cb9707dfbca69d461d6feb51dd6"
+    sha256 x86_64_linux:  "f6e300e2fe0b381a6eb40ff7889412b463dc6cb9707dfbca69d461d6feb51dd6" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
