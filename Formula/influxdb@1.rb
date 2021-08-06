@@ -25,7 +25,7 @@ class InfluxdbAT1 < Formula
   def install
     ldflags = "-s -w -X main.version=#{version}"
 
-    %w[influxd influx influx_tsm influx_stress influx_inspect].each do |f|
+    %w[influxd influx influx_stress influx_inspect].each do |f|
       system "go", "build", "-ldflags", ldflags, *std_go_args, "-o", bin/f, "./cmd/#{f}"
     end
 
