@@ -1,8 +1,8 @@
 class InfluxdbAT1 < Formula
   desc "Time series, events, and metrics database"
   homepage "https://influxdata.com/time-series-platform/influxdb/"
-  url "https://github.com/influxdata/influxdb/archive/v1.8.5.tar.gz"
-  sha256 "03e43e494777b117366831b45c14663c569479ac84ddef9fc83a50f6708b49f2"
+  url "https://github.com/influxdata/influxdb/archive/v1.8.9.tar.gz"
+  sha256 "3730cdee96e5fed8adc39ba91e76772c407c3d60b9c7eead9b9940c5aeb76c83"
   license "MIT"
 
   livecheck do
@@ -11,11 +11,10 @@ class InfluxdbAT1 < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "87209fda062ca2cc837396f553b3b528b4744510666a76d4ce1350e6485f56b4"
-    sha256 cellar: :any_skip_relocation, big_sur:       "50ffaa51c50e29f485f8558e6771fa0f221ce52bb2de74de7145dc85a02e1033"
-    sha256 cellar: :any_skip_relocation, catalina:      "be4f578608c750b90fafa55ecdebee4d9b322bab6dc849dffef5b2113dc7aa54"
-    sha256 cellar: :any_skip_relocation, mojave:        "9fd6a0fed10afc6225b2029fe6b4fa90af0f86cd04074d9c3a5dea4f49225232"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "db82d8205433e39160b463693ed6f6e291674735d5aa05f944035213b090b35a"
+    sha256 cellar: :any_skip_relocation, big_sur:       "2dc4895864df3fe8bc027ebae8fab14152600fd12566ded62d1647b2a47a2608"
+    sha256 cellar: :any_skip_relocation, catalina:      "133759ca7ea95bcb390a87b3d784e6d75f2f650ee4a7be77b488cd8e481cea24"
+    sha256 cellar: :any_skip_relocation, mojave:        "d040c44fa708edea7af6ec05f5a44ec222025569245fa2a71b1b0c697a07b498"
   end
 
   keg_only :versioned_formula
