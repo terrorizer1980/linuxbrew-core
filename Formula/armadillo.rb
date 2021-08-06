@@ -15,6 +15,7 @@ class Armadillo < Formula
     sha256 cellar: :any,                 big_sur:       "11c8cb78e7a99befa9d57153ba4e51844ccbb9dc471f2b4df55bb915466ada31"
     sha256 cellar: :any,                 catalina:      "672039181b0d20615d10c18860df2e2187c7c00a48f16d9420edbcf5c8cf086d"
     sha256 cellar: :any,                 mojave:        "64110329e7400b96adba49a08be247019d2b861e592338e1768fe48df26e536e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3d179b1e2367cc872dad0366463619d805b8b464d09151f77c0411c38cda0f79"
   end
 
   depends_on "cmake" => :build
