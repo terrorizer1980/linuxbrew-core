@@ -17,7 +17,6 @@ class Bpytop < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "274d8ebc17a5c54d05f37b3f1064ce6998b207a369bab0ceef2e312438e083e0" # linuxbrew-core
   end
 
-  depends_on "rust" => :build # for cryptography
   depends_on "python@3.9"
   on_macos do
     depends_on "osx-cpu-temp"
