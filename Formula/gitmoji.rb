@@ -12,7 +12,7 @@ class Gitmoji < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6edfdc5bbf36f1ec18f0d3e09367c698d9c43d240e197dc4293ecf60032659be"
     sha256 cellar: :any_skip_relocation, catalina:      "6edfdc5bbf36f1ec18f0d3e09367c698d9c43d240e197dc4293ecf60032659be"
     sha256 cellar: :any_skip_relocation, mojave:        "6edfdc5bbf36f1ec18f0d3e09367c698d9c43d240e197dc4293ecf60032659be"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a4110513ee99ec34a96425e6eb1c3f6b51f35e800496d66a78ccd28cc4ffcba"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a4110513ee99ec34a96425e6eb1c3f6b51f35e800496d66a78ccd28cc4ffcba" # linuxbrew-core
   end
 
   depends_on "node"

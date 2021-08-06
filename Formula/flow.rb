@@ -10,7 +10,7 @@ class Flow < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "77a5e150e85dd1c6da2bcf1d58221bc96345a4a1d65116f5682a433d22682f7b"
     sha256 cellar: :any_skip_relocation, catalina:     "815a9ad6189315a588727e25791c0df22cea1b23dab31b7d25d0198370028f19"
     sha256 cellar: :any_skip_relocation, mojave:       "e1205763f39399e491e266c604dbb76e3c532ce49b8108f93c540a70bf31899e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3b55c577f79016b4d5abda43fd361d7409924aeadcedb787486c78f144a38640"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3b55c577f79016b4d5abda43fd361d7409924aeadcedb787486c78f144a38640" # linuxbrew-core
   end
 
   depends_on "ocaml" => :build
