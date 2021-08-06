@@ -6,8 +6,9 @@ class Homeshick < Formula
   license "MIT"
   head "https://github.com/andsens/homeshick.git"
 
-  conflicts_with "asdf",
-    because: "asdf and homeshick both install files in lib/commands"
+  bottle do
+    rebuild 1
+  end
 
   def install
     inreplace "bin/homeshick", /^homeshick=.*/, "homeshick=#{opt_prefix}"
