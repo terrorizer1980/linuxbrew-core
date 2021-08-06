@@ -15,8 +15,7 @@ class Movgrab < Formula
     sha256 cellar: :any, x86_64_linux:  "a213c5acfd106131fb89a7488d4a9bf54150116f4cdc5f56aaf56665b65a3075" # linuxbrew-core
   end
 
-  depends_on "pkg-config" => :build
-  depends_on "openssl@1.1"
+  depends_on "libressl"
 
   uses_from_macos "zlib"
 
