@@ -3,16 +3,15 @@ class Twarc < Formula
 
   desc "Command-line tool and Python library for archiving Twitter JSON"
   homepage "https://github.com/DocNow/twarc"
-  url "https://files.pythonhosted.org/packages/a9/c7/fca8f8f57049055a9bbd9de57e2ab44c873949a350a2dbecd00b73d0fa34/twarc-2.3.12.tar.gz"
-  sha256 "ee49c12a63b780df2233fba2454be8401ce9e0ce8f87f417f49e72b0d5c7f1c1"
+  url "https://files.pythonhosted.org/packages/1a/46/70536d71f7d44803c3ab106b5a732387ae842ee1266e18b4c29dd20280c3/twarc-2.4.0.tar.gz"
+  sha256 "875f6a80316ed07b22305cc81808432b32d3189482906e96c253438a305a8249"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5d07c314fdb6fbb000aa75c7d9664b039f112aa46ed60f4b9cb8e777a2041c23"
-    sha256 cellar: :any_skip_relocation, big_sur:       "ac5985395dd180a2f085e64c0e8790dfd7261229ae6642728d385277912c1cd8"
-    sha256 cellar: :any_skip_relocation, catalina:      "13c196efa61a08c9c8865fed59e4f42653c4da84290cfffe78e41631ac71823d"
-    sha256 cellar: :any_skip_relocation, mojave:        "5f4acbe017184c757f1093780a19d670b59daa9fa04c5c98ff52b46fb9c9359f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9e28d69e655997cb13d5a2d6eb563ebc54411d365ed13c82a6210f0fa64605e" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a19fc5c61a8f6c91ef9f5da152f849a0f0318d3740f809a9e42dbf78739c68d9"
+    sha256 cellar: :any_skip_relocation, big_sur:       "19202f43dcba2706d6f45c4c7100b4e30cb99aed8957243f33b0235b81276f64"
+    sha256 cellar: :any_skip_relocation, catalina:      "86b2491bf842c89d6566fbad32637635add841c8e962e8c8b2ed69a3f0396307"
+    sha256 cellar: :any_skip_relocation, mojave:        "55e8f123a85f21d128d173e76da6287a9e585046b777fcb04f45077935b1331b"
   end
 
   depends_on "python@3.9"
@@ -49,8 +48,8 @@ class Twarc < Formula
   end
 
   resource "humanize" do
-    url "https://files.pythonhosted.org/packages/d4/1e/d1057df6928e817e2b77ec2ac5581a6c3f7c5c332cf112a645db4d4c6f71/humanize-3.10.0.tar.gz"
-    sha256 "b2413730ce6684f85e0439a5b80b8f402e09f03e16ab8023d1da758c6ff41148"
+    url "https://files.pythonhosted.org/packages/a6/d0/e06993724937f2aab3e7085d137d453968aaac0f74661ef9c90528a79d61/humanize-3.11.0.tar.gz"
+    sha256 "4160cdc63fcd0daac27d2e1e218a31bb396fc3fe5712d153675d89432a03778f"
   end
 
   resource "idna" do
