@@ -36,13 +36,7 @@ class Reposurgeon < Formula
     system "git", "init"
     system "git", "commit", "--allow-empty", "--message", "brewing"
 
-    on_macos do
-      assert_match "brewing",
-        shell_output("script -q /dev/null #{bin}/reposurgeon read list")
-    end
-    on_linux do
-      assert_match "brewing",
-        shell_output("script -q /dev/null -c \"#{bin}/reposurgeon read list\"")
-    end
+    assert_match "brewing",
+      shell_output("script -q /dev/null #{bin}/reposurgeon read list")
   end
 end
