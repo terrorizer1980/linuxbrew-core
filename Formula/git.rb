@@ -162,13 +162,6 @@ class Git < Formula
     # only contains the perllocal.pod installation file.
     rm_rf prefix/"Library/Perl"
 
-    pod = Dir[lib/"*/*/perllocal.pod"][0]
-    unless pod.nil?
-      # Remove perllocal.pod, which conflicts with the perl formula.
-      # I don't know why this issue doesn't affect Mac.
-      rm_r Pathname.new(pod).dirname.dirname
-    end
-
     # Set the macOS keychain credential helper by default
     # (as Apple's CLT's git also does this).
     on_macos do
@@ -189,10 +182,6 @@ class Git < Formula
   test do
     system bin/"git", "init"
     %w[haunted house].each { |f| touch testpath/f }
-
-    # Test environment has no git configuration, which prevents commiting
-    system bin/"git", "config", "user.email", "you@example.com"
-    system bin/"git", "config", "user.name", "Your Name"
 
     system bin/"git", "add", "haunted", "house"
     system bin/"git", "config", "user.name", "'A U Thor'"
