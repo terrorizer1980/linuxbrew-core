@@ -16,7 +16,6 @@ class Libpqxx < Formula
   depends_on "python@3.9" => :build
   depends_on "xmlto" => :build
   depends_on "libpq"
-  depends_on "postgresql"
 
   on_linux do
     depends_on "gcc" # for C++17
