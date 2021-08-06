@@ -8,6 +8,7 @@ class Homeshick < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d29552fb8156450804811f4fb98dc61b13f921cf6fe4227e4d5a8bfd7467da3e"
   end
 
   def install
