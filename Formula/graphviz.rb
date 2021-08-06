@@ -28,7 +28,6 @@ class Graphviz < Formula
   depends_on "pango"
 
   uses_from_macos "flex" => :build
-  uses_from_macos "groff" => :build
 
   on_linux do
     depends_on "byacc" => :build
@@ -69,6 +68,6 @@ class Graphviz < Formula
       }
     EOS
 
-    system "#{bin}/dot", "-Tpng", "-o", "sample.png", "sample.dot"
+    system "#{bin}/dot", "-Tpdf", "-o", "sample.pdf", "sample.dot"
   end
 end
