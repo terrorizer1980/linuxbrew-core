@@ -20,6 +20,7 @@ class Vault < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9e9c2aa82c3b01b249e13be7823a6dc0fc9cb863542239e2e1be0917ef872b5e"
     sha256 cellar: :any_skip_relocation, catalina:      "027b8dcb2c36e24c52b0b55e569b2ad8e3a422d8d108936b353dfd4a85196c70"
     sha256 cellar: :any_skip_relocation, mojave:        "bb02f3e56b99260044606aa2ef4e649dace21400591c87c28a65560a0d92a11d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8879c111e70b822ad7122039b0ce24fc3ce3103d5c2d7162fa22cdc27c067861"
   end
 
   depends_on "go" => :build
