@@ -16,6 +16,7 @@ class Goredo < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6d63a4c70f75f5181e077c27f3b02b8f83d718c78fee5fff9338bad0f53905de"
     sha256 cellar: :any_skip_relocation, catalina:      "6d63a4c70f75f5181e077c27f3b02b8f83d718c78fee5fff9338bad0f53905de"
     sha256 cellar: :any_skip_relocation, mojave:        "6d63a4c70f75f5181e077c27f3b02b8f83d718c78fee5fff9338bad0f53905de"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "70e81407e6aac5aa36e16f5e99c275018ab1383c3833da8c92429f1f3fe337aa"
   end
 
   depends_on "go" => :build
