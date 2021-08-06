@@ -10,6 +10,7 @@ class DuaCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "534b963e7375412a38983b1c538a36a889ba49d21676b9ea6df1dafacfe935e7"
     sha256 cellar: :any_skip_relocation, catalina:      "7ecccdd3e7b349a5e9517e0241f2f3b8e45cf8a182fa200ba27ee5eba6ac62ba"
     sha256 cellar: :any_skip_relocation, mojave:        "bd92bc20c29722b0e893bb11cd9762f76651c30d390bf7a2f0de3fb399b840d5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "036403b9337eee8771498a6e48e56e9c5899bcb3083f57ec12afbbc4fba40f93"
   end
 
   depends_on "rust" => :build
