@@ -24,7 +24,6 @@ class Mupdf < Formula
   depends_on "pkg-config" => :build
   depends_on "freeglut"
   depends_on "mesa"
-  depends_on "openssl@1.1"
 
   conflicts_with "mupdf-tools",
     because: "mupdf and mupdf-tools install the same binaries"
