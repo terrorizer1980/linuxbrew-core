@@ -17,14 +17,22 @@ class Jp < Formula
 
   depends_on "go" => :build
 
+  # Fix build on ARM by adding a corresponding Makefile target
+  patch :DATA
+
   def install
     ENV["GOPATH"] = buildpath
     ENV["GO111MODULE"] = "auto"
     build_root = buildpath/"src/github.com/sgreben/jp"
     build_root.install Dir["*"]
     cd build_root do
-      system "make", "binaries/osx_x86_64/jp"
-      bin.install "binaries/osx_x86_64/jp"
+      arch = Hardware::CPU.arm? ? "arm64" : "x86_64"
+      os = "osx"
+      on_linux do
+        os = "linux"
+      end
+      system "make", "binaries/#{os}_#{arch}/jp"
+      bin.install "binaries/#{os}_#{arch}/jp"
     end
   end
 
