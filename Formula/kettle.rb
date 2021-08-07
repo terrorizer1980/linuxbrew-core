@@ -9,6 +9,10 @@ class Kettle < Formula
     regex(%r{url=.*?/pdi-ce[._-]v?(\d+(?:\.\d+)+(?:-\d+)?)\.(?:t|zip)}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c39816fbf4175cfd98a5870ea24e31a739dcf1b1014f4201d3f324b22847af7d"
+  end
+
   depends_on arch: :x86_64
   depends_on "openjdk@8"
 
