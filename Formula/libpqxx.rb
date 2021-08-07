@@ -9,6 +9,7 @@ class Libpqxx < Formula
     sha256 cellar: :any,                 arm64_big_sur: "ebdfe3e913d5afbde0f306f0ba1068bc1935b8f5b33a07868b5a2507fd1feda1"
     sha256 cellar: :any,                 big_sur:       "bb2989b2d1a03abb75e4e49ef80b12c5ab735e9eb4fd1d3b3c617c8ac4790bbb"
     sha256 cellar: :any,                 catalina:      "5d929d781d272625dddbdecd737b7afd17425042a54ca77e49c8a1b7902ef123"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "03c98f0676015f7bd07eb61cf41f5cec431e95529edfca116ae91f86ab4b274a"
   end
 
   depends_on "pkg-config" => :build
