@@ -12,6 +12,7 @@ class Micro < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5bcf6e60611b745183aeda8294088f9b42bbcc367ba9765c570b6c4224e26047"
     sha256 cellar: :any_skip_relocation, catalina:      "2915aafc3513241afd778caeadc146ad0df2a7124e03012c1bf2ba867194deb2"
     sha256 cellar: :any_skip_relocation, mojave:        "35b0c0717cfb5c7c78cfa2f51bf162594f7f6f84ac88243c51e40c0ada9fb496"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4a284bc50e33f7792f802e460c2c400ffcbfb392927e6ece1dfba876c5c5d33f"
   end
 
   depends_on "go" => :build
