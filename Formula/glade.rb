@@ -26,6 +26,8 @@ class Glade < Formula
   depends_on "hicolor-icon-theme"
   depends_on "libxml2"
 
+  uses_from_macos "libxslt" => :build
+
   on_macos do
     depends_on "gtk-mac-integration"
   end
@@ -50,7 +52,8 @@ class Glade < Formula
 
   test do
     # executable test (GUI)
-    system "#{bin}/glade", "--version"
+    # fails in Linux CI with (glade:20337): Gtk-WARNING **: 21:45:31.876: cannot open display:
+    on_macos { system "#{bin}/glade", "--version" }
     # API test
     (testpath/"test.c").write <<~EOS
       #include <gladeui/glade.h>
