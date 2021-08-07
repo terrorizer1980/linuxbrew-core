@@ -16,6 +16,7 @@ class Butane < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "487ac17beeb2467b4303bf121f9d92990a2cea2e771054dc8c5a285703fcf16a"
     sha256 cellar: :any_skip_relocation, catalina:      "9f3bab80844e4d604d2af13099c5fcd89b94235b7e61ffb0cfbc3803c2028267"
     sha256 cellar: :any_skip_relocation, mojave:        "4004c1bc3911ab5bcdae308072fbd5cb96daee93c150810f84b27d954041c848"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "18a7fe18d9358176615849685302c14aaeda4ca6a86845f714f6cbe5a269f8ac"
   end
 
   depends_on "go" => :build
