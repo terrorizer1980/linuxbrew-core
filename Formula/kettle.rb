@@ -10,7 +10,7 @@ class Kettle < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c39816fbf4175cfd98a5870ea24e31a739dcf1b1014f4201d3f324b22847af7d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c39816fbf4175cfd98a5870ea24e31a739dcf1b1014f4201d3f324b22847af7d" # linuxbrew-core
   end
 
   depends_on arch: :x86_64
