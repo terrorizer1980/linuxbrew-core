@@ -15,7 +15,7 @@ class Lnav < Formula
     sha256 cellar: :any,                 big_sur:       "29b6a8e732ac1e65fc3007415d9485636073a2aa31317255b29911f4ffba04b9"
     sha256 cellar: :any,                 catalina:      "f01d5a0c1f1c2b8363d9955ff6fdda4f78ac78fede954935d2984bd8ddd9b15d"
     sha256 cellar: :any,                 mojave:        "09cdb7d5fd6f816cd8f69bf23e29ac4e9775186bfb959b533ef321bcb61d4395"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f1bebe74f8cc100795599682aed4658bd66821abcab88c92fadf6bf246cef28d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f1bebe74f8cc100795599682aed4658bd66821abcab88c92fadf6bf246cef28d" # linuxbrew-core
   end
 
   head do

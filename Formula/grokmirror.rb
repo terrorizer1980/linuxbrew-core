@@ -13,7 +13,7 @@ class Grokmirror < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "de77cf1bd818795884882944ac3bbc340152835a0900566925f92b04dc2c8bcd"
     sha256 cellar: :any_skip_relocation, catalina:      "de77cf1bd818795884882944ac3bbc340152835a0900566925f92b04dc2c8bcd"
     sha256 cellar: :any_skip_relocation, mojave:        "de77cf1bd818795884882944ac3bbc340152835a0900566925f92b04dc2c8bcd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "801646256b6ee8e12a5c968818aa7a5de0f83c02012b2014fbb165ee6b80a6ab"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "801646256b6ee8e12a5c968818aa7a5de0f83c02012b2014fbb165ee6b80a6ab" # linuxbrew-core
   end
 
   depends_on "python@3.9"

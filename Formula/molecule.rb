@@ -12,7 +12,7 @@ class Molecule < Formula
     sha256 cellar: :any,                 big_sur:       "f8f9ea9049a3a60391a76c7d4cfbf3750a30f3f4fd3b6a4e5cfe6fa5c819ded8"
     sha256 cellar: :any,                 catalina:      "ddb4f4cddbeeedf3df0f1e5357388372a701865ab0f8200c7b4aa78bb8c49f92"
     sha256 cellar: :any,                 mojave:        "0c81dea48cae6e7a7f5c4f596e89c1e06c34e6e4e32d8a3c090f82dd1a78a5e3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0ada6b26fedcaf3c46b3e1d2c0651f028b2533ae99030b3dfc0867ea5fb642dc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0ada6b26fedcaf3c46b3e1d2c0651f028b2533ae99030b3dfc0867ea5fb642dc" # linuxbrew-core
   end
 
   depends_on "rust" => :build
