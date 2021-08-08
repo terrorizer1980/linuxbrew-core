@@ -15,7 +15,7 @@ class Dovecot < Formula
     sha256 big_sur:       "c1feffb201e4febf583cae5597f09ffcb595ed050af95b59f3ef342ef394a60e"
     sha256 catalina:      "f3c3f3fce439ab75e20fe6fc49f8e186653afb68c0a9779791a31dd8e04b4850"
     sha256 mojave:        "a8867734064460304e21056d59156f8f01e0b0ec15341e3fac901167eff0bc8f"
-    sha256 x86_64_linux:  "c4c1beb8368da32f6743e58c7a0db23397081c366ceddedf026598a4d215241e"
+    sha256 x86_64_linux:  "c4c1beb8368da32f6743e58c7a0db23397081c366ceddedf026598a4d215241e" # linuxbrew-core
   end
 
   depends_on "openssl@1.1"
