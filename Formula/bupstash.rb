@@ -10,6 +10,7 @@ class Bupstash < Formula
     sha256 cellar: :any,                 big_sur:       "f30a220780b8d94cbbeec8faf0dc13464a38f7029116ee587ea39279c4e3e1cb"
     sha256 cellar: :any,                 catalina:      "0488ba4d72c967d3d2ba923930f248a0bb60122f773f98f4438cfa8b2097084d"
     sha256 cellar: :any,                 mojave:        "b637f71d3cff79b2621c436f597e313cb76d1eef015ed501269b73e0832cc5d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a39d89ad62c230504c2cb876806b05fea4d35965a805e2161b0de72cd0ceb1d9"
   end
 
   depends_on "pkg-config" => :build
