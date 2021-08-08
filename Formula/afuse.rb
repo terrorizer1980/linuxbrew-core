@@ -13,7 +13,7 @@ class Afuse < Formula
     sha256 cellar: :any,                 sierra:       "900e55a47834181f518e87e7cbaaf0f3f078b0d40631ffccfc776e82c7c61f87"
     sha256 cellar: :any,                 el_capitan:   "a4c0f86a179ca8c5d1e3977ff167dbcd1abff4ec1ee17fd5700a3fb602c781a3"
     sha256 cellar: :any,                 yosemite:     "2a57c7752c7b461f6b628a1c30e845fe13685eab394d933e8da3aebf7102ae9c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "92168618ad5494d66f18c4dd4682d81a6e1fbd255cbebda66a01e899574f2b75"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "92168618ad5494d66f18c4dd4682d81a6e1fbd255cbebda66a01e899574f2b75" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
