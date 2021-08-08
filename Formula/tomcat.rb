@@ -6,6 +6,10 @@ class Tomcat < Formula
   sha256 "cd1e27216cd8dad1e9b7f9a0a4107c7148b748eb646f2aee45a11016d1268bb2"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0cdfbbdd72060205ff5346d2046f8369779623221c09ed52c6e990a1c2107752"
+  end
+
   depends_on "openjdk"
 
   def install
