@@ -98,25 +98,17 @@ class Netcdf < Formula
     end
 
     # Remove some shims path
-    on_macos do
-      inreplace [
-        bin/"nf-config", bin/"ncxx4-config", bin/"nc-config",
-        lib/"pkgconfig/netcdf.pc", lib/"pkgconfig/netcdf-fortran.pc",
-        lib/"cmake/netCDF/netCDFConfig.cmake",
-        lib/"libnetcdf.settings", lib/"libnetcdf-cxx.settings"
-      ], HOMEBREW_LIBRARY/"Homebrew/shims/mac/super/clang", "/usr/bin/clang"
-    end
+    inreplace [
+      bin/"nf-config", bin/"ncxx4-config", bin/"nc-config",
+      lib/"pkgconfig/netcdf.pc", lib/"pkgconfig/netcdf-fortran.pc",
+      lib/"cmake/netCDF/netCDFConfig.cmake",
+      lib/"libnetcdf.settings", lib/"libnetcdf-cxx.settings"
+    ], %r{#{HOMEBREW_SHIMS_PATH}/[^/]+/super/#{ENV.cc}}, ENV.cc
+
     on_linux do
-      inreplace [
-        bin/"nf-config", bin/"ncxx4-config", bin/"nc-config",
-        lib/"pkgconfig/netcdf.pc", lib/"pkgconfig/netcdf-fortran.pc",
-        lib/"cmake/netCDF/netCDFConfig.cmake",
-        lib/"libnetcdf.settings", lib/"libnetcdf-cxx.settings"
-      ], HOMEBREW_LIBRARY/"Homebrew/shims/linux/super/gcc-5",
-         "/usr/bin/cc"
       inreplace bin/"ncxx4-config",
-                HOMEBREW_LIBRARY/"Homebrew/shims/linux/super/g++-5",
-                "/usr/bin/c++"
+                %r{#{HOMEBREW_SHIMS_PATH}/[^/]+/super/#{Regexp.escape(ENV.cxx)}},
+                ENV.cxx
     end
 
     on_macos do
