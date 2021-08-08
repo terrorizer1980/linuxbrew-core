@@ -6,6 +6,10 @@ class Numcpp < Formula
   license "MIT"
   head "https://github.com/dpilger26/NumCpp.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "98e4db2b2caa2f80ca5ad9c24d23065f69b3db75311be04ce22a633fc37cb8a2"
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
 
