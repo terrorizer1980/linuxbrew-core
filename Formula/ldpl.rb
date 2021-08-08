@@ -15,7 +15,11 @@ class Ldpl < Formula
   end
 
   on_linux do
-    depends_on "man-db"
+    # Disable running mandb as it needs to modify /var/cache/man
+    # Copied from AUR: https://aur.archlinux.org/cgit/aur.git/tree/dont-do-mandb.patch?h=ldpl
+    # Upstream ref: https://github.com/Lartu/ldpl/commit/66c1513a38fba8048c209c525335ce0e3a32dbe5
+    # Remove in the next release.
+    patch :DATA
   end
 
   def install
