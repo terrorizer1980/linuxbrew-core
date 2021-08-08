@@ -15,6 +15,7 @@ class Stunnel < Formula
     sha256 cellar: :any,                 big_sur:       "1f963558de66d9549d77bd970c0e67a5e01666317c20b63403361df25569f7ec"
     sha256 cellar: :any,                 catalina:      "e0002bbf08f27e3533a7b518bfcc669b813122fb7e8943b5896f2d1325ad169f"
     sha256 cellar: :any,                 mojave:        "f4735a2843512ff3bdd76ecaf23b1bc7049987cdc1831fdd0c410e7c91ab5f9b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bba594f82df36a457a6cb832e7771369b98ab653972e4544ce465bae87000987"
   end
 
   depends_on "openssl@1.1"
