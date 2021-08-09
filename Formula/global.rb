@@ -24,6 +24,7 @@ class Global < Formula
     depends_on "automake" => :build
     depends_on "bison" => :build
     depends_on "flex" => :build
+    ## gperf is provided by OSX Command Line Tools.
     depends_on "libtool" => :build
   end
 
