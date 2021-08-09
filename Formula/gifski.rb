@@ -10,7 +10,7 @@ class Gifski < Formula
     sha256 cellar: :any,                 big_sur:       "e75740a344bac5b985ff6b2ca63603fee1e10bdf00a2afa59e749862cab64f14"
     sha256 cellar: :any,                 catalina:      "338e8fa823d6b5c31edf455d82ab21786b58051a9d7e5a3c96ff9aff47aee428"
     sha256 cellar: :any,                 mojave:        "a8a74c3a065e7f6258d645e409c4db5405116f2ef9f0541fdfeec5f5850d0ac7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2d6bb18c32777502fbcbf91d8e6404646c478ea0057151fb7e9bfeb291e077b2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2d6bb18c32777502fbcbf91d8e6404646c478ea0057151fb7e9bfeb291e077b2" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

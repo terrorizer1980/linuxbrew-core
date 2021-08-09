@@ -14,7 +14,7 @@ class Ngspice < Formula
     sha256 big_sur:       "4faccb580e3fa378262a8f9f3d4b20c28af2f052424b30fd4ea0466ad09986b4"
     sha256 catalina:      "d26cd0c032de8caaa2f4010043417e728df17c4e271dc0a4acb911a413b90f36"
     sha256 mojave:        "1fc7fa69b46f1d95c8473fcca45f1b7faac6af1296d1cf22d0d99c3a3968234b"
-    sha256 x86_64_linux:  "c0d0de7275a902a088abfeb4d04ad8b99ccfb11df9800b08caf95ad0bad74ba5"
+    sha256 x86_64_linux:  "c0d0de7275a902a088abfeb4d04ad8b99ccfb11df9800b08caf95ad0bad74ba5" # linuxbrew-core
   end
 
   head do
