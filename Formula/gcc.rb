@@ -1,5 +1,3 @@
-require "os/linux/glibc"
-
 class Gcc < Formula
   desc "GNU compiler collection"
   homepage "https://gcc.gnu.org/"
@@ -109,9 +107,6 @@ class Gcc < Formula
         args << "--with-sysroot=#{sdk}"
       end
 
-      # Avoid reference to sed shim
-      args << "SED=/usr/bin/sed"
-
       # Ensure correct install names when linking against libgcc_s;
       # see discussion in https://github.com/Homebrew/legacy-homebrew/pull/34303
       inreplace "libgcc/config/t-slibgcc-darwin", "@shlib_slibdir@", "#{HOMEBREW_PREFIX}/lib/gcc/#{version_suffix}"
@@ -146,7 +141,6 @@ class Gcc < Formula
       end
 
       bin.install_symlink bin/"gfortran-#{version_suffix}" => "gfortran"
-
       bin.install_symlink bin/"gdc-#{version_suffix}" => "gdc" if Hardware::CPU.intel?
 
       on_linux do
