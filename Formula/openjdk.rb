@@ -129,7 +129,6 @@ class Openjdk < Formula
     end
 
     chmod 0755, "configure"
-
     system "./configure", *args
 
     ENV["MAKEFLAGS"] = "JOBS=#{ENV.make_jobs}"
