@@ -14,6 +14,7 @@ class Clair < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "29e36d4081f4180e7c5ca4e33505f402be46697c42110caaf71202aae6c9ebbc"
     sha256 cellar: :any_skip_relocation, catalina:     "9c77e26cbab0a0196407025429f9fdc144be1534e1f7c4e7325a101f46a2b1a4"
     sha256 cellar: :any_skip_relocation, mojave:       "6e0ec2cc483e43dd1ad928554b72f4b9a4a1d84413f45c84615d810143baf70f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1e3eb62ba2b35c7fae234678b612149229ae621026aa0328df37a44fa86370f6"
   end
 
   depends_on "go" => :build
