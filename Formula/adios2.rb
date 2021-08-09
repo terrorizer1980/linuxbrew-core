@@ -30,7 +30,6 @@ class Adios2 < Formula
   depends_on "open-mpi"
   depends_on "python@3.9"
   depends_on "zeromq"
-
   uses_from_macos "bzip2"
 
   def install
