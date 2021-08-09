@@ -46,7 +46,6 @@ class SuiteSparse < Formula
       "MY_METIS_LIB=-L#{Formula["metis"].opt_lib} -lmetis",
       "MY_METIS_INC=#{Formula["metis"].opt_include}",
     ]
-
     system "make", "library", *args
     system "make", "install", *args
     lib.install Dir["**/*.a"]
