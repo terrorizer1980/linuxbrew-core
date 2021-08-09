@@ -1,5 +1,3 @@
-require "os/linux/glibc"
-
 class GccAT5 < Formula
   desc "GNU Compiler Collection"
   homepage "https://gcc.gnu.org/"
@@ -13,7 +11,6 @@ class GccAT5 < Formula
     regex(%r{href=.*?gcc[._-]v?(5(?:\.\d+)+)(?:/?["' >]|\.t)}i)
   end
 
-  # gcc is designed to be portable.
   bottle do
     sha256 cellar: :any, high_sierra:  "dcc9059b725fd7c87842287bbedf60a28745417652d42a300dcd944e15986f36"
     sha256               x86_64_linux: "cd94b6bc2189df7861c2c32c480f777984865dbab4107f493188feda5a05b80d" # linuxbrew-core
