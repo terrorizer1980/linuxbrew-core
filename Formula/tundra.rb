@@ -59,6 +59,7 @@ class Tundra < Formula
             Tools = { "#{cc}" },
           },
         }
+      }
     EOS
     system bin/"tundra2"
     system "./t2-output/#{os}-#{cc}-debug-default/test"
