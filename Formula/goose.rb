@@ -10,6 +10,7 @@ class Goose < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "51ceb50cb44e2a3907bbf7fb01398a6f2150ba20f7b110c668e73afccc9dfad2"
     sha256 cellar: :any_skip_relocation, catalina:      "d67b3467e39bf391088ee9c0deaf7781478ba269c4cf45fe5c542f3f854752e8"
     sha256 cellar: :any_skip_relocation, mojave:        "abf9f68a0c1e32a140b7d877bc89f69592bca2a00f1d1ae7fe722b6b18aa817a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bc3e7d0b692cc6f134cf1a8fe264f2c507d0b33d3047babdd4069f6038cde652"
   end
 
   depends_on "go" => :build
