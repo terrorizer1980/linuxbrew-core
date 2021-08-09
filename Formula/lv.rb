@@ -59,7 +59,7 @@ __END__
 --- a/src/escape.c
 +++ b/src/escape.c
 @@ -62,6 +62,10 @@
- break;
+   break;
      } while( 'm' != ch );
 
 +    if( 'K' == ch ){
