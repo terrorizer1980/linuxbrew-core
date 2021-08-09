@@ -43,7 +43,7 @@ class Netcdf < Formula
   def install
     ENV.deparallelize
 
-    common_args = std_cmake_args << "-DBUILD_TESTING=OFF" << "-DCMAKE_INSTALL_LIBDIR=#{lib}"
+    common_args = std_cmake_args << "-DBUILD_TESTING=OFF"
 
     mkdir "build" do
       args = common_args.dup
