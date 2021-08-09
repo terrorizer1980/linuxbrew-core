@@ -28,8 +28,6 @@ class Modules < Formula
     args = %W[
       --prefix=#{prefix}
       --datarootdir=#{share}
-      #{with_pager}
-      #{with_tclsh}
       --with-tcl=#{Formula["tcl-tk"].opt_lib}
       --without-x
     ]
