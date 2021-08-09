@@ -5,6 +5,11 @@ class Mallet < Formula
   sha256 "5b2d6fb9bcf600b1836b09881821a6781dd45a7d3032e61d7500d027a5b34faf"
   revision 1
 
+  livecheck do
+    url "http://mallet.cs.umass.edu/download.php"
+    regex(/href=.*?mallet[._-]v?(\d+(?:\.\d+)+)\.t/i)
+  end
+
   depends_on "openjdk"
 
   resource "testdata" do
