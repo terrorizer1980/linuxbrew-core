@@ -182,7 +182,6 @@ class Git < Formula
   test do
     system bin/"git", "init"
     %w[haunted house].each { |f| touch testpath/f }
-
     system bin/"git", "add", "haunted", "house"
     system bin/"git", "config", "user.name", "'A U Thor'"
     system bin/"git", "config", "user.email", "author@example.com"
