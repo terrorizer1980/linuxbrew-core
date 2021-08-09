@@ -59,7 +59,6 @@ class Movgrab < Formula
   end
 end
 
-
 __END__
 diff --git a/Makefile.in b/Makefile.in
 index 04ea67d..5516051 100755
