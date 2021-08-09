@@ -10,6 +10,10 @@ class Mallet < Formula
     regex(/href=.*?mallet[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e94a83c844dc7b836009d2aca876dd08582b91b77843fdff844cddb43dae9b5c"
+  end
+
   depends_on "openjdk"
 
   resource "testdata" do
