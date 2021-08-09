@@ -29,6 +29,7 @@ class Udns < Formula
 
     bin.install "dnsget", "rblcheck"
     doc.install "NOTES", "TODO", "ex-rdns.c"
+    include.install "udns.h"
     lib.install "libudns.a", "libudns.0.dylib", "libudns.dylib"
     man1.install "dnsget.1", "rblcheck.1"
     man3.install "udns.3"
