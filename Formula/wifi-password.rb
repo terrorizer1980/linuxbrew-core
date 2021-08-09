@@ -6,8 +6,6 @@ class WifiPassword < Formula
 
   depends_on :macos
 
-  depends_on :macos
-
   def install
     bin.install "wifi-password.sh" => "wifi-password"
   end
