@@ -46,6 +46,7 @@ class Spidermonkey < Formula
 
     mkdir "brew-build" do
       system "../js/src/configure", "--prefix=#{prefix}",
+                                    "--enable-readline",
                                     "--enable-threadsafe",
                                     "--with-system-nspr",
                                     "--with-nspr-prefix=#{Formula["nspr"].opt_prefix}",
