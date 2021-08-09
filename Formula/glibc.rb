@@ -128,7 +128,6 @@ class Glibc < Formula
         "--prefix=#{prefix}",
         "--enable-obsolete-rpc",
         "--without-selinux",
-        "--without-selinux",
         "--with-binutils=#{Formula["binutils"].bin}",
         "--with-headers=#{Formula["linux-headers"].include}",
       ]
