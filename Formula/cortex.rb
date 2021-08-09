@@ -15,6 +15,7 @@ class Cortex < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3044d8217250a03b90158a8600b03e7cfb70d3de3b19c14141d748d70ba51c22"
     sha256 cellar: :any_skip_relocation, catalina:      "d31d8bcb6cab6eb3b5679972e41d0a272355650d7fed1a8c1a726364aa8cd871"
     sha256 cellar: :any_skip_relocation, mojave:        "a9ff8743b74f1cc4286b174446d22928c374a0d907711b05be3ef5dd83481c1c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "960b349470adc18fecda3f24ebbe9871bcab6a8a112c387ab7730c8d1195cc60"
   end
 
   depends_on "go" => :build
