@@ -15,7 +15,6 @@ class Offlineimap < Formula
 
   depends_on :macos # Due to Python 2 (Will never support Python 3)
   # https://github.com/OfflineIMAP/offlineimap/issues/616#issuecomment-491003691
-
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
 
