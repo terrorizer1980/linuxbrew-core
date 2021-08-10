@@ -10,6 +10,7 @@ class Navi < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e297366638bbea0f735a5efb491ffcb9be8ab13b005a34f40d5573895e4fd665"
     sha256 cellar: :any_skip_relocation, catalina:      "50f06154a09b3927a240d6346b6ca72552347b12a75a4634eb633c16b7da0f50"
     sha256 cellar: :any_skip_relocation, mojave:        "ad9b1c1da07794686886dac478791619e2427ce1ca0917908ca12b7169be9954"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1d9f25163a72c0252684a91a5f05688f80a2edcb871591ed8255011a1ffd2423"
   end
 
   depends_on "rust" => :build
