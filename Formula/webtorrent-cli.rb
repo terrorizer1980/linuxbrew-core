@@ -12,7 +12,7 @@ class WebtorrentCli < Formula
     sha256                               big_sur:       "bb15d36ea3a989c9d238df5c8e0236bdfbc069bf4dd057b5b1088da7ae94e89d"
     sha256                               catalina:      "3f9ae728fe1cd50d0ded0cf35681c20b5b49af2afeb80ec4e2d0f1fba73652d6"
     sha256                               mojave:        "57f76ff00f3368ae837b137c62d6836545023c2856291e8bae0f513aa1481eb6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5eb2da2e5294b83705a4e47c1afe0ce6ac26de462b9b20d138c91d550efd9f30"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5eb2da2e5294b83705a4e47c1afe0ce6ac26de462b9b20d138c91d550efd9f30" # linuxbrew-core
   end
 
   depends_on "node"

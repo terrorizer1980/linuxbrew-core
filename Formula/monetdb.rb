@@ -16,7 +16,7 @@ class Monetdb < Formula
     sha256 big_sur:       "0cdefcdc6b8ee4fe5a736eb6387cf04d913d81b69f3aab3161e4d1707433ed9c"
     sha256 catalina:      "d37d5825ed00523026a3c9802ad87953796b8b3ae2b3f72186ebc66a0ff27669"
     sha256 mojave:        "813e7e6ecd735549264a747e56aa4d2d940591a9d3467fde1812f8139cc9aac6"
-    sha256 x86_64_linux:  "ac894e9d5a78909b7734ce873e62f0980a5b2ba017d867b2d111c08cf444862c"
+    sha256 x86_64_linux:  "ac894e9d5a78909b7734ce873e62f0980a5b2ba017d867b2d111c08cf444862c" # linuxbrew-core
   end
 
   depends_on "bison" => :build # macOS bison is too old
