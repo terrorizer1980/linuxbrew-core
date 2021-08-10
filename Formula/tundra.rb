@@ -58,7 +58,7 @@ class Tundra < Formula
             DefaultOnHost = "#{os}",
             Tools = { "#{cc}" },
           },
-        }
+        },
       }
     EOS
     system bin/"tundra2"
