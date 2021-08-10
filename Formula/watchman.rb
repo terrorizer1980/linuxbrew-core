@@ -4,13 +4,14 @@ class Watchman < Formula
   url "https://github.com/facebook/watchman/archive/v2021.08.02.00.tar.gz"
   sha256 "8994793334422d5101a087aadec55aa2d73979c0b4b63368dfc1a9ac5e547a2d"
   license "Apache-2.0"
+  revision 1
   head "https://github.com/facebook/watchman.git"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "11439140011d2a5f6f26a5e51b4646980c171e8c36b723098e2d951315390aa2"
-    sha256 cellar: :any, big_sur:       "cc15494120136970bdc3bebd2605543fcfa23f2e61891ba6a816e7cd4db03ede"
-    sha256 cellar: :any, catalina:      "669d7caaff8e2b98fa558e9a44ee75f420fddea2ec0ce057586bd04b3625eb7a"
-    sha256 cellar: :any, mojave:        "13584cac0dab9e73c7a33d336ee7a94fc3c300b37c615ab0435f74436276c9ea"
+    sha256 cellar: :any, arm64_big_sur: "896a77c6c7289380d1a173b0c97b2e64418e5a4098cf01c882a8c75748a4b074"
+    sha256 cellar: :any, big_sur:       "c744264cd104d9881b39ae9262305c2ebc788c1914a5228fbe856450e9e07ff4"
+    sha256 cellar: :any, catalina:      "31d96cf969b3827beacae1ae9be47b92adddcede3b2903c51361155d6170f438"
+    sha256 cellar: :any, mojave:        "e8fc3b77dfe13f30a87e2235222f66f91d3f0f313331633d6ccfbcd608086996"
   end
 
   depends_on "cmake" => :build
