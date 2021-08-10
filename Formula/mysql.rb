@@ -210,7 +210,7 @@ index 0e1886bb..87b7aff7 100644
 --- a/cmake/abi_check.cmake
 +++ b/cmake/abi_check.cmake
 @@ -30,7 +30,7 @@
- # (Solaris) sed or diff might act differently from GNU, so we run only
+ # (Solaris) sed or diff might act differently from GNU, so we run only 
  # on systems we can trust.
  IF(LINUX)
 -  SET(RUN_ABI_CHECK 1)
