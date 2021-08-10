@@ -16,7 +16,6 @@ class Glade < Formula
   depends_on "docbook-xsl" => :build
   depends_on "gobject-introspection" => :build
   depends_on "itstool" => :build
-  depends_on "libxslt" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
