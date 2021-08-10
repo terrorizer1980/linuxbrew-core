@@ -201,3 +201,4 @@ index 43d731e..3031258 100644
     IF(str)
       STRING(REPLACE "${keyword}=" "" str ${str})
       STRING(REGEX REPLACE  "[ ].*" ""  str "${str}")
+
