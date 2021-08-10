@@ -11,6 +11,7 @@ class Clip < Formula
     sha256 cellar: :any,                 big_sur:       "cb33d312ff97b10b5761ceb105e3a5d63ab11c48db072c199108167cecf47854"
     sha256 cellar: :any,                 catalina:      "c6e0fc40838d76e9632e21e1a781603a1a75d584a3206300fe0a9f7272d9b702"
     sha256 cellar: :any,                 mojave:        "72f17c87e0c824cea89ba5fa383cf22d013751997a916a408eaa8408544292fb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01ad1faf80c39957551fd0aa3204ffa2c0477183f8269b98a9dcda4d5ac3083c"
   end
 
   depends_on "cmake" => :build
