@@ -14,7 +14,7 @@ class Mrtg < Formula
     sha256 cellar: :any,                 big_sur:       "07e807ddaf2a41cefd8511bf441c403da9062eaaa4978628d99ee82fc9204947"
     sha256 cellar: :any,                 catalina:      "16df660ec359b69b2459c924b53531e858d5cbf07ae2d182c3d8af150c62274d"
     sha256 cellar: :any,                 mojave:        "f2d1b8898e2cdda752a6456bed569a37a61c48b6d3f881ecc9a8e8ec2543257a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "110cdf1481f558df5b6b2438b5087ff0e13d07ee2a287c2bd29617dc431a0843"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "110cdf1481f558df5b6b2438b5087ff0e13d07ee2a287c2bd29617dc431a0843" # linuxbrew-core
   end
 
   depends_on "gd"
