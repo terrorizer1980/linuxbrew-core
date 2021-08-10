@@ -62,6 +62,7 @@ class Arangodb < Formula
         -DOPENSSL_USE_STATIC_LIBS=On
         -DCMAKE_LIBRARY_PATH=#{openssl.opt_lib}
         -DOPENSSL_ROOT_DIR=#{openssl.opt_lib}
+        -DCMAKE_OSX_DEPLOYMENT_TARGET=#{MacOS.version}
         -DTARGET_ARCHITECTURE=nehalem
         -DUSE_CATCH_TESTS=Off
         -DUSE_GOOGLE_TESTS=Off
