@@ -2,16 +2,15 @@ class SqliteUtils < Formula
   include Language::Python::Virtualenv
   desc "CLI utility for manipulating SQLite databases"
   homepage "https://sqlite-utils.datasette.io/"
-  url "https://files.pythonhosted.org/packages/14/26/e154fa2c23156535977491c09c0112ef3a2e4b4cf53ab6a8e063b4d4d98c/sqlite-utils-3.14.tar.gz"
-  sha256 "bb383402e658b4601e64b84e7dd1485e3efc19c54e278a94d62af874cac8fc9a"
+  url "https://files.pythonhosted.org/packages/b9/b1/df6583717f7e8c6e369b7db8b3ee50f274416e65d3e65112a1b00f5b1075/sqlite-utils-3.15.tar.gz"
+  sha256 "8fabc70fb18e86509dc5eb88610592991357f29f90b6313bb1ece741be84e42b"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "10e0c7ac1154bb67e3b531dcd75f7cb691176fffbf1f074de1a1d4aa5463d7ea"
-    sha256 cellar: :any_skip_relocation, big_sur:       "2d2804d87b5ab39f05eea0c6b5f142e5b158d9ff57ddc39ca9dd9e1de5bb8fd6"
-    sha256 cellar: :any_skip_relocation, catalina:      "c8fb15db2c2c5e29a9e9c654b51bbe186b34f48bf869563482dcab0360426ab5"
-    sha256 cellar: :any_skip_relocation, mojave:        "e992ab048e3f13a45a411a8934e4f4307888cd78bbbf70fa857bce16006b3361"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "adb4e84023ccd78b6ff9da4a13571319ffb60b3528c5a9e0f1bccc73515a77ee" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3f6fc5958af6f29ab32fe7869af33769a0be66feb397d2d6aefa80d7fcc07962"
+    sha256 cellar: :any_skip_relocation, big_sur:       "5c399387feeebaf9ec0bfb522e740d68571352baf0dd6f8eff348bf7375d9abe"
+    sha256 cellar: :any_skip_relocation, catalina:      "4e5c280292f1441e5e83d1734f16c0cb32b9415b1cc8a22dbf910a19821d1636"
+    sha256 cellar: :any_skip_relocation, mojave:        "ad97ead14ea83af1a167bd29390d5c05c0fc661b97352d8e318b80af68f8a1fd"
   end
 
   depends_on "python-tabulate"
