@@ -22,6 +22,7 @@ class Libpq < Formula
   # GSSAPI provided by Kerberos.framework crashes when forked.
   # See https://github.com/Homebrew/homebrew-core/issues/47494.
   depends_on "krb5"
+
   depends_on "openssl@1.1"
 
   on_linux do
