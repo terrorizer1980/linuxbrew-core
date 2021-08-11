@@ -10,6 +10,7 @@ class ForkCleaner < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6c38ca3c1fdd113fa6cab6275b0b8ac09dd58c003b65b736d07525fdfcf20128"
     sha256 cellar: :any_skip_relocation, catalina:      "755110dfb469caf2412b848dc34a2f888306fe99bdd785404314e934f71314c1"
     sha256 cellar: :any_skip_relocation, mojave:        "df5b5612adc55c88a3b3eefe80f0d02ee407bacaf07ff76c24dac6bfd382086e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cfc42163d0da149fe07a083829c55db6f27cb277c3ab730a811a45d4e780052c"
   end
 
   depends_on "go" => :build
