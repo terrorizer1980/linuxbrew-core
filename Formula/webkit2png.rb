@@ -8,9 +8,6 @@ class Webkit2png < Formula
   # Requires Quartz, as well as other potentially Mac-only libraries
   depends_on :macos
 
-  # Requires Quartz, as well as other potentially Mac-only libraries
-  depends_on :macos
-
   def install
     bin.install "webkit2png"
   end
