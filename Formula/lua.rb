@@ -17,7 +17,7 @@ class Lua < Formula
     sha256 cellar: :any,                 big_sur:       "b47b9174126bc9bdabb694db4c61cc4d705b06cf7b6f5c19771f447992863bb4"
     sha256 cellar: :any,                 catalina:      "8503086f7311c0c05a12fbad5c49561d066efb8abef9ed3b66c8b35f17e6a5a0"
     sha256 cellar: :any,                 mojave:        "e075a5333160b570cb0532f7124061c44ae58fe33cad382ad2dbbf9f87675712"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1feca91330e2144f22f39b74161936f04ffc75f38034f7c5d339685315ca4b6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1feca91330e2144f22f39b74161936f04ffc75f38034f7c5d339685315ca4b6" # linuxbrew-core
   end
 
   uses_from_macos "unzip" => :build
