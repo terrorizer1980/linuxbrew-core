@@ -24,6 +24,7 @@ class Openjdk < Formula
     sha256 cellar: :any, big_sur:       "fb57725b9d1ac7dc846842c4905630ebe6878242cd876dc23d00d3100e6d4e26"
     sha256 cellar: :any, catalina:      "71fe0d7fb0120bb7fdb011cb9ecb107413920f97eb54f53770649f63c9780a56"
     sha256 cellar: :any, mojave:        "d92651670572e834a36ca2af789646a28c4745930c19a3468b92834da9a0f1a1"
+    sha256               x86_64_linux:  "3b0a2360cb4abe946f2d2ee162e7ffdc8e6f0664565445e01811acb4f65f558b"
   end
 
   keg_only :shadowed_by_macos
