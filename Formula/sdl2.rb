@@ -11,10 +11,11 @@ class Sdl2 < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "6adac3ca2899ab923427b9b9322c8a4a412485ac7fe6448e276b4aae598f7a49"
-    sha256 cellar: :any, big_sur:       "71fe247bc197133b02186fac4e8f296d7f457a9507e0c77357b1069e5ee2ca61"
-    sha256 cellar: :any, catalina:      "4634185a35d9fc37c8fc07f884e45e7e2fbaa3fdec615171e647a9e02c395bd4"
-    sha256 cellar: :any, mojave:        "9966890d7d39147e75e92d6a7390ef5fb2f043b08f913e751638bdeef8c1c220"
+    sha256 cellar: :any,                 arm64_big_sur: "6adac3ca2899ab923427b9b9322c8a4a412485ac7fe6448e276b4aae598f7a49"
+    sha256 cellar: :any,                 big_sur:       "71fe247bc197133b02186fac4e8f296d7f457a9507e0c77357b1069e5ee2ca61"
+    sha256 cellar: :any,                 catalina:      "4634185a35d9fc37c8fc07f884e45e7e2fbaa3fdec615171e647a9e02c395bd4"
+    sha256 cellar: :any,                 mojave:        "9966890d7d39147e75e92d6a7390ef5fb2f043b08f913e751638bdeef8c1c220"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a1f8e4577648d0ba82a188dc6638a100ac69a16b090aa6853f31819e0a752f9"
   end
 
   head do
