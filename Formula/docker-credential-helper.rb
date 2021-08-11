@@ -11,6 +11,7 @@ class DockerCredentialHelper < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b86ee5413d74bb4e52c8c7cd056168b421096acb2a20be4ed8fc8192851b2e4a"
     sha256 cellar: :any_skip_relocation, catalina:      "b0d84bdcdeb21c6a19cd765cd09fe9646e7c50370c61f5f4460e30d730128bbe"
     sha256 cellar: :any_skip_relocation, mojave:        "b9949fc061dea2f7fcf6e54039203d133ffe3f00706b16e43623f90bb57331d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5fcb0d51e2f88f96d26d2ea012403c1882c51ff85bff4828b377b1e73f1530c"
   end
 
   depends_on "go" => :build
