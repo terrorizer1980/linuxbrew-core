@@ -16,6 +16,7 @@ class Gpsd < Formula
     sha256 cellar: :any,                 big_sur:       "b8d992eb67763ca693525720a70f546b2944b913ec93aee936a7c084995f5ceb"
     sha256 cellar: :any,                 catalina:      "7e347f09e9780efed87f483d2d1663655405539f32ef3741d5377909857b481f"
     sha256 cellar: :any,                 mojave:        "619c8ba68ab43aae14deb1ba148ed91e4d50e2eae5971893ed1f3a60165c39c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0fb25eed89a7918bc5c84cc061f1308c24b43a6877be98da240a15d8bc7184dc"
   end
 
   depends_on "asciidoctor" => :build
