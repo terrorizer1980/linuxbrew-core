@@ -53,9 +53,14 @@ class Openldap < Formula
       --without-systemd
     ]
 
-    # Disable manpage generation
-    inreplace "Makefile.in" do |s|
-      s.change_make_var! "SUBDIRS", "include libraries clients servers"
+    on_linux do
+      args << "--without-systemd"
+
+      # Disable manpage generation, because it requires groff which has a huge
+      # dependency tree on Linux
+      inreplace "Makefile.in" do |s|
+        s.change_make_var! "SUBDIRS", "include libraries clients servers"
+      end
     end
 
     system "./configure", *args
