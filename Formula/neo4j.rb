@@ -11,6 +11,10 @@ class Neo4j < Formula
           |href=.*?release=v?(\d+(?:\.\d+)+)[^"' >]+edition=community/ix)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2e98e9ddae89034c050ab28ab328cc52ebe2a993501aefb1b7a30377cbdf78fc"
+  end
+
   depends_on "openjdk@11"
 
   def install
