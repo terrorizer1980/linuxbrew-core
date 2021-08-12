@@ -50,7 +50,6 @@ class Openldap < Formula
       --enable-translucent
       --enable-unique
       --enable-valsort
-      --without-systemd
     ]
 
     on_linux do
