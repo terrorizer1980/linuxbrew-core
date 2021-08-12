@@ -12,6 +12,7 @@ class MarpCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "923196c727bc3b5b6a0c6eb695a9956460c88b66df5c2084c68155b7a8329b4e"
     sha256 cellar: :any_skip_relocation, catalina:      "923196c727bc3b5b6a0c6eb695a9956460c88b66df5c2084c68155b7a8329b4e"
     sha256 cellar: :any_skip_relocation, mojave:        "923196c727bc3b5b6a0c6eb695a9956460c88b66df5c2084c68155b7a8329b4e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c6ac1dbe4900075afbc5cd58718a7cce621764b6eb1cf77b7c3a5ab707d323ec"
   end
 
   depends_on "node"
