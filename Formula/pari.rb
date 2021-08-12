@@ -4,6 +4,7 @@ class Pari < Formula
   url "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.2.tar.gz"
   sha256 "1679985094a0b723d14f49aa891dbe5ec967aa4040050a2c50bd764ddb3eba24"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://pari.math.u-bordeaux.fr/pub/pari/unix/"
@@ -11,11 +12,10 @@ class Pari < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "ded4bc8651cbbab6d1c13f1209b3d013c39d712dee28ed38e2e927052d4acd77"
-    sha256 big_sur:       "84b7739fcd41c82756c2610a6b6e7686d52d9b338b9cd23b9bc7405aea3b8901"
-    sha256 catalina:      "6eafc6e4947af844a2984f78ee3769df27be397d2beeab046595c87cf54a0576"
-    sha256 mojave:        "6f745e024e7cd4acbea3db05f8942c843549aa0003c621bb597ac9982a65e56d"
-    sha256 x86_64_linux:  "3b62dbe1570c79d82b68c5093b621c4584eb0111f71f75c9aa9dfcb1ac1baef8" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "8b7ed66542790052cdf4a5792ac3686fedc43e69b5d643f6e8fbbc04d3d7c6aa"
+    sha256 cellar: :any,                 big_sur:       "789d72fe3f7a8b53bb4f95735f1f3849e479050d1f8ddcdedc35f96bc3ed8e16"
+    sha256 cellar: :any,                 catalina:      "56a92398748eb0ab496165049096e138a6d5e7f18f44bbfe18c94743c25f9893"
+    sha256 cellar: :any,                 mojave:        "db4da067cb412e1ed6125d847e566dd70ec834f6fa81fc7854881e66cc42fd5e"
   end
 
   depends_on "gmp"
@@ -28,6 +28,12 @@ class Pari < Formula
                           "--with-gmp=#{gmp}",
                           "--with-readline=#{readline}",
                           "--graphic=ps"
+
+    # Explicitly set datadir to HOMEBREW_PREFIX/share/pari to allow for external packages to be found
+    # We do this here rather than in configure because we still want the actual files to be installed to the Cellar
+    objdir = Utils.safe_popen_read("./config/objdir").chomp
+    inreplace %W[#{objdir}/pari.cfg #{objdir}/paricfg.h], pkgshare, "#{HOMEBREW_PREFIX}/share/pari"
+
     # make needs to be done in two steps
     system "make", "all"
     system "make", "install"

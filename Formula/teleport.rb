@@ -16,10 +16,11 @@ class Teleport < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5f7bf92bb44028e0d0a8c8f2b0a4ce1e4bb56f3e7aca6a6114d11274ece3d7b5"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1fcbd49b535b37e1f0d10afd77b2dbc95b43616c7c4694d61dc12c5f16affb99"
-    sha256 cellar: :any_skip_relocation, catalina:      "24f1d5ebbe600a406cb227f153c6033707f19116ccdc0ab696f8d4da38a7f737"
-    sha256 cellar: :any_skip_relocation, mojave:        "0fc72099413f9a0ce52643a97ee2241ea003e4ee98fec56d0fbbbe089fa1e017"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "778532a9fb732fdca0084c15d3d23fcde832dca7ed61ee8ba53638b9963fe264"
+    sha256 cellar: :any_skip_relocation, big_sur:       "46d0e70e476067e1919c8be3bca1b24bb642ba0aa73a5ee1b0b57a2d03793089"
+    sha256 cellar: :any_skip_relocation, catalina:      "79462fc8df1309fe83fd284e242f2027a44daecb5efe90eada3ec9cfe8467987"
+    sha256 cellar: :any_skip_relocation, mojave:        "5b6ae2bdc4ff1c9c06fa1426f1ec01847065a2158ab2f68da321df87ff93efbd"
   end
 
   depends_on "go" => :build
@@ -49,27 +50,15 @@ class Teleport < Formula
       .gsub("/var/lib/teleport", testpath)
       .gsub("/var/run", testpath)
       .gsub(/https_(.*)/, "")
-    unless OS.mac?
-      inreplace testpath/"config.yml", "/usr/bin/hostname", "/bin/hostname"
-      inreplace testpath/"config.yml", "/usr/bin/uname", "/bin/uname"
+
+    fork do
+      exec "#{bin}/teleport start -c #{testpath}/config.yml --debug"
     end
-    begin
-      debug = OS.mac? ? "" : "DEBUG=1 "
-      pid = spawn("#{debug}#{bin}/teleport start -c #{testpath}/config.yml")
-      if OS.mac?
-        sleep 5
-        path = OS.mac? ? "/usr/bin/" : ""
-        system "#{path}curl", "--insecure", "https://localhost:3080"
-        # Fails on Linux:
-        # Failed to update cache: \nERROR REPORT:\nOriginal Error:
-        # *trace.NotFoundError open /tmp/teleport-test-20190120-15973-1hx2ui3/cache/auth/localCluster:
-        # no such file or directory
-        system "#{path}nc", "-z", "localhost", "3022"
-        system "#{path}nc", "-z", "localhost", "3023"
-        system "#{path}nc", "-z", "localhost", "3025"
-      end
-    ensure
-      Process.kill(9, pid)
-    end
+
+    sleep 10
+    system "curl", "--insecure", "https://localhost:3080"
+    system "nc", "-z", "localhost", "3022"
+    system "nc", "-z", "localhost", "3023"
+    system "nc", "-z", "localhost", "3025"
   end
 end
