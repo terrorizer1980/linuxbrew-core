@@ -81,8 +81,6 @@ class MariadbAT104 < Formula
 
     on_linux do
       args << "-DWITH_NUMA=OFF"
-      args << "-DPLUGIN_ROCKSDB=NO"
-      args << "-DPLUGIN_MROONGA=NO"
       args << "-DENABLE_DTRACE=NO"
       args << "-DCONNECT_WITH_JDBC=OFF"
     end
