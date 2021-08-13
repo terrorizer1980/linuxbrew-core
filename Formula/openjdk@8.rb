@@ -15,13 +15,11 @@ class OpenjdkAT8 < Formula
 
   keg_only :versioned_formula
 
-  ignore_missing_libraries %w[libjvm.so libawt_xawt.so] unless OS.mac?
-
   depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
   depends_on "freetype"
 
-  unless OS.mac?
+  on_linux do
     depends_on "alsa-lib"
     depends_on "cups"
     depends_on "fontconfig"
@@ -33,6 +31,8 @@ class OpenjdkAT8 < Formula
     depends_on "libxtst"
     depends_on "unzip"
     depends_on "zip"
+
+    ignore_missing_libraries %w[libjvm.so libawt_xawt.so]
   end
 
   # Oracle doesn't serve JDK 7 downloads anymore, so use Zulu JDK 7 for bootstrapping.
@@ -63,20 +63,19 @@ class OpenjdkAT8 < Formula
     inreplace "hotspot/make/bsd/makefiles/saproc.make",
               '-isysroot "$(SDKPATH)" -iframework"$(SDKPATH)/System/Library/Frameworks"', ""
 
-    # Fix linker error with position-independent code with brewed GCC.
-    inreplace "common/autoconf/flags.m4", "-pie", "-fno-pie -no-pie"
-    # Fix unknown linker hash style on GCC toolchains.
-    inreplace "common/autoconf/flags.m4", "-Xlinker --hash-style=both", ""
-    inreplace "hotspot/make/linux/makefiles/gcc.make" do |s|
-      s.gsub! "-Xlinker -O1", ""
-      s.gsub! "-Wl,--hash-style=both", ""
+    on_macos do
+      # Fix macOS version detection. After 10.10 this was changed to a 6 digit number,
+      # but this Makefile was written in the era of 4 digit numbers.
+      inreplace "hotspot/make/bsd/makefiles/gcc.make" do |s|
+        s.gsub! "$(subst .,,$(MACOSX_VERSION_MIN))", ENV["HOMEBREW_MACOS_VERSION_NUMERIC"]
+        s.gsub! "MACOSX_VERSION_MIN=10.7.0", "MACOSX_VERSION_MIN=#{MacOS.version}"
+      end
     end
 
-    # Fix macOS version detection. After 10.10 this was changed to a 6 digit number,
-    # but this Makefile was written in the era of 4 digit numbers.
-    inreplace "hotspot/make/bsd/makefiles/gcc.make" do |s|
-      s.gsub! "$(subst .,,$(MACOSX_VERSION_MIN))", ENV["HOMEBREW_MACOS_VERSION_NUMERIC"].to_s
-      s.gsub! "MACOSX_VERSION_MIN=10.7.0", "MACOSX_VERSION_MIN=#{MacOS.version}"
+    on_linux do
+      # Fix linker errors on brewed GCC
+      inreplace "common/autoconf/flags.m4", "-Xlinker -O1", ""
+      inreplace "hotspot/make/linux/makefiles/gcc.make", "-Xlinker -O1", ""
     end
 
     args = %W[--with-boot-jdk-jvmargs=#{java_options}
@@ -87,7 +86,9 @@ class OpenjdkAT8 < Formula
               --with-native-debug-symbols=none
               --with-update-version=#{update}]
 
-    if OS.mac?
+    on_macos do
+      args << "--with-toolchain-type=clang"
+
       # Work around SDK issues with JavaVM framework.
       if MacOS.version <= :catalina
         sdk_path = MacOS::CLT.sdk_path(MacOS.version)
@@ -97,11 +98,11 @@ class OpenjdkAT8 < Formula
                    --with-extra-cxxflags=-F#{javavm_framework_path}
                    --with-extra-ldflags=-F#{javavm_framework_path}]
       end
+    end
 
-      args << "--with-toolchain-type=clang"
-    else
-      args += %W[CC=/usr/bin/gcc
-                 CXX=/usr/bin/g++
+    on_linux do
+      args += %W[CC=#{ENV.cc}
+                 CXX=#{ENV.cxx}
                  --with-toolchain-type=gcc
                  --x-includes=#{HOMEBREW_PREFIX}/include
                  --x-libraries=#{HOMEBREW_PREFIX}/lib
@@ -117,17 +118,21 @@ class OpenjdkAT8 < Formula
     ENV["MAKEFLAGS"] = "JOBS=#{ENV.make_jobs}"
     system "make", "images"
 
-    if OS.mac?
+    on_macos do
       jdk = Dir["build/*/images/j2sdk-bundle/*"].first
       libexec.install jdk => "openjdk.jdk"
-      bin.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/bin/*"]
-      include.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/include/*.h"]
-      include.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/include/darwin/*.h"]
-    else
+      bin.install_symlink Dir[libexec/"openjdk.jdk/Contents/Home/bin/*"]
+      include.install_symlink Dir[libexec/"openjdk.jdk/Contents/Home/include/*.h"]
+      include.install_symlink Dir[libexec/"openjdk.jdk/Contents/Home/include/darwin/*.h"]
+      man1.install_symlink Dir[libexec/"openjdk.jdk/Contents/Home/man/man1/*"]
+    end
+
+    on_linux do
       libexec.install Dir["build/*/images/j2sdk-image/*"]
-      bin.install_symlink Dir["#{libexec}/bin/*"]
-      include.install_symlink Dir["#{libexec}/include/*.h"]
-      include.install_symlink Dir["#{libexec}/include/linux/*.h"]
+      bin.install_symlink Dir[libexec/"bin/*"]
+      include.install_symlink Dir[libexec/"include/*.h"]
+      include.install_symlink Dir[libexec/"include/linux/*.h"]
+      man1.install_symlink Dir[libexec/"man/man1/*"]
     end
   end
 
