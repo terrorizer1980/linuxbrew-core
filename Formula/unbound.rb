@@ -19,7 +19,7 @@ class Unbound < Formula
     sha256 big_sur:       "4e4b82b339beb0a6adc5385e39f7a44165deda8759ed6b80f08b947a3b6db994"
     sha256 catalina:      "46d5cce43c8e9f99d04c597f925a4c4ee9e84d2d33cc03d3344e9d659fafb292"
     sha256 mojave:        "0ecc5fa9233d3fb74789f80c553ede84b9d783a9f6f886cf9a29937b6a8b3bf8"
-    sha256 x86_64_linux:  "3984ad5082f41b699c7e259172ccb0163b8368d3fb163e945ed43fc21d8b495f"
+    sha256 x86_64_linux:  "3984ad5082f41b699c7e259172ccb0163b8368d3fb163e945ed43fc21d8b495f" # linuxbrew-core
   end
 
   depends_on "libevent"

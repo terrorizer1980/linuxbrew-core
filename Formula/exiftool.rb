@@ -18,7 +18,7 @@ class Exiftool < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8e727af23046739b711bd75afeec7ca4e5853b2a7999c7f972f3c4c0daab3c0a"
     sha256 cellar: :any_skip_relocation, catalina:      "336b0ba051cc4f11b07c2b307dc7199f973f8c5f10d2dd9a3fbd33bb7d707bf5"
     sha256 cellar: :any_skip_relocation, mojave:        "336b0ba051cc4f11b07c2b307dc7199f973f8c5f10d2dd9a3fbd33bb7d707bf5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "451d3581ac54e5b552b9ae6517e9e6d3d78f068e23ed0431200d6d9be814a2f8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "451d3581ac54e5b552b9ae6517e9e6d3d78f068e23ed0431200d6d9be814a2f8" # linuxbrew-core
   end
 
   def install
