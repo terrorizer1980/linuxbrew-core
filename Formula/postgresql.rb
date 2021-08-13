@@ -16,7 +16,7 @@ class Postgresql < Formula
     sha256 big_sur:       "3b51c2493a21aa8738b113b10049262ce934b2bf3dba0ad95d43cdddc7f167c0"
     sha256 catalina:      "03029b01b1f56a544a686ce600f4136e789a2445723f6e2cd15df2146dc8b316"
     sha256 mojave:        "5e3070c5e9bb867d27601ee9c174afb60fa8d845de92f61596a5d87d86ef73aa"
-    sha256 x86_64_linux:  "a2b94f656bb16815b6f8fe228b52dc9f4e3597afdd06299be931797b7d10a6a0"
+    sha256 x86_64_linux:  "a2b94f656bb16815b6f8fe228b52dc9f4e3597afdd06299be931797b7d10a6a0" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
