@@ -11,7 +11,7 @@ class Microplane < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6a7331b0798fe910e483fb17ae7867462736f727b1c0321a0bfc504f67190e5e"
     sha256 cellar: :any_skip_relocation, catalina:      "3b835af36cf8be74fa4cb40db5263cf9f5b33f1682cd43fb2ba916df9c0a9adf"
     sha256 cellar: :any_skip_relocation, mojave:        "dcb748ddf661e7fa5f839b372a818f046733741783dd01ba16434c4f187ee2ad"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e7b4187dc00e5c2d200978f1029751120e99c8b95760c4e6b830b07dd6f1aba"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e7b4187dc00e5c2d200978f1029751120e99c8b95760c4e6b830b07dd6f1aba" # linuxbrew-core
   end
 
   depends_on "go" => :build
