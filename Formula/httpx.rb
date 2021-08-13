@@ -11,6 +11,7 @@ class Httpx < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "632528bc7b0aeb80b5aeb7c071447a64ddb64f26c615ae792df060cae4cbde67"
     sha256 cellar: :any_skip_relocation, catalina:      "1254a2235c1664c2486fea7631f02d8b238caf331c5bfc0ea103c8cfb25468ce"
     sha256 cellar: :any_skip_relocation, mojave:        "de1c33bba55e354643575cdc882c27ca82ed88cadc11908d09442e218199c502"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "102d35b81a64b1376999d107393093993212cbbf314e3bc1c2a90ee063af7d8b"
   end
 
   depends_on "go" => :build
