@@ -17,6 +17,7 @@ class Gor < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "193350bae7567c2770169b1e81f4ad359852905533d42e8a1e2bf74158b4d094"
     sha256 cellar: :any_skip_relocation, catalina:      "0f281049b7e7845fa155222d49d817270fce4229364bbebc85d74f6972c382bd"
     sha256 cellar: :any_skip_relocation, mojave:        "c52b65e40a57693f07a84682dbb9d09c0b3d6a5cc4e913da41249525bb8ea8b1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1fd0975f2a3bedb8e10ba381d5e415a492fa9a253f67c01cc447499aae696250"
   end
 
   depends_on "go" => :build
