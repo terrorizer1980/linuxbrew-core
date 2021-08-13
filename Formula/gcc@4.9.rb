@@ -8,6 +8,7 @@ class GccAT49 < Formula
 
   bottle do
     rebuild 1
+    sha256 x86_64_linux: "69da4727205f69158982959779c3d5819f516e3395313c8f35130e31e8047898"
   end
 
   # The bottles are built on systems with the CLT installed, and do not work
