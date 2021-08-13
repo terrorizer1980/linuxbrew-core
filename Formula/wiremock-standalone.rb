@@ -6,6 +6,10 @@ class WiremockStandalone < Formula
   license "Apache-2.0"
   head "https://github.com/tomakehurst/wiremock.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "bf8458fb1667cbb26d27a2a6b3e3bb6d7d0de48f353f1f4786de935a95b1b04e"
+  end
+
   depends_on "openjdk"
 
   def install
