@@ -15,6 +15,7 @@ class Usbredir < Formula
     sha256 cellar: :any, big_sur:       "1d29697803e3eec97d1d8ebe00d9dba354b1ad51122913414752380c0eedacd7"
     sha256 cellar: :any, catalina:      "ac6f36424efd438cd495ac1f2309b3d058541a43a71cdd0477cd5d4f602c130e"
     sha256 cellar: :any, mojave:        "16c79281da519d94bf5f10c1521e84f38e1465bc4f2835fa8ab9eb576af479cc"
+    sha256               x86_64_linux:  "73ba4b4154c70fb9e65a95c36e6cf6e2eb7cd09c90c8aa5f2d844bcfb8502694"
   end
 
   depends_on "meson" => :build
