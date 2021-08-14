@@ -18,6 +18,7 @@ class Grpc < Formula
     sha256 cellar: :any,                 big_sur:       "e75d097487de766329a3b867e98bc2715c1887147e80517285f2e2a68526c09f"
     sha256 cellar: :any,                 catalina:      "bb1674f7190928d0c4557367ea9ae93ce54f06ced9dbf6686de62832919e9186"
     sha256 cellar: :any,                 mojave:        "9bbf5282420979603cb7902b043a2e905296f03d6b29985b953f0849ffc080fd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "28d72581766c00474fc3b6b0aacaca046a59dc10b919702072306b80474a637c"
   end
 
   depends_on "autoconf" => :build
