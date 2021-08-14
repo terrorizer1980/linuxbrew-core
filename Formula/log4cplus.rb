@@ -15,6 +15,7 @@ class Log4cplus < Formula
     sha256 cellar: :any,                 big_sur:       "020f5bb424ba5b13c36a031d0faffbf0bae4132aca32dc8fbb8020e30ac82260"
     sha256 cellar: :any,                 catalina:      "0ca8fc813a82137c28138a19d602344756233447b8b0789880f911e7e597b9e7"
     sha256 cellar: :any,                 mojave:        "b1bd74384498b0fa7617a0fbd70e56af32d2c84d7c3552cae86cbdca52dcf323"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "65982c47478a5a2d7fe345429ddbe7a076734948425a42a988749ab4d627e003"
   end
 
   def install
