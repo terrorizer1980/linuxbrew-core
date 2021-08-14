@@ -10,6 +10,10 @@ class OsinfoDb < Formula
     regex(/href=.*?osinfo-db[._-]v?(\d+(?:\.\d+)*)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7317e117b25335079ea40f9917680e2123a10e4a15738312bd561a8af7c7e0f"
+  end
+
   depends_on "osinfo-db-tools" => [:build, :test]
 
   def install
