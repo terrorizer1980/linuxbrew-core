@@ -15,7 +15,7 @@ class Librealsense < Formula
     sha256 cellar: :any,                 big_sur:      "874d8bb2d532562ba525f7106820b2a69f87ba126ad0d50094a188f2410da5b9"
     sha256 cellar: :any,                 catalina:     "2f6a598c960c718439c072014109c5edd93b83c09f42c97d56004a2a5f83ff19"
     sha256 cellar: :any,                 mojave:       "24524f8069fc972b315914863f0e0b69213a9d10738cf8053a15141ac815b85f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e4b7947a328d587d7b5f964038abe3ad2cf21fb505d070d9ed6f05ce79661766"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e4b7947a328d587d7b5f964038abe3ad2cf21fb505d070d9ed6f05ce79661766" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

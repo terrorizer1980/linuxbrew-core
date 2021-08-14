@@ -11,7 +11,7 @@ class OsinfoDb < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7317e117b25335079ea40f9917680e2123a10e4a15738312bd561a8af7c7e0f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7317e117b25335079ea40f9917680e2123a10e4a15738312bd561a8af7c7e0f" # linuxbrew-core
   end
 
   depends_on "osinfo-db-tools" => [:build, :test]

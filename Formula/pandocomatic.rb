@@ -10,7 +10,7 @@ class Pandocomatic < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a7049bd282b595c4b5f8b8bf2ae1142d3f36081b316360f0e3235dc6e5500757"
     sha256 cellar: :any_skip_relocation, catalina:      "a7049bd282b595c4b5f8b8bf2ae1142d3f36081b316360f0e3235dc6e5500757"
     sha256 cellar: :any_skip_relocation, mojave:        "1c51680618ae42fe46954499c83137ad5fa1ecee95030b66015aafb0ddd2f9e6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c51680618ae42fe46954499c83137ad5fa1ecee95030b66015aafb0ddd2f9e6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c51680618ae42fe46954499c83137ad5fa1ecee95030b66015aafb0ddd2f9e6" # linuxbrew-core
   end
 
   depends_on "pandoc"

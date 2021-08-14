@@ -14,7 +14,7 @@ class OpenkimModels < Formula
     sha256 cellar: :any,                 big_sur:       "4c0c49b3ff34e3656e1d1dce4ebcbec296851ad6c20c417f31b97a2b5f6bb779"
     sha256 cellar: :any,                 catalina:      "3f8e0b64864f1f03dd0a22801ee2a03ed80540a033f107a2dbfb6f3758beff86"
     sha256 cellar: :any,                 mojave:        "57c577a620d2cba560232d4d5cd189816580d22f93403330431d3970496a626c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51f58aeabcaae58bbbe92ef82294caab2942b436cf9af48584da76b350d000bf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51f58aeabcaae58bbbe92ef82294caab2942b436cf9af48584da76b350d000bf" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
