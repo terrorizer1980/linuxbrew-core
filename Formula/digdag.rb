@@ -11,7 +11,7 @@ class Digdag < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a46e7f53dd2c1351dbf4854bcdbd02d4d32b093d6dc5184575c403fb56befdbd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a46e7f53dd2c1351dbf4854bcdbd02d4d32b093d6dc5184575c403fb56befdbd" # linuxbrew-core
   end
 
   depends_on arch: :x86_64 # openjdk@8 is not supported on ARM

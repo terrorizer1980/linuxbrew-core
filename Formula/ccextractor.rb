@@ -11,7 +11,7 @@ class Ccextractor < Formula
     sha256 cellar: :any,                 big_sur:       "7ef74d19888cc643e9cccc6be88123b354bddc60d79ff1597e2db15d0fd053a8"
     sha256 cellar: :any,                 catalina:      "ebb303622c9d44a67532afe590ec0fcad987cd602f5903a1b193cd86aebcf140"
     sha256 cellar: :any,                 mojave:        "14a4e53589bae04b5acfea0e5c95528d0a9196393c40dbe020beea7ae359d537"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5988d41b84e97724ecab3eaad7cb1a28c6f425a410bcc43ab44a0ee21591d301"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5988d41b84e97724ecab3eaad7cb1a28c6f425a410bcc43ab44a0ee21591d301" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

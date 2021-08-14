@@ -12,7 +12,7 @@ class Zeek < Formula
     sha256 big_sur:       "f495915276550ecc000d756466c923f9b59714e71b2ba27eed56c6918985f558"
     sha256 catalina:      "964022f5acec17e81d4ccac974a01bb07c5623af24046a15a11fcb696b6d9bbc"
     sha256 mojave:        "0d21a26a3785f6d3b34cefbf57273251a442d2ad2c53a1d0672ffdbe0d39404a"
-    sha256 x86_64_linux:  "1e011bf3ded6b3a6dac76a963fb4dc7ba4ea21a1f73f4382bd6ecae8056202a6"
+    sha256 x86_64_linux:  "1e011bf3ded6b3a6dac76a963fb4dc7ba4ea21a1f73f4382bd6ecae8056202a6" # linuxbrew-core
   end
 
   depends_on "bison" => :build
