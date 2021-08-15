@@ -10,7 +10,7 @@ class Sonobuoy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ec5a4dbe0498a470c0f0899d73eac4a489d865493445a482e2f9b41b80ec6e8f"
     sha256 cellar: :any_skip_relocation, catalina:      "d39ab320c5133e52611bd80f95234c3bfc9614e06bfc411156015fbe2cec4b82"
     sha256 cellar: :any_skip_relocation, mojave:        "170fc45c12732904420475124abdd7d4fe8c69d9f039ee355464e08472d06045"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e0f92efb85063f1eb5be61c3a76cac10242b2b1dad8d4ada59a670018499e12"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e0f92efb85063f1eb5be61c3a76cac10242b2b1dad8d4ada59a670018499e12" # linuxbrew-core
   end
 
   depends_on "go" => :build

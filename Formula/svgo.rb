@@ -8,7 +8,7 @@ class Svgo < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d90d4b6d709987731d1552fd4d8fbaa3ec6f7ffca8fe9e90d8c8cc497037d80"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d90d4b6d709987731d1552fd4d8fbaa3ec6f7ffca8fe9e90d8c8cc497037d80" # linuxbrew-core
   end
 
   depends_on "node"

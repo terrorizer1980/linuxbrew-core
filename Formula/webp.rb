@@ -10,7 +10,7 @@ class Webp < Formula
     sha256 cellar: :any,                 big_sur:       "82435d74c96ff1a8482981458f110a9526472e452968e2969e37dc6b48fbe3e5"
     sha256 cellar: :any,                 catalina:      "43953ec86a790330c17c714d88087f0388c739f6a15be2ae18480e397df25d61"
     sha256 cellar: :any,                 mojave:        "372e3ce46f089e0ae89fcdc62a8f360634dabcedeabade508d8cc7fd4fd6405c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af503080f936897776b59b9000e3e230c76e1eb694cf6f8366fa776f5207b75a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af503080f936897776b59b9000e3e230c76e1eb694cf6f8366fa776f5207b75a" # linuxbrew-core
   end
 
   head do

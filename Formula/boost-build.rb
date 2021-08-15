@@ -17,7 +17,7 @@ class BoostBuild < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "651353d33f97fa5183c9acde956f7cfd67e36f288a4a35afaf907838e69dca36"
     sha256 cellar: :any_skip_relocation, catalina:      "bc8909293558dd1d3c55a9d2d5cdfa155e63b3540da63a719a33fa872f371921"
     sha256 cellar: :any_skip_relocation, mojave:        "26da04379b8dd9506778273f12277eb00b257653c11502d8ff50d3218587cc10"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9119799f6a153292e094509fdce67cb553b83cb8f32db717324b7a529cf99939"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9119799f6a153292e094509fdce67cb553b83cb8f32db717324b7a529cf99939" # linuxbrew-core
   end
 
   conflicts_with "b2-tools", because: "both install `b2` binaries"
