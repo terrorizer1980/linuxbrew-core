@@ -6,7 +6,7 @@ class Asciidoctorj < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0574d47ac526e59ade2b3e6280d13179862627096502ac8a614f6f06bf579d6a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0574d47ac526e59ade2b3e6280d13179862627096502ac8a614f6f06bf579d6a" # linuxbrew-core
   end
 
   depends_on "openjdk"

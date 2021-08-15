@@ -11,7 +11,7 @@ class Sqlc < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c679692541c7354727131f04710df15a2b5e9c40ec983e323bb9a99d7b5e2157"
     sha256 cellar: :any_skip_relocation, catalina:      "d606bfb712742f046e1b1f0ce662f1ce1fda4a16823abff61661d3a7b01a1aa3"
     sha256 cellar: :any_skip_relocation, mojave:        "d7e58abb333731d563686e499a6c0e748e377fb8a08872201ab7622d358e7de0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3f2979beaba1ab88bc02b1daa645e3bcb3ac8b2efb926e469bedffa3103da26d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3f2979beaba1ab88bc02b1daa645e3bcb3ac8b2efb926e469bedffa3103da26d" # linuxbrew-core
   end
 
   depends_on "go" => :build
