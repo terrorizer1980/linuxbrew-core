@@ -16,6 +16,7 @@ class V2ray < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a045bd37d878fbddc311e4b5e8531a24efc84e3416637af63f613d16c61f3e16"
     sha256 cellar: :any_skip_relocation, catalina:      "fc560d3ffd4c4ec14eb36cd49b6efe4247b323c5fbec7e56f590d720c47dec3e"
     sha256 cellar: :any_skip_relocation, mojave:        "78279973a5e7cede499991139f7865e22747aa8c607fbae9f6045cb3560e6a40"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "63c87aeb08f79f5fb148b7be48cc686f2da50671d73a45637ec8806546efeebe"
   end
 
   depends_on "go" => :build
