@@ -11,6 +11,7 @@ class OpenjdkAT8 < Formula
     sha256 cellar: :any,                 big_sur:      "b13d2fe2ec9a4fe98ffcfb9c7b4e7a9307b12d8e999d08b88dac35eed211e459"
     sha256 cellar: :any,                 catalina:     "2268eefc71327f9784a1a5a7ddbf17e14e50485d78bce0a856763d91dcff4ce0"
     sha256 cellar: :any,                 mojave:       "c45c00f59218eca6e8ba55a082be6048ac30d7b13236debbc3787d3ca947b55c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "767b9ec455e9625878208d203971490f67432d9f9a518d8464a23dfa92fe0418"
   end
 
   keg_only :versioned_formula
