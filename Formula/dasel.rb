@@ -11,6 +11,7 @@ class Dasel < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ff64877247d4a86df9add71a04f948447c964c5387bf25b07b94bb4b8b535b33"
     sha256 cellar: :any_skip_relocation, catalina:      "64c6c2188b76d0d39fe8bd536b2bb43ea52677b17a3a265e4800aba9679837ab"
     sha256 cellar: :any_skip_relocation, mojave:        "ef13e65365cbd8d4cfb7ac699faef9ecc75fc6491b2be127f903f62867c7daa3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d8454da98513b2f184245f4adfbc577c287deef857c1d8c8636d5d1ce19aac50"
   end
 
   depends_on "go" => :build
