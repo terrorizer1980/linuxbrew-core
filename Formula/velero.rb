@@ -10,6 +10,7 @@ class Velero < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "414e6ddcb5d63126e01e33d6059d2e4db441e657dafc618d0c226fa6ca990056"
     sha256 cellar: :any_skip_relocation, catalina:      "2e70e812e6aeb4ca0936c89a71221f59e20488643c9ba61a57ef05696fe97488"
     sha256 cellar: :any_skip_relocation, mojave:        "0a6d6bc432ad242d605fcaa84d99aace7eefbbf7d2e1dc02e6e8aa063737960b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6736ffa4deedc27edd87f68416e99580cce02c86107492051656bbc18332e4f0"
   end
 
   depends_on "go" => :build
