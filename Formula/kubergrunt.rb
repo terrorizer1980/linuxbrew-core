@@ -10,6 +10,7 @@ class Kubergrunt < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d4b1b7d85830ce27b51f5459b0605ad2918e30d33522b45116f4213268c3afaf"
     sha256 cellar: :any_skip_relocation, catalina:      "685f262e8196fbd6000201b278334412f96fc64f0249c006e6c0097d1427fa6a"
     sha256 cellar: :any_skip_relocation, mojave:        "6fd2bc14347a2f90e940c6ecb72a396fbfbd595cfa2ed2d1d5fd3603155f520f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dacf81f1879c28e410eb785969317e204e3279acd21020d7c03be6b7572a5b5a"
   end
 
   depends_on "go" => :build
