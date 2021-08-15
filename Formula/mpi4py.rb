@@ -9,6 +9,7 @@ class Mpi4py < Formula
     sha256 cellar: :any, big_sur:       "b7ca05b0d8ddcc698e1ee29e6108f169cff4f4552ca80842469a63c0a6e90de1"
     sha256 cellar: :any, catalina:      "9019d4011822668326aec24352f2a743457e727d83d3903b1bee00a1bbfd6751"
     sha256 cellar: :any, mojave:        "19b22755d25aab224777f996e12cbcb16a8156f1bf98123a607d648b676d7af4"
+    sha256               x86_64_linux:  "55219524503a403d618cf7b74e3ab5c6772d148cc1fc208230430942777560c6"
   end
 
   depends_on "cython" => :build
