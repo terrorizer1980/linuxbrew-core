@@ -13,9 +13,11 @@ class Prestodb < Formula
     regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
-  depends_on "openjdk"
+  bottle do
+    rebuild 1
+  end
 
-  conflicts_with "prestosql", because: "both install `presto` and `presto-server` binaries"
+  depends_on "openjdk"
 
   resource "presto-cli" do
     url "https://search.maven.org/remotecontent?filepath=com/facebook/presto/presto-cli/0.259.1/presto-cli-0.259.1-executable.jar"
