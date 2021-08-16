@@ -13,6 +13,7 @@ class Pgbouncer < Formula
     sha256 cellar: :any,                 big_sur:       "7d61dac174635767840b8dde46b2d9b4b25f6a36fc5ac950beb0868366fa87b8"
     sha256 cellar: :any,                 catalina:      "e9bcdece7ed67566382ed196d34f6550fd093519e0283cb5e6170bd66645355f"
     sha256 cellar: :any,                 mojave:        "d6e080c159196a61edd69c73ea234ce34bc91baeaf25e814633d2b35cabfb496"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26f5a2974400ec50e0727ce1b3054ceacd83e2e10e6b65e0e92296f412c65bfb"
   end
 
   depends_on "pkg-config" => :build
