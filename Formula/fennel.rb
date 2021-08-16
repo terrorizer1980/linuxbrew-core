@@ -6,7 +6,7 @@ class Fennel < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "61413fc779425837a7498ece98d85016b3a5d26f1ffb5099f6363afe058b2290"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "61413fc779425837a7498ece98d85016b3a5d26f1ffb5099f6363afe058b2290" # linuxbrew-core
   end
 
   depends_on "lua"

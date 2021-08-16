@@ -11,7 +11,7 @@ class Idnits < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6ad8398fb0962f27699d3cdbc897d636d8a118d18902f24a0d61bda419f6c29"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6ad8398fb0962f27699d3cdbc897d636d8a118d18902f24a0d61bda419f6c29" # linuxbrew-core
   end
 
   resource "test" do

@@ -11,7 +11,7 @@ class Grep < Formula
     sha256 cellar: :any,                 big_sur:       "0ca6e4d8a78798fa84b9bc96be28efb0f815996a2bc3c291773467f016e874e9"
     sha256 cellar: :any,                 catalina:      "f41a618521eb9f55c50de5e6fe0c0e76df83962236cf076deff2107911fb0bdc"
     sha256 cellar: :any,                 mojave:        "180f055eeacb118cd73e2c3dbb0fda9d71fcbe0d4ee613b799a130085d6db76f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b842a12e018e675333c0cfd93602c5ef1c7889e0fa7314610182419cd73327af"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b842a12e018e675333c0cfd93602c5ef1c7889e0fa7314610182419cd73327af" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
