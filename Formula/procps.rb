@@ -1,8 +1,9 @@
 class Procps < Formula
   desc "Utilities for browsing procfs"
   homepage "https://gitlab.com/procps-ng/procps"
-  url "https://gitlab.com/procps-ng/procps/repository/archive.tar.gz?ref=v3.3.16"
-  sha256 "25eb11aefe6ecf3b4932e04d79b609bb0b9f735f31e15ddce86fcc9040ee48d1"
+  url "https://gitlab.com/procps-ng/procps/-/archive/v3.3.16/procps-v3.3.16.tar.gz"
+  sha256 "7f09945e73beac5b12e163a7ee4cae98bcdd9a505163b6a060756f462907ebbc"
+  license "GPL-2.0-or-later"
   head "https://gitlab.com/procps-ng/procps.git"
 
   bottle do
@@ -32,6 +33,6 @@ class Procps < Formula
 
   test do
     system "#{bin}/ps", "--version"
-    system "#{bin}/ps"
+    assert_match "grep homebrew", shell_output("ps aux | grep homebrew")
   end
 end
