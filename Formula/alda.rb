@@ -10,7 +10,7 @@ class Alda < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d20aa732aba4bba381a67b2be7d381f07925564072988ec7233b50d5cc8f8572"
     sha256 cellar: :any_skip_relocation, catalina:      "ceb559532cf0c0dca31d9f31885f4826c5979028e3f20b340aec247b1276b79d"
     sha256 cellar: :any_skip_relocation, mojave:        "3a20dbbe017aa41397a6c5ba0fbcdf3fe52b57df33ef0ff01bcbc55143e14098"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e620debbed072ba4afd24a7c4349b647c4fa03b25888c6d0a36b22018e4d1846"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e620debbed072ba4afd24a7c4349b647c4fa03b25888c6d0a36b22018e4d1846" # linuxbrew-core
   end
 
   depends_on "go" => :build
