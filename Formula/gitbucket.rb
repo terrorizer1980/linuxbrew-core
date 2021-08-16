@@ -7,6 +7,7 @@ class Gitbucket < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4d7f498b49317e9b8de744e3964f6edcaa5d4510cabb39ab0389a6c5683d2a6e"
   end
 
   head do
