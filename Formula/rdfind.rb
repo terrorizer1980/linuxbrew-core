@@ -15,6 +15,7 @@ class Rdfind < Formula
     sha256 cellar: :any,                 big_sur:       "db5e30a0195c38a79630c88cc32a37e0f837ece980dd039a042c4879d9365c4b"
     sha256 cellar: :any,                 catalina:      "b25d141342e3ebb09d42f528fd2dcb253c6f729665bc39f58ff1fbe4ca757c72"
     sha256 cellar: :any,                 mojave:        "d704696e7f9ab9c095ce6f59db3725576ea7ac4a540e115a3928feca3cb75b28"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "787feec863b81e78f378a46b60505051c4b8b29b25c19e3d41b5c94c8ce88562"
   end
 
   depends_on "nettle"
