@@ -10,7 +10,6 @@ class OpenjdkAT11 < Formula
     sha256 cellar: :any,                 big_sur:       "2de8af552742c3caa4d19fa15f6c39c771c20684c0afc0ebaa1e5f9b1ce1801a"
     sha256 cellar: :any,                 catalina:      "339415a28991471cad033b5025c37e0b235338379b51dbd1b94551b721f6e1b2"
     sha256 cellar: :any,                 mojave:        "73ff7dac9d97a48cf4774c4c68ee265dab978fa061f65c11ac5889c18845bffc"
-    sha256                               x86_64_linux:  "0c1be71fd49f5b1d36bd9a06f4585a37e52b5bb29e500b5b495f2b27ce8c473b" # linuxbrew-core
   end
 
   keg_only :versioned_formula
