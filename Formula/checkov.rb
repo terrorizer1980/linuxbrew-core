@@ -7,13 +7,13 @@ class Checkov < Formula
   url "https://files.pythonhosted.org/packages/ea/d2/ab888c6e689cc701acc033c5dab129e81474c06765cb4dc4e97a3a1d1bc8/checkov-2.0.330.tar.gz"
   sha256 "d59ed481a0f6d976baa5cbd0d671463ba89466a3a42174b4ed1e5c2087ee9e3a"
   license "Apache-2.0"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b0f24616405127b7ca5f6b139497e3f7ecd6d76fe1d7bf564121541bd52bb72f"
-    sha256 cellar: :any_skip_relocation, big_sur:       "01e63d859016402d13c3165125f58215a78994c0e8cae287ae2e628413ec2bc1"
-    sha256 cellar: :any_skip_relocation, catalina:      "91e39150c42c8359705c40b9e3c3bca9e57f1d493a11c22d71ba52cb0d55aeb1"
-    sha256 cellar: :any_skip_relocation, mojave:        "066adab9008eab23394e6f019ffa6b1bf94f1ec006ef71a301f35ea686ef1ac4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "40c05c7fb653a2d1de2439aaeb1d90be79dcab9ba4337b81c31fd0ce2ecba8a6" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0face8ff7a8a2eb90aeafe2204efffaeaaf894cdc6a2f87b3ae8a0290defdd30"
+    sha256 cellar: :any_skip_relocation, big_sur:       "3a4c8e7cf5412e854363d78047d34f5b7f1da41ef6ff884479344db4d4804dfc"
+    sha256 cellar: :any_skip_relocation, catalina:      "d733fbb7db7cb880a98e85f5915c9d4331706d5a7a91810bc665e5b48086a4fd"
+    sha256 cellar: :any_skip_relocation, mojave:        "8b44a13a0efd983af7f336add5f08a9cfd32419c440a034567fd45799844b155"
   end
 
   depends_on "python-tabulate"
@@ -251,7 +251,7 @@ class Checkov < Formula
   end
 
   def install
-    inreplace "checkov/common/output/report.py", "junit_xml", "junit_xml_2"
+    inreplace "checkov/common/output/report.py", "from junit_xml", "from junit_xml_2"
     virtualenv_install_with_resources
   end
 
