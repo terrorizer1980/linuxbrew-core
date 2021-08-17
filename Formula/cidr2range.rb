@@ -15,7 +15,7 @@ class Cidr2range < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c4674bd284ea97c018ae479b439ebe1ec3bf08ca2631e3eb9a27d92479c3bf21"
     sha256 cellar: :any_skip_relocation, catalina:      "0e761e1ac45563693d03501e82ff1a07a865e55453026cda2895650edbeda503"
     sha256 cellar: :any_skip_relocation, mojave:        "e76347d9d442df7f4c2335c277ed801c0e4e947e8d38a9c4e0a3e5bf3519430d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0991c9fc45ebee1696c6f65477cffcf03a1ba88223bbfe95b68bb03eaa87ac9b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0991c9fc45ebee1696c6f65477cffcf03a1ba88223bbfe95b68bb03eaa87ac9b" # linuxbrew-core
   end
 
   depends_on "go" => :build

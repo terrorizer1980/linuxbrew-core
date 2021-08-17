@@ -15,7 +15,7 @@ class IpinfoCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "16bdbace0a3525c6bb5c2b88576d54477340cf18de6e61a3cc36124cad9933bc"
     sha256 cellar: :any_skip_relocation, catalina:      "9864acd40e2280331f79a7b8e665dfa5b237beb2f33d935e62109f724e0701a1"
     sha256 cellar: :any_skip_relocation, mojave:        "368f06b63d241c5ffe492247243e33a12f2f20566d5fab5f89eb274d61f20020"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6630c32e36a6089544962df498694b33cdf5d9dc31be760e2bdeda42a24e6ebb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6630c32e36a6089544962df498694b33cdf5d9dc31be760e2bdeda42a24e6ebb" # linuxbrew-core
   end
 
   depends_on "go" => :build
