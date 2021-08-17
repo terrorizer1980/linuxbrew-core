@@ -11,7 +11,7 @@ class Onednn < Formula
     sha256 cellar: :any,                 big_sur:       "54de4099e0e24c93e94437c1a3cea1844d5bc0f1a6dc50f75e8f2fcd020e9eac"
     sha256 cellar: :any,                 catalina:      "3f0e47b458db78e9294e5970f6d7eb023cc9abef4fc03efecbaab5c62f41f80d"
     sha256 cellar: :any,                 mojave:        "8beb08cae2c9e6161b8036e55e8cb4ba286aac5733d9dfe6ff9a2248c955ee9c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2352e38848241280370a3446dc4d731df2daaad9d32000f0f5910d5d95c0d16a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2352e38848241280370a3446dc4d731df2daaad9d32000f0f5910d5d95c0d16a" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
