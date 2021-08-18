@@ -10,6 +10,7 @@ class JsonGlib < Formula
     sha256 big_sur:       "520330aa60afa6b10ff37b481efeccb6edc773d0f33dbde68c2f88cc90eedf68"
     sha256 catalina:      "f3116ac48b3acdecc384e110e84be26c211b475cb7e1007ceaaedad4611054d9"
     sha256 mojave:        "91cb0342846214588c95f9c338e67d181ec77d237dbd93009e3dfdd831feec85"
+    sha256 x86_64_linux:  "aef61281d66f276b85663dd82fe297ea8b4d7af55ad5880d3f67a3aa3df92dd4"
   end
 
   depends_on "gobject-introspection" => :build
