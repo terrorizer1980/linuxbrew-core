@@ -11,7 +11,7 @@ class Harfbuzz < Formula
     sha256 cellar: :any, big_sur:       "5641820f5fdab22faf48a0865dd9f325d27ccd34cbfd327efb43a8e9a0ee5c76"
     sha256 cellar: :any, catalina:      "1b4db678008df8fabc859a6f589cc9934d5aa95f2c728ebdaef55422ae0742fd"
     sha256 cellar: :any, mojave:        "84757b98555c2e9b20c2a23e388e0ce04d996bec212021005b3e633901ac4280"
-    sha256               x86_64_linux:  "b36a4b9af3b1164339c612910df319439f1c8e562b30874b69d7b1260239d74e"
+    sha256               x86_64_linux:  "b36a4b9af3b1164339c612910df319439f1c8e562b30874b69d7b1260239d74e" # linuxbrew-core
   end
 
   depends_on "meson" => :build

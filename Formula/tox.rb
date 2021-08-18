@@ -12,7 +12,7 @@ class Tox < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "526ec36b876d880ccca72bbd738d05a1a281a72bb946d3f4d1dea4075d9474b3"
     sha256 cellar: :any_skip_relocation, catalina:      "e56e175c0c9d09e3a15cb4c26a5e58eb5ff63061ba68a31062a19b4ff1cf2ad7"
     sha256 cellar: :any_skip_relocation, mojave:        "5af253385c0c9f9653a531c01c2430ab75ddbdf52b379e5657db8152571777dc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75ca339316a0596066bde41846746a5f5d349be124e423313492a21fb0c08587"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75ca339316a0596066bde41846746a5f5d349be124e423313492a21fb0c08587" # linuxbrew-core
   end
 
   depends_on "python@3.9"
