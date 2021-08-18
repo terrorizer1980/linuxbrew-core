@@ -22,7 +22,7 @@ class PariSeadata < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e1310a89e74bc49b8fb00213aa9210b7e2fa89c6529a23771b185a63c3b1a668"
     sha256 cellar: :any_skip_relocation, catalina:      "e1310a89e74bc49b8fb00213aa9210b7e2fa89c6529a23771b185a63c3b1a668"
     sha256 cellar: :any_skip_relocation, mojave:        "e1310a89e74bc49b8fb00213aa9210b7e2fa89c6529a23771b185a63c3b1a668"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b521d8b719cf49b0b8a4a1d81d4819e7789af3f3a141bfda7a7f7b19fa7a8ee4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b521d8b719cf49b0b8a4a1d81d4819e7789af3f3a141bfda7a7f7b19fa7a8ee4" # linuxbrew-core
   end
 
   depends_on "pari"
