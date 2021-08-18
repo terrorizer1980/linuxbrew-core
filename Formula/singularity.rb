@@ -6,7 +6,7 @@ class Singularity < Formula
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8579e2228ef36fe875618f5f16d99c417a57093762b99961c82d68789588f3c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8579e2228ef36fe875618f5f16d99c417a57093762b99961c82d68789588f3c6" # linuxbrew-core
   end
 
   depends_on "go" => :build

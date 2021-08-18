@@ -15,7 +15,7 @@ class Gradle < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "271f05a8828d3e763fc615ce1d709d1e01d5957f7a001f0723303ffe130a8251"
     sha256 cellar: :any_skip_relocation, catalina:      "271f05a8828d3e763fc615ce1d709d1e01d5957f7a001f0723303ffe130a8251"
     sha256 cellar: :any_skip_relocation, mojave:        "271f05a8828d3e763fc615ce1d709d1e01d5957f7a001f0723303ffe130a8251"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "15d4fa8e444f0127ea833fcb53099b3a92e13a0a39e7bffc5dd824a029f60736"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "15d4fa8e444f0127ea833fcb53099b3a92e13a0a39e7bffc5dd824a029f60736" # linuxbrew-core
   end
 
   # gradle currently does not support Java 17

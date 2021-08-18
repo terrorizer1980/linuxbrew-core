@@ -23,7 +23,7 @@ class Tor < Formula
     sha256 big_sur:       "07b5cb200302bb21aa031f86bf3e00247954c176bcb6c932f86f450a7ad62b67"
     sha256 catalina:      "4446f16f1efce667ceedd801b51cbdf541cdeb52e2311b44d2d12ec5ff95bf91"
     sha256 mojave:        "d64ff6e3ff8b258694d277a805ebe975c8fcdcbc033983974ee09dec01ab14cc"
-    sha256 x86_64_linux:  "69425b9125943c55d0b8b31d78a77ea18a22ada3f9c01b5241278829f17d3a48"
+    sha256 x86_64_linux:  "69425b9125943c55d0b8b31d78a77ea18a22ada3f9c01b5241278829f17d3a48" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
