@@ -10,6 +10,7 @@ class AwsVault < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "96bea08ce45ad2b3e5ab857f81ba0373c57a82887d50ee3f501901726b8987c8"
     sha256 cellar: :any_skip_relocation, catalina:      "84af267993e86cd67cb6dbe9d7768c6407837d8473d6a17e715fafa5c7bdf7ca"
     sha256 cellar: :any_skip_relocation, mojave:        "f36473dafd176d15448ce1dcaf80de6bbb460a97d8ce4ae706816b864d911baa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d06d1464ac9785ef949386ccf54fcc17aa12ef6b88bb8c95489aa8d93ca355e4"
   end
 
   depends_on "go" => :build
