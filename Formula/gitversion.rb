@@ -9,6 +9,7 @@ class Gitversion < Formula
     sha256 cellar: :any,                 big_sur:      "da4483fe73a5085dd3a54034bdac7a17e12710c18ca53e90fe1386a188cb6946"
     sha256 cellar: :any,                 catalina:     "106a5e3b8ac1e69809bbd4e86733bcab971f2f35fed40a2a7197f9b57d28a039"
     sha256 cellar: :any,                 mojave:       "b5d5943589f696a3bbcdb61d0827374cd45e5903203a3e574f40bf2c19c16da1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ce718fba03f900cecca4f71e34c8d0eb99750eaaeea57b2ee6388eca2b3d8d3e"
   end
 
   depends_on arch: :x86_64 # dotnet does not support ARM
