@@ -3,16 +3,15 @@ class Tox < Formula
 
   desc "Generic Python virtualenv management and test command-line tool"
   homepage "https://tox.readthedocs.io/"
-  url "https://files.pythonhosted.org/packages/87/d1/602b0faa100f327c102cf3cab7c9adc949b64e0a9dc5862045888fb1df38/tox-3.24.1.tar.gz"
-  sha256 "9850daeb96d21b4abf049bc5f197426123039e383ebfed201764e9355fc5a880"
+  url "https://files.pythonhosted.org/packages/f9/1e/b583fd4970d991967e14c06d894973cb4d5d013b86349b3dab0f3e61a7cd/tox-3.24.2.tar.gz"
+  sha256 "ae442d4d51d5a3afb3711e4c7d94f5ca8461afd27c53f5dd994aba34896cf02d"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d5ea3dd534e5e5ee01f1e0008010cb0959a72ab199eceafe56ba7fd5ad4a13b8"
-    sha256 cellar: :any_skip_relocation, big_sur:       "0760296f2c8ce6368be4f911d1471cdc993383f7b98392a8253e7bee1b966041"
-    sha256 cellar: :any_skip_relocation, catalina:      "93453a5818dd4a79d2b7cb1b5549dca6f13e97390a1682f25982ba03d2bddadd"
-    sha256 cellar: :any_skip_relocation, mojave:        "768782aa66f0e324a0df19f951ea923d0607b979dfd1d01aa6d2d9f9f162e93f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aafe161830f14e8745f9eb3825b4916c078d35de1f279f862c25e662d731fe49" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7a2f8a4265f8c990500b1f9ee73f156917f3fc20db3bf873b56b296f10975908"
+    sha256 cellar: :any_skip_relocation, big_sur:       "526ec36b876d880ccca72bbd738d05a1a281a72bb946d3f4d1dea4075d9474b3"
+    sha256 cellar: :any_skip_relocation, catalina:      "e56e175c0c9d09e3a15cb4c26a5e58eb5ff63061ba68a31062a19b4ff1cf2ad7"
+    sha256 cellar: :any_skip_relocation, mojave:        "5af253385c0c9f9653a531c01c2430ab75ddbdf52b379e5657db8152571777dc"
   end
 
   depends_on "python@3.9"
@@ -68,8 +67,8 @@ class Tox < Formula
   end
 
   resource "virtualenv" do
-    url "https://files.pythonhosted.org/packages/e2/04/878273c00ec63df9acf76d1657155243c8874ca38833c62eface20ce15cd/virtualenv-20.7.0.tar.gz"
-    sha256 "97066a978431ec096d163e72771df5357c5c898ffdd587048f45e0aecc228094"
+    url "https://files.pythonhosted.org/packages/6d/89/9691b0d0521c069bd238585ccb7f4035b8393d843a50491270e7dae0209e/virtualenv-20.7.2.tar.gz"
+    sha256 "9ef4e8ee4710826e98ff3075c9a4739e2cb1040de6a2a8d35db0055840dc96a0"
   end
 
   def install

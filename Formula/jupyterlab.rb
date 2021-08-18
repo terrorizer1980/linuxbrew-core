@@ -15,7 +15,6 @@ class Jupyterlab < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "1bcc29d0b65585f00a2e9787a779ec90a7df2b05396c696bbab4a8c5cd752f07" # linuxbrew-core
   end
 
-  depends_on "ipython"
   depends_on "node"
   depends_on "pandoc"
   depends_on "python@3.9"
@@ -352,6 +351,7 @@ class Jupyterlab < Formula
     # gather packages to link based on options
     linked = %w[jupyter-core jupyter-client nbformat ipykernel jupyter-console nbconvert notebook]
     dependencies = resources.map(&:name).to_set - linked
+    on_linux { dependencies -= ["appnope"] }
     dependencies.each do |r|
       venv.pip_install resource(r)
     end
