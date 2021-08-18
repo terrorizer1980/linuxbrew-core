@@ -15,7 +15,7 @@ class UBootTools < Formula
     sha256 cellar: :any,                 big_sur:       "14ec1c7ecbd9f2988b5375684d7808eb1eee0c3b96f21eaf0525993f770d9eb4"
     sha256 cellar: :any,                 catalina:      "c47f93bad1f4dc106528afd47a6c5d2f1a840c4de8ad4b6bc8c23ebd74d2b444"
     sha256 cellar: :any,                 mojave:        "4123e118d4c499416fabdedd1e6e3ba4c097b5aa494832b8894c08193dfda26d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc4d6167a0f8770ee60cc2d33d31ac664ee021f33f09065b4fd9fba96bbeb12c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc4d6167a0f8770ee60cc2d33d31ac664ee021f33f09065b4fd9fba96bbeb12c" # linuxbrew-core
   end
 
   depends_on "coreutils" => :build # Makefile needs $(gdate)
