@@ -3,16 +3,15 @@ class Jupyterlab < Formula
 
   desc "Interactive environments for writing and running code"
   homepage "https://jupyter.org/"
-  url "https://files.pythonhosted.org/packages/c5/43/1077820f062efabe5c5518a32c5fe22c5a084d73ed23ffa8d0c107802667/jupyterlab-3.1.6.tar.gz"
-  sha256 "6d2ada6a333861f33a1b555d3cb7b07aa9d1ab80f07997b3d0c43878a98c1174"
+  url "https://files.pythonhosted.org/packages/b6/b8/4be743cfde7962769b456ba4f166954e758ffd4802a105e0a727ad28c0eb/jupyterlab-3.1.7.tar.gz"
+  sha256 "af3f452a6cc2117529bc09ecf9902fe239eec9346ac51b6882a998aa6339f5ea"
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "07764acc444734684efdafd00cf1194b78885f0336bf295716cbfaf1a68aae6c"
-    sha256 cellar: :any,                 big_sur:       "955f1a07917959a7f904c4ab0a925788fb7b1bd64b0e93c601fea979aeeb8ef2"
-    sha256 cellar: :any,                 catalina:      "7f7aab1f016ed518a2ad36ea8519606a1a402ad3752edc72c19a2e142fd2b8a3"
-    sha256 cellar: :any,                 mojave:        "b3fd0a46527c25405cc6c112c8ce854a4f5f2a33a3a961ccb63d8a7ea4cc48dc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "10bef8cf96b75667b8e9d00ad8d01715daf0abd8dc6c70512f903c4afb694134" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "e185a1329cfadfc0a0d967ff0bd1c19648796d7c0909a8891fc02b4481a83364"
+    sha256 cellar: :any, big_sur:       "2fe874c079f56343c8b31849872b1dbb4e242c58f0a4374ba7b1df5892ff222b"
+    sha256 cellar: :any, catalina:      "14b01598789b400271b16f552f5a334ef6bdff827a19b62703bb8defb39a1fee"
+    sha256 cellar: :any, mojave:        "7f498ca9bb3ef34ec71ba80518be152a071aefc2bc8710eaeafc5e8e8538d879"
   end
 
   depends_on "ipython"
@@ -38,11 +37,6 @@ class Jupyterlab < Formula
   resource "argon2-cffi" do
     url "https://files.pythonhosted.org/packages/74/fd/d78e003a79c453e8454197092fce9d1c6099445b7e7da0b04eb4fe1dbab7/argon2-cffi-20.1.0.tar.gz"
     sha256 "d8029b2d3e4b4cea770e9e5a0104dd8fa185c1724a0f01528ae4826a6d25f97d"
-  end
-
-  resource "async_generator" do
-    url "https://files.pythonhosted.org/packages/ce/b6/6fa6b3b598a03cba5e80f829e0dadbb49d7645f523d209b2fb7ea0bbb02a/async_generator-1.10.tar.gz"
-    sha256 "6ebb3d106c12920aaae42ccb6f787ef5eefdcdd166ea3d628fa8476abe712144"
   end
 
   resource "attrs" do
@@ -106,8 +100,8 @@ class Jupyterlab < Formula
   end
 
   resource "ipykernel" do
-    url "https://files.pythonhosted.org/packages/5e/33/56890c7307c2ea65082df4449cb066ce060ba9ded51b9e9205e6ccb764d6/ipykernel-6.1.0.tar.gz"
-    sha256 "e21a718c696ded7d4d5e25b13d2bdd88e099e782fd3be66f9d2e66397543d283"
+    url "https://files.pythonhosted.org/packages/d0/40/34a363757519c295218d6b1ceba93d1af976821d9f36672512e9401b7c94/ipykernel-6.2.0.tar.gz"
+    sha256 "4439459f171d77f35b7f7e72dace5d7c2dd10a5c9e2c22b173ad9048fbfe7656"
   end
 
   resource "ipython" do
@@ -186,8 +180,8 @@ class Jupyterlab < Formula
   end
 
   resource "nbclient" do
-    url "https://files.pythonhosted.org/packages/11/95/894f0f5e1671ffce42d22400717058c0a5e37d288a55427ef6ec605f1db6/nbclient-0.5.3.tar.gz"
-    sha256 "db17271330c68c8c88d46d72349e24c147bb6f34ec82d8481a8f025c4d26589c"
+    url "https://files.pythonhosted.org/packages/fc/be/c61d973ff6a53bfd961e81bfccf38d0bb7612546c247afeb27985430c593/nbclient-0.5.4.tar.gz"
+    sha256 "6c8ad36a28edad4562580847f9f1636fe5316a51a323ed85a24a4ad37d4aefce"
   end
 
   resource "nbconvert" do
@@ -256,8 +250,8 @@ class Jupyterlab < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz"
-    sha256 "a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"
+    url "https://files.pythonhosted.org/packages/b7/b3/5cba26637fe43500d4568d0ee7b7362de1fb29c0e158d50b4b69e9a40422/Pygments-2.10.0.tar.gz"
+    sha256 "f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"
   end
 
   resource "pyparsing" do
