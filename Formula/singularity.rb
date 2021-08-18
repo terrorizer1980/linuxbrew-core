@@ -1,12 +1,9 @@
 class Singularity < Formula
   desc "Application containers for Linux"
-  homepage "https://www.sylabs.io/singularity/"
-  url "https://github.com/sylabs/singularity/releases/download/v3.6.2/singularity-3.6.2.tar.gz"
-  sha256 "dfd7ec7376ca0321c47787388fb3e781034edf99068f66efc36109e516024d9b"
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d7addc5d9c86abf7dc6265529711eec33c24b13916e4e350bbe4ce4d689fba57" # linuxbrew-core
-  end
+  homepage "https://singularity.hpcng.org"
+  url "https://github.com/hpcng/singularity/releases/download/v3.8.1/singularity-3.8.1.tar.gz"
+  sha256 "2648366fbc7e8fcba9d32f8f187ea149356c5f9083a57826d641359fa8415d9a"
+  license "BSD-3-Clause"
 
   depends_on "go" => :build
   depends_on "openssl@1.1" => :build
@@ -25,6 +22,6 @@ class Singularity < Formula
   end
 
   test do
-    assert_match "Usage", shell_output("#{bin}/singularity --help")
+    assert_match "There are 0 container file(s)", shell_output("#{bin}/singularity cache list")
   end
 end
