@@ -11,6 +11,7 @@ class Nsq < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e0ab534bb29ef8aa87ec70991763ec4b91e7c445e5ae980a992c7f0c392b17c2"
     sha256 cellar: :any_skip_relocation, catalina:      "9ec55f85df4dc5d5061faab19e8f8385518f5251aa53a72bc723a72123495bbb"
     sha256 cellar: :any_skip_relocation, mojave:        "c9fd1a756550b9bc325c1e8e88ddbc22da23d5a52cc0c11dd2669f5ec650ef90"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e8b1b5fd5b3b4ebe2f664ea26646b89eff4a33102c2aacf4f851f7e50faf506"
   end
 
   depends_on "go" => :build
