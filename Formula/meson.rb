@@ -11,6 +11,7 @@ class Meson < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c5a6b1422db1ea301dd5da6cbe25731baca4e030d939ce688f7c7cee1a4b55e8"
     sha256 cellar: :any_skip_relocation, catalina:      "c5a6b1422db1ea301dd5da6cbe25731baca4e030d939ce688f7c7cee1a4b55e8"
     sha256 cellar: :any_skip_relocation, mojave:        "c5a6b1422db1ea301dd5da6cbe25731baca4e030d939ce688f7c7cee1a4b55e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "18e2e5fedef3e9853ab12b8e9f0e0b486b8d53837346f8025bf35ff2e58f308e"
   end
 
   depends_on "ninja"
