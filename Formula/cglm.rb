@@ -10,7 +10,7 @@ class Cglm < Formula
     sha256 cellar: :any,                 big_sur:       "2fe11e20a528578738d09dc81ee3454655aa847d35bb3c2476e4b398071399d0"
     sha256 cellar: :any,                 catalina:      "cafb0e2119b9d0a56acd3cb8c2aae7438a4dd9aeb3bf4ce1014780c3ef2dcccd"
     sha256 cellar: :any,                 mojave:        "3d9041245205d45fea1da390d139fa2457a92a5181938b6a51c1c8de3393ce74"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "35c5030d9019fae7bea72f57d9fd7ff9efbd3bc5e70bace3f34aa1e10a3d53a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "35c5030d9019fae7bea72f57d9fd7ff9efbd3bc5e70bace3f34aa1e10a3d53a5" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
