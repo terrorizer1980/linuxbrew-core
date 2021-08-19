@@ -11,6 +11,7 @@ class Pueue < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9dfcddb1449553353e059947ea4810304c61c07e710f2d106785fa0b3d0b17c4"
     sha256 cellar: :any_skip_relocation, catalina:      "bdc1926ca83547d7e59fadb230f9d0fb9de8a3ccb07def536e2690b25bb1148d"
     sha256 cellar: :any_skip_relocation, mojave:        "1e04b24afcb6f2a60c69f020d316bfa462d1ddf5a4d3032d1040993f7f486a9a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "78fed3136a866c59924e6c26f2be6503d9d7f2ba6a49faac7fab5ba71e944c31"
   end
 
   depends_on "rust" => :build
