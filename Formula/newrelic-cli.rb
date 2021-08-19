@@ -11,6 +11,7 @@ class NewrelicCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b4cdbd4eaeae7dd01974aed032d360d3056389f416b95abef91802c248f7ee5f"
     sha256 cellar: :any_skip_relocation, catalina:      "0ae9addca5944050a24aae726b0154599ee1a724cac61e9fc529b8637912baa0"
     sha256 cellar: :any_skip_relocation, mojave:        "3aa9819cda08cb4fd813b96832fb69719a4c3b6e9d15baa941ce5c1aa7b49d47"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "eb763f5f7f500667efbc87e24fbe1e990f57a2a7b6474d7a94da565f2521fe35"
   end
 
   depends_on "go" => :build
