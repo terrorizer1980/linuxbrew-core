@@ -11,6 +11,7 @@ class JsonFortran < Formula
     sha256 cellar: :any,                 big_sur:       "5f0d95474e94df306b48cb3efa41faf3063bded45b35bb115d2b9b5c14f76ca5"
     sha256 cellar: :any,                 catalina:      "02437f7df43e2615343b61de2cdffbca011a43ea578cdd9ca4c41205c687947c"
     sha256 cellar: :any,                 mojave:        "e09a2b0652b503775d930080bf6a9abc960b2c937e424543450d1977fcdd9ae0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e2fffb951d6c1d4749be7ce2d826e71057fcd55bc98e6207109db8388befd5f"
   end
 
   depends_on "cmake" => :build
