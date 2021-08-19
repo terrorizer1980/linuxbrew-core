@@ -14,7 +14,7 @@ class Remarshal < Formula
     sha256 cellar: :any,                 big_sur:       "e80acb98ffa9b1810221849012cbb256fb576c2eaa7751a15d837f51b3e753a1"
     sha256 cellar: :any,                 catalina:      "c565d849e47622eb7a95f5a4dbbc560aeb706c4ebef9f916096137d316a544ed"
     sha256 cellar: :any,                 mojave:        "0eeefb705f7d7c83e76004df5c907b643b4ee296c24ee383c39e75490762523f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "37546ab0b67bb432f2548ce99f344adce24fa11eabe690b3446c2f44e27328ca"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "37546ab0b67bb432f2548ce99f344adce24fa11eabe690b3446c2f44e27328ca" # linuxbrew-core
   end
 
   depends_on "poetry" => :build
