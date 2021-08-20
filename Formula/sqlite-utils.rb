@@ -2,20 +2,20 @@ class SqliteUtils < Formula
   include Language::Python::Virtualenv
   desc "CLI utility for manipulating SQLite databases"
   homepage "https://sqlite-utils.datasette.io/"
-  url "https://files.pythonhosted.org/packages/86/ac/3ed8f334d61e7984bc5ce05f47fb96467de0b256ca2815a8bdde909d777a/sqlite-utils-3.15.1.tar.gz"
-  sha256 "029d90209cd2f1bd5b3eae61b90f149edc27e89ee1efc3b826538e1ee762534b"
+  url "https://files.pythonhosted.org/packages/c1/80/5fdd80679e4190ee2ff5cd8dc1e18bee08a409eed79f20766d2056c54aa3/sqlite-utils-3.16.tar.gz"
+  sha256 "11d7b975a66b3fcf3b08b3298b2f9726896cf5915c72f2c37086dfc671f834d8"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "76b82b0b5359b9e14b65f0307481a667b7e4c431c1010b6eff32490ae7c6efd3"
-    sha256 cellar: :any_skip_relocation, big_sur:       "317e677e823975e0e17ce6fe215c70da659e7e2afc9a52ba89764ae9f27c8889"
-    sha256 cellar: :any_skip_relocation, catalina:      "daac49cd99806609bfd557ce50d8443c0926353f7b976c22ae47121b992838ea"
-    sha256 cellar: :any_skip_relocation, mojave:        "385c9c20ef520a5bf52999e0af91d748a7ba4a94610db6704c0b729e7d34b227"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8778f070f9322dc4dd9203dcbb79c907f986dce7bc4130ea8ef470cad4072348" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e41a7a9ea04dc5ae11597f29874d0a98ded3055de10ceb3322534da1048a9907"
+    sha256 cellar: :any_skip_relocation, big_sur:       "a11f9a5a5da4a1f52c65a0782d0a6a67170c281cfa80e7bbf1005eead2143c11"
+    sha256 cellar: :any_skip_relocation, catalina:      "638298385470b6313b963fb3fcc4ae1e4e12c4ceaa13cfb44b5e6800f0911736"
+    sha256 cellar: :any_skip_relocation, mojave:        "1c537fe06650a51b528fad3993a3452fea2647141a15b4fdc1e763997db51452"
   end
 
   depends_on "python-tabulate"
   depends_on "python@3.9"
+  depends_on "six"
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/21/83/308a74ca1104fe1e3197d31693a7a2db67c2d4e668f20f43a2fca491f9f7/click-8.0.1.tar.gz"
@@ -40,11 +40,6 @@ class SqliteUtils < Formula
   resource "pytz" do
     url "https://files.pythonhosted.org/packages/b0/61/eddc6eb2c682ea6fd97a7e1018a6294be80dba08fa28e7a3570148b4612d/pytz-2021.1.tar.gz"
     sha256 "83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"
-  end
-
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
-    sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
   end
 
   resource "sqlite-fts4" do
