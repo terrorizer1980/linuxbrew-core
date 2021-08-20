@@ -10,6 +10,10 @@ class Checkbashisms < Formula
     regex(/href=.*?devscripts[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "53f97b7d77cc245cb7281f261ebd84195c17078a21f90a96a52abe8870352c93"
+  end
+
   def install
     inreplace "scripts/checkbashisms.pl" do |s|
       s.gsub! "###VERSION###", version
