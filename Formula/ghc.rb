@@ -19,7 +19,7 @@ class Ghc < Formula
     sha256                               big_sur:       "a6cf3b392bffa87b860cf42966015e00707f8bb559c8cad27b76a55d4f12af23"
     sha256                               catalina:      "735ab8edd2fd0c4ca7b5ef8763bff6579647e562fb819b42d319b1561bef70a5"
     sha256                               mojave:        "babf59ed8241f90f695d99c9f0e6c6180c738dbf092e70e40cbf6d92e385f059"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6c3c6ae372bdd73143a8c15488d74bc5581dc4e3f2bb20214d365ad1955317d0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6c3c6ae372bdd73143a8c15488d74bc5581dc4e3f2bb20214d365ad1955317d0" # linuxbrew-core
   end
 
   depends_on "python@3.9" => :build
