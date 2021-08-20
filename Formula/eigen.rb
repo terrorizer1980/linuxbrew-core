@@ -11,6 +11,10 @@ class Eigen < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "87b2664bdc6ec98850643d1149ab53c57b9f6c228cabe23f724b0ff331492fca"
+  end
+
   depends_on "cmake" => :build
 
   conflicts_with "freeling", because: "freeling ships its own copy of eigen"
