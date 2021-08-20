@@ -5,6 +5,10 @@ class GradleAT6 < Formula
   sha256 "b13f5d97f08000996bf12d9dd70af3f2c6b694c2c663ab1b545e9695562ad1ee"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd167292281521adf832093bbc0485f5a03e82c9962039f54f12e59d0d2dce1b"
+  end
+
   keg_only :versioned_formula
 
   # gradle@6 does not support Java 16
