@@ -10,7 +10,6 @@ class GhcAT86 < Formula
   ]
   revision OS.mac? ? 2 : 3
 
-  # Cellar should be :any_skip_relocation on Linux
   bottle do
     sha256 cellar: :any_skip_relocation, big_sur:      "d8cc7eb020495417a2674bb0b4129720fef30fd9c5688713501dd5ca6c1dea0f"
     sha256 cellar: :any_skip_relocation, catalina:     "af21e24b89361083a6cd5a27268e0470cdbf2e8616d1d95355df603f58f4e30d"
