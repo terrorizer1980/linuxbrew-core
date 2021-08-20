@@ -16,7 +16,7 @@ class Bgpq4 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3ed16f7427a8e609d8c3828e49fa36137e463158d842d165c024f951761bf7cb"
     sha256 cellar: :any_skip_relocation, catalina:      "ad87a2cbd75668227e7a48078f541232af953c779b20a3072072cf41e64b2219"
     sha256 cellar: :any_skip_relocation, mojave:        "f7e51d65e2f64e239a1031e79341de74f3b13e56dfcd68fb4a5dfefe018e065b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6eebdb95f521b4d0f9c8bbb794becf1f6acc32a5476d21192f07ebb094b736b1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6eebdb95f521b4d0f9c8bbb794becf1f6acc32a5476d21192f07ebb094b736b1" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
