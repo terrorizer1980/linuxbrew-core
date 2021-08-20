@@ -12,6 +12,7 @@ class CeresSolver < Formula
     sha256 cellar: :any,                 big_sur:       "ae150dc0c639a5e4efdbd7bf2f01c933f9852a20f78056670eb5b27fe3bc28f0"
     sha256 cellar: :any,                 catalina:      "de7e1776beb556708bfb34af3b1e26f67ce5f9ecfb7e4332a56d25c456e01082"
     sha256 cellar: :any,                 mojave:        "c7d6078d42b69ebc67ef7e2ed8cabcc9cbcfb32f0509a2a20f869fe627b1f53d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b48b9f59af3fd2b9a599d3918909170462f503254b4bbdace0cffb2bfe17967"
   end
 
   depends_on "cmake" => [:build, :test]
