@@ -10,6 +10,7 @@ class Youtubedr < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "80d0c11df93af2a56e092d2aaa7012ae61c781045ceddffe4cdc9872e9efe2f0"
     sha256 cellar: :any_skip_relocation, catalina:      "80d0c11df93af2a56e092d2aaa7012ae61c781045ceddffe4cdc9872e9efe2f0"
     sha256 cellar: :any_skip_relocation, mojave:        "80d0c11df93af2a56e092d2aaa7012ae61c781045ceddffe4cdc9872e9efe2f0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "48ee061f5c900b2c775d4ab135f2feffefd1799d094bb4d5e8482e91329b7e6a"
   end
 
   depends_on "go" => :build
