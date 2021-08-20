@@ -11,6 +11,7 @@ class ElmFormat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "9066d69a558d83fd34502c7a8949213fbd8c62314d6020e7bf83bf533b48ff87"
     sha256 cellar: :any_skip_relocation, catalina:     "934eed770e7b19d15cb01906b5e64124b4b6bb0c5a0272d52b70d20d98b3487d"
     sha256 cellar: :any_skip_relocation, mojave:       "fed548eb02c34faf688a6ac250b69bf4d5c6720e22213ea794542385bccee387"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "122e69e40ba66e45f3cae09c9e8d48a886a9cba6fa91ef10a0acc42134771621"
   end
 
   depends_on "cabal-install" => :build
