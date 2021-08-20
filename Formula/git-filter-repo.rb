@@ -7,6 +7,10 @@ class GitFilterRepo < Formula
   sha256 "7bcf11da134bbd82a4171f7fb28a3ab7bc4d478fe8ec3a3d9580e4bbdc32e6e9"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e6a31397b8642487d4fa6a5c8a80cfbdc8aba9cd4baab761296ac7a7fa06b7cd"
+  end
+
   depends_on "python@3.9"
   uses_from_macos "git", since: :catalina # git 2.22.0+ is required
 
