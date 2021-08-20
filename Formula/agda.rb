@@ -19,7 +19,7 @@ class Agda < Formula
     sha256 big_sur:       "00e9d93ea09e7b2f8e021a4d88b4e3001492c46f8688a0815aaa650d9efcaaa9"
     sha256 catalina:      "7cef8fb175d3b65e4649ee22d4b98c37f7e503df3022b2e0a610515e1cbf76b2"
     sha256 mojave:        "73cbbc28465422adfdbe3e090cc6ebe8b2a89c32bca2bace6ee382d9fdfbcca1"
-    sha256 x86_64_linux:  "25fa7abb049cbfe569a4f88404e3be26c8e6345b163b3a0c3085d84aff8a4143"
+    sha256 x86_64_linux:  "25fa7abb049cbfe569a4f88404e3be26c8e6345b163b3a0c3085d84aff8a4143" # linuxbrew-core
   end
 
   head do

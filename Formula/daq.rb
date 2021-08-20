@@ -12,7 +12,7 @@ class Daq < Formula
     sha256 cellar: :any,                 big_sur:       "add510dd1048bd47451b086020aa64326cbb272e317598ac35394cd74ec36fe1"
     sha256 cellar: :any,                 catalina:      "c9b6281bb8e20fd935b734f9cacdca7f2528356a90b2614ad8dc164870dcc4cc"
     sha256 cellar: :any,                 mojave:        "4d3f5ade023a0021385619c66507cdf5b322d837c99d0eec4b1778c78fbbdd77"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4b16f5e49e6ba2ddb8c4a078f9139cc5f64bc953f60c909efd519c9da088f522"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4b16f5e49e6ba2ddb8c4a078f9139cc5f64bc953f60c909efd519c9da088f522" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
