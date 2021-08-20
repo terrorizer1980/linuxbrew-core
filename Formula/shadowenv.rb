@@ -10,6 +10,7 @@ class Shadowenv < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fc41f2d973d0d6b18b490af91cdd51a71986c6f5901892b69363d1aeb4743d3c"
     sha256 cellar: :any_skip_relocation, catalina:      "3818f557a4d4401dd5eb09177621724e48914f6cbb51d2e92ace1e7d891668c3"
     sha256 cellar: :any_skip_relocation, mojave:        "489a6fb71afd4932813c6c376cbc6862b14dea2f1b8984b6b161bd55633dfc07"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b0b872c08f871e7ee5489c4c82ba515f8c720c101a127cf0c230e879432c47ce"
   end
 
   depends_on "rust" => :build
