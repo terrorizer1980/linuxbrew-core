@@ -15,7 +15,7 @@ class Gsoap < Formula
     sha256 big_sur:       "84f24f86809047fdd972a9d192514b0d9ab08a27821ce07a3e60f33a44697459"
     sha256 catalina:      "6bee22cc8b7c43f3d41b51bd75c50cf0f444feed51d9bf5a4f7dd288d662a42d"
     sha256 mojave:        "d90706cf140e9b273d56007f6e56db0933686d50afae9a9703b862af3bce5b55"
-    sha256 x86_64_linux:  "2ecb0911a0996e51f00d7e35a3729865bc19eeec3aaf5189ce54ee7e18c5d5a5"
+    sha256 x86_64_linux:  "2ecb0911a0996e51f00d7e35a3729865bc19eeec3aaf5189ce54ee7e18c5d5a5" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

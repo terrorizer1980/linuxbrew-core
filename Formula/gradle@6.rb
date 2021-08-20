@@ -6,7 +6,7 @@ class GradleAT6 < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd167292281521adf832093bbc0485f5a03e82c9962039f54f12e59d0d2dce1b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd167292281521adf832093bbc0485f5a03e82c9962039f54f12e59d0d2dce1b" # linuxbrew-core
   end
 
   keg_only :versioned_formula
