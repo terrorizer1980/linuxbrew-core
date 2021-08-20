@@ -17,7 +17,7 @@ class Gor < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "91229d9994e4e18c0f5ef3677db46d9ff88fadd996b614b1d54d3b5060c02f44"
     sha256 cellar: :any_skip_relocation, catalina:      "184110bd3cc16c192d4389a12cc2b96b515e0839b0b59a2120fae4c6abe6e7a7"
     sha256 cellar: :any_skip_relocation, mojave:        "3b95b1e0101ca612faaca34ab4d4a1e4e291a14d71be890921d1af16d1a59664"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd0ca7bb9a0e13f6e05e92a22c1ebebdfb32cf02df1d87aa8ba614dcdd877196"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd0ca7bb9a0e13f6e05e92a22c1ebebdfb32cf02df1d87aa8ba614dcdd877196" # linuxbrew-core
   end
 
   depends_on "go" => :build
