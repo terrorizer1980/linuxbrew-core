@@ -11,7 +11,7 @@ class Doctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "12dd6a47099ae90ed410df6fe9b14a53cfa06464121423744cd646a9ef7628e5"
     sha256 cellar: :any_skip_relocation, catalina:      "835594f4124830d4b4dd1d03f06852f49d91e8ff2419bd6ac08e78035c32954d"
     sha256 cellar: :any_skip_relocation, mojave:        "4e431077053da6d575e2f09f9e77c73a2a3e66a7ab63ed53ee30dba6983d0210"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5a2db9535cd82a899c0824ee75bddfb5845c2a823941320aaa1afafc0d0f5af0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5a2db9535cd82a899c0824ee75bddfb5845c2a823941320aaa1afafc0d0f5af0" # linuxbrew-core
   end
 
   depends_on "go" => :build

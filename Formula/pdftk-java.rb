@@ -16,7 +16,7 @@ class PdftkJava < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7f2b754be7be891f87d2252b774a845ea8b3d5564e1834eb1f8efdb2cfbf9aae"
     sha256 cellar: :any_skip_relocation, catalina:      "db5aed5d0bd12239d7a36b2f52ab6efccd6406a0c19839d33c7481abd18e3f51"
     sha256 cellar: :any_skip_relocation, mojave:        "6cb812b6d452482410f8d43e324cfc510d18fd088f6d1b65b02c15735145e81f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98e43d50aaafd0031085f6aa439fa8fe34c37f0647e65f29fbfd38d69f791f2b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98e43d50aaafd0031085f6aa439fa8fe34c37f0647e65f29fbfd38d69f791f2b" # linuxbrew-core
   end
 
   depends_on "gradle" => :build

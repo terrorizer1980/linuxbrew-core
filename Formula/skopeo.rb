@@ -10,7 +10,7 @@ class Skopeo < Formula
     sha256 big_sur:       "33af6c3adae94860c96383da8c47539279363e0ba27c1e6dcd50eb8665f719fb"
     sha256 catalina:      "6064efa825c96c4ce12a97e7c46e2681ff402422690861a01bd66f83eff70ee2"
     sha256 mojave:        "47ff419d4f02c33802656dfe03582c0f89fb32ad42940bb3ca3cee4f10862be7"
-    sha256 x86_64_linux:  "1c0d7f0be4019be1807585bbdbce5de05d7e1f6908c0d771dd9515e5e5dc9282"
+    sha256 x86_64_linux:  "1c0d7f0be4019be1807585bbdbce5de05d7e1f6908c0d771dd9515e5e5dc9282" # linuxbrew-core
   end
 
   depends_on "go" => :build

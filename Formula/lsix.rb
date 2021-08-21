@@ -6,7 +6,7 @@ class Lsix < Formula
   license "GPL-3.0-only"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e04dc6de7545a6d9f6905dd19e9aeba8b141710fdea1e74818bdbc55cd0560ac"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e04dc6de7545a6d9f6905dd19e9aeba8b141710fdea1e74818bdbc55cd0560ac" # linuxbrew-core
   end
 
   depends_on "bash"
