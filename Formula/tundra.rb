@@ -15,6 +15,7 @@ class Tundra < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5e7970c3893238a41438bcc2dfb96f24b826ccf93a2c1c75dfdec4ab5a39186c"
     sha256 cellar: :any_skip_relocation, catalina:      "72abfc5263693f27df124037c5b40764bbce51bf7922316d1f2dcdc5fbe5f2d1"
     sha256 cellar: :any_skip_relocation, mojave:        "ea38828937d82358d09da4c756b31bf6ee7c5884b40a750900e2b45566946c35"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "42397e9302b5183e746e7d7c7215d517fba47630a92c5bbd8914814e8f5d498a"
   end
 
   depends_on "googletest" => :build
