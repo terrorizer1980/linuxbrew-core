@@ -10,6 +10,7 @@ class PandocPlot < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "120bd15c035dbf94e35c5c2fdbc27e551f72bfecf6d92b77ece3c525a7f4f863"
     sha256 cellar: :any_skip_relocation, catalina:      "7761b38c9970d18e837f898dd3cd24ca1030438a8a4ba6d2c9c08c91287978bf"
     sha256 cellar: :any_skip_relocation, mojave:        "7eb7ee123b453b2d33be167b838914ae12fcb9c13f4382d1cdf1f3350ecd9722"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "de0e1eda0c609fa4cfa5d1fa9500ef47cf0bdfd21b8afcbbcb61a02b4a5bf7bb"
   end
 
   depends_on "cabal-install" => :build
