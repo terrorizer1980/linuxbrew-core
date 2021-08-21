@@ -12,6 +12,7 @@ class Doxygen < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a3c10247d05fe6a007ad97b1131e522eec0729288bee680dfd3e5a4cca2ee5fb"
     sha256 cellar: :any_skip_relocation, catalina:      "d4651ac184617629b57a0842ecb267adb25c34fc0b61b08296d80ee68928b66d"
     sha256 cellar: :any_skip_relocation, mojave:        "cab7c99f874c1a498ce9b27ebd863a46dd9940b75a86da8782eef952d49e709a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3fb57a0c3c30e0c49a97c4823f1412cdcaccd8af7851c85f2eeb790ecf3cd795"
   end
 
   depends_on "bison" => :build
