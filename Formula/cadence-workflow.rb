@@ -12,6 +12,7 @@ class CadenceWorkflow < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9f0acf7884bd1d05db0b0883357f359f3772990acb2224721b451538003c1277"
     sha256 cellar: :any_skip_relocation, catalina:      "7c561ec4abd26335049a865ca2e929d8df73e3837b9028052ee738940730c3f4"
     sha256 cellar: :any_skip_relocation, mojave:        "805f5604c6a4c02df187b8463549aa17f813cc85a47f40009c15081b8983b389"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "64cad0bec6a5912e66cccb606bd58802776045aaac5707b92e70d008e27444a1"
   end
 
   depends_on "go" => :build
