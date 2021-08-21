@@ -12,7 +12,7 @@ class Eksctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8f89698a5a544af4cc803fbc1b25b5fdbc3dab15db2ea703c4642b18dedb66b4"
     sha256 cellar: :any_skip_relocation, catalina:      "8a668ae6300bfb292a926ba498c229e69e515aff0e07b9650f06a456ecea2e05"
     sha256 cellar: :any_skip_relocation, mojave:        "9b42ca6a0ace85ca5caa95a8f0f5179c72f3c25f7e219a00b5303d2fc84bd7c7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "44ea94e3560d0ad0397d8e200366332032d8c4c82805c154df591e6f6ea4cf33"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "44ea94e3560d0ad0397d8e200366332032d8c4c82805c154df591e6f6ea4cf33" # linuxbrew-core
   end
 
   depends_on "counterfeiter" => :build
