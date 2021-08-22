@@ -13,6 +13,7 @@ class Pyinstaller < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "18d32eca7f24a755e73cdc63f64f1c2bbd813ee16d91d5f883a77cad112ea3a7"
     sha256 cellar: :any_skip_relocation, catalina:      "fcd5279e9d8fc01bdd988a3ad7ebb3bb13162f0221d1651746beb55570824c92"
     sha256 cellar: :any_skip_relocation, mojave:        "14b0ce068eb56e05a847cc72834163072ef3da7bfdbbd517d2f82255164ed226"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "832df8774c85fc2608ad416ec0205718507c25ec7d8c907465f5787362b291e0"
   end
 
   depends_on "python@3.9"
