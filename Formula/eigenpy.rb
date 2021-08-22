@@ -11,7 +11,7 @@ class Eigenpy < Formula
     sha256 cellar: :any,                 big_sur:       "9ab8e65c15d034579a20f06d7daf3c78c932e68b3a61e377c5f62e78c76021b2"
     sha256 cellar: :any,                 catalina:      "82d0dae974ebd520801a7ee40d2ad82059ab713a4adb38b15da7a06c488c2cb9"
     sha256 cellar: :any,                 mojave:        "442ff6eb6f5d551f083be28b23511ebf661b9a4ee4ea0f3e364634e8ed731aa2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23f3a6acc2bebf678cc925257763b7711fea8352e5e76269926f762fbb4dad59"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "23f3a6acc2bebf678cc925257763b7711fea8352e5e76269926f762fbb4dad59" # linuxbrew-core
   end
 
   depends_on "boost" => :build
