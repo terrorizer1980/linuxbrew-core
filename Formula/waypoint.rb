@@ -11,6 +11,7 @@ class Waypoint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8e0694e9b508aedb9abc96ee45204b271715a7f809553248ce423ab9ad191ca5"
     sha256 cellar: :any_skip_relocation, catalina:      "e3b6f9cd8d70de2af1b9537f9eb2ca87bae9eecb66f6f71ef1ea878c31415936"
     sha256 cellar: :any_skip_relocation, mojave:        "d20a5d1a561bf58ecedad4515f5ca3c11cd52ba6420d8378b10eb76528f1d5ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "92f2335ca85914f782a09cdf038d43285e3e0bc3bcfef522e843f6a6abb0219e"
   end
 
   depends_on "go" => :build
