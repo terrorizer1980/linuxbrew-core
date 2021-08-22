@@ -15,6 +15,7 @@ class Haproxy < Formula
     sha256 cellar: :any,                 big_sur:       "a0040d3c7a43b6f88cd7c3f781d53836395bdd3b056ac286e4dbbb6d0b925c05"
     sha256 cellar: :any,                 catalina:      "1097602fdf302fde146b708e61b97c5bcf1461180ffffa1af1e3feecbea9fd28"
     sha256 cellar: :any,                 mojave:        "8e68913c94c421080e8fd931824add73bb3ba2e49c29ef5e82e5fa483809b21e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7af7d982e0be49774ad7dc957a213f36d004103d98b62675595183d144b28237"
   end
 
   depends_on "openssl@1.1"
