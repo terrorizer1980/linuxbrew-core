@@ -17,7 +17,7 @@ class Ntopng < Formula
     sha256 big_sur:      "6c03ede014ebd615cb2716898b11d48af7973eef1c9c2f4a5c24d11fda776be8"
     sha256 catalina:     "115f0cb4514aacda5ba0fc003afc96659249a8ce26287ea340810cc48791e1da"
     sha256 mojave:       "199498493df28a4c3d0d2f6aa211f02954997db319a4c4f58ad00c3ccb95fbc8"
-    sha256 x86_64_linux: "2fbe0f9b3163fc832aaba454c71ad72a4b529518e0d21384f483df37073710b6"
+    sha256 x86_64_linux: "2fbe0f9b3163fc832aaba454c71ad72a4b529518e0d21384f483df37073710b6" # linuxbrew-core
   end
 
   head do

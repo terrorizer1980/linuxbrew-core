@@ -11,7 +11,7 @@ class Dstask < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b1976a39a056f8bef4d354afefcc427c4612527fb578b56734fbfa8432cc6e25"
     sha256 cellar: :any_skip_relocation, catalina:      "6db5f204f382f928f3890e5983f4c8531172080f3a90068a0b521435c7860e0b"
     sha256 cellar: :any_skip_relocation, mojave:        "fbcb9d73ddf2619094cd64478112c73eb384a8d839a72aae3f16833087d3973c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d666d285f3ddab4b90ed5baae31eff8a7729cc3d952f8774a05071d34ccb653"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d666d285f3ddab4b90ed5baae31eff8a7729cc3d952f8774a05071d34ccb653" # linuxbrew-core
   end
 
   depends_on "go" => :build

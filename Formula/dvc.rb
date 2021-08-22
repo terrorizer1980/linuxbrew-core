@@ -12,7 +12,7 @@ class Dvc < Formula
     sha256 cellar: :any,                 big_sur:       "2cf5fe422285b40bdd4c05bb870b3c3d0751e917ceca6424ce7e73fb36270395"
     sha256 cellar: :any,                 catalina:      "6b09152e93f5dd3b9f8d365b9ca226923424b2fc6e689929e96aa10a867cae2d"
     sha256 cellar: :any,                 mojave:        "48d654baa19755a169c5ced87c1d185d6d408fc98d8b0c38685aaf7e6bca5da5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2f68e9cdcef5beabcb482b28a2ea8f15e2106a92246f188e58cca207dcc2d6a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2f68e9cdcef5beabcb482b28a2ea8f15e2106a92246f188e58cca207dcc2d6a" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
