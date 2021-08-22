@@ -11,6 +11,7 @@ class Rmlint < Formula
     sha256 cellar: :any,                 big_sur:       "ce229f94deeb1e91f84db64e71e4c3bd22f2bf0d1236c6093aad80d3685540b2"
     sha256 cellar: :any,                 catalina:      "b22e86d9727096bb5a73d92e28f03dcb36c7b46d4fbe3289a1105d46eff7d67b"
     sha256 cellar: :any,                 mojave:        "c31b3ec4510357b5acacf8469311faafb66725bc38d89938227903e33473dfd4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fa5fc48d3bcc5fa1d5401c49b67ac5080e9865bd78f745ac7c0ce587512465da"
   end
 
   depends_on "gettext" => :build
