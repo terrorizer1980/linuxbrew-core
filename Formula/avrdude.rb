@@ -20,7 +20,6 @@ class Avrdude < Formula
     sha256                               high_sierra:   "b0cb94b5c4f01fcc870f286bca293218c98fda23d76397db8a831272f7087038"
     sha256                               sierra:        "e8e26af5565cd897867d4e6e71e66e6e946e1e21eb4e27d3cd49f199f088fc5d"
     sha256                               el_capitan:    "c953526dc893a9b162a109d074edf8bb71d7049c63990282edc994c63de90c44"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ddfe626435ddcdbb928056a816515ff4b8da1f009dec703afe9c7de2788f7407" # linuxbrew-core
   end
 
   head do
@@ -32,13 +31,20 @@ class Avrdude < Formula
   end
 
   depends_on "automake" => :build
-  depends_on "libelf"
   depends_on "libftdi0"
   depends_on "libhid"
   depends_on "libusb-compat"
 
   uses_from_macos "bison"
   uses_from_macos "flex"
+
+  on_macos do
+    depends_on "libelf"
+  end
+
+  on_linux do
+    depends_on "elfutils"
+  end
 
   def install
     # Workaround for ancient config files not recognizing aarch64 macos.
@@ -53,8 +59,7 @@ class Avrdude < Formula
       inreplace "bootstrap", /libtoolize/, "glibtoolize"
       system "./bootstrap"
     end
-    system "./configure", "--disable-dependency-tracking",
-                          "--prefix=#{prefix}"
+    system "./configure", *std_configure_args
     system "make"
     system "make", "install"
   end
