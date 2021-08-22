@@ -11,7 +11,7 @@ class Reproc < Formula
     sha256 cellar: :any,                 big_sur:       "45eadbe6fd0d8c7290c841df4382ae7d3856786246aeece1eafbbfac966f1654"
     sha256 cellar: :any,                 catalina:      "99cea88e4dea75d93cd99dce06affadf03f77a6e930a4757173bff223f700255"
     sha256 cellar: :any,                 mojave:        "a57ce39842edfdffeb70c5e9f707f6adf4b309d27c7b0e48de21b9c02c803922"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b8d92c86ead3042691d0b71e41bce3d4c4548139172a6e14c5534bc422050fc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b8d92c86ead3042691d0b71e41bce3d4c4548139172a6e14c5534bc422050fc" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

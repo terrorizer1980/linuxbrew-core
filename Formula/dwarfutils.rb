@@ -16,7 +16,7 @@ class Dwarfutils < Formula
     sha256 big_sur:       "84941130062830cdf8bb7e724d38704df8fa27cc90a19db76326b391d8c1049b"
     sha256 catalina:      "1664a1d0bfadf1ee6fdb95229aeea41c7cddae537afa8bdaed398d99f31e8c4b"
     sha256 mojave:        "89f93e8814b05bfa901aa11a41526d86737f742b4cb150d9df5b0f241aa995fa"
-    sha256 x86_64_linux:  "20d0af399420474afd8c5e3fb24c592aca8d37efbf0e93e49763c9bfcf8ff6fb"
+    sha256 x86_64_linux:  "20d0af399420474afd8c5e3fb24c592aca8d37efbf0e93e49763c9bfcf8ff6fb" # linuxbrew-core
   end
 
   head do

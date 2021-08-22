@@ -13,7 +13,7 @@ class Yamllint < Formula
     sha256 cellar: :any,                 big_sur:       "2b55ce529a710907e020567612a5da5c17641a8dbf6aad0d9d52eb7bc0d9d290"
     sha256 cellar: :any,                 catalina:      "353876497c255a31d87fc64ab9e92ea18b5cae00bf31d2de8920e26b96ddc3dc"
     sha256 cellar: :any,                 mojave:        "d167a9db92455faa155de1271e7e7480b9f74dfc649318475a23a62531f577c8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6602fdc3feb42bc8e0881282fd3e8ffd1bb5e86c4f36bfc23cdaea7d1deeab49"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6602fdc3feb42bc8e0881282fd3e8ffd1bb5e86c4f36bfc23cdaea7d1deeab49" # linuxbrew-core
   end
 
   depends_on "libyaml"

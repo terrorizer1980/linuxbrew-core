@@ -11,7 +11,7 @@ class Ccache < Formula
     sha256 cellar: :any,                 big_sur:       "01a6eb140be4b65cd4309e5248dea5cb715ffb790bada58a0b1bbca569660543"
     sha256 cellar: :any,                 catalina:      "d9f4da69ace3c9ace3ce16caed6f5eef19b8adb7e83acfa6eed80282384c2cfa"
     sha256 cellar: :any,                 mojave:        "3d73453a7262b646f5dabd071b3a70bf1520f28452dc87b8d786f8c22039a235"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "87b136b16effead02a8bb798610fc0477ff8b77ae1cdb3433d6d5e991a399a65"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "87b136b16effead02a8bb798610fc0477ff8b77ae1cdb3433d6d5e991a399a65" # linuxbrew-core
   end
 
   depends_on "asciidoctor" => :build
