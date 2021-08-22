@@ -10,6 +10,7 @@ class SoundTouch < Formula
     sha256 cellar: :any,                 big_sur:       "3e93fe618dfa7ab0a5cd7d5d240f3e93e8e94f2deac41968ee07d88dabef4b78"
     sha256 cellar: :any,                 catalina:      "3b640770fce02c9c0b3ce38d622607f4c3618b65aeaa9c6da331ea92f0acfc8c"
     sha256 cellar: :any,                 mojave:        "d436643cbe36c3f51f23d68a1ed03267d89a9cee2d2e724710051fcb7d2ceec0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2dd6e80b00d188723f05aeebf23483bca8921ed8158e7c2025e59034c786233f"
   end
 
   depends_on "autoconf" => :build
