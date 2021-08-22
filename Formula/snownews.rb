@@ -10,7 +10,7 @@ class Snownews < Formula
     sha256 big_sur:       "aee8b149b904e87e04fe17646410f880d5950f4c23290f1cc88fe692683a5a96"
     sha256 catalina:      "a2e648ee4c4e7a8887cb2ccdb463ffc5e533695ac2ef41a40969bcb27efc9bf0"
     sha256 mojave:        "572a335a0a5b9ad6593c3624a967748d6afd7b9063041e4b8f55a4cc6eac805e"
-    sha256 x86_64_linux:  "79d3a5f582497d91865d44713ace32971c68ebdb08ad9a4893f10148c0bfadd2"
+    sha256 x86_64_linux:  "79d3a5f582497d91865d44713ace32971c68ebdb08ad9a4893f10148c0bfadd2" # linuxbrew-core
   end
 
   depends_on "coreutils" => :build

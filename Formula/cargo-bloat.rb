@@ -11,7 +11,7 @@ class CargoBloat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "13a5085420d616ddf0d1a5450d7af511ddda7b82c356c1c55281f7950072031e"
     sha256 cellar: :any_skip_relocation, catalina:      "b68f52e68c24c3d0a451685c7f031d98e8d01850d2855e6ad1a72d5066502d21"
     sha256 cellar: :any_skip_relocation, mojave:        "03b2f370cc1a2fe4fd4f0b5db4009271a40a4294c2ea2b458220adfaedea5b3a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8d6055560a17d1843e15f8163e8388b3d1912a6ac34ca4623af8482bbdd912d8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8d6055560a17d1843e15f8163e8388b3d1912a6ac34ca4623af8482bbdd912d8" # linuxbrew-core
   end
 
   depends_on "rust"

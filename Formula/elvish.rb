@@ -11,7 +11,7 @@ class Elvish < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5951f4c0c32b9d1e70e0cc5951529b34b1d0cf3404ce6cd96f40a573a1225138"
     sha256 cellar: :any_skip_relocation, catalina:      "d2e7445c3c2eed9b14a5db95e1c889227a891a75345dacaf34cfc2c92e4f9349"
     sha256 cellar: :any_skip_relocation, mojave:        "3cf7d45620b233953b79adaff992a69fd9e74ea81de9289379cc40c91391f566"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "82068a99f4cce4d3ad15a875fc6e9f97e03a51d6e4baa3de44e8f14fed924c0d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "82068a99f4cce4d3ad15a875fc6e9f97e03a51d6e4baa3de44e8f14fed924c0d" # linuxbrew-core
   end
 
   depends_on "go" => :build
