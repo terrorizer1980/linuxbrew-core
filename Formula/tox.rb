@@ -3,16 +3,15 @@ class Tox < Formula
 
   desc "Generic Python virtualenv management and test command-line tool"
   homepage "https://tox.readthedocs.io/"
-  url "https://files.pythonhosted.org/packages/f9/1e/b583fd4970d991967e14c06d894973cb4d5d013b86349b3dab0f3e61a7cd/tox-3.24.2.tar.gz"
-  sha256 "ae442d4d51d5a3afb3711e4c7d94f5ca8461afd27c53f5dd994aba34896cf02d"
+  url "https://files.pythonhosted.org/packages/2c/bf/7c85d0d956c68a38afb8cc52e7c9dc18f7619f666aa4bc1655afa7247c49/tox-3.24.3.tar.gz"
+  sha256 "c6c4e77705ada004283610fd6d9ba4f77bc85d235447f875df9f0ba1bc23b634"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7a2f8a4265f8c990500b1f9ee73f156917f3fc20db3bf873b56b296f10975908"
-    sha256 cellar: :any_skip_relocation, big_sur:       "526ec36b876d880ccca72bbd738d05a1a281a72bb946d3f4d1dea4075d9474b3"
-    sha256 cellar: :any_skip_relocation, catalina:      "e56e175c0c9d09e3a15cb4c26a5e58eb5ff63061ba68a31062a19b4ff1cf2ad7"
-    sha256 cellar: :any_skip_relocation, mojave:        "5af253385c0c9f9653a531c01c2430ab75ddbdf52b379e5657db8152571777dc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75ca339316a0596066bde41846746a5f5d349be124e423313492a21fb0c08587" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "110a3d45cc9dad2b531940f941c89f38aa7a7c8a90170426bf7957b067d92532"
+    sha256 cellar: :any_skip_relocation, big_sur:       "61bd24d283acadad73ab3d2ca540ac972adb646c773dfb487d71e4ef447d2fed"
+    sha256 cellar: :any_skip_relocation, catalina:      "748b701813237f4f0248d49d4c470904fc95e0120bb1c9219bed0ecbb917f5db"
+    sha256 cellar: :any_skip_relocation, mojave:        "4a8c71f72c0d8f095645c0f2ac08e0ff75585101494acac3d06df6cd10d44735"
   end
 
   depends_on "python@3.9"

@@ -3,16 +3,15 @@ class Moto < Formula
 
   desc "Mock AWS services"
   homepage "http://getmoto.org/"
-  url "https://files.pythonhosted.org/packages/eb/7c/f40a10267acf08869dab0014a5a80deca289e30df251efdd4bf562824feb/moto-2.2.3.tar.gz"
-  sha256 "76850f44a38c0047e573ec5d4d2e5b20a77ae2de2691b2be03ed0cae17a85a0e"
+  url "https://files.pythonhosted.org/packages/4c/28/1ab0e94ed163986cd5c81b23edce50779d11443179fe844f48131b060370/moto-2.2.4.tar.gz"
+  sha256 "ee652be8c3bb52c6c54bcc811f74afbfb317c59dcdfdc96d6027fe93e1b4a94d"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "e4c5945a52087736a140a20c553b44a4923f3bcd79c09347c8bdd6973c56358c"
-    sha256 cellar: :any,                 big_sur:       "c5a94e9850d03b637970e5985e6f84e994ca07b638e0153d32626a478c927d74"
-    sha256 cellar: :any,                 catalina:      "bfd534249fd0da11f8a5743bc2da0365af2eabd5572df8b841bd41c0c983635a"
-    sha256 cellar: :any,                 mojave:        "13ab948be723dbbe0d73f9c4a01f90a22f3ee09b6dbbc2aa4426d27864255167"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32ef989b6bde3058260b8ee64f9e027ffba028a082d8c7055a580413a4f729cf" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "bd13f6587b28a2dd713ac58131dff16a624ae14b1a0be13818d98fb6df85202d"
+    sha256 cellar: :any,                 big_sur:       "07dc4daa39be1b3e9a69b48d0edf7285960dfd5cfade22a6ab6e45056a5a65f2"
+    sha256 cellar: :any,                 catalina:      "a0bc4e319f661670be290bcae771d8f6cd94301dd5ef805317c37e535fe88700"
+    sha256 cellar: :any,                 mojave:        "61437145c31740d266a7b71d879d430a3078bb96022b9b4394a0fc0276228523"
   end
 
   depends_on "rust" => :build # for cryptography
@@ -34,13 +33,13 @@ class Moto < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/72/ac/4f109cc03f333e1dc9cc489b54b3261eb1213557b48a42afe69321706517/boto3-1.18.22.tar.gz"
-    sha256 "7405ae77ce4f2151fae1b542183f9c0f7ffb57c288b1f152819cfcb88e9cf297"
+    url "https://files.pythonhosted.org/packages/41/38/b35889b32c096193a08d00095cfac00c7b955938f16241cfdc2e58aaac51/boto3-1.18.26.tar.gz"
+    sha256 "39ed0f5004b671e4a4241ae23023ad63674cd25f766bfe1617cfc809728bc3e0"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/78/cc/0b4e959ca99c24093391d8f5a62761f23528734508623bd6845adf8e1a64/botocore-1.21.22.tar.gz"
-    sha256 "9c133caab58b04b4a9ab3f6523cc61cf815c1a5fde7b5ee279eefa48dc3a01d1"
+    url "https://files.pythonhosted.org/packages/05/6d/555954459910a8ef7a6c8ee63a9a85d1097705b61815cb2b2e9a72075a18/botocore-1.21.26.tar.gz"
+    sha256 "911246faac450e13a3ef0e81993dd9bd9c282a7c0f4546bfe8cccf9649364cef"
   end
 
   resource "certifi" do
@@ -262,36 +261,12 @@ class Moto < Formula
     virtualenv_install_with_resources
   end
 
-  plist_options manual: "moto_server"
-
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>KeepAlive</key>
-          <dict>
-            <key>SuccessfulExit</key>
-            <false/>
-          </dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>ProgramArguments</key>
-          <array>
-            <string>#{opt_bin}/moto_server</string>
-          </array>
-          <key>RunAtLoad</key>
-          <true/>
-          <key>WorkingDirectory</key>
-          <string>#{var}</string>
-          <key>StandardErrorPath</key>
-          <string>#{var}/log/moto.log</string>
-          <key>StandardOutPath</key>
-          <string>#{var}/log/moto.log</string>
-        </dict>
-      </plist>
-    EOS
+  service do
+    run [opt_bin/"moto_server"]
+    keep_alive true
+    working_dir var
+    log_path var/"log/moto.log"
+    error_log_path var/"log/moto.log"
   end
 
   test do
