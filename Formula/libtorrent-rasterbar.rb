@@ -16,6 +16,7 @@ class LibtorrentRasterbar < Formula
     sha256 cellar: :any,                 big_sur:       "d48ce0307a32554477f8e726ac48f53452172dd53af279d418d35b47d981c903"
     sha256 cellar: :any,                 catalina:      "427766e035c86318f55b44fe60b740355ddd2f804c3ceef6a15a838857d6efbd"
     sha256 cellar: :any,                 mojave:        "a4d966bc79d6771bdebcdfd55e1f9d8455e9caa0e0d4ed72b1bf562c8197aa21"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3c93a8ee3b38770ba0744b359f9ad51126a2997fce39d0bb52be188031c0a05"
   end
 
   depends_on "cmake" => :build
