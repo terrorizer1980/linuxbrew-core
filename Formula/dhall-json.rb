@@ -11,7 +11,7 @@ class DhallJson < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1fe927c9bb161d8280a7f7e4ae7f0c02e981fc1d7e78292d48ded976c496be38"
     sha256 cellar: :any_skip_relocation, catalina:      "e4d2763620f32d19b77495ff7703835a791f81787b20557b7b29e494969cebcd"
     sha256 cellar: :any_skip_relocation, mojave:        "782a3471003a7a941e45c635b708cf33a8e12eac2c08c890a6f44d1379e476ce"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c1a3899780087002347275d033cad6869d516c2621e0fd49ca0c0399d7194122"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c1a3899780087002347275d033cad6869d516c2621e0fd49ca0c0399d7194122" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build

@@ -15,7 +15,7 @@ class Xfig < Formula
     sha256 big_sur:       "d7c37dccd5e37725dedb44b09e35b58012032c9363d45237434cb7195df477c8"
     sha256 catalina:      "8bb1ae517dc9f6b845b5fa991f6264d94396e24410f387579e7fc89cd3210559"
     sha256 mojave:        "7dda7fca1b9524128292409321f7a1614faabff17cc02c62bbc351cac8f45969"
-    sha256 x86_64_linux:  "dcfffe75f2f42a482f9b37c6d6e76b588da469b3118a37382046d83ddd303bdf"
+    sha256 x86_64_linux:  "dcfffe75f2f42a482f9b37c6d6e76b588da469b3118a37382046d83ddd303bdf" # linuxbrew-core
   end
 
   depends_on "fig2dev"
