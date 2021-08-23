@@ -19,6 +19,7 @@ class AzureCli < Formula
     sha256 cellar: :any,                 big_sur:       "1c7f1a53eb16acf46940fe589d625a502c0aaf03860ac3c4f04d766a15ae3505"
     sha256 cellar: :any,                 catalina:      "5ef32e5bf4b227f4cc405550c74ab53629bdcfe01d4759357e378700e3f369ac"
     sha256 cellar: :any,                 mojave:        "aca7b391640242729b8e5578b7420f16b2310790ecdd9fc70e83cd37983d3e36"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "114d08834a31ef4d8eb7f754c93473992d1c598ce8e191c59d6d3f4c40567c77"
   end
 
   depends_on "openssl@1.1"
