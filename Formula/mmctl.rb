@@ -2,10 +2,10 @@ class Mmctl < Formula
   desc "Remote CLI tool for Mattermost server"
   homepage "https://github.com/mattermost/mmctl"
   url "https://github.com/mattermost/mmctl.git",
-      tag:      "v5.36.0",
-      revision: "a3c6ff14a9f44dc847fa629a9e8ab516b8b883ec"
+      tag:      "v5.38.0",
+      revision: "cf832fbc44c2b36afde8bf1c01ff72f877cea79d"
   license "Apache-2.0"
-  head "https://github.com/mattermost/mmctl.git"
+  head "https://github.com/mattermost/mmctl.git", branch: "master"
 
   livecheck do
     url :stable
@@ -13,30 +13,23 @@ class Mmctl < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "2100b6ed7798a993f34233c4b6b58759c83ce0f96b3c39a66d192d6a89c3d570"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1e14c73707eb41c21ad5b9b6aea1850b56b71b79dd7fa6e8ccd8ec48e888c162"
-    sha256 cellar: :any_skip_relocation, catalina:      "9c7223fc02910173dabd773352af3617e92e1cfacc37337e43f5606cfeeef13d"
-    sha256 cellar: :any_skip_relocation, mojave:        "4db09ecf5831227464cf41b6bd512e37a079406c124d32ec93b4ce14987772cd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "58a89bcd22a6ca383ce06645fbfeb9d4b0f682be21d8186d5a82271ea2d85482" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8dbc58b892467e7993e7eb0fd8057f422c275ebb48a1a580030dd6b7002f4275"
+    sha256 cellar: :any_skip_relocation, big_sur:       "fee7f54d8736deb5f5e551c9560f36c292b464f654f80861d33c5596dd386d17"
+    sha256 cellar: :any_skip_relocation, catalina:      "edaa5058df6a486136dd8115487a0ae530a1394a06cb87442015947d0fe1fd37"
+    sha256 cellar: :any_skip_relocation, mojave:        "373a36850a48177e87bd953aa16f47e880341a5f1b86afa83dca1eacd31461ab"
   end
 
   depends_on "go" => :build
 
   def install
-    ENV["GOBIN"] = buildpath/bin
-    ENV["ADVANCED_VET"] = "FALSE"
-    ENV["BUILD_HASH"] = Utils.git_head
-    ENV["BUILD_VERSION"] = version.to_s
-    (buildpath/"src/github.com/mattermost/mmctl").install buildpath.children
-    cd "src/github.com/mattermost/mmctl" do
-      system "make", "install"
+    ldflags = "-s -w -X github.com/mattermost/mmctl/commands.BuildHash=#{Utils.git_head}"
+    system "go", "build", *std_go_args(ldflags: ldflags), "-mod=vendor"
 
-      # Install the zsh and bash completions
-      output = Utils.safe_popen_read("#{bin}/mmctl", "completion", "bash")
-      (bash_completion/"mmctl").write output
-      output = Utils.safe_popen_read("#{bin}/mmctl", "completion", "zsh")
-      (zsh_completion/"_mmctl").write output
-    end
+    # Install shell completions
+    output = Utils.safe_popen_read(bin/"mmctl", "completion", "bash")
+    (bash_completion/"mmctl").write output
+    output = Utils.safe_popen_read(bin/"mmctl", "completion", "zsh")
+    (zsh_completion/"_mmctl").write output
   end
 
   test do
