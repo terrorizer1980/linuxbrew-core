@@ -16,7 +16,7 @@ class Libopenmpt < Formula
     sha256 cellar: :any,                 big_sur:       "c8162bdb274a343204e64ed72484d90e989d183d9bdfdb80b9bc26b936f1a7d0"
     sha256 cellar: :any,                 catalina:      "a4bf21dfb4587f17a820e9046a52f03da174310e8af9311b6b5ee5fdec492737"
     sha256 cellar: :any,                 mojave:        "0877f7fe6b8593a88ac32e378a89f445759305fe69f7b67ea41c62b132be2835"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b708dc422c688ae0334eeabff965ae64a7eb586bfc5764902388c4d148786967"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b708dc422c688ae0334eeabff965ae64a7eb586bfc5764902388c4d148786967" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
