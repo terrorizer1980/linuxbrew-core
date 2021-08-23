@@ -17,6 +17,7 @@ class Avrdude < Formula
     sha256                               big_sur:       "08ea02dd2d51688a0f0b590c16f98e055909f7177536d74bafec8a9db6b5787e"
     sha256                               catalina:      "3c30bd1e1bd1419b23b04aa6103600d0691ea6c88967fa721f482c5194105f11"
     sha256                               mojave:        "0def40dd2ad77f5baf9b31b95678994a795c5691fec160ed3e2e5bbd96c36f74"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d251e554f650596a0f491f5b71e5f2af54da8226fdbd61cdbfe87f25776297a6"
   end
 
   head do
