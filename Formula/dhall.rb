@@ -10,7 +10,7 @@ class Dhall < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d1c36be171b91a50d710af00cd7321d6fadb496a90583f73e6033e28035a143e"
     sha256 cellar: :any_skip_relocation, catalina:      "ade8c77d54c09576a75f0e2f6bc98e0a2b7cceb4cf3e93c271a24258a3855e74"
     sha256 cellar: :any_skip_relocation, mojave:        "66ddeb565cc75a33877d69553b1aba1724a3a54e780954f799a45c3c5634ab82"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b9cf19a359f541ce49e6dfe6b6d4a15ac53c2dfd60ec6628ad58fa33465b8792"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b9cf19a359f541ce49e6dfe6b6d4a15ac53c2dfd60ec6628ad58fa33465b8792" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build

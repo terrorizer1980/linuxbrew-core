@@ -10,7 +10,7 @@ class Bat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1a075678316a795840e43db540d7465d106860c1db0153d2cabac285dca83fbb"
     sha256 cellar: :any_skip_relocation, catalina:      "0a8ce5ab853f1408966e23718b408e655b70b2d5d6c3b2ebdb0159eee389f6ef"
     sha256 cellar: :any_skip_relocation, mojave:        "c564416a4de6fd26eaf03029a1afd47edce0e49919d0fd2821cf3d870ee5f91f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aeb0bb4192f90a8d38d03d360b8b2bc9499190ab079061e46909f2adaaf34bdb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aeb0bb4192f90a8d38d03d360b8b2bc9499190ab079061e46909f2adaaf34bdb" # linuxbrew-core
   end
 
   depends_on "rust" => :build
