@@ -4,7 +4,7 @@ class Winetricks < Formula
   url "https://github.com/Winetricks/winetricks/archive/20210206.tar.gz"
   sha256 "705421798b28696f577104ebdf03b068b9343ab096754150f47a6ec06fa8ae65"
   license "LGPL-2.1-or-later"
-  head "https://github.com/Winetricks/winetricks.git"
+  head "https://github.com/Winetricks/winetricks.git", branch: "master"
 
   depends_on "cabextract"
   depends_on "p7zip"

@@ -4,7 +4,7 @@ class WiremockStandalone < Formula
   url "https://search.maven.org/remotecontent?filepath=com/github/tomakehurst/wiremock-jre8-standalone/2.30.1/wiremock-jre8-standalone-2.30.1.jar"
   sha256 "6aa6d9fa536040ba3c9b062c1257b90c045672f3864b9b481496e6ff1bef91c1"
   license "Apache-2.0"
-  head "https://github.com/tomakehurst/wiremock.git"
+  head "https://github.com/tomakehurst/wiremock.git", branch: "master"
 
   bottle do
     sha256 cellar: :any_skip_relocation, x86_64_linux: "bf8458fb1667cbb26d27a2a6b3e3bb6d7d0de48f353f1f4786de935a95b1b04e" # linuxbrew-core
