@@ -1,11 +1,18 @@
 class Apngasm < Formula
   desc "Next generation of apngasm, the APNG assembler"
   homepage "https://github.com/apngasm/apngasm"
-  url "https://github.com/apngasm/apngasm/archive/3.1.6.tar.gz"
-  sha256 "0068e31cd878e07f3dffa4c6afba6242a753dac83b3799470149d2e816c1a2a7"
   license "Zlib"
   revision 2
   head "https://github.com/apngasm/apngasm.git", branch: "master"
+
+  stable do
+    url "https://github.com/apngasm/apngasm/archive/3.1.6.tar.gz"
+    sha256 "0068e31cd878e07f3dffa4c6afba6242a753dac83b3799470149d2e816c1a2a7"
+
+    # Fix build with newer boost by changing boost::filesystem to std::filesystem
+    # Backport of https://github.com/apngasm/apngasm/commit/de1c87cd7696384be3235eb07766766891474e09
+    patch :DATA
+  end
 
   bottle do
     sha256 cellar: :any,                 arm64_big_sur: "9f447e672e2a167926aba3a733123ad244be88f5814dbf86dff970394537abf4"
@@ -19,12 +26,21 @@ class Apngasm < Formula
   depends_on "boost"
   depends_on "libpng"
   depends_on "lzlib"
+  depends_on macos: :catalina # Requires C++17 filesystem
+
+  on_linux do
+    depends_on "gcc" # for C++17
+  end
+
+  fails_with gcc: "5"
 
   def install
     inreplace "cli/CMakeLists.txt", "${CMAKE_INSTALL_PREFIX}/man/man1",
                                     "${CMAKE_INSTALL_PREFIX}/share/man/man1"
-    system "cmake", ".", *std_cmake_args
-    system "make", "install"
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make", "install"
+    end
     (pkgshare/"test").install "test/samples"
   end
 
