@@ -11,6 +11,7 @@ class ScIm < Formula
     sha256 big_sur:       "218f06c63577dddf1357cf92c8f66f47ef6ff64f082eea98cce94b62c8a1e00f"
     sha256 catalina:      "3461913e568fce79d103aac72c8edd7e69911f8581133eac8e06759f46b81878"
     sha256 mojave:        "56cd7dbc8cff16da87cb2cc3206c52bba7961401b03e67d73332862133cf780b"
+    sha256 x86_64_linux:  "fc3af3d6197b5e2c768266c82efe9b55e80a645d1288cfd9caea53ed353516fc"
   end
 
   depends_on "ncurses"
