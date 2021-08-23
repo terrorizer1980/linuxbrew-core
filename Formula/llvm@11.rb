@@ -21,6 +21,7 @@ class LlvmAT11 < Formula
     sha256 cellar: :any,                 big_sur:       "28be37f5fc663e1916c230b9b94e63f11166dcc4f172e649c37fd3477bd725e5"
     sha256 cellar: :any,                 catalina:      "d74e57328f28889026d6c480b82146d3e101a3671b8570ec54da008640f15f46"
     sha256 cellar: :any,                 mojave:        "11e70193c46e3daac701cb4cd3b63234af30c61c8d8af7eb090c3610a73948f8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9d53fc141ad7e5d6481776932a00bb0c4f78cb312aa92616444f807ddb93725"
   end
 
   # Clang cannot find system headers if Xcode CLT is not installed
