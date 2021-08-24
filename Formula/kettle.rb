@@ -11,6 +11,7 @@ class Kettle < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "693b4669939d3501209b2994ee4e359c05740ac1641380f8a54727177603c5c5"
   end
 
   depends_on arch: :x86_64
