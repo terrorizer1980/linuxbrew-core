@@ -11,7 +11,7 @@ class Nebula < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e2e3d254fe289a4f2f23501f28ca166905faaf57db788e5ee315f4fc0bb4e0b5"
     sha256 cellar: :any_skip_relocation, catalina:      "ab02181a5aac3eeb36c11e1125e5076cf4b8a95d27da2aa08b1f75b47da80ce4"
     sha256 cellar: :any_skip_relocation, mojave:        "38f86a06ff08b5f28e3cce3d4509c12998d163977c6e99d38f897a3a28964381"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a828aa47aec4b8d8dff116b5e894731c294a7deef25e8d5e0f348cbbe93d584e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a828aa47aec4b8d8dff116b5e894731c294a7deef25e8d5e0f348cbbe93d584e" # linuxbrew-core
   end
 
   depends_on "go" => :build
