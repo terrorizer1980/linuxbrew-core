@@ -17,6 +17,7 @@ class ShairportSync < Formula
     sha256 big_sur:       "539e6ac514499bb752fa3bc5621f2851abaec22822f9471a59b8520b6f89550e"
     sha256 catalina:      "1bd4a19140ae1361a0bff75f52a0fd0d44017333d1caffbe9d71a3dbde7e9eee"
     sha256 mojave:        "87beee235a4af62b1bd7971a97ed011b23ee0d553eccea22e045130c6927e061"
+    sha256 x86_64_linux:  "30b6ed5b817fc506e92b3f3985575f2ae6b2c0c17ff0f69ab347bd1c9513d83c"
   end
 
   depends_on "autoconf" => :build
