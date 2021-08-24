@@ -1,16 +1,15 @@
 class Dhall < Formula
   desc "Interpreter for the Dhall language"
   homepage "https://dhall-lang.org/"
-  url "https://hackage.haskell.org/package/dhall-1.40.0/dhall-1.40.0.tar.gz"
-  sha256 "c6307696ab9c793e5b71bf524c8d1e807e9bb6832bfb46a94c3ecde7b3dbb0a8"
+  url "https://hackage.haskell.org/package/dhall-1.40.1/dhall-1.40.1.tar.gz"
+  sha256 "21c23ed7c3949f6c8adb439666a934460a07636320ae4b3dfaced03455e24e54"
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "af427f1180f96b9bcd9ff77347f861d19ac67b3b62e3511ffc0c1cb810483143"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d1c36be171b91a50d710af00cd7321d6fadb496a90583f73e6033e28035a143e"
-    sha256 cellar: :any_skip_relocation, catalina:      "ade8c77d54c09576a75f0e2f6bc98e0a2b7cceb4cf3e93c271a24258a3855e74"
-    sha256 cellar: :any_skip_relocation, mojave:        "66ddeb565cc75a33877d69553b1aba1724a3a54e780954f799a45c3c5634ab82"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b9cf19a359f541ce49e6dfe6b6d4a15ac53c2dfd60ec6628ad58fa33465b8792" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d5813e732f904689c01bd850dacfbadefc7cc7eabc9de698eae354f6da536487"
+    sha256 cellar: :any_skip_relocation, big_sur:       "7419b77dbe5d0c193fee5fcc025b4498093827c49b7bb72cd5a1ea9049df2ace"
+    sha256 cellar: :any_skip_relocation, catalina:      "5237942d82f12c997ed07086c1be7610ce4ba998dc87b24a3dec2d88bd382d71"
+    sha256 cellar: :any_skip_relocation, mojave:        "dad39b07677cd3dc786e269a9160e938f3cdb1cdd7c35d7856293d61c7aad741"
   end
 
   depends_on "cabal-install" => :build
