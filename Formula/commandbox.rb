@@ -10,6 +10,10 @@ class Commandbox < Formula
     regex(/Download CommandBox v?(\d+(?:\.\d+)+)/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c948344f1add6f1f12f38e03b6a833ea0a8b150d5ebf6a654dbfaf7f89a2b506"
+  end
+
   # not yet compatible with Java 17 on ARM
   depends_on "openjdk@11"
 
