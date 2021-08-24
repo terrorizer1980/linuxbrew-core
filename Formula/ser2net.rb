@@ -16,6 +16,7 @@ class Ser2net < Formula
     sha256 cellar: :any,                 big_sur:       "03feeb3d9e3049231fccb29a8ca8bc7d79c0e4839381d1340c45cf932ddaea68"
     sha256 cellar: :any,                 catalina:      "21a9c4c0a980b74a864c7db0782f71786e133cc2e3d62411fa9ea0f99c38e0b2"
     sha256 cellar: :any,                 mojave:        "a2abbe3f823de5e70a863f521e63fcb079801b22d653f4bdb26a775c97fa4289"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2c4726875c7f661b925b6fbd7d82eeaf89fd4b91a28ba34377860c8ebbb3f999"
   end
 
   depends_on "libyaml"
