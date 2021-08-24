@@ -11,7 +11,7 @@ class Alp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "909d30918325d04599ffe05aecd4b12dc3b4287367f392abc645329cdc0f57f9"
     sha256 cellar: :any_skip_relocation, catalina:      "3b5ed01c4396d31b9873f39339a6efc9663ee2968db6dbbab777f05ecc7cda84"
     sha256 cellar: :any_skip_relocation, mojave:        "03a94a2058cd2e4e889fd9064949d0164ade83cc1c6dba2ae5d0804c9e8232c5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4cd651384c89d4e08b98079a3c0fd6ead60956211a73acee1bc3cb7a541d49a0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4cd651384c89d4e08b98079a3c0fd6ead60956211a73acee1bc3cb7a541d49a0" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -6,7 +6,7 @@ class Yadm < Formula
   license "GPL-3.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "71127b1a24c8590c29be1982b5577362ce9ccd8e3dbbb57f033a0769d1890264"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "71127b1a24c8590c29be1982b5577362ce9ccd8e3dbbb57f033a0769d1890264" # linuxbrew-core
   end
 
   def install
