@@ -7,11 +7,11 @@ class Kcptun < Formula
   head "https://github.com/xtaci/kcptun.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6e345408ba16132ad0013c13015df96fc97fdf4661e67d4f0fc01c574a203097"
-    sha256 cellar: :any_skip_relocation, big_sur:       "2cd2c509194e43eafd7b14cb3374e2b96b2438f0c8430aea762915fcfc1d5971"
-    sha256 cellar: :any_skip_relocation, catalina:      "cd5687433da66043168a885f2ce895232fa7e44564a4ac73ae2875eaf1310fa2"
-    sha256 cellar: :any_skip_relocation, mojave:        "19f310dd4027105d9dc76a526571f9e286c1d77f530de3012a9130daf3f806d9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d8af319c71fe8c2a3d11d3678891fdf791398bb1a65240b47fd16185ad36ff6c" # linuxbrew-core
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0cbeb08ced20b11a0f40715c298145f09cb15a1df96193146495af783cc3c2e2"
+    sha256 cellar: :any_skip_relocation, big_sur:       "fceb1bc66a46428a08d59ceda920961969ab358b2e938e43140882c8d9bacbb6"
+    sha256 cellar: :any_skip_relocation, catalina:      "958b2f9440b0c9c760b766c7a5b8f523e5f3f182866cbf46abb1912e22947b6a"
+    sha256 cellar: :any_skip_relocation, mojave:        "3bbf3c2432c91de79cfae4e846973257d42b18d484244cfc74e454019f2ad264"
   end
 
   depends_on "go" => :build
