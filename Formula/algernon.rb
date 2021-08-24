@@ -17,6 +17,7 @@ class Algernon < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ffe7eed6b3576166e41b66beecdccc47aabed4644119190a1534ec8210fb25cc"
     sha256 cellar: :any_skip_relocation, catalina:      "57e11ff2b146da5e254189058ec5502bda66d7213996daf8846756cca5de38ec"
     sha256 cellar: :any_skip_relocation, mojave:        "c06af8b3677a3d46e7be0160533e8da8b7512b848a24105d498c0a9b1d381125"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ccdca9ac607c215c4981e35dc13101c5acc0533edd1a5441bd3c874dea275b2a"
   end
 
   depends_on "go" => :build
