@@ -11,6 +11,7 @@ class Yara < Formula
     sha256 cellar: :any,                 big_sur:       "83aa393c51adf92eb310e23943929dfbd489cd365535682e97dc27bda9fc310d"
     sha256 cellar: :any,                 catalina:      "6a4703dfcb6e2d8b4d753e54e8adc16aecfb1000983a55b2f86e43628d4d36d8"
     sha256 cellar: :any,                 mojave:        "3d2b7b10112923b8b8efa938f4ae54aed85ac13a860a82e3c1e090b89106083b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e120322c0dbfa6b57698af458f91383f34cebc501e1ef79a45840c7ce68fbd2"
   end
 
   depends_on "autoconf" => :build
