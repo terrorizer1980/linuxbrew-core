@@ -6,11 +6,11 @@ class Nebula < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "227c21ce7bc1df21cfbc32e5ddc9183d47fbb948f822ebada84a5fe85b9ea70c"
-    sha256 cellar: :any_skip_relocation, big_sur:       "c22fa740a6bcbebfa2c66a2983cb1c4be85ab26f3e94744d7d2216769e836c79"
-    sha256 cellar: :any_skip_relocation, catalina:      "6b4e35987bd0fbc8a44248e1c6c8463945bf5775700856400af492e598aac565"
-    sha256 cellar: :any_skip_relocation, mojave:        "443bf8ec9c2c4a7a40e49320ff7da810bed35fe599a62618820d7f97443744c6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "828f9385696240ea69d494cb7fc4864487516551760c1473bb07c1624d2ad04e" # linuxbrew-core
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "f7917a3ad415e2b258d46eeb8d477e1fe4b1116d57b988143652c0dc35407429"
+    sha256 cellar: :any_skip_relocation, big_sur:       "e2e3d254fe289a4f2f23501f28ca166905faaf57db788e5ee315f4fc0bb4e0b5"
+    sha256 cellar: :any_skip_relocation, catalina:      "ab02181a5aac3eeb36c11e1125e5076cf4b8a95d27da2aa08b1f75b47da80ce4"
+    sha256 cellar: :any_skip_relocation, mojave:        "38f86a06ff08b5f28e3cce3d4509c12998d163977c6e99d38f897a3a28964381"
   end
 
   depends_on "go" => :build
