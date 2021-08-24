@@ -12,6 +12,7 @@ class Peru < Formula
     sha256 cellar: :any,                 big_sur:       "bcc6478c675786f51934108b92b5e47d2798dc2a4b0ef8bfae99f130fa2f473e"
     sha256 cellar: :any,                 catalina:      "31220d37966a4dc4edb016b44a80e70ca291c669ed56176dc08b00eeeeafe683"
     sha256 cellar: :any,                 mojave:        "c0e0c051d79f223765f095524f5fea92fd5275c51d2f59281d12e9456e9ee2c9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bec41b82f2b9c0f72b3b22ad27f06033e316e42e24d8bd75024cf5379909a06e"
   end
 
   depends_on "libyaml"
