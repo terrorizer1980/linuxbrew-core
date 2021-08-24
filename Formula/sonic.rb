@@ -10,6 +10,7 @@ class Sonic < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "96cada862d795baf29e21b10735b373117c4c0fa8058cd48f31b9dbe24e954bf"
     sha256 cellar: :any_skip_relocation, catalina:     "fb2bb9eff6d9c7e20e6c86cd8279772d9d2be7d4969eb93bd8442ffac4a57663"
     sha256 cellar: :any_skip_relocation, mojave:       "7b2e9de3bed6b681c2b2cb21b784841f5153c55085579fb0598e0c939a033a36"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "84494a2ce5c1349b265abe66634eba2387430dbf71594d24231da66d88a6ed4b"
   end
 
   depends_on "rust" => :build
