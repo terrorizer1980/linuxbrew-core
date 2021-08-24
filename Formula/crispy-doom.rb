@@ -4,14 +4,13 @@ class CrispyDoom < Formula
   url "https://github.com/fabiangreffrath/crispy-doom/archive/crispy-doom-5.10.3.tar.gz"
   sha256 "eef8dc26e8952b23717be3b20239fda4ee59842511328387766d1c8fe8252f6b"
   license "GPL-2.0-only"
-
-  head "https://github.com/fabiangreffrath/crispy-doom", branch: "master"
+  head "https://github.com/fabiangreffrath/crispy-doom.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "6d9000bd5ee7e800eecf8748c419ea4f8d42dc1e5c78ec5e49e91ab095e34895"
-    sha256 cellar: :any, big_sur:       "cbd514df66ecb0eb170169ce1f099fedefafa17f79cdeb2dfe00120d7e2fa03a"
-    sha256 cellar: :any, catalina:      "07ab97bfe589f66a63007f32ab6f5a937aec221fb3528ab33259fc3c6652bb60"
-    sha256 cellar: :any, mojave:        "ae4f7e635129aa417d47826af76123678ae786c0889b4baad08c59b3c730c36a"
+    sha256 cellar: :any,                 arm64_big_sur: "6d9000bd5ee7e800eecf8748c419ea4f8d42dc1e5c78ec5e49e91ab095e34895"
+    sha256 cellar: :any,                 big_sur:       "cbd514df66ecb0eb170169ce1f099fedefafa17f79cdeb2dfe00120d7e2fa03a"
+    sha256 cellar: :any,                 catalina:      "07ab97bfe589f66a63007f32ab6f5a937aec221fb3528ab33259fc3c6652bb60"
+    sha256 cellar: :any,                 mojave:        "ae4f7e635129aa417d47826af76123678ae786c0889b4baad08c59b3c730c36a"
   end
 
   depends_on "autoconf" => :build
