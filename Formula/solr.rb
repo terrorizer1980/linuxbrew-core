@@ -6,6 +6,10 @@ class Solr < Formula
   sha256 "c9c970e0603318eac1ca5bae24e9a85e917d012266159237e572e636c5a3da62"
   license "Apache-2.0"
 
+  bottle do
+    rebuild 1
+  end
+
   depends_on "openjdk"
 
   def install
