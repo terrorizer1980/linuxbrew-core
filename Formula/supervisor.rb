@@ -14,6 +14,7 @@ class Supervisor < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8719a67515fc2e5ceaaf19eb8fc2998343c7001fca4c22f68b0531a7ca26103d"
     sha256 cellar: :any_skip_relocation, catalina:      "8719a67515fc2e5ceaaf19eb8fc2998343c7001fca4c22f68b0531a7ca26103d"
     sha256 cellar: :any_skip_relocation, mojave:        "8719a67515fc2e5ceaaf19eb8fc2998343c7001fca4c22f68b0531a7ca26103d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "92246cbda1ce67873519f07455f74dafc55b292f5132d0103dffcd79aa185835"
   end
 
   depends_on "python@3.9"
