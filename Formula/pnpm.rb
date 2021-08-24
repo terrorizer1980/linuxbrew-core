@@ -17,6 +17,7 @@ class Pnpm < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1c6984eca4bf24118d0170576bde5d9c651749a19b5c106b9e542e968a0d54b5"
     sha256 cellar: :any_skip_relocation, catalina:      "1c6984eca4bf24118d0170576bde5d9c651749a19b5c106b9e542e968a0d54b5"
     sha256 cellar: :any_skip_relocation, mojave:        "1c6984eca4bf24118d0170576bde5d9c651749a19b5c106b9e542e968a0d54b5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7c6e99eda3ac41d3f16cdc1c0f6d917020fe73acd0796531eb378080228659f1"
   end
 
   depends_on "node"
