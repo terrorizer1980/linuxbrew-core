@@ -13,6 +13,7 @@ class SeleniumServerStandalone < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8fc1e1b18186d116b44d749fbe73aeb7736cb94c51071013aad19095904f9e29"
   end
 
   depends_on "openjdk"
