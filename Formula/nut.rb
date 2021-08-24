@@ -22,6 +22,7 @@ class Nut < Formula
     sha256 big_sur:       "38d910d0eb58cccc15593aa6675aa9547710e88c39c31849053a48bcc9ec972d"
     sha256 catalina:      "b77e56263a12f2159bce36d8d4e27ca87bc8b9d855e204051b4726237c06899f"
     sha256 mojave:        "357f99b63af4a81516fb8e1775f3569aeed577e62bad7906136bd9f0906e7184"
+    sha256 x86_64_linux:  "ad7dfc16b500f03bbead324d23ddc4125ba416a504a5bc81e9515d807a741669"
   end
 
   head do
