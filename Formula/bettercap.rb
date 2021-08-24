@@ -11,6 +11,7 @@ class Bettercap < Formula
     sha256 cellar: :any,                 big_sur:       "6ca4df5dc6af80e97961923613220f3930989b3b2ef2911609a719003500d613"
     sha256 cellar: :any,                 catalina:      "d719df24fe3a24f2712fd5e08027b20ec0cf4a1e3e9f659d1b085a0b23bc7ee8"
     sha256 cellar: :any,                 mojave:        "cb44f7b4fed4e8c10049d4e69f3745f78d07a70b03b77327b9e6d02e03e7c020"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "178b9e000b63477b586c4f31679b4e1aae6513efd454bbbc4f9a150719f47615"
   end
 
   depends_on "go" => :build
