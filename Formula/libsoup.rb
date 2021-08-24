@@ -10,6 +10,7 @@ class Libsoup < Formula
     sha256 big_sur:       "75b7a97c03c5eb93b5fa612d53189e35bc92d9455fdedf85e885a516c43f932e"
     sha256 catalina:      "255b10e650d1c4892fb37643efe9e57c578d565a26ca024d14fa773bf067ff1c"
     sha256 mojave:        "910b60a2602e8aab51bf9162590c6f28c34de1efab02c50549d4c41b0adbc106"
+    sha256 x86_64_linux:  "64e4b60673a0e428c261a715fffd9bfbca1798c3254f31f9ac80e591c2a53f57"
   end
 
   depends_on "gobject-introspection" => :build
