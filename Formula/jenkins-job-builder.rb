@@ -10,7 +10,7 @@ class JenkinsJobBuilder < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7e94f45f664e83e88cf4bfcc79ce279458fc9e6635bc4b68d9abe72b30e4bea9"
     sha256 cellar: :any_skip_relocation, catalina:      "c9d180a084a198db13dcff07da187bd728823ca64e28dddd9ed3b2bda2386223"
     sha256 cellar: :any_skip_relocation, mojave:        "fd5dc6e524f98e22ae7698eb0211014597fe1d0fd499301c43f6aeac69afc083"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "434e3a6cb3279cfaae8bf69f9e06dbc4125714bc427315583eef1184cd847fc3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "434e3a6cb3279cfaae8bf69f9e06dbc4125714bc427315583eef1184cd847fc3" # linuxbrew-core
   end
 
   depends_on "python@3.9"

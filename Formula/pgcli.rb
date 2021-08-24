@@ -12,7 +12,7 @@ class Pgcli < Formula
     sha256 cellar: :any,                 big_sur:       "f4e5249349761c5e95024d8281e29ba0a90799e49fdbb20f4ec7d2654a2aef9c"
     sha256 cellar: :any,                 catalina:      "0c7a430fdd6d5f1346b4b0028c3540424da4783a089e293e650b3cb570ce7ccc"
     sha256 cellar: :any,                 mojave:        "7bf0526c0ecc82a745c63bb3c69d26259896592507c5be0b53e6709ccf435764"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "220d3a9ad6dbe6c5c81276285686a035cbd9c68daf55feebb3238d28ca0e4a53"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "220d3a9ad6dbe6c5c81276285686a035cbd9c68daf55feebb3238d28ca0e4a53" # linuxbrew-core
   end
 
   depends_on "poetry" => :build
