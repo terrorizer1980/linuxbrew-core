@@ -92,6 +92,9 @@
   "homeassistant-cli": {
     "exclude_packages": ["tabulate"]
   },
+  "jenkins-job-builder": {
+    "exclude_packages": ["six"]
+  },
   "litecli": {
     "exclude_packages": ["tabulate"]
   },
@@ -134,6 +137,9 @@
   "pdm": {
     "exclude_packages": ["six"],
     "extra_packages": ["wheel"]
+  },
+  "pgcli": {
+    "exclude_packages": ["six", "tabulate"]
   },
   "pipgrip": {
     "exclude_packages": ["six"],

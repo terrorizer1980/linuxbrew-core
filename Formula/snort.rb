@@ -5,14 +5,14 @@ class Snort < Formula
   mirror "https://fossies.org/linux/misc/snort3-3.1.10.0.tar.gz"
   sha256 "6bd1c2c243ff69f9222aee6fb5d48998c7e24acaa4d2349115af324f9810bb01"
   license "GPL-2.0-only"
+  revision 1
   head "https://github.com/snort3/snort3.git"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "58986cae6a7edcb337c8f719e38d38b5c6656414df138814a191135ec6196d43"
-    sha256 cellar: :any,                 big_sur:       "5b1749b31605e7c22eeb1f90edc4979b7674324754a2230f7f8d1440bf1aa808"
-    sha256 cellar: :any,                 catalina:      "d25dd4a9b0a6d6596848d40de190c59f9b4cce3b5e8797ac0d27a39801bc93af"
-    sha256 cellar: :any,                 mojave:        "5aa32bd5221b932274c2cbb322b0315cd42242f626b4b29d2203882739764a4f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d55b8760ed186928055e3470a4ab02134a4765c64faf986cc7e2a8f8a3f18576" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "75c1886602ba92de7e259863ed2a51c6d052a50b224674370015b4002da87bed"
+    sha256 cellar: :any,                 big_sur:       "3d14db3d6a83c80857b430d2729816bd46f799056e8269974e7460f63a26135c"
+    sha256 cellar: :any,                 catalina:      "c6e210b20cc622800df9af6c2f0356f4b432d9c784334f0f54bc785951f42fd0"
+    sha256 cellar: :any,                 mojave:        "c36e66231f8dc03504662da1070228c818383f40e218802d918a7d7d211e13fd"
   end
 
   depends_on "cmake" => :build
@@ -25,12 +25,12 @@ class Snort < Formula
   # Hyperscan improves IPS performance, but is only available for x86_64 arch.
   depends_on "hyperscan" if Hardware::CPU.intel?
   depends_on "libdnet"
+  depends_on "libpcap" # macOS version segfaults
   depends_on "luajit-openresty"
   depends_on "openssl@1.1"
   depends_on "pcre"
   depends_on "xz" # for lzma.h
 
-  uses_from_macos "libpcap"
   uses_from_macos "zlib"
 
   on_linux do
@@ -43,7 +43,7 @@ class Snort < Formula
     inreplace "cmake/FindLuaJIT.cmake", " -pagezero_size 10000 -image_base 100000000\"", "\""
 
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args, "-DENABLE_STATIC_DAQ=OFF", "-DENABLE_TCMALLOC=ON"
+      system "cmake", "..", *std_cmake_args, "-DENABLE_TCMALLOC=ON"
       system "make", "install"
     end
   end
