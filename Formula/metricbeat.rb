@@ -13,6 +13,7 @@ class Metricbeat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cd39c9314c57875191d8a24e882137bb6cf140a5b9f693148b5b8de529196a84"
     sha256 cellar: :any_skip_relocation, catalina:      "fa509869c27d2e661f372d2560cf5c352ff8a530d00b3854f15750f07ad07d0d"
     sha256 cellar: :any_skip_relocation, mojave:        "a8aafc256f5faaec771ed72892a16cb3d8bd290187e7c964ebcb93e23cac361b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "729bf9ba5d0597e48c62da27d4f5adc62044020f7653528308ba2791f84116bf"
   end
 
   depends_on "go" => :build
