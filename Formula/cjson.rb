@@ -11,6 +11,7 @@ class Cjson < Formula
     sha256 cellar: :any,                 catalina:      "19da0211d4aabe7a2bf7cf489682d8a9ec57f7d5749cdd39f81491354017a9b9"
     sha256 cellar: :any,                 mojave:        "32192c80f7a8dea4988342342dd80aabba292e8200e52f9cd2a2a35fc202b671"
     sha256 cellar: :any,                 high_sierra:   "0dfc85831529da5d33e07b46c08fbca4ed673f3879c4025a982b7612a0a05b7c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1a39a0fc4172d227baba49411faf4567001bd1df624ad1ded4de4c92d705c961"
   end
 
   depends_on "cmake" => :build
