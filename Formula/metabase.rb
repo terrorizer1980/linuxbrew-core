@@ -11,7 +11,7 @@ class Metabase < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2b35580f27e8590353bc3aaaef2460f799b5f3a9bf1423c21f17760e960b6096" # linuxbrew-core
+    rebuild 1
   end
 
   head do
@@ -37,33 +37,13 @@ class Metabase < Formula
     bin.write_jar_script libexec/"metabase.jar", "metabase", java_version: "11"
   end
 
-  plist_options startup: true, manual: "metabase"
-
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-      <dict>
-        <key>KeepAlive</key>
-        <true/>
-        <key>Label</key>
-        <string>#{plist_name}</string>
-        <key>ProgramArguments</key>
-        <array>
-          <string>#{opt_bin}/metabase</string>
-        </array>
-        <key>RunAtLoad</key>
-        <true/>
-        <key>WorkingDirectory</key>
-        <string>#{var}/metabase</string>
-        <key>StandardOutPath</key>
-        <string>#{var}/metabase/server.log</string>
-        <key>StandardErrorPath</key>
-        <string>/dev/null</string>
-      </dict>
-      </plist>
-    EOS
+  plist_options startup: true
+  service do
+    run opt_bin/"metabase"
+    keep_alive true
+    working_dir var/"metabase"
+    log_path var/"metabase/server.log"
+    error_log_path "/dev/null"
   end
 
   test do
