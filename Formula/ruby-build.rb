@@ -4,7 +4,7 @@ class RubyBuild < Formula
   url "https://github.com/rbenv/ruby-build/archive/v20210825.tar.gz"
   sha256 "9bc4f44303ab2fe454d4e3a173929a5bd59b0fda75a829e00bafb321c1476d30"
   license "MIT"
-  head "https://github.com/rbenv/ruby-build.git"
+  head "https://github.com/rbenv/ruby-build.git", branch: "master"
 
   depends_on "autoconf"
   depends_on "pkg-config"
