@@ -19,7 +19,7 @@ class Rdkit < Formula
     sha256 cellar: :any,                 big_sur:       "66468b15e7392d673b64fb3ccd88d54d0a1f12fc20741f2aebbfccac7aaeb982"
     sha256 cellar: :any,                 catalina:      "1e4bb08e11fd7acb40c17521032f9f99735fde9b8ac0a89c14a8557ea13f8c57"
     sha256 cellar: :any,                 mojave:        "88689935bdc08604cecf7f278dade986ea7942cec5f3a9d7d5f1aca16330187f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "260ccc3ff97ea6cb6aa28d37f93b150b0d4b1c9e24290e216e084a2272e159d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "260ccc3ff97ea6cb6aa28d37f93b150b0d4b1c9e24290e216e084a2272e159d1" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

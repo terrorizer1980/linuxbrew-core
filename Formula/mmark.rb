@@ -10,7 +10,7 @@ class Mmark < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "43a495c72b63b05ad45f72ceea9a740f123ad94ab21c277d20062e40189c75dd"
     sha256 cellar: :any_skip_relocation, catalina:      "43a495c72b63b05ad45f72ceea9a740f123ad94ab21c277d20062e40189c75dd"
     sha256 cellar: :any_skip_relocation, mojave:        "43a495c72b63b05ad45f72ceea9a740f123ad94ab21c277d20062e40189c75dd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e8faa5cfc2180bcb920e40378d19e18513c9a83d3d26e8560100ffb378ddaead"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e8faa5cfc2180bcb920e40378d19e18513c9a83d3d26e8560100ffb378ddaead" # linuxbrew-core
   end
 
   depends_on "go" => :build

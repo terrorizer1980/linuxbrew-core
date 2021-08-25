@@ -24,7 +24,7 @@ class Awscli < Formula
     sha256 cellar: :any,                 big_sur:       "aa9a43d5a7e28a2b714ca2d69d738288ec504d2d857a86ee72b39ba9385f3863"
     sha256 cellar: :any,                 catalina:      "162cdb6a3509416b74bc327ede9ce2974d7b1b7ece069d9a5bec3e10f93d6fae"
     sha256 cellar: :any,                 mojave:        "d33dfebf3bae3c221067df1c9c2e61cda98b7f415497d36f2e90d4c11f5fc822"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a7f16e1c6cccf03276c787b7bce3d6bf6d338979dbd7aeea0f88531187bdc4e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a7f16e1c6cccf03276c787b7bce3d6bf6d338979dbd7aeea0f88531187bdc4e" # linuxbrew-core
   end
 
   head do

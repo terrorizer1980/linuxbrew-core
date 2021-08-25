@@ -11,7 +11,7 @@ class NlohmannJson < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cc0818f8063c5b3f12116ee7d493ce909bb96d07b5f5e6fec82610beeacb9119"
     sha256 cellar: :any_skip_relocation, catalina:      "cc0818f8063c5b3f12116ee7d493ce909bb96d07b5f5e6fec82610beeacb9119"
     sha256 cellar: :any_skip_relocation, mojave:        "cc0818f8063c5b3f12116ee7d493ce909bb96d07b5f5e6fec82610beeacb9119"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "28f8f2061fa9a1a794a58662fbf50e206c3b8db86df16430ec660e4ebf3cbe23"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "28f8f2061fa9a1a794a58662fbf50e206c3b8db86df16430ec660e4ebf3cbe23" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

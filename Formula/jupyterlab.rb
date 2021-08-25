@@ -12,7 +12,7 @@ class Jupyterlab < Formula
     sha256 cellar: :any,                 big_sur:       "3d86fb4d6b5b25acf3428e8b6c67a5a8a7db126723686d626c4752044329ea48"
     sha256 cellar: :any,                 catalina:      "9b88c085bc4a2010c95ba8be9481e7b613986d45685a9abc1c953393de3402bf"
     sha256 cellar: :any,                 mojave:        "f9683be4d3ad591633b4534bb7cafaae0dc1af2f10a67ecc69973a150530ecae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1497c5b610c077bcd8a5590403666384a3c0d7dc8a2ac65248693cc46c335786"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1497c5b610c077bcd8a5590403666384a3c0d7dc8a2ac65248693cc46c335786" # linuxbrew-core
   end
 
   depends_on "node"

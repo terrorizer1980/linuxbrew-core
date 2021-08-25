@@ -11,7 +11,7 @@ class Jql < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9ef6864301c3199dd7c3b8e791ed68841e1694cf491c4edd2fccc919ce30b98c"
     sha256 cellar: :any_skip_relocation, catalina:      "1283c011a25f34eab396186cece7082a07fd52e899276d559696d2775fe797d4"
     sha256 cellar: :any_skip_relocation, mojave:        "04cf4d07e468885bb1f741db4869eefd11d79f426418f04dc12378179625b612"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1309fe125e3107ae8730ed639d4238adb78d0f9488b92f373c23cb7ef1754d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1309fe125e3107ae8730ed639d4238adb78d0f9488b92f373c23cb7ef1754d1" # linuxbrew-core
   end
 
   depends_on "rust" => :build
