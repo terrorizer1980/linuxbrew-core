@@ -11,7 +11,7 @@ class Minidlna < Formula
     sha256 cellar: :any,                 big_sur:       "92e3ced10e41d5528a06befe8124b0badde96b3542c094109c0d9b07315af0c4"
     sha256 cellar: :any,                 catalina:      "e43528eb7559099f5dd38d278c75ac2555be3f28474c84a7005e5a16f920e528"
     sha256 cellar: :any,                 mojave:        "fc24ceaaed86d9b4417349afa20ad6c86b765097314cc01bb2bb81d83a4c4639"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "173ae732e17fab4ba2f5722af2d0a05e8d45029d849ca16ac4130859530bd56a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "173ae732e17fab4ba2f5722af2d0a05e8d45029d849ca16ac4130859530bd56a" # linuxbrew-core
   end
 
   head do

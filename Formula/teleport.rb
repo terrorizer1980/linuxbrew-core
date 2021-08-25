@@ -20,7 +20,7 @@ class Teleport < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0d5f384bc8b6aae44448810509948bd0c16015e9a7c3c8d075db26b04f134967"
     sha256 cellar: :any_skip_relocation, catalina:      "b1437b41e39c3de655941fdcadf96fdbed05ad15ca19012baab60f68a8599269"
     sha256 cellar: :any_skip_relocation, mojave:        "1c47d87520dba62e93784e125ccbcc0fa75dc9c990fcd416e7209d4875797b5d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b94d1636336e3289c30495efac5aa59ed1b71d27b61e9e01b3c86690c0adb448"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b94d1636336e3289c30495efac5aa59ed1b71d27b61e9e01b3c86690c0adb448" # linuxbrew-core
   end
 
   depends_on "go" => :build

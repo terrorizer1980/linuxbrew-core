@@ -14,7 +14,7 @@ class MongoOrchestration < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e041335f3dbbf6a41a7b23422eee73925811becd1e546e7382322bbc6796aa51"
     sha256 cellar: :any_skip_relocation, catalina:      "9c1d470d4a8c29025b8dd949da85b47e8e9b6fb25092db6919b61ae990164321"
     sha256 cellar: :any_skip_relocation, mojave:        "1116172042657ce84ebf4a2a8a53c673d7a7f7f4b2ebf407fc4dfb479f547f8b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e933403039c076fb30edb4b9c9ac32d51b2ae45f2ed16fb0e186719b0de7c17"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5e933403039c076fb30edb4b9c9ac32d51b2ae45f2ed16fb0e186719b0de7c17" # linuxbrew-core
   end
 
   depends_on "python@3.9"

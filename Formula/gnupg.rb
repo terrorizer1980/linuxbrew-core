@@ -15,7 +15,7 @@ class Gnupg < Formula
     sha256 big_sur:       "ca228c2800845d8d0e020c3e3359201edc0bac8554cfc3a2e985617eb09b629a"
     sha256 catalina:      "9d0e847588e735e9f1137b7ccfa73a9439a8653a6949d284e3192e6fb2fdf5a5"
     sha256 mojave:        "a483dd421a3156007c163969705a617676c78e2780ed7bf9279cbcefc903b904"
-    sha256 x86_64_linux:  "cb12c6aab9f508b977047bf4053047b3f48d010988760c53d4c728d78ba7dae9"
+    sha256 x86_64_linux:  "cb12c6aab9f508b977047bf4053047b3f48d010988760c53d4c728d78ba7dae9" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

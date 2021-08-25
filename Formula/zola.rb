@@ -10,7 +10,7 @@ class Zola < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5a49c5001b16f01f12295f9066dcda62c9e088ab781ee70787d2c7734422206b"
     sha256 cellar: :any_skip_relocation, catalina:      "ea76bba77f6b6752f303327ee2e10b246355f43f904596073edaed5259ecfaf4"
     sha256 cellar: :any_skip_relocation, mojave:        "5e553968c1abcd38fbde7ea397b6026f2fbb8843d69d5916eeaec7b01020d717"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d7d1ed8bebdb019f1dd28503818e0570a0cb27bd0acebf64c2e1d65b6e5ef84d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d7d1ed8bebdb019f1dd28503818e0570a0cb27bd0acebf64c2e1d65b6e5ef84d" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

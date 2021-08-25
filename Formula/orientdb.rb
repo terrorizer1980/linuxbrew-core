@@ -12,7 +12,7 @@ class Orientdb < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c487c1824c6d2e48f78437a0934f2743bfeb8731c2a3040aa2c27bc40252c642"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c487c1824c6d2e48f78437a0934f2743bfeb8731c2a3040aa2c27bc40252c642" # linuxbrew-core
   end
 
   depends_on "maven" => :build
