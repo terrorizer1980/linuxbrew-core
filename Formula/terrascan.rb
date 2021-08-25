@@ -11,6 +11,7 @@ class Terrascan < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a4f13faec599cfe1586d6ea8512052e98f72783578f09ff182e6d4d7f01088a3"
     sha256 cellar: :any_skip_relocation, catalina:      "8a064db94da0f9eb0a3ec7e76983a8efae5f450e2537dbfc391688f9da487174"
     sha256 cellar: :any_skip_relocation, mojave:        "eb86095118573dd1bf4435bb54eab1515ab3feb5699fbc8acf3875ecf8064671"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "eb8924a8c37b95b6580e08b7c3151f50a208d47b88191c090b72e7c03abcbd2a"
   end
 
   depends_on "go" => :build
