@@ -12,7 +12,7 @@ class ReconNg < Formula
     sha256 cellar: :any,                 big_sur:       "c59a7fe40f66a18e7bf3a1a1209ff8ed4b960742beda6bcb7647e4fd0e339fd3"
     sha256 cellar: :any,                 catalina:      "cfb08fd27c9735d05c102fdb1f2bf26e4ee4d70d019891ef5145f748832a4ee3"
     sha256 cellar: :any,                 mojave:        "eb58dafa4f0bb049b6b8cbd52a2481b378b184a4539f888a448bb41cf306fe94"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e77a4fca95520e0cfef428b50d9e395c07d833be394fdc6d5547c62f4d0ae24"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e77a4fca95520e0cfef428b50d9e395c07d833be394fdc6d5547c62f4d0ae24" # linuxbrew-core
   end
 
   depends_on "libyaml"
