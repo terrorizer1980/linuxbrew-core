@@ -8,14 +8,19 @@ class Ksync < Formula
   head "https://github.com/ksync/ksync.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "75b929e1d0d310d0a0b875936e84f62f407be3b275659ce37875d4131b02206b"
-    sha256 cellar: :any_skip_relocation, big_sur:       "abdae6cfb9a6e71f0580c21d576cdba97462c95eeb0d98bf380562991db3e06b"
-    sha256 cellar: :any_skip_relocation, catalina:      "8424ffd61d19d4cb33bb433482b09e9d9980a0ab0a5ac1721091be8e377dcec6"
-    sha256 cellar: :any_skip_relocation, mojave:        "e3548758ab06f87ad12fdb1bc25faa555c0f46f476754e0cc92a306f977cd094"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a1d66fc653111ee81e7db9de7d88252736f58748077f238589f660fbdfa78be9" # linuxbrew-core
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4fe9c12efd8e73fd794edecca04b0270e4dc2229adad3953f25635c3432fc313"
+    sha256 cellar: :any_skip_relocation, big_sur:       "0e497912738482d6fa2d1161c6a26b62a781b25ba4280f7ac8e2487b757cda9d"
+    sha256 cellar: :any_skip_relocation, catalina:      "ccee0b1bd4f7d3af674d1c2901965e7140b4408a794a781fc8e7640276936f98"
+    sha256 cellar: :any_skip_relocation, mojave:        "6128a2e80da17e718001cd9a9a240d27b4dcac7a3e893b2e00316b886c04a3d3"
   end
 
   depends_on "go" => :build
+
+  # Support go 1.17, remove after next release
+  # Patch is equivalent to https://github.com/ksync/ksync/pull/544,
+  # but does not apply cleanly
+  patch :DATA
 
   def install
     project = "github.com/ksync/ksync"
