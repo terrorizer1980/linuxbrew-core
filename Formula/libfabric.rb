@@ -11,6 +11,7 @@ class Libfabric < Formula
     sha256 cellar: :any,                 big_sur:       "d36c230c17834a53d4427bc26cc982c7575595707d7a2179e629f81cbc661951"
     sha256 cellar: :any,                 catalina:      "5ac8f1202e3558aad6f83fa085e9e384546e5d54cfbadd600d35ea1fecf630af"
     sha256 cellar: :any,                 mojave:        "adedf2375e16169127c2caffe63e7df5f13d739301b929150779ad3a30faacb6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "28c0448c0eb7155e04bb6771bc9981b0e50f86cb1cb39bcaa10540b303ead891"
   end
 
   depends_on "autoconf" => :build
