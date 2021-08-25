@@ -16,6 +16,7 @@ class Monit < Formula
     sha256 cellar: :any,                 big_sur:       "87816b1850bfa853ba312933fdaa0af656f9ecc18cc4a420f58fae9e659d6d55"
     sha256 cellar: :any,                 catalina:      "07be9b5e3c46d314cbdcffc239c275f98a5fa1ac9f1161d1cd2d1e21fdb44a16"
     sha256 cellar: :any,                 mojave:        "5952392c467ab1b0286c9fe977e962089afc479e92e067a22008f4d742014b5d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "93877d0e9224a41b9c13b8142ebad4ae572c3023b62df0bc38ddf2f10036c4c2"
   end
 
   depends_on "openssl@1.1"
