@@ -16,7 +16,7 @@ class VorbisTools < Formula
     sha256 cellar: :any,                 big_sur:       "96ba6cde73391d6a892e9bf2dc858264450481fd82abf7b5b18d51e50f925337"
     sha256 cellar: :any,                 catalina:      "b01d184e0950457c156be75a93e58f33d3e68fc1c563d11c3d4201bd91835f1e"
     sha256 cellar: :any,                 mojave:        "a9564d93b704d270a94dc5831f20a1033a18f4ad8f7c90270eeeb1c65abcd578"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a6e13cfa641da45da07d912c1b6dcacf9e3603ea2152266605ad212188183259"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a6e13cfa641da45da07d912c1b6dcacf9e3603ea2152266605ad212188183259" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
