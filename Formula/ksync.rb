@@ -49,13 +49,13 @@ index e2ff1b7..dd4bed9 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -51,6 +51,7 @@ require (
-  github.com/timfallmk/overseer v0.0.0-20200214205711-64f40ac3a421
-  golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
-  golang.org/x/net v0.0.0-20201031054903-ff519b6c9102
-+ golang.org/x/sys v0.0.0-20210819135213-f52c844e1c1c // indirect
-  google.golang.org/grpc v1.36.0
-  gopkg.in/ini.v1 v1.52.0 // indirect
-  gopkg.in/resty.v1 v1.12.0
+ 	github.com/timfallmk/overseer v0.0.0-20200214205711-64f40ac3a421
+ 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
+ 	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102
++	golang.org/x/sys v0.0.0-20210819135213-f52c844e1c1c // indirect
+ 	google.golang.org/grpc v1.36.0
+ 	gopkg.in/ini.v1 v1.52.0 // indirect
+ 	gopkg.in/resty.v1 v1.12.0
 diff --git a/go.sum b/go.sum
 index babd1b5..063f1af 100644
 --- a/go.sum
