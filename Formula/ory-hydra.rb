@@ -11,16 +11,22 @@ class OryHydra < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "77854c18f822f5542273f516e349dd6d0e348e099e72b958eb9fdbbddafdc05d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "9a76c22d363440fe2b8cb6907507fe7ab944961689f8cca84b59668b6911a3f5"
-    sha256 cellar: :any_skip_relocation, catalina:      "bbc3f75a8bb71cc6f9877098ab6d2dffb68c7edb87e7e2cb2d2221d8359aa482"
-    sha256 cellar: :any_skip_relocation, mojave:        "7d281cb2973926ffe5eaacc652622a9dc888a8461fad2fbf14d49538b923faf0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "17030d13ddde16f0bfce62ec8d33e57a766b56febc8499d2db2198fd212f2e97" # linuxbrew-core
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "37f660bfd89f1bc766d06397f71087bdbc6ed7cea28f25e1ab282d55fb1ab19e"
+    sha256 cellar: :any_skip_relocation, big_sur:       "db58ee23f24377e5db80a9137b7c30c596540125705292f19bb921d4bb573e4d"
+    sha256 cellar: :any_skip_relocation, catalina:      "fc6c7dda2fee18826f95fecb6740219b090522bc95fe364efe8117dba9954c52"
+    sha256 cellar: :any_skip_relocation, mojave:        "9a9c01bb5fc78a8b2e0ccabc85963687eac4b4251df7be3cf15911553765bef0"
   end
 
   depends_on "go" => :build
 
   conflicts_with "hydra", because: "both install `hydra` binaries"
+
+  # Support go 1.17, remove after next release
+  patch do
+    url "https://github.com/ory/hydra/commit/57b41e93f89ff847da0386a8315603bba203f417.patch?full_index=1"
+    sha256 "9b51bb86935b53e30e7e1dc3585b94f4fd901e1127263b783110d7b1bb983e11"
+  end
 
   def install
     ENV["GOBIN"] = bin
