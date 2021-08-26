@@ -1,8 +1,8 @@
 class Duck < Formula
   desc "Command-line interface for Cyberduck (a multi-protocol file transfer tool)"
   homepage "https://duck.sh/"
-  url "https://dist.duck.sh/duck-src-7.10.1.35318.tar.gz"
-  sha256 "e268751603bce7f276b3173f9cffe6d9a76d34a07b9054937b53b0469e7e6b8e"
+  url "https://dist.duck.sh/duck-src-7.10.2.35432.tar.gz"
+  sha256 "8f5885799a10b0e06ed0587198dbecce63b08fa609778e84673b34faccfea40b"
   license "GPL-3.0-only"
   head "https://svn.cyberduck.io/trunk/"
 
@@ -12,9 +12,9 @@ class Duck < Formula
   end
 
   bottle do
-    sha256 cellar: :any, big_sur:      "dd5f7f78271c1784a8590d86116c99636a55e7a8d3df3fdca246758674ce6781"
-    sha256 cellar: :any, catalina:     "d42483784fdf4bb40e04866c8c7408e0cdbb05ba814b6d670fe084a08ef9346b"
-    sha256 cellar: :any, mojave:       "8ed2983e9f6f6bafa745275942cb36509be96fc1ee5f4df4dfc28d2aa2494e76"
+    sha256 cellar: :any, big_sur:      "b7bb41802a4fb208fb61f1d04ac52c6275e5d06f1cb950ef0057a400ef090251"
+    sha256 cellar: :any, catalina:     "21665b8a7d45aed16246274d5e7d85300784bb3a4e9876c07f977b3857db0189"
+    sha256 cellar: :any, mojave:       "d2ac998c80f2592acf099f4a5122241a0e56945f4e20297c6a434e77816d8d9f"
   end
 
   depends_on "ant" => :build

@@ -3,16 +3,15 @@ class Jupyterlab < Formula
 
   desc "Interactive environments for writing and running code"
   homepage "https://jupyter.org/"
-  url "https://files.pythonhosted.org/packages/61/b3/ddeff4ded4a50f16b52f9984c93d6de426c82790ef58060111d4619d5092/jupyterlab-3.1.8.tar.gz"
-  sha256 "113cf7a033547f90efba96bb3c1b5fbcf1fd194e1c1b52b24f3e3fd619083a3b"
+  url "https://files.pythonhosted.org/packages/0c/dc/3f308cd14655a8205478f8a98a983a5216b065062390c5efeedabe8878ff/jupyterlab-3.1.9.tar.gz"
+  sha256 "007e42f833e59fd36872d459e45be243d899edbd0e4a98d21388632e4e0d8af7"
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "62e0e1830f01ccdbd948fa5cac9ae899102d2c38d2669ae15a88e76fdfe8ff7d"
-    sha256 cellar: :any,                 big_sur:       "3d86fb4d6b5b25acf3428e8b6c67a5a8a7db126723686d626c4752044329ea48"
-    sha256 cellar: :any,                 catalina:      "9b88c085bc4a2010c95ba8be9481e7b613986d45685a9abc1c953393de3402bf"
-    sha256 cellar: :any,                 mojave:        "f9683be4d3ad591633b4534bb7cafaae0dc1af2f10a67ecc69973a150530ecae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1497c5b610c077bcd8a5590403666384a3c0d7dc8a2ac65248693cc46c335786" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "91a6b7748c40fb7dabf1bb65f18960b173786ac8276e50d972fdfcc314d39220"
+    sha256 cellar: :any,                 big_sur:       "9d341a9bbc1c219d110fa72fa87e308ac6c5d19989929d4258c0fdcd851b433b"
+    sha256 cellar: :any,                 catalina:      "6fd01e65d6296c35e3bf238c3e4d38cd5e96a54827449ab30d73b782d70ffbc7"
+    sha256 cellar: :any,                 mojave:        "8b5912809de0a353dad96f1f2c37b4d74d7dd64d08ca2fd42c9a343b1766d7e2"
   end
 
   depends_on "node"
@@ -55,8 +54,8 @@ class Jupyterlab < Formula
   end
 
   resource "bleach" do
-    url "https://files.pythonhosted.org/packages/ed/0c/0acbc89b1c229f5bb1b89b63af4ad60a49603a7933e2939f4e6cdbe00e14/bleach-4.0.0.tar.gz"
-    sha256 "ffa9221c6ac29399cc50fcc33473366edd0cf8d5e2cbbbb63296dc327fb67cc8"
+    url "https://files.pythonhosted.org/packages/6a/a3/217842324374fd3fb33db0eb4c2909ccf3ecc5a94f458088ac68581f8314/bleach-4.1.0.tar.gz"
+    sha256 "0900d8b37eba61a802ee40ac0061f8c2b5dee29c1927dd1d233e075ebf5a71da"
   end
 
   resource "certifi" do
