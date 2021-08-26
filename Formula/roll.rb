@@ -10,7 +10,7 @@ class Roll < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "03f970f61a9ef13cce52f7a73103b524b7e70b1a5ef882a4b6426b47f79d7db5"
     sha256 cellar: :any_skip_relocation, catalina:      "84da55198adbe7417d937de4e85d66f285bc70fea85786e962c9caab4a7511fe"
     sha256 cellar: :any_skip_relocation, mojave:        "e83b58e741695154b169582217226d669c4f2f12cdce20ae7f3b405a31e2dd6c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6bccb762f767b5e4d76cf24e5c4ad833261e2326b174ecc3251de557bf6c9086"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6bccb762f767b5e4d76cf24e5c4ad833261e2326b174ecc3251de557bf6c9086" # linuxbrew-core
   end
 
   head do

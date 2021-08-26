@@ -11,7 +11,7 @@ class Xgboost < Formula
     sha256 cellar: :any,                 big_sur:       "e81b8fd6533fce3a66f0b013dfc0d3c0eede4b54d2071dc6933201d22b135f34"
     sha256 cellar: :any,                 catalina:      "919b6d95848c782d2c330a7abbb273be7dd3babd4e38395b9ab2065bcea793d0"
     sha256 cellar: :any,                 mojave:        "a0bc2283a8dfd93406e1b9449286eb4153f306c0cdea70fc88349e970ace4bf7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bcfb34b840e3373e664481f75c325c81f2e9bd10bf3405b7339a111d889b3f9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bcfb34b840e3373e664481f75c325c81f2e9bd10bf3405b7339a111d889b3f9f" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

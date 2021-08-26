@@ -11,7 +11,7 @@ class BasisUniversal < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a3564f412c01518c7fa8489cfff76e4c72f96972055741651383dcbc1f621d44"
     sha256 cellar: :any_skip_relocation, catalina:      "20c4d1f426658cdde46b4d535d91254796ac5f5ca51ae7c741630bb06ff9545c"
     sha256 cellar: :any_skip_relocation, mojave:        "fa893b4498d244cb26f6a35db9059dacc84ef0fc6c60558c51cd60faa6ca222e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a571eefca9a99ff9dc3faa67e12f1292cd207d57fb2dcfb90ea31144b8201c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a571eefca9a99ff9dc3faa67e12f1292cd207d57fb2dcfb90ea31144b8201c5" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
