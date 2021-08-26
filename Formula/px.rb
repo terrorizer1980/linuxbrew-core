@@ -13,7 +13,7 @@ class Px < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "66db0f1fc9229b20269e4112499cb61db1571cdea764681077cb286874c8b263"
     sha256 cellar: :any_skip_relocation, catalina:      "e75d83def73aa21157724a5990dbeaa9c1274c8cd621200b2dc8f0ebffe5f9ad"
     sha256 cellar: :any_skip_relocation, mojave:        "f021cb0dfbf9c534618f0068ed7adb6d0bb4a08c28d2e2dc49d0d8f0a5ac532b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77d62c8cc5d4bf05be907ee3fe09540b766c79a0847c27d8dc5af8ea6c67fb80"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77d62c8cc5d4bf05be907ee3fe09540b766c79a0847c27d8dc5af8ea6c67fb80" # linuxbrew-core
   end
 
   depends_on "python@3.9"

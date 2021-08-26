@@ -17,7 +17,7 @@ class Nushell < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e6cb8f8d2a28c28f8775f7ce6e8ae9c2056360242925731de4b125045dfc7e6b"
     sha256 cellar: :any_skip_relocation, catalina:      "e88a27fee1e49b1433a63b3ecb6406f05aed6f7d00cc73cc368ef5ea270121a8"
     sha256 cellar: :any_skip_relocation, mojave:        "2fbf6c8e829ca8cab175170d4d2d74049c76e91282aa339f5b349d0a785e46ab"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f56c2a52d0710e7971d28d09f5580706cecfe94eabd89bda5d752a90f3dbd63"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f56c2a52d0710e7971d28d09f5580706cecfe94eabd89bda5d752a90f3dbd63" # linuxbrew-core
   end
 
   depends_on "rust" => :build
