@@ -6,6 +6,10 @@ class IsoCodes < Formula
   license "LGPL-2.1-or-later"
   head "https://salsa.debian.org/iso-codes-team/iso-codes.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e73500953641acc8108dac1d15b3929b48c50f91140387af201a126581cbd05d"
+  end
+
   depends_on "gettext" => :build
   depends_on "python@3.9" => :build
 
