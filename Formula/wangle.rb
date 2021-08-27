@@ -11,6 +11,7 @@ class Wangle < Formula
     sha256 cellar: :any,                 big_sur:       "08322031001ee7c9388daa0a8a9d138408e16bd2cd3e4c44165104dfdc917d0d"
     sha256 cellar: :any,                 catalina:      "96e698c4895a48bbbab8045bdeaa146b0604a56cc09c89d07e7a114517621276"
     sha256 cellar: :any,                 mojave:        "be693361b388ebd10db28e44859ad8c1ebd7475ace1c2356e36230af970ec713"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b3422d1d10bd3a15c89f31e336dc09767ea89b2bd827aeb1ac10491290be8e21"
   end
 
   depends_on "cmake" => :build
