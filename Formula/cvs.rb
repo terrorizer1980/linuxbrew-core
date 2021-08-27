@@ -2,13 +2,6 @@
 # Apple Open Source: https://opensource.apple.com/source/cvs/cvs-47/
 # MacPorts: https://github.com/macports/macports-ports/blob/master/devel/cvs/Portfile
 # Creating a useful testcase: https://mrsrl.stanford.edu/~brian/cvstutorial/
-
-class VimRequirement < Requirement
-  fatal true
-  # formula "vim"
-  satisfy { which "vim" }
-end
-
 class Cvs < Formula
   desc "Version control system"
   homepage "https://www.nongnu.org/cvs/"
@@ -39,17 +32,6 @@ class Cvs < Formula
   on_linux do
     depends_on "vim" => :build # a text editor must be detected by the configure script
     depends_on "linux-pam"
-  end
-
-  unless OS.mac?
-    depends_on VimRequirement unless ENV["HOMEBREW_GITHUB_ACTIONS"]
-    depends_on "vim" unless which "vim"
-
-    # Fixes error: %n in writable segment detected
-    patch do
-      url "https://gitweb.gentoo.org/repo/gentoo.git/plain/dev-vcs/cvs/files/cvs-1.12.13.1-fix-gnulib-SEGV-vasnprintf.patch?id=6c49fbac47ddb2c42ee285130afea56f349a2d40"
-      sha256 "4f4b820ca39405348895d43e0d0f75bab1def93fb7a43519f6c10229a7c64952"
-    end
   end
 
   patch :p0 do
