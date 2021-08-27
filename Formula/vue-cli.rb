@@ -12,7 +12,7 @@ class VueCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bd9ce4bc894223d6cb62993a235cbc3f20a30126c0bce5912de6e457fdb69e84"
     sha256 cellar: :any_skip_relocation, catalina:      "bd9ce4bc894223d6cb62993a235cbc3f20a30126c0bce5912de6e457fdb69e84"
     sha256 cellar: :any_skip_relocation, mojave:        "bd9ce4bc894223d6cb62993a235cbc3f20a30126c0bce5912de6e457fdb69e84"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e2aadb882a707a6239567c5207053752e1e7e1f8b2bca1cbb3de3c3274489bae"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e2aadb882a707a6239567c5207053752e1e7e1f8b2bca1cbb3de3c3274489bae" # linuxbrew-core
   end
 
   depends_on "node"

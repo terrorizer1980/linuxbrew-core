@@ -8,7 +8,7 @@ class GitFixup < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1d0bfbc7b1cdccd454e5c532e27b79e5a791e92be429758cdc8c4b70c1b1dd9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1d0bfbc7b1cdccd454e5c532e27b79e5a791e92be429758cdc8c4b70c1b1dd9" # linuxbrew-core
   end
 
   def install
