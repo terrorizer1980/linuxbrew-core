@@ -12,6 +12,7 @@ class Revive < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3e9d926d7fc9c92b811f086ea632b69f654007de10253dea6f9f00b943f53468"
     sha256 cellar: :any_skip_relocation, catalina:      "3e9d926d7fc9c92b811f086ea632b69f654007de10253dea6f9f00b943f53468"
     sha256 cellar: :any_skip_relocation, mojave:        "3e9d926d7fc9c92b811f086ea632b69f654007de10253dea6f9f00b943f53468"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5656421dd1b71c7a00807ee276ea22df8537ad50e9e8437626c170d006a1f540"
   end
 
   depends_on "go" => :build
