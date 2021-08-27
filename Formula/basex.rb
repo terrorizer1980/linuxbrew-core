@@ -11,6 +11,10 @@ class Basex < Formula
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b33eeeb144a2545bbac432256e99b31ba153544be828500d1a3e0b21875807c4"
+  end
+
   depends_on "openjdk"
 
   def install
