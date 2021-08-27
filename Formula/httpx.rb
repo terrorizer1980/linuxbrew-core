@@ -11,7 +11,7 @@ class Httpx < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9df6c694c5b5c0f05e6ae4483003e9ecd3ba1cbcf8e9e6ac66aedfedcf92b1dc"
     sha256 cellar: :any_skip_relocation, catalina:      "cac1f3447f2f13f6dfd36434c3999514c9e05540fc50142b939ee34c3aad3ad6"
     sha256 cellar: :any_skip_relocation, mojave:        "182fdb01e623536bf7454d8527b63b4f1eff5f38caceace05a1a41374626b918"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8ab4836e8f7ad808865df65a1aa9aa77919f43ca9f4ed9bc45ae6906b3feb6d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8ab4836e8f7ad808865df65a1aa9aa77919f43ca9f4ed9bc45ae6906b3feb6d2" # linuxbrew-core
   end
 
   depends_on "go" => :build

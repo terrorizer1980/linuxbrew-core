@@ -10,7 +10,7 @@ class Hadolint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "abce0685f4b3f1ead842ff06ad3558241df8774f688d47756ecd35ebcfab3269"
     sha256 cellar: :any_skip_relocation, catalina:      "5eab02ca98f5edb9d0739b3e32a571a2ccc7ff3a1587f6ec551538920e501f63"
     sha256 cellar: :any_skip_relocation, mojave:        "c0fa969e5b180cf5ddd5f46ddee81bf76bebe902f40e7a248ff235930b37d60f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "88030a38925b8d1d520a750fd1e91925113a0782e2ccd39b6868e1cf14b4453b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "88030a38925b8d1d520a750fd1e91925113a0782e2ccd39b6868e1cf14b4453b" # linuxbrew-core
   end
 
   depends_on "ghc" => :build

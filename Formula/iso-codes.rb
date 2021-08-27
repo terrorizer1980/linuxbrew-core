@@ -7,7 +7,7 @@ class IsoCodes < Formula
   head "https://salsa.debian.org/iso-codes-team/iso-codes.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e73500953641acc8108dac1d15b3929b48c50f91140387af201a126581cbd05d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e73500953641acc8108dac1d15b3929b48c50f91140387af201a126581cbd05d" # linuxbrew-core
   end
 
   depends_on "gettext" => :build

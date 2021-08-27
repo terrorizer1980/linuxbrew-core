@@ -16,7 +16,7 @@ class Root < Formula
     sha256 big_sur:       "1fa26f261a9a86327106fbb5f2dd48687efa39979c207696f85eb6d6a7814fef"
     sha256 catalina:      "2c925c6cfea7e222a1aaec1c0bec0e74d6a6f56ca24afd0f36cf0b3ef97b01f6"
     sha256 mojave:        "75c2a278276d76be14f0ed92a78e104a39cdcf0d7e506dda0d172b83747d7ed7"
-    sha256 x86_64_linux:  "deab04d8ec9f21c1caa365fd750993cb8d9379830529074381060f9a67c2153c"
+    sha256 x86_64_linux:  "deab04d8ec9f21c1caa365fd750993cb8d9379830529074381060f9a67c2153c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
