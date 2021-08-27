@@ -17,7 +17,7 @@ class Convox < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f9f44fe49ec1864dcd72abb2b0932b75d960c5120e96c93c11df2a24ff6e661d"
     sha256 cellar: :any_skip_relocation, catalina:      "08dffd8d6ca1788812913d032630029f0ac87ba116272ae852261e14c6496a65"
     sha256 cellar: :any_skip_relocation, mojave:        "d65b92e8f228af2b1bd4da1500144a5086eead5ccf91e1b59b53de0b8f86d74e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "347f7c9cb0a54a04d995592054218826c9ff27bd133fd5616ee034ffcfcd70f0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "347f7c9cb0a54a04d995592054218826c9ff27bd133fd5616ee034ffcfcd70f0" # linuxbrew-core
   end
 
   depends_on "go" => :build

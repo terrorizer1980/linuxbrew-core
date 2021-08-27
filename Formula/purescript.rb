@@ -11,7 +11,7 @@ class Purescript < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cd63479d4e3c3840de1d4570144323cf0c855fa04320115b48baa80f34e3a7a4"
     sha256 cellar: :any_skip_relocation, catalina:      "24592ee5e641295e60751043239c94c29e83be369157101f8a6532621928d5ab"
     sha256 cellar: :any_skip_relocation, mojave:        "d3206d2e8a4b865d7fa7a023d1f8e0dc2ae2f37a10aaf30ab9396c7860b280d2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0900f0003c843d4bf8dd4f3e87c8d9919f425ddc3ef58edab687800e8c40dbe5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0900f0003c843d4bf8dd4f3e87c8d9919f425ddc3ef58edab687800e8c40dbe5" # linuxbrew-core
   end
 
   depends_on "ghc" => :build

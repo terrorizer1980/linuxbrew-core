@@ -12,7 +12,7 @@ class YubikeyAgent < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "29df3472e1a5e57ed20f54cef3a5c4e87662e5c64f55338b01239741795447c3"
     sha256 cellar: :any_skip_relocation, catalina:      "4e7259eeb5ddd924251e7c73f6ae6904804193e4fee4d49e95fc02f211d3ac2e"
     sha256 cellar: :any_skip_relocation, mojave:        "bf031ee9b131fa3646b624bb6c84a0fc5b02f3abd6b693c5d5c488e58bb4e89c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cb43a6764a9caa2c39fba8bdd5ebe79c677923b004f8c2280213bb4afc298d17"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cb43a6764a9caa2c39fba8bdd5ebe79c677923b004f8c2280213bb4afc298d17" # linuxbrew-core
   end
 
   depends_on "go" => :build
