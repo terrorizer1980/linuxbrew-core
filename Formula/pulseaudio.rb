@@ -35,11 +35,6 @@ class Pulseaudio < Formula
   depends_on "libtool"
   depends_on "openssl@1.1"
   depends_on "speexdsp"
-  unless OS.mac?
-    depends_on "dbus"
-    depends_on "glib"
-    depends_on "libcap"
-  end
 
   uses_from_macos "perl" => :build
   uses_from_macos "expat"
