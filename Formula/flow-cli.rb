@@ -16,6 +16,7 @@ class FlowCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "37372844bf21bc507fcece25a0765e606a7a65ec9305bb189d2a58378d908043"
     sha256 cellar: :any_skip_relocation, catalina:      "d89ff0d5a240554afa5c93d7b94f3179be2dc302d72f719f45d064acbc657232"
     sha256 cellar: :any_skip_relocation, mojave:        "873699d0c2cfe18dbc8de97df68e5c4b29f594f9da4480d23cedcd29427ee715"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a1ecffd22f64f4d29ec7430f740c2c5a253db005920f5bd03cfca33459ff4e90"
   end
 
   depends_on "go" => :build
