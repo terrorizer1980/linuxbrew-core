@@ -12,6 +12,7 @@ class Devd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3a80a457e6b056c0b00d9b1dbbce26c18c36285e4296100d1196875988ee6b7c"
     sha256 cellar: :any_skip_relocation, catalina:      "5a1dceea4de81075bab6e0617b38c39f715423c4e8e0d17f75f65d7e15cf7dee"
     sha256 cellar: :any_skip_relocation, mojave:        "33c299776d5aa228d68b36d9d51af12b04d5e65a194b907900bd117882a45f27"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "66eca058276a5d91d1c9117b26421dbf6d5b09368422e930dadf4b57e9d0b2e4"
   end
 
   depends_on "dep" => :build
