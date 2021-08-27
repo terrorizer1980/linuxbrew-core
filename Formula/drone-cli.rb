@@ -11,6 +11,7 @@ class DroneCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bcfb5688ba6966c7d12d838db3e4d1e934e6540f16d14db3e3396b1da6dcdfe0"
     sha256 cellar: :any_skip_relocation, catalina:      "d4a31d58bf3bf5f2faab6761c8d3a29bc33334403570ff79f41e371b9b730c99"
     sha256 cellar: :any_skip_relocation, mojave:        "e174e0f30436a58cf2e1502ae2bfa0d4764bab07ca15a46f9259aa5a18684c61"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d32b99adf26718d22686ae8cf597d6b237f0b2d6eebded3d8f1772d7e22c1d97"
   end
 
   depends_on "go" => :build
