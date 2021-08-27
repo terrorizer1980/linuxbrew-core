@@ -1,17 +1,13 @@
 class Metabase < Formula
   desc "Business intelligence report server"
   homepage "https://www.metabase.com/"
-  url "https://downloads.metabase.com/v0.40.3/metabase.jar"
-  sha256 "14bc212bcf784b8b0b96ca8067d514561c612b9fe967f951109aad91a5172642"
+  url "https://downloads.metabase.com/v0.40.3.1/metabase.jar"
+  sha256 "d5f5f15e4db45f62a6d5ae47224f12bfd861f2c98aaf5d42e635e9702557ef6a"
   license "AGPL-3.0-only"
 
   livecheck do
     url "https://www.metabase.com/start/oss/jar.html"
     regex(%r{href=.*?/v?(\d+(?:\.\d+)+)/metabase\.jar}i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "72e832de877e088af668e88f3bf2182a5b5b8f94f02fd3ea3222af7671797d48" # linuxbrew-core
   end
 
   head do

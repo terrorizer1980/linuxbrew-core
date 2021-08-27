@@ -2,6 +2,7 @@ class Rust < Formula
   desc "Safe, concurrent, practical language"
   homepage "https://www.rust-lang.org/"
   license any_of: ["Apache-2.0", "MIT"]
+  revision 1
 
   stable do
     url "https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz"
@@ -12,15 +13,21 @@ class Rust < Formula
       url "https://github.com/rust-lang/cargo.git",
           tag:      "0.55.0",
           revision: "5ae8d74b3b2d58f32c8d357e5cfa04d430a70e0b"
+
+      # Work around crates.io timeouts with newer curl versions
+      # https://github.com/rust-lang/cargo/pull/9695
+      patch do
+        url "https://github.com/rust-lang/cargo/commit/27277d966b3cfa454d6dea7f724cb961c036251c.patch?full_index=1"
+        sha256 "55bf95b62dd38f372747922e5530544321601cf4c0e87e8174f440aa874f522d"
+      end
     end
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "63c7e4b6ed3d5262fbc67a4850234624f5139d2d71261917eceadb7681589a6a"
-    sha256 cellar: :any,                 big_sur:       "8e324bb50e3176b3287aeac558deb3bb62631fcf49f56ab656761d7406669b63"
-    sha256 cellar: :any,                 catalina:      "802d25a7e561ab9aee2e9496f511e17bc231eb6f0a6a41dbf8c4f770fef3537d"
-    sha256 cellar: :any,                 mojave:        "5589f6ecdfc6f0401dcc899ee4a2664b499d884e1e4a64cbd68d7e09c392df6a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6a7125834583457c4a14d1db1360457905c187aa0494b229ae1472fd15380320" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "daee7ff695e32d4da880fa29fac3b17f2d61f36be79bf86dcbada8b1d4399513"
+    sha256 cellar: :any,                 big_sur:       "fb31ba5ba6204f6adcb5baafdae3279b4b9c8ab6212cb499f1c7cf2f4e689432"
+    sha256 cellar: :any,                 catalina:      "01674095435bd75b6e3c7b0870c1d3b997d65adc2c9dcccb145fe82153af2435"
+    sha256 cellar: :any,                 mojave:        "333073da9e0d506a552377a2e57b230f25e985cb4b47b2f5660127bce694387e"
   end
 
   head do

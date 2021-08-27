@@ -7,12 +7,13 @@ class GitFixup < Formula
   head "https://github.com/keis/git-fixup.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3868823118314e8a8669fe02c51015ffa7e3d5f9cef9c892dcd464928622d2f6" # linuxbrew-core
+    rebuild 1
   end
 
   def install
     system "make", "PREFIX=#{prefix}", "install"
     zsh_completion.install "completion.zsh" => "_git-fixup"
+    fish_completion.install "completion.fish" => "git-fixup.fish"
   end
 
   test do
