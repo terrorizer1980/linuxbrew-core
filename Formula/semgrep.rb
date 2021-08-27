@@ -4,8 +4,8 @@ class Semgrep < Formula
   desc "Easily detect and prevent bugs and anti-patterns in your codebase"
   homepage "https://semgrep.dev"
   url "https://github.com/returntocorp/semgrep.git",
-      tag:      "v0.62.0",
-      revision: "5460dcfe9d65fcefa876bc16e801c7aebcd8f4e5"
+      tag:      "v0.63.0",
+      revision: "ddf6726caf741f676adb93d552384069c4b152e5"
   license "LGPL-2.1-only"
   head "https://github.com/returntocorp/semgrep.git", branch: "develop"
 
@@ -15,11 +15,10 @@ class Semgrep < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "9787e6bdbf7bb1e8446eec31bbacf9c1db9568c046b962fb293b55fd31e71175"
-    sha256 cellar: :any, big_sur:       "6466bcb5b570c48d16cd3bf9deb7432edadcf1c452c0bdd019fe31c7a1798faa"
-    sha256 cellar: :any, catalina:      "0be9eefe5df154b45bfe92883d31bfc5c214345b3503f05a24daea3990f77298"
-    sha256 cellar: :any, mojave:        "0483ab5b384043647ed90bd3941bd7adf7aeb19597c1dc40b18debd0f99a259d"
-    sha256               x86_64_linux:  "09120ba38619db84a97e0a5363fee009b814882e8d755e1de6fddef44763a4c7" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "ee8b82f0dc357e757ded92e2142fb9d8e60ff7ed1dff2200b14a84e08bc153e0"
+    sha256 cellar: :any, big_sur:       "64c241fc59830433b218be8769d173032c15506ec9fa9539cb5fcdf8d48b381a"
+    sha256 cellar: :any, catalina:      "2955e861e29a35bd560b7ef108b9a02c8e7fd726ea89caab95fd8d265e5f1c9b"
+    sha256 cellar: :any, mojave:        "919c1875755ead3bf9641708f5e4fc3b65c7d2a4147e2403b0e6e3b8771f5ef7"
   end
 
   depends_on "cmake" => :build
@@ -101,8 +100,8 @@ class Semgrep < Formula
   end
 
   resource "ruamel.yaml" do
-    url "https://files.pythonhosted.org/packages/83/59/4f576abb336d30b3d47061717224be714a9dc39c774061c34cb41c1795cf/ruamel.yaml-0.17.10.tar.gz"
-    sha256 "106bc8d6dc6a0ff7c9196a47570432036f41d556b779c6b4e618085f57e39e67"
+    url "https://files.pythonhosted.org/packages/6e/ac/a4c038a2e48a8930a7b04711fec48f779875ed3a3d3941663413454b8fa7/ruamel.yaml-0.17.14.tar.gz"
+    sha256 "4185fcfa9e037fea9ffd0bb6172354a03ec98c21e462355d72e068c74e493512"
   end
 
   resource "ruamel.yaml.clib" do
@@ -116,8 +115,8 @@ class Semgrep < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/48/a9/06793044a329e3d80489d5bf2153924f9463c08beec7f8ce4d20efd3cfbc/tqdm-4.62.1.tar.gz"
-    sha256 "35540feeaca9ac40c304e916729e6b78045cbbeccd3e941b2868f09306798ac9"
+    url "https://files.pythonhosted.org/packages/37/e5/1b54ef934d731576d0145bc8ae22da5b410f96922cec52b91cc29d3ff1b6/tqdm-4.62.2.tar.gz"
+    sha256 "a4d6d112e507ef98513ac119ead1159d286deab17dffedd96921412c2d236ff5"
   end
 
   resource "urllib3" do

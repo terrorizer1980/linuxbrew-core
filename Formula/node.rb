@@ -1,8 +1,8 @@
 class Node < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v16.7.0/node-v16.7.0.tar.xz"
-  sha256 "fa85fdfbd378e587fa04ad9548e7c9f50e690af9575730d3b330cba6fc3f2d37"
+  url "https://nodejs.org/dist/v16.8.0/node-v16.8.0.tar.xz"
+  sha256 "b8790226312970ba5d8fd98229380c48bf0366eb1a3633091e350a34a4b46392"
   license "MIT"
   head "https://github.com/nodejs/node.git"
 
@@ -12,11 +12,10 @@ class Node < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "e66ba7d690ea50b7155c3a842329735a815daa4f3fcea4c2b87f9bf6d0956c4e"
-    sha256 cellar: :any,                 big_sur:       "81e084ec8665c37bdb37939cdbe554502b4d4e849c1e9a4979cddb1754378331"
-    sha256 cellar: :any,                 catalina:      "0bd7325e2ad523fe5088bfa7168e482bd85fcfdc017ce86572986584964d8719"
-    sha256 cellar: :any,                 mojave:        "9285b5064bccb1a7a1b0174a40a597679a4b3a092057ee58f433320187cd9c26"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a7edf8cff13f4c974c7d1fdb1de68da4ab2a9deeda733a2c16b47d2d3c362ae2" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "cb89acec7de3b968e6e5f1aac5c0817f7bb8a6cad9feeaa3b47fe816fd47e706"
+    sha256 cellar: :any,                 big_sur:       "4a7246c67afb628d1ffedfe72adb16b48705dc0eb77baae605a8f3a95ae05670"
+    sha256 cellar: :any,                 catalina:      "9999cf2060a78494d700b63cc031d1cfcea4b3df788fc3ddc09ddcad874e4754"
+    sha256 cellar: :any,                 mojave:        "e2268c9b0a451432310876508920c02680b2ce0e6b2e789c5d793b9912939f55"
   end
 
   depends_on "pkg-config" => :build
@@ -44,8 +43,8 @@ class Node < Formula
   # We track major/minor from upstream Node releases.
   # We will accept *important* npm patch releases when necessary.
   resource "npm" do
-    url "https://registry.npmjs.org/npm/-/npm-7.20.3.tgz"
-    sha256 "bf73538dbcd933e5a9d9575c0c39539aee3e70b32e27837037681662d3bc2c0b"
+    url "https://registry.npmjs.org/npm/-/npm-7.21.0.tgz"
+    sha256 "bd80a815b23a0fe73c532fc346bc8331212bf7ce0a516f9e488198ff55034dde"
   end
 
   # Fix build with brewed c-ares.

@@ -12,21 +12,29 @@ class Convox < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0dadd2bc011f1b5a1a9333e4bb646078b0817de59819a264f90c3faa6b563389"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d422f5f2addbf0f1ae87e703ac39ecb325129a650182caaeacac2604efe3facf"
-    sha256 cellar: :any_skip_relocation, catalina:      "60ead08f69f2224afc46b225f2eefad5455e1f12870467301734e35d85a26c87"
-    sha256 cellar: :any_skip_relocation, mojave:        "b802e8c4c9d838279f8ff68c641afdfbb71e8d1795202263ae3da982fdd49ea6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c16d84545d819a1af086fdadd7196f059e9b13a6f611b3009e9e0115b8be8761" # linuxbrew-core
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e503ebe52f677066e01a9e4180f93aafacfc1d326bc82cb1f4cd578b8f5f6d59"
+    sha256 cellar: :any_skip_relocation, big_sur:       "f9f44fe49ec1864dcd72abb2b0932b75d960c5120e96c93c11df2a24ff6e661d"
+    sha256 cellar: :any_skip_relocation, catalina:      "08dffd8d6ca1788812913d032630029f0ac87ba116272ae852261e14c6496a65"
+    sha256 cellar: :any_skip_relocation, mojave:        "d65b92e8f228af2b1bd4da1500144a5086eead5ccf91e1b59b53de0b8f86d74e"
   end
 
   depends_on "go" => :build
 
+  # Support go 1.17, remove when upstream patch is merged/released
+  # https://github.com/convox/convox/pull/389
+  patch do
+    url "https://github.com/convox/convox/commit/d28b01c5797cc8697820c890e469eb715b1d2e2e.patch?full_index=1"
+    sha256 "a0f94053a5549bf676c13cea877a33b3680b6116d54918d1fcfb7f3d2941f58b"
+  end
+
   def install
     ldflags = %W[
+      -s -w
       -X main.version=#{version}
     ].join(" ")
 
-    system "go", "build", *std_go_args, "-mod=vendor", "-ldflags", ldflags, "./cmd/convox"
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/convox"
   end
 
   test do
