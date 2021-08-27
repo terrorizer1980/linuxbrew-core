@@ -24,7 +24,6 @@ class Snapcraft < Formula
   depends_on "libsodium"
   depends_on "libyaml" # for PyYAML
   depends_on "lxc"
-  depends_on :macos
   depends_on "python@3.9"
   depends_on "six"
   depends_on "snap"
