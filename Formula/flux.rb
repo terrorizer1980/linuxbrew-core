@@ -18,6 +18,7 @@ class Flux < Formula
     sha256 cellar: :any,                 big_sur:       "d0fa7eff1f68a3bf56b4e4d933689eca65e2b6dbcf56ee0f459141ccf0a67ad3"
     sha256 cellar: :any,                 catalina:      "57280d055bf98d6f8dc7b5ad96582dbe550e6c68eb8f672345db1910f6b87036"
     sha256 cellar: :any,                 mojave:        "db623af5b425e866861c679124c096827c7ca93110dfe4509f3debc7aea82e8b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d435527015c1966551d25664cb912ca29dc1744268a8d681832a4570a816970f"
   end
 
   depends_on "go" => :build
