@@ -21,9 +21,9 @@ class Duck < Formula
   depends_on "maven" => :build
   depends_on "pkg-config" => :build
   depends_on xcode: :build
+
   depends_on arch: :x86_64
   depends_on "libffi"
-  depends_on :macos
   depends_on "openjdk"
 
   uses_from_macos "zlib"
@@ -123,7 +123,6 @@ class Duck < Formula
       inreplace "cli/linux/build.xml", "<arg value=\"GPL\"/>", ""
     end
 
-    revision = version.to_s.rpartition(".").last
     system "mvn", "-DskipTests", "-Dgit.commitsCount=#{revision}",
                   "--projects", "cli/#{os}", "--also-make", "verify"
 
