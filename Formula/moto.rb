@@ -3,16 +3,15 @@ class Moto < Formula
 
   desc "Mock AWS services"
   homepage "http://getmoto.org/"
-  url "https://files.pythonhosted.org/packages/28/af/782477b607386d08284c384fb66ba2c1f5d8c7a60a0f5f5a14ab74cedebc/moto-2.2.5.tar.gz"
-  sha256 "45ec8723c51386ad0062d76bbd7c49239c97811988d4f547067eb52a72558134"
+  url "https://files.pythonhosted.org/packages/be/e7/ec32d675fdfc22324c6bc7680d7789a382029dd23b483c186e8050e74195/moto-2.2.6.tar.gz"
+  sha256 "21c838b63f44e24b9b5015a2cdcc5be7c1e1004e58a69fb7cac71383bce34535"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "b01d6c2a2b77b9b6e536054052b5fa321c2e5ce37d84ce99aea99f2a1191250f"
-    sha256 cellar: :any,                 big_sur:       "0904ac89434c7ef4bc1c2aecbef3f6cf3abcaa377ee2ad80bb109417fd537e96"
-    sha256 cellar: :any,                 catalina:      "47097113c4e78ed64962e1f4b7502b75bed07fad992ee4efa38ac958981d6f91"
-    sha256 cellar: :any,                 mojave:        "b2f9118dcb7327f5a577d2306ba2368c9a49f244f69d8d758439b5ff042730ea"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3d10aed945a52f2062bb31dab45fe5d20a75882b96a599bb054b0f05b989e67d" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "902331b0600b7334aea7826e3c573d7b47d22142722cfe45d1d6a22f3cf012fb"
+    sha256 cellar: :any,                 big_sur:       "8fbe6b584c4a1a20cae2426ba6c49b67e06d3a3de53e8455f43494b9ccf8801d"
+    sha256 cellar: :any,                 catalina:      "d70d25af6e91abf5f561d9fc3940095303fc01f21c1e3f1e86fafdf5b0d32fc3"
+    sha256 cellar: :any,                 mojave:        "562348b51730ffc2bb2375d52edd600ec366e4763c674232e8339aa4c9d3b83b"
   end
 
   depends_on "rust" => :build # for cryptography
