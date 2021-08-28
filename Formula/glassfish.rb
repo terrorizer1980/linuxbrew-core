@@ -1,18 +1,14 @@
 class Glassfish < Formula
   desc "Java EE application server"
   homepage "https://glassfish.org/"
-  url "https://download.eclipse.org/ee4j/glassfish/glassfish-6.2.0.zip"
-  mirror "https://github.com/eclipse-ee4j/glassfish/releases/download/6.2.0/glassfish-6.2.0.zip"
-  sha256 "b09af3c4f331a88fa40a96e35bde871801beeb79ba2f774974b4257489842a3e"
+  url "https://download.eclipse.org/ee4j/glassfish/glassfish-6.2.1.zip"
+  mirror "https://github.com/eclipse-ee4j/glassfish/releases/download/6.2.1/glassfish-6.2.1.zip"
+  sha256 "088f6ed8115af1e1ad0bec00ce3eaffe3624ee6a40583776c97c7fd933cde51d"
   license "EPL-2.0"
 
   livecheck do
     url "https://projects.eclipse.org/projects/ee4j.glassfish/downloads"
     regex(/href=.*?glassfish[._-]v?(\d+(?:\.\d+)+)\.zip/i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c8ece85d085ebcb202f1a36cddbd4e1618c1ec924ad53c39e9d3c7cb2f5b4097" # linuxbrew-core
   end
 
   depends_on "openjdk@11"

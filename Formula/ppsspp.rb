@@ -20,10 +20,10 @@ class Ppsspp < Formula
 
   bottle do
     rebuild 1
-    sha256 cellar: :any, arm64_big_sur: "e2fbd7a06918037ba8d7cd4cd63aac2a91da169109846858d289abf2c506dbea"
-    sha256 cellar: :any, big_sur:       "1fb64f1bf453622476e94460904d4f033e05f42755d3f6793775233e9a55dec9"
-    sha256 cellar: :any, catalina:      "9b375483a60f6e4e631c5c01a0f5b69c15ff69570749d31f0af77014a6e2c373"
-    sha256 cellar: :any, mojave:        "6d22974f4e46d094860b1b1de2ed5b1d9a77e41ae777519fe77e8172fc1ada54"
+    sha256 cellar: :any,                 arm64_big_sur: "e2fbd7a06918037ba8d7cd4cd63aac2a91da169109846858d289abf2c506dbea"
+    sha256 cellar: :any,                 big_sur:       "1fb64f1bf453622476e94460904d4f033e05f42755d3f6793775233e9a55dec9"
+    sha256 cellar: :any,                 catalina:      "9b375483a60f6e4e631c5c01a0f5b69c15ff69570749d31f0af77014a6e2c373"
+    sha256 cellar: :any,                 mojave:        "6d22974f4e46d094860b1b1de2ed5b1d9a77e41ae777519fe77e8172fc1ada54"
   end
 
   depends_on "cmake" => :build
@@ -45,11 +45,12 @@ class Ppsspp < Formula
     mkdir "build" do
       system "cmake", "..", *args
       system "make"
-      if OS.mac?
+      on_macos do
         prefix.install "PPSSPPSDL.app"
         bin.write_exec_script "#{prefix}/PPSSPPSDL.app/Contents/MacOS/PPSSPPSDL"
         mv "#{bin}/PPSSPPSDL", "#{bin}/ppsspp"
-      else
+      end
+      on_linux do
         bin.install "PPSSPPSDL" => "ppsspp"
       end
     end
