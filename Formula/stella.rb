@@ -17,11 +17,6 @@ class Stella < Formula
   depends_on "libpng"
   depends_on "sdl2"
 
-  unless OS.mac?
-    fails_with gcc: "5"
-    depends_on "gcc"
-  end
-
   uses_from_macos "zlib"
 
   on_linux do
