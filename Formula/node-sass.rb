@@ -12,6 +12,7 @@ class NodeSass < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "64b63257353313e60b1c8d90e5f79de42cab062c6ea7ed49ddeadcd95a708987"
     sha256 cellar: :any_skip_relocation, catalina:      "64b63257353313e60b1c8d90e5f79de42cab062c6ea7ed49ddeadcd95a708987"
     sha256 cellar: :any_skip_relocation, mojave:        "64b63257353313e60b1c8d90e5f79de42cab062c6ea7ed49ddeadcd95a708987"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7fa1926ca9a3e7b889a6647cab5733c9bbb7919bafe6a1edd5bc15d82b3bdd46"
   end
 
   depends_on "node"
