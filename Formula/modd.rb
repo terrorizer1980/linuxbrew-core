@@ -12,7 +12,7 @@ class Modd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "468d421ccb60b0e236dd15299fd6c09f8dfca1dc67ee73bf17b60d07410417ff"
     sha256 cellar: :any_skip_relocation, catalina:      "d4e92bca2fb812429c92ae88e8e04ef11de28f00eaad8bb42a736965666ff02c"
     sha256 cellar: :any_skip_relocation, mojave:        "a2422e6f5c756a3202b47d58ca88eb6011361445b0ace2198c6f7aaa01eebf6f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "16c3ed52b7621ce7aeedb09e6265b8e1ea699cf5d4607a2e01fb15835f6ee206"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "16c3ed52b7621ce7aeedb09e6265b8e1ea699cf5d4607a2e01fb15835f6ee206" # linuxbrew-core
   end
 
   # https://github.com/cortesi/modd/issues/96

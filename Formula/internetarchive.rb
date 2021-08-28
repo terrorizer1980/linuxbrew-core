@@ -12,7 +12,7 @@ class Internetarchive < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fb46971f8737f8df3fd581d34165a485655daa35677d7b2d23ed8a98ca518be3"
     sha256 cellar: :any_skip_relocation, catalina:      "3452cddfc926f50ab193f97d008f13aa8857f42688bf829994eb80521b84ed8e"
     sha256 cellar: :any_skip_relocation, mojave:        "34976cd4bc110ba7043355db9d70e78d36863cdab96023dd87c096fa33b60f7c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bdffd0e36c2f7f58042163599db79e256cca0e48654124ed8fc2e5e1c21373cf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bdffd0e36c2f7f58042163599db79e256cca0e48654124ed8fc2e5e1c21373cf" # linuxbrew-core
   end
 
   depends_on "python@3.9"
