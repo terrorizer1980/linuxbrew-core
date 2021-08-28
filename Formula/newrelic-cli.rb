@@ -1,17 +1,16 @@
 class NewrelicCli < Formula
   desc "Command-line interface for New Relic"
   homepage "https://github.com/newrelic/newrelic-cli"
-  url "https://github.com/newrelic/newrelic-cli/archive/v0.34.21.tar.gz"
-  sha256 "33f99c520b0c5d194765cb523d392d952d40e4b9a018e0bb901507ed8635f88e"
+  url "https://github.com/newrelic/newrelic-cli/archive/v0.34.23.tar.gz"
+  sha256 "5bda6c99f2f2a3f54f42d07a8f323b6e895e5eb38568e53c01d8af1f9baef88d"
   license "Apache-2.0"
   head "https://github.com/newrelic/newrelic-cli.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8719fd2eca5a2b85b347adc5a6879c7e359a9c3cbc6acbf5b466e5c1b1ba967b"
-    sha256 cellar: :any_skip_relocation, big_sur:       "7f22f96be6132ad8d536a3230ec9ca977a55a91b79285c76d16f5a2f49fe290e"
-    sha256 cellar: :any_skip_relocation, catalina:      "9206d7ba333ecb4ada5c0ef431eed00bc6f984890f2d1d02455431b7eda6390b"
-    sha256 cellar: :any_skip_relocation, mojave:        "ad3e2e06de097c997711dee7432cbb7c6aa8078c46dadf4f28d9e8834befde32"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b3d3144e79613318fb42cc1bbb1448457ecb0a72a160b2b9b7e9de7af438f8f0" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e153713cd55b3da9120895c03408bd151602e0ad9ac79900190ff31cf1d48631"
+    sha256 cellar: :any_skip_relocation, big_sur:       "abf42a9edcdde564db8d88ff938c45e5fbc08cf481006ba45d317f4469e005d8"
+    sha256 cellar: :any_skip_relocation, catalina:      "03e45d1e4576109d8c5620be2cc4620eb346e9df180ed1d5e6d4de64322c7ba4"
+    sha256 cellar: :any_skip_relocation, mojave:        "af0d0a8b4de64dd855ad068ddbdc26b150000cc3079de7ee4c017e2a15e65274"
   end
 
   depends_on "go" => :build
