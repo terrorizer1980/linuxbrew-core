@@ -17,7 +17,7 @@ class FleetCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "257553bb3ee89b4b5b2c9a1afae3ef9a44f3c9c080dc64a5b3eb9a6d5b428ebe"
     sha256 cellar: :any_skip_relocation, catalina:      "603685447d15afa041674ef58c0695f4f39d475164ccf64c2b93f1bd95aab4a8"
     sha256 cellar: :any_skip_relocation, mojave:        "32fda21995c1d951e28b199836b868682d284d7bd27138220f3d5990c524d092"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c8070dbeb4fd1f7ee7a78cef4f0642c8bc4f0000e7e02bd94993934f99eddc0b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c8070dbeb4fd1f7ee7a78cef4f0642c8bc4f0000e7e02bd94993934f99eddc0b" # linuxbrew-core
   end
 
   depends_on "go" => :build
