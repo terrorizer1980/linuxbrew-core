@@ -11,6 +11,10 @@ class Glassfish < Formula
     regex(/href=.*?glassfish[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2dc7b83ab032d6ec6ad4b8b2cd9c6a72d94ccd9b6049ad63fdd5d6cba762babc"
+  end
+
   depends_on "openjdk@11"
 
   conflicts_with "payara", because: "both install the same scripts"
