@@ -1,23 +1,22 @@
 class Step < Formula
   desc "Crypto and x509 Swiss-Army-Knife"
   homepage "https://smallstep.com"
-  url "https://github.com/smallstep/cli/releases/download/v0.17.0/step_0.17.0.tar.gz"
-  sha256 "e97ea11f5a9e832d9b7c30d2298499a8d1f5628bf4a5155e27d657aee4663046"
+  url "https://github.com/smallstep/cli/releases/download/v0.17.1/step_0.17.1.tar.gz"
+  sha256 "e47c889314093d499a560aacd8e336134af77bffaafe21b55d804357d075efce"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "2e5fdab9b3a4e3d2b889ebe0b56f21da9c0f3215a5d379b15fee74844cfba3dc"
-    sha256 cellar: :any_skip_relocation, big_sur:       "2a49669caa8c50a32c3ddc695e5ce0de68a0a3d47241c29401698c80f9e2148c"
-    sha256 cellar: :any_skip_relocation, catalina:      "46e08c645236f8e11470b51fe1fb6bda87a055958635493032b520970d8f89ac"
-    sha256 cellar: :any_skip_relocation, mojave:        "4d5cf5fb6bcd5dafb78c3898b422d8cdf1297a47fbd176056a68e61a7030aa6d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "481d30e0433843b033c84c3f28cedcc75b90e5e35d35ddb6126628ccf5e51e69" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "bdf26f0b0ee58be99c1db838a7bfe5a890e8e703dacf40434a47b54557f93762"
+    sha256 cellar: :any_skip_relocation, big_sur:       "ac72b71cfd7810d31add2766dfc299b07849feeac1e83a45128e02c103fc0720"
+    sha256 cellar: :any_skip_relocation, catalina:      "89368c7f4acd2d61c677d5f71170f6b415f40ee3fbce530aed1ad04fdf02f054"
+    sha256 cellar: :any_skip_relocation, mojave:        "197f47f56213f723686ac6564f524df66129501f60ca7d354b9dc3fb10b6df90"
   end
 
   depends_on "go" => :build
 
   resource "certificates" do
-    url "https://github.com/smallstep/certificates/releases/download/v0.17.0/step-ca_0.17.0.tar.gz"
-    sha256 "3d1e838461fa578c387fee5fb5502c7dabf1c005c508acb8cabe300e2a75889e"
+    url "https://github.com/smallstep/certificates/releases/download/v0.17.1/step-ca_0.17.1.tar.gz"
+    sha256 "6ff7d52b3e8cb1972242701ac348d00248844e4efb68a8b829311986462a2b7e"
   end
 
   def install
