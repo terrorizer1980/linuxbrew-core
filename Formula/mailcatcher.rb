@@ -11,6 +11,7 @@ class Mailcatcher < Formula
     sha256                               big_sur:       "f66c059ff505ac51846dd6a749e9b76a3f734b603e620d0612a00ae834bb9ad7"
     sha256                               catalina:      "30ab2a3c7040c47eaf0463fb98ca112eb78eeadcb5330363e80388ea1c5e0816"
     sha256                               mojave:        "508b814f8c365c9cb0cf0fcdd94eecdb4cfc4bda6a9e165082c10304b558bec8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "27a0d0be5201f5cae5d14f0bdf5094b93d280babe99648257d9a146913502090"
   end
 
   depends_on "pkg-config" => :build
