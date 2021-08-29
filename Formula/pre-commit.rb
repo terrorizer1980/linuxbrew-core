@@ -12,7 +12,7 @@ class PreCommit < Formula
     sha256 cellar: :any,                 big_sur:       "844c53119af074d8f385d94f53e1a25d7f991af4e9767834092919954edc8eec"
     sha256 cellar: :any,                 catalina:      "5ed43858c0bb46cb0a50b079adeae0d746d8db32dc58b48f9788de3781f6694d"
     sha256 cellar: :any,                 mojave:        "b27a0f03b9cbff195804c7673da048f5e68383c56f7b90788ef298aec0ee2967"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fc02552c3eb53c31259eca0631ee2748ea5ea686539f7c6b0b9f9f0ad8fd331e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fc02552c3eb53c31259eca0631ee2748ea5ea686539f7c6b0b9f9f0ad8fd331e" # linuxbrew-core
   end
 
   depends_on "libyaml"
