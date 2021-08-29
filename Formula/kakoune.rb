@@ -16,7 +16,7 @@ class Kakoune < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6fdb7731b67b916f43c85d1674982a5801af161878446eba999de72a492e586e"
     sha256 cellar: :any_skip_relocation, catalina:      "cdd59d3c8978b2c8f2ca0899867be322ce4d23eac3600a3b0684e199d5020e42"
     sha256 cellar: :any_skip_relocation, mojave:        "af3a8f431b72c684b26bbbd115bf08ad9d8c12b95e83f7c0cea3f8881946d6a9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9797d57cd6184e1b12a2c6120ccbfc51bbb369cf932400c0e556d0f9074b5d8e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9797d57cd6184e1b12a2c6120ccbfc51bbb369cf932400c0e556d0f9074b5d8e" # linuxbrew-core
   end
 
   depends_on macos: :high_sierra # needs C++17

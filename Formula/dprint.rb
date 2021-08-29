@@ -11,7 +11,7 @@ class Dprint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f4968e791594d0b63eaadcda03e5b84361a248b3104e17a0bbff1733c758991d"
     sha256 cellar: :any_skip_relocation, catalina:      "7ffe57fbf0adec12f68e765916a0aaaa0a31fd3d030493f5d3802bce2f4d3670"
     sha256 cellar: :any_skip_relocation, mojave:        "d074693c790e5528d33a723625b6c20708e772401ecebc6e38c24513e8ed1843"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b64c5a5904edbc196b2909b7ae6e929b775ab35942a4bde6ace870410d20ae35"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b64c5a5904edbc196b2909b7ae6e929b775ab35942a4bde6ace870410d20ae35" # linuxbrew-core
   end
 
   depends_on "rust" => :build

@@ -11,7 +11,7 @@ class Xmake < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "58bce8747a74b63062537efbde6cd29657e4ca95c3d7f8bffcbc32d161966808"
     sha256 cellar: :any_skip_relocation, catalina:      "b43c7743ad8c50bb848e374bdaed62985f61bdcce1f6e2522b5ecb8b8c728f7e"
     sha256 cellar: :any_skip_relocation, mojave:        "dace16d198785d7e9348d5fda056dd63f8d7ff94da562f6a6289622f0a3a2028"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5f63c25d6de8b39e6430df0c1e6123c60fe896b4e99cee0a4792d83c9906e41"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5f63c25d6de8b39e6430df0c1e6123c60fe896b4e99cee0a4792d83c9906e41" # linuxbrew-core
   end
 
   on_linux do

@@ -12,7 +12,7 @@ class Kcat < Formula
     sha256 cellar: :any,                 big_sur:       "c6d947fa5cbdd948ab09082f1c961d21e5a6e565c36cb6ffffdc9712456cafad"
     sha256 cellar: :any,                 catalina:      "7125450d67cedf6116bc7e2afb22be2b860a715dc1de6663e4e75936d7eb466e"
     sha256 cellar: :any,                 mojave:        "f403c10fd0970ed617e43cbf6fa107cac70cba94633e04c47586a586505b7ec6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "954186ec95e9963cafa13f2ec0ac95591adc1a6ab1b82df116468c973c1ba51f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "954186ec95e9963cafa13f2ec0ac95591adc1a6ab1b82df116468c973c1ba51f" # linuxbrew-core
   end
 
   depends_on "avro-c"
