@@ -5,6 +5,10 @@ class PhpCsFixer < Formula
   sha256 "e2cb82356feae90eafe9aebc9491957fc0ee96cacc77381db05f4673fe2f7a24"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e78739464adae18998a254ca4d1c4c5242126ce0d71d55ce9cad96a49d315eab"
+  end
+
   uses_from_macos "php", since: :mojave
 
   def install
