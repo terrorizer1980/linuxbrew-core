@@ -1,17 +1,16 @@
 class Sslh < Formula
   desc "Forward connections based on first data packet sent by client"
   homepage "https://www.rutschle.net/tech/sslh.shtml"
-  url "https://www.rutschle.net/tech/sslh/sslh-v1.22.tar.gz"
-  sha256 "50ea47f8a52e09855e4abcba00e2d6efa3b100faef4b7a066582dfb9bd043b6e"
+  url "https://www.rutschle.net/tech/sslh/sslh-v1.22b.tar.gz"
+  sha256 "5ef48dd9dacec8dc04c100f273952e534be9ae1ef02baa52708a8ecdbd4173cc"
   license all_of: ["GPL-2.0-or-later", "BSD-2-Clause"]
   head "https://github.com/yrutschle/sslh.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "4e7f76188b8a7e6e4582449b44215be2e81aeae61d0597f8a4fc5019e3e01437"
-    sha256 cellar: :any,                 big_sur:       "f4bca122c45d30d12a09f10415ca2e5eee87b03a5bc20aafd213f1c3b9393402"
-    sha256 cellar: :any,                 catalina:      "e9b7153fafb25bcb3d0421e82ca9c96b17b243bba5968a5b0aa3fc39089ab917"
-    sha256 cellar: :any,                 mojave:        "070dc0b0522e6ceb8a76af229c64d2d00b658277b8aab039d74d2e665673b02a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a8b1b0033c2966af34c81039b359ed9cd7dee03548ddc13d7b8a91743a1a571" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "8360d538e98fcd95eb8e2cdc151631bed5b0004c8c3f57ec1b0458f0e68ccd62"
+    sha256 cellar: :any,                 big_sur:       "24d1ee698d3b2e8b8c88e760e9839371be04b8440ca936209a4869d01d2393a1"
+    sha256 cellar: :any,                 catalina:      "64f1e1f8f49dd800b936a648a319fe85f644ce183db00032314db93e484611a0"
+    sha256 cellar: :any,                 mojave:        "3b5ff13cd57fa71015eda12c607dc180d11f999c0b1b9703419c3eebc54e8087"
   end
 
   depends_on "libconfig"
