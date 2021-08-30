@@ -5,6 +5,10 @@ class Pure < Formula
   sha256 "fafc75234ebfd8f0b12c5ac41da55cbe0f282500d3041b5940fa0d7da6f8e361"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0f5d0c2df3e13671a1ad4797c8585c47331827bafb0aaef37a330fd657ff06b0"
+  end
+
   depends_on "zsh" => :test
   depends_on "zsh-async"
 
