@@ -16,6 +16,7 @@ class Never < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6eba6d82763dd636acc89082030bf414648263e876741c3168c70676f6a8f397"
     sha256 cellar: :any_skip_relocation, catalina:      "8cd4e86723085d1957b1e86a4d62192ed66d3226e0c730c0cbe953d1e059a4c2"
     sha256 cellar: :any_skip_relocation, mojave:        "e22182439c9a1fbe0ce7f5535c809bfb387df8ca105aef5a14de1b735aad433b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7215993532fc94fb14b7c1782f868e94f6f8eef0585bed6d77dd876e1d548b09"
   end
 
   depends_on "bison" => :build
