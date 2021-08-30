@@ -7,7 +7,7 @@ class Spaceship < Formula
   head "https://github.com/spaceship-prompt/spaceship-prompt.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c1fccc96bfe26a01e2795bd52852e0a4d6cff717c6db2d418a122177c2635444"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c1fccc96bfe26a01e2795bd52852e0a4d6cff717c6db2d418a122177c2635444" # linuxbrew-core
   end
 
   depends_on "zsh" => :test

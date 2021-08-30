@@ -10,7 +10,7 @@ class Ncspot < Formula
     sha256 cellar: :any,                 big_sur:       "f1eb987148a0db5acd0f5278851ac5432fabd53687a74f3fda3dbd7bc80dd1bb"
     sha256 cellar: :any,                 catalina:      "c47a959de1dbfd45396162f4eeadac9cfe2aac41de20ab8e760e4cec589a9d75"
     sha256 cellar: :any,                 mojave:        "d2bee764837f04d29f050fabf1b1d6430ffe6ec8af2cfb426ac8670c8678549e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9bc226c45d4b6297efef64efb3817f2a8f5a499cf441a16a2c15537b686ed03f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9bc226c45d4b6297efef64efb3817f2a8f5a499cf441a16a2c15537b686ed03f" # linuxbrew-core
   end
 
   depends_on "python@3.9" => :build

@@ -10,7 +10,7 @@ class Pstoedit < Formula
     sha256 big_sur:       "c76b47283e6032cc1a03a3fbd36336df45cc9ef7c9b9754cfcd24ca84a33ebdf"
     sha256 catalina:      "0c90597e74d743451a0df04969f2f4a424b275b75121d05f2f4da7b5a68dbe82"
     sha256 mojave:        "9835ffc2e2099f4e0eec8ae34b89a24678d6a360537c529347bdad5efa9b00e6"
-    sha256 x86_64_linux:  "554a5ef2692a5dafbba4b1412ddb34038b61a93b60d31b7ba4ff142dd18584c0"
+    sha256 x86_64_linux:  "554a5ef2692a5dafbba4b1412ddb34038b61a93b60d31b7ba4ff142dd18584c0" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

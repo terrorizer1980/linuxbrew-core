@@ -17,7 +17,7 @@ class Libwebsockets < Formula
     sha256 big_sur:       "2b0b926c4236961cf4adeb52cc3a606003e03db50d1337f127e255cd5aa72f58"
     sha256 catalina:      "c052c60d078806ef7e588d1a8bf32515636a44c6654a02f2652bbe8daec78951"
     sha256 mojave:        "65001a55abbef57c74da7c3785ac9b09cef97f2c66c861a16349ea88d9961363"
-    sha256 x86_64_linux:  "ad004a4a93fcff922b16fcf3ecb536564ed0c605b2dd78d6f4d319d83bdd3b59"
+    sha256 x86_64_linux:  "ad004a4a93fcff922b16fcf3ecb536564ed0c605b2dd78d6f4d319d83bdd3b59" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

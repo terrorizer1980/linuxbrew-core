@@ -18,7 +18,7 @@ class Flawfinder < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "407c52c1becc39385244c0d877570de07e10daeab69001c675299c16c81e1ea1"
     sha256 cellar: :any_skip_relocation, catalina:      "407c52c1becc39385244c0d877570de07e10daeab69001c675299c16c81e1ea1"
     sha256 cellar: :any_skip_relocation, mojave:        "407c52c1becc39385244c0d877570de07e10daeab69001c675299c16c81e1ea1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4d66b65f5681f260ed454465b9b5176d3325e971f8092a1275776c80515d76be"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4d66b65f5681f260ed454465b9b5176d3325e971f8092a1275776c80515d76be" # linuxbrew-core
   end
 
   depends_on "python@3.9"

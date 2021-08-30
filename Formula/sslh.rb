@@ -11,7 +11,7 @@ class Sslh < Formula
     sha256 cellar: :any,                 big_sur:       "24d1ee698d3b2e8b8c88e760e9839371be04b8440ca936209a4869d01d2393a1"
     sha256 cellar: :any,                 catalina:      "64f1e1f8f49dd800b936a648a319fe85f644ce183db00032314db93e484611a0"
     sha256 cellar: :any,                 mojave:        "3b5ff13cd57fa71015eda12c607dc180d11f999c0b1b9703419c3eebc54e8087"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ab38a8e54b6be3c711c4f34d22e51a3b5964fbad6544e3159d16e5c36117370e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ab38a8e54b6be3c711c4f34d22e51a3b5964fbad6544e3159d16e5c36117370e" # linuxbrew-core
   end
 
   depends_on "libconfig"

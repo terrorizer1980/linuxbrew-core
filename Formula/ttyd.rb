@@ -12,7 +12,7 @@ class Ttyd < Formula
     sha256 big_sur:       "27dcb4906faadbad0117389bc2cc634743d7f2287cd6f9a8a7379dd1a4e652e3"
     sha256 catalina:      "8774607c36974cc37ee765e925ea535dd51f33ab57fc134fb68ab45da4c70eef"
     sha256 mojave:        "fcf3fcc3945fe46b3a9478b7f8b42149af40e331bc793af6b8202bc8d98dbc5d"
-    sha256 x86_64_linux:  "2fd377e28e533d8f46e61fea79a782e6df48fe0d8ac15240f5da10ed519b9489"
+    sha256 x86_64_linux:  "2fd377e28e533d8f46e61fea79a782e6df48fe0d8ac15240f5da10ed519b9489" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

@@ -17,7 +17,7 @@ class Black < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f7d70f82deb8cae4f91e5abeff974f3a612a26559bfaff463f3401e392229975"
     sha256 cellar: :any_skip_relocation, catalina:      "7e7dcd6b40c9253ae05c7c141ddd3fc9234868397966a0f4e2c66455bc9985e7"
     sha256 cellar: :any_skip_relocation, mojave:        "14285e5573f258da711d215b72389062143c2420684c4b6dc93abea14c8c1412"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1bffa3ebbbb42ef1b37571195adf4e42a54cb8ec21fc3ba7696c0676c4192d9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1bffa3ebbbb42ef1b37571195adf4e42a54cb8ec21fc3ba7696c0676c4192d9" # linuxbrew-core
   end
 
   depends_on "python@3.9"

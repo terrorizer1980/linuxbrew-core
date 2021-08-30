@@ -10,7 +10,7 @@ class Bitrise < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7b200d18f14e18e611c3fc9a98a6c1ef656f85d2f8d4df75f9d98c8a77067762"
     sha256 cellar: :any_skip_relocation, catalina:      "5f7902cce52a17241873c3a172e018bd874dfb28f9159a838aa6f48cc3100704"
     sha256 cellar: :any_skip_relocation, mojave:        "746b543d056b120d00af803f2170be17b3648c5fc7f8e100aa1d367817b3cf50"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1609e537cca0ea8a5452b30eeeae470d8663f7942e2fc28b7e72c518d7bee9df"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1609e537cca0ea8a5452b30eeeae470d8663f7942e2fc28b7e72c518d7bee9df" # linuxbrew-core
   end
 
   depends_on "go" => :build
