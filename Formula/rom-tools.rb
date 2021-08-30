@@ -13,10 +13,11 @@ class RomTools < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "d49345e2d8faf9c2de60a36aa212e4975c30bdbd2f70e58a4a90a90ed400ceea"
-    sha256 cellar: :any, big_sur:       "b79f86bb5daa5c7d0ee6b0b4293f9029957712c6e004f13931461d3a71469ca8"
-    sha256 cellar: :any, catalina:      "94378dc68a867f811eafcf98dfdb2a8fce75dfab25a736bf19b43ac4b1c63dd1"
-    sha256 cellar: :any, mojave:        "74cd7fde93c72f0696f33e802435b0294cb740c2f2864959a28489dfef8564b3"
+    rebuild 1
+    sha256 cellar: :any,                 arm64_big_sur: "e5cfb72ac6f2239d314539628da395c574c13799ab57c0484ca9f41e0e1b3dcb"
+    sha256 cellar: :any,                 big_sur:       "5cfe9f6ad326b909fc46f50831e9786182e80fedc01dd1171d87458f77197905"
+    sha256 cellar: :any,                 catalina:      "759745b4766554b212aba9295fd4ace7bd2091ca301cdc58a5c342e7638adbb9"
+    sha256 cellar: :any,                 mojave:        "ecac9d5e81b7cb3fa4cc7f61bc1a58af4d54c4bc2330539f0a77f657b07f9885"
   end
 
   depends_on "pkg-config" => :build
@@ -31,16 +32,11 @@ class RomTools < Formula
   uses_from_macos "zlib"
 
   on_linux do
-    depends_on "glm" => :build
-    depends_on "jpeg" => :build
     depends_on "portaudio" => :build
     depends_on "portmidi" => :build
-    depends_on "pugixml" => :build
     depends_on "pulseaudio" => :build
     depends_on "qt@5" => :build
-    depends_on "rapidjson" => :build
     depends_on "sdl2_ttf" => :build
-    depends_on "sqlite" => :build
     depends_on "gcc" # for C++17
   end
 
@@ -64,16 +60,8 @@ class RomTools < Formula
       USE_SYSTEM_LIB_UTF8PROC=1
     ]
     on_linux do
-      args += %w[
-        USE_SYSTEM_LIB_GLM=1
-        USE_SYSTEM_LIB_JPEG=1
-        USE_SYSTEM_LIB_LUA=
-        USE_SYSTEM_LIB_PORTAUDIO=1
-        USE_SYSTEM_LIB_PORTMIDI=1
-        USE_SYSTEM_LIB_PUGIXML=1
-        USE_SYSTEM_LIB_RAPIDJSON=1
-        USE_SYSTEM_LIB_SQLITE3=1
-      ]
+      args << "USE_SYSTEM_LIB_PORTAUDIO=1"
+      args << "USE_SYSTEM_LIB_PORTMIDI=1"
     end
     system "make", *args
 
