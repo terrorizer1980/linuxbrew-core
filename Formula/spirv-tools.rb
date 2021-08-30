@@ -10,6 +10,7 @@ class SpirvTools < Formula
     sha256 cellar: :any,                 big_sur:       "2c0679ffd907c528e88fea56a965bdba726327c40c5638080b185f79a0eafcb6"
     sha256 cellar: :any,                 catalina:      "fe79aa02c8e46822aa429be46b842dc28876602a772a75c4cce8aa4d2bf8c32f"
     sha256 cellar: :any,                 mojave:        "3075c62d7893812454a63ccf16f88c5db3b26569a33fcfed786c7a0d15c97d80"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cb5babecfeaa0681f7e4b577935cc0e186d39978e69ce6c8775e835f61c682e8"
   end
 
   depends_on "cmake" => :build
