@@ -54,12 +54,6 @@ class Stella < Formula
                             "--with-zlib-prefix=#{Formula["zlib"].prefix}"
       system "make", "install"
     end
-    system "./configure", "--prefix=#{prefix}",
-                          "--bindir=#{bin}",
-                          "--with-sdl-prefix=#{sdl2.prefix}",
-                          "--with-libpng-prefix=#{libpng.prefix}",
-                          "--with-zlib-prefix=#{Formula["zlib"].prefix}"
-    system "make", "install"
   end
 
   test do
