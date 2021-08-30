@@ -12,6 +12,7 @@ class Toot < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "544593a98889cb203856d12b0f1562d5f3f684ea38e478c1e25a9c6327b4e155"
     sha256 cellar: :any_skip_relocation, catalina:      "1f818703d41ed23b64df3691b5a95cc9b56b1b2f13f95b010d515ac7024009be"
     sha256 cellar: :any_skip_relocation, mojave:        "125739cfaa0543cc7ec8d48bce32fa43b4306573c293aa76bef947a21256801a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7c41a4cf407034e940ee88d241f673759463595d06ef17272fdd949733df66b8"
   end
 
   depends_on "python@3.9"
