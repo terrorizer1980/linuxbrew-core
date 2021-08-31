@@ -5,6 +5,10 @@ class VulkanHeaders < Formula
   sha256 "ce997a3d6f43f9697c5ec232efb0f6e7826d0648412ed141f9495e88429075e0"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6a369d5f884dbf1e6da28fd0741fe661b5110c3427b78f97bf1118f43df0a0a"
+  end
+
   depends_on "cmake" => :build
 
   def install
