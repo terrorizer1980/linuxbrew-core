@@ -5,6 +5,10 @@ class Checkstyle < Formula
   sha256 "cc6c182df2f450f7cf88539a330ab2e7e9bc8e69eae1c13b3abd6592e6b59d94"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9089a3fd6b7fd6a3face3dc4737e24a872663f36f4244f377061a4ebc2122a6f"
+  end
+
   depends_on "openjdk"
 
   def install
