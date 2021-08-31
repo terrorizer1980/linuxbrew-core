@@ -11,7 +11,7 @@ class AliyunCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5222b413f27bc704c193de4dd550d3a6fcef7b9bf3cb62dc1a4216facfad4126"
     sha256 cellar: :any_skip_relocation, catalina:      "6fa0e9ed36e821889e57f0160fab58a65d16428bf0d1915137860eac5f5128f2"
     sha256 cellar: :any_skip_relocation, mojave:        "3058e2f9ac87dd5c28cdd6226bcb02b3378dc6db0873fa4e5fb1d1f6fc9e5fc3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e045c21284a026093c4c67f87d700a214b8408e363aef382097aac3197fba059"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e045c21284a026093c4c67f87d700a214b8408e363aef382097aac3197fba059" # linuxbrew-core
   end
 
   depends_on "go" => :build
