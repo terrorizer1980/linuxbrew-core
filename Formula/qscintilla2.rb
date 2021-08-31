@@ -20,7 +20,7 @@ class Qscintilla2 < Formula
     sha256 cellar: :any,                 big_sur:       "673822543d6b2469f6dbcf7a7227f070ede7a104f53a09a3ba1aeec6d1c4cc2c"
     sha256 cellar: :any,                 catalina:      "43c3199750767469f77fb742f40273f9860fcafeef580da2998a055c9aab379c"
     sha256 cellar: :any,                 mojave:        "a89b1ca10b6df95e3a2d76fb71ff71546f4e8c9a5de6765f950af54394e42f68"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "30a6aa3971a33551be6eecfc449d51a1a84a4b98ea0a97d5a587225dd08f565d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "30a6aa3971a33551be6eecfc449d51a1a84a4b98ea0a97d5a587225dd08f565d" # linuxbrew-core
   end
 
   depends_on "pyqt-builder" => :build

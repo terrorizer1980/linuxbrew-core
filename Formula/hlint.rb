@@ -11,7 +11,7 @@ class Hlint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9ccdf7b77e4ed209b06b5f65007b1fc560e27d8f8d334723f92fac504d2251bb"
     sha256 cellar: :any_skip_relocation, catalina:      "2d20096003764312d23aa3c1ca4d83fc4c383e00f440c71af140573ad977bc91"
     sha256 cellar: :any_skip_relocation, mojave:        "7b3c9dbda4c9c9f37d54669cc04c91ff98ebf8f1ad90d40f23e77c81c049e4fd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c29098dfe8c734d41b9890e4a01a0e3a3a808f4c65ab971dca136d874d60171f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c29098dfe8c734d41b9890e4a01a0e3a3a808f4c65ab971dca136d874d60171f" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build
