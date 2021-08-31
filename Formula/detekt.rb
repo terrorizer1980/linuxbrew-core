@@ -11,7 +11,7 @@ class Detekt < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f33a4939b86e657b648774ac310024db1401527f7b126747be26eb89edf8c93a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f33a4939b86e657b648774ac310024db1401527f7b126747be26eb89edf8c93a" # linuxbrew-core
   end
 
   depends_on "openjdk@11"

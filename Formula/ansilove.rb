@@ -10,7 +10,7 @@ class Ansilove < Formula
     sha256 cellar: :any,                 big_sur:       "6b82fee266c64e4738ebef22c745f3a457dccad114a285bc85972651c2545c26"
     sha256 cellar: :any,                 catalina:      "78487b299437decd72a5a2152caf81ba4997e9300016032ed449981cfc174641"
     sha256 cellar: :any,                 mojave:        "d40386a9e4ab3b22d87f894f1a018bd481592c26792fe95ea86fc918e4f3c26f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f25e133bbae1b11f1422da43fd27da11bf42cd3d2caf68e92024143726d24d02"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f25e133bbae1b11f1422da43fd27da11bf42cd3d2caf68e92024143726d24d02" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
