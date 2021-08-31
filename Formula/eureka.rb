@@ -12,6 +12,7 @@ class Eureka < Formula
     sha256 cellar: :any,                 big_sur:       "3447e5073ee6dd2026b39fcc2dac86465806fa57a263127b92d672a142efcbfe"
     sha256 cellar: :any,                 catalina:      "616a745506e35e1ab0a7645d7d122f204cbf94e292d2fc56958795a056af0a9a"
     sha256 cellar: :any,                 mojave:        "998ed401c748a0916768a566ccf44e4295c56cd6f23a90b156087588f23e7e2c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "10a4686e41cb3bc18974d558899493bc13aeffb51590ff0cbdb0e8668d120cd5"
   end
 
   depends_on "rust" => :build
