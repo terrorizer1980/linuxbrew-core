@@ -10,6 +10,7 @@ class Acl2 < Formula
     sha256 big_sur:      "0bd281c90284949c9357cf4f377f838535c089a998f879c846fdcb6cf2592289"
     sha256 catalina:     "7b39eaeb9fc962be139fa93c1300e79ecc0b01b8f1883fd3de2f89f3d9399485"
     sha256 mojave:       "859c31ecec386d2f912a9ded763323ac0256331836f522a74c3d6f096f425c75"
+    sha256 x86_64_linux: "95c4620adc0d4714093e5228b4764decdf65407eff9b281bb270d15889a389ad"
   end
 
   depends_on "sbcl"
