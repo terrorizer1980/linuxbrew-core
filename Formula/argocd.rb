@@ -11,6 +11,7 @@ class Argocd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "84bbf1f5c23367c0d6e315e9fac1edca589d2cc860553213ce3006c8f2b693ac"
     sha256 cellar: :any_skip_relocation, catalina:      "2b2a6a21556b4b57fa6f19459ae306d267ec0000eeaff8039ef166232a41f9cf"
     sha256 cellar: :any_skip_relocation, mojave:        "ffb4a51e4135be2afe97905ec4add5c769ac9076791a8a1bc71901ba478533f6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6d0b084292637914e787dedd6d0443d58d888fa52b23f10d9a904fc7b66a6227"
   end
 
   depends_on "go" => :build
