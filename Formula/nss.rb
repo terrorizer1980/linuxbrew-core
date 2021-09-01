@@ -15,6 +15,7 @@ class Nss < Formula
     sha256 cellar: :any,                 big_sur:       "63d87629c05162754d71702dba7244054c31e9a1a83059f97885c1d9dbdaac6f"
     sha256 cellar: :any,                 catalina:      "7564c6985576f77027727394a4e47d90a6144d966de9097624cb9b1a18d75789"
     sha256 cellar: :any,                 mojave:        "683540bbb7bb5ecc98b44e263b22c6a6e78036ffb50634d410084130733a7576"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3c424d31b3e3871be749a57bc4b1b026c802f7564fded3dc18a066ade1cb8e35"
   end
 
   depends_on "nspr"
