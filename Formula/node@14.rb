@@ -15,6 +15,7 @@ class NodeAT14 < Formula
     sha256 cellar: :any,                 big_sur:       "cd0c93868bf70ac6a51e2ea7e7ca52d405dba808a35564625695d5385402c289"
     sha256 cellar: :any,                 catalina:      "32b944c89b4274a5eb5053b84d540e012043f1b41cf096133739d2fab9784beb"
     sha256 cellar: :any,                 mojave:        "503373b72c753e8eb3506a962f52e861221ba375cc40720aa46bec002fc5900d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "36f53fa14a69748daeac1d5fbff3a76e04688df73e0b0db65bf9c406b57f396d"
   end
 
   keg_only :versioned_formula
