@@ -2,8 +2,8 @@ class Kamel < Formula
   desc "Apache Camel K CLI"
   homepage "https://camel.apache.org/"
   url "https://github.com/apache/camel-k.git",
-      tag:      "v1.5.0",
-      revision: "9355c0808f5368e5c70bd03535ddaaeb85c6b43e"
+      tag:      "v1.5.1",
+      revision: "02dd9e62f7e3f29de2db99ad51304c9ae5db9846"
   license "Apache-2.0"
   head "https://github.com/apache/camel-k.git"
 
@@ -13,21 +13,14 @@ class Kamel < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "747cf904af90425eb6dffff7a7f6cd9f9e1ac37b777a892eae3cbc3a73c411ad"
-    sha256 cellar: :any_skip_relocation, big_sur:       "4e8c1c913c2a70db9a9714189f380124d95dc1627f78c4736c4df13d3ba5a6d1"
-    sha256 cellar: :any_skip_relocation, catalina:      "18d3e4401efd0ffc1465fc3bb6337f12342499c350a44d49aa900039000e8562"
-    sha256 cellar: :any_skip_relocation, mojave:        "70be9a875b178084c9f7af37152cd83b20d2f2208fde8ac74582840dd54b0ede"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "857f06a18965d1cc751cf8c3b6a9ec5b2cab5080aa08dc297560de5e4434367f" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "90da83597065617ca2cbe2cfcb1f7684ba701774a7ec5f465dba418fd3dd0f47"
+    sha256 cellar: :any_skip_relocation, big_sur:       "247f124ed56bfb76d16a3ba0bec780c019206e969535bbdcf4a2c9ad8d57e811"
+    sha256 cellar: :any_skip_relocation, catalina:      "05d8139be2927df577ef13d3955e27bcbd924c253b16c7967adc81b2455bca61"
+    sha256 cellar: :any_skip_relocation, mojave:        "67167b34fd58d194e93a81a5393dcd443da305c00516af8fdc85f8b03eafa243"
   end
 
   depends_on "go" => :build
   depends_on "openjdk@11" => :build
-
-  # remove in next release
-  patch do
-    url "https://github.com/apache/camel-k/commit/5385f35485e95197be33cd3684392186fe49db31.patch?full_index=1"
-    sha256 "0ab648244ed6e342ac1a1d6ecc878d78e8d0b64b14d872346d29f897e56e6bd1"
-  end
 
   def install
     ENV["JAVA_HOME"] = Language::Java.java_home("11")

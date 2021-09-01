@@ -4,21 +4,21 @@ class Msgpack < Formula
   url "https://github.com/msgpack/msgpack-c/releases/download/cpp-3.3.0/msgpack-3.3.0.tar.gz"
   sha256 "6e114d12a5ddb8cb11f669f83f32246e484a8addd0ce93f274996f1941c1f07b"
   license "BSL-1.0"
+  revision 1
   head "https://github.com/msgpack/msgpack-c.git", branch: "c_master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c66ea6e1ec61f9fa18e8146c9aa8306e39adcb0b31d2d6c6784ddd3d17a479f7"
-    sha256 cellar: :any_skip_relocation, big_sur:       "434fdf5aea4bdee584755531889cbbe40a093a4a85dbb993dcca60516a6aaeab"
-    sha256 cellar: :any_skip_relocation, catalina:      "bb3e3af7ce4994911518db90db9ff4747e72492832b3aa98ff7c82fd3d5990b2"
-    sha256 cellar: :any_skip_relocation, mojave:        "f418d11d056dd08160b27088d19ee12d4a9e36dbd913ffae8d2c9838a1449475"
-    sha256 cellar: :any_skip_relocation, high_sierra:   "7424d6d9dee3edd0f07c4ea6f11567255dea4f1bbffbb6c41f20c5412952028d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8ffc795917ab21985beeb23e6940c197a3ee483eb767fa393c05ed4a74619331" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "8b16bfe485fb0bdacd68a14b8a6acb8811e61c50f9178c6dccc63e6e6f32fea3"
+    sha256 cellar: :any,                 big_sur:       "2c29077e763920ec59779a5f1be1a0206fda9f8f8c82447356ff616eb572d7fe"
+    sha256 cellar: :any,                 catalina:      "3cc886ce8752df92a979fb8c3559738fe105379954eb2c2b660abb8769f4e64b"
+    sha256 cellar: :any,                 mojave:        "5e597990ddb6b7044af3deeb1e08a5a1dcce697c14e671d725ad0b041d670099"
   end
 
   depends_on "cmake" => :build
 
   def install
-    system "cmake", ".", *std_cmake_args
+    # C++ Headers are now in msgpack-cxx
+    system "cmake", ".", *std_cmake_args, "-DMSGPACK_ENABLE_CXX=OFF"
     system "make", "install"
   end
 

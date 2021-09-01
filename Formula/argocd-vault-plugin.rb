@@ -2,16 +2,15 @@ class ArgocdVaultPlugin < Formula
   desc "Argo CD plugin to retrieve secrets from Secret Management tools"
   homepage "https://ibm.github.io/argocd-vault-plugin"
   url "https://github.com/IBM/argocd-vault-plugin.git",
-      tag:      "v1.2.0",
-      revision: "44a1e9a75d64dd3d5410acfd525128ece1ab1726"
+      tag:      "v1.3.0",
+      revision: "733d62dd23ceb01a183d995799ba9e5566b08eeb"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "9018b5a9e630fd660f49193e51d2dd43b4a2a0d751cdcca4ca85a42cca22d16b"
-    sha256 cellar: :any_skip_relocation, big_sur:       "7ff5b5b148a9399665f8a58c0b9567ae4449d3754fee9eadabadd42c927aff2e"
-    sha256 cellar: :any_skip_relocation, catalina:      "7ff5b5b148a9399665f8a58c0b9567ae4449d3754fee9eadabadd42c927aff2e"
-    sha256 cellar: :any_skip_relocation, mojave:        "7ff5b5b148a9399665f8a58c0b9567ae4449d3754fee9eadabadd42c927aff2e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "255735a047513406afe27b380422dc8f3fca65f082a77314a18f212fab6dd2e3" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8eb93b97c954c6196323a06967552f7985d37d025f38ccd46b88262640cced52"
+    sha256 cellar: :any_skip_relocation, big_sur:       "ed64434e7217f2665d0f83c8dd1ced0cf8166db1be3cf1772903d8b25a9b6bd2"
+    sha256 cellar: :any_skip_relocation, catalina:      "ed64434e7217f2665d0f83c8dd1ced0cf8166db1be3cf1772903d8b25a9b6bd2"
+    sha256 cellar: :any_skip_relocation, mojave:        "ed64434e7217f2665d0f83c8dd1ced0cf8166db1be3cf1772903d8b25a9b6bd2"
   end
 
   depends_on "go" => :build
@@ -30,7 +29,7 @@ class ArgocdVaultPlugin < Formula
   end
 
   test do
-    assert_match "This is a plugin to replace <wildcards> with Vault secrets",
+    assert_match "This is a plugin to replace <placeholders> with Vault secrets",
       shell_output("#{bin}/argocd-vault-plugin --help")
 
     touch testpath/"empty.yaml"
