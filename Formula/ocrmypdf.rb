@@ -3,16 +3,15 @@ class Ocrmypdf < Formula
 
   desc "Adds an OCR text layer to scanned PDF files"
   homepage "https://github.com/jbarlow83/OCRmyPDF"
-  url "https://files.pythonhosted.org/packages/fc/f5/38d150ec54a959ce786cb6b52a35cffbf02d692de36f7a692acbee920984/ocrmypdf-12.3.3.tar.gz"
-  sha256 "07ef78ff4faf9f6cf8f885076a63ee6828c1dcb05b1b73e5e46da1a70868ddc7"
+  url "https://files.pythonhosted.org/packages/34/64/5592a77a2809e43df7add6d8e38ae4c9c3bdc38d007f046a8bf135b6d5db/ocrmypdf-12.4.0.tar.gz"
+  sha256 "94c1bbc93a93493388930bbc6ede131ea3a17c30476033d99162647c0dc874f6"
   license "MPL-2.0"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "8ebad8fcb26525ddc170dcf7b05fa9ac7817e95f01f8427dca85d20ad9104516"
-    sha256 cellar: :any,                 big_sur:       "b546fd5552990a7a86e3f33b2298c25cbb376e6e15e11e0ab169d3487ccba6bf"
-    sha256 cellar: :any,                 catalina:      "110d5ebb17e1a9f877a4495a7d00c65756bef9308617f05b11780b4247959b3a"
-    sha256 cellar: :any,                 mojave:        "b70175b424f212b02e5170387d99c7d1ff74c38b57c158a2e1a9dd22063b5873"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d7cae63e4b5a6e2ed14de8b8f7d2ed838f987888826b9eb7762ccb294b596d3c" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "fcdac71e2d5929d9a4d2f9c7be15254229a4efa6c1efb0a922d47010b7cfd82f"
+    sha256 cellar: :any,                 big_sur:       "4e03f2d06bb64fbfa83cb3fcddaa55a1c334306315f351b4c452e9f84662aee3"
+    sha256 cellar: :any,                 catalina:      "cfb0a84a216425fa7c46d285ab38fae1e1117b9fc7aa958bd86b02d861005bb4"
+    sha256 cellar: :any,                 mojave:        "62bf0675bb4018903f8e9de755c2b6c1960ed0f467ff70fec3fe5973d5fa4980"
   end
 
   depends_on "pkg-config" => :build
@@ -85,8 +84,8 @@ class Ocrmypdf < Formula
   end
 
   resource "pluggy" do
-    url "https://files.pythonhosted.org/packages/f8/04/7a8542bed4b16a65c2714bf76cf5a0b026157da7f75e87cc88774aa10b14/pluggy-0.13.1.tar.gz"
-    sha256 "15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"
+    url "https://files.pythonhosted.org/packages/a1/16/db2d7de3474b6e37cbb9c008965ee63835bba517e22cdb8c35b5116b5ce1/pluggy-1.0.0.tar.gz"
+    sha256 "4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"
   end
 
   resource "pycparser" do
