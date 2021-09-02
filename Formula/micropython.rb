@@ -11,6 +11,7 @@ class Micropython < Formula
     sha256 cellar: :any,                 big_sur:       "a4edf2dea151e9d75df897e28a8bbe79ffaa9d28e288a958ce963ca062eca4d9"
     sha256 cellar: :any,                 catalina:      "4bdae46a88ef9337b619931ad80578189fec96f955cd7c0d4736498db208a96f"
     sha256 cellar: :any,                 mojave:        "ac856567d0576d050da683f656ab0cd4d04f7ca5fa51eb5905cf948e6c2ec504"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "49292f085f5962dc6539d22c8bdddfb2255aa720b6f48cecdce5266f5a94bb63"
   end
 
   depends_on "pkg-config" => :build
