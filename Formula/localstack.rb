@@ -12,7 +12,7 @@ class Localstack < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "29b86998ec0ec7e10eb935913a61d4ce7aac674454066b5ef1dd9cb0f0509d18"
     sha256 cellar: :any_skip_relocation, catalina:      "8d1466becdd7ef9c8a71daca898bf28ec1d6376915d811091146d86978a83b93"
     sha256 cellar: :any_skip_relocation, mojave:        "a192fffc693abdeebde5224fec979b9afc6ef2baf1d6f2d634949e62ff31f114"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1a3d274b0df521bd1261b71209e693999ddc6534688681da955aa7054d42d60"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1a3d274b0df521bd1261b71209e693999ddc6534688681da955aa7054d42d60" # linuxbrew-core
   end
 
   depends_on "docker" => :test

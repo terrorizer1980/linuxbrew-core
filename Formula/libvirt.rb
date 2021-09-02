@@ -15,7 +15,7 @@ class Libvirt < Formula
     sha256 big_sur:       "d0d3c1a8d8eed20cbce36ad2fc90c07583a682cbdfcb176d558151a4efb3ffa3"
     sha256 catalina:      "ac9aba9184b948b8711f8c9ce73aa20381df8c8a82202966fb16eb36a0613be6"
     sha256 mojave:        "d12670e71fb2f6e7144e47f605961758ac2e50995328020b2ccb89d62005c378"
-    sha256 x86_64_linux:  "daaa232a4577e8935fa4b4ed1014f120677091f5dae5c8a44d38481b3ba447f6"
+    sha256 x86_64_linux:  "daaa232a4577e8935fa4b4ed1014f120677091f5dae5c8a44d38481b3ba447f6" # linuxbrew-core
   end
 
   head do

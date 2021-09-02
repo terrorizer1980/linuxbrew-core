@@ -12,7 +12,7 @@ class Gojq < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1d41987fde95d422eaa3cb4401e3b608b9f1f2ff4dcf7b93326cac71f1b67a89"
     sha256 cellar: :any_skip_relocation, catalina:      "1d41987fde95d422eaa3cb4401e3b608b9f1f2ff4dcf7b93326cac71f1b67a89"
     sha256 cellar: :any_skip_relocation, mojave:        "1d41987fde95d422eaa3cb4401e3b608b9f1f2ff4dcf7b93326cac71f1b67a89"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ebcdb10123fdf5bea3a1a43eece46ba3bf580fffdf632a56f157258614758ed"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ebcdb10123fdf5bea3a1a43eece46ba3bf580fffdf632a56f157258614758ed" # linuxbrew-core
   end
 
   depends_on "go" => :build
