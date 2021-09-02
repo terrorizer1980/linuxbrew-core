@@ -10,6 +10,10 @@ class VertX < Formula
     regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "37ef5e00d3a7f7a5c54916a66d37b4c2cc41f28f7030434e196da476ca02b3d1"
+  end
+
   depends_on "openjdk"
 
   def install
