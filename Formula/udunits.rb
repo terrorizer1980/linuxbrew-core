@@ -14,7 +14,7 @@ class Udunits < Formula
     sha256 big_sur:       "cb3a237ce5aa71c094ece2c9a7ba3199238d8facf053760a5f29ebec93f29e53"
     sha256 catalina:      "5787ba730b9969468621db38503a036de75aea0a8e62cbd253e9c73262355419"
     sha256 mojave:        "c1c3d199cfc58d42469bfb423e269dd9b7771e155f710e0e46bfb6a33fdc19f4"
-    sha256 x86_64_linux:  "9df6142349c78d0ebb0922ea53c48f702ca83cf223513437022086ee332c22a8"
+    sha256 x86_64_linux:  "9df6142349c78d0ebb0922ea53c48f702ca83cf223513437022086ee332c22a8" # linuxbrew-core
   end
 
   head do

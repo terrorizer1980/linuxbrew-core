@@ -13,7 +13,7 @@ class Bear < Formula
     sha256 big_sur:       "e58705a9c3723629fded1756a20bdcfe34a3d45db8880c0f03afbdd8a1958e14"
     sha256 catalina:      "4d1332c1aa866cd17ff2cb201047b201ff3f110509566cdbfd01ca634b4c41a6"
     sha256 mojave:        "98e61b99eb53f789d1b20f0ef02c249cbce5806b7eb803e28a7d71d2dca78c00"
-    sha256 x86_64_linux:  "c04061eab576069e9e4cbf525d2b0c00d0ad58eed96023a7becd1206f81120ad"
+    sha256 x86_64_linux:  "c04061eab576069e9e4cbf525d2b0c00d0ad58eed96023a7becd1206f81120ad" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

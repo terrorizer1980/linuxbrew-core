@@ -11,7 +11,7 @@ class Vtk < Formula
     sha256                               big_sur:       "030677a7748f0fc0d4116424db9225ecf3d805476c08da3d07e65e381ff21589"
     sha256                               catalina:      "beb7e778df907e3763363ad51579b4e004b1b2b745a395621cbc1f2800340d81"
     sha256                               mojave:        "d466d33fd7932aedd24fce9c5b791e7e97cf375db629180718171a2df4b97153"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "359033d7b61641fc3f767103d001310db7e9b62089823e4a63ca3a560741da7d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "359033d7b61641fc3f767103d001310db7e9b62089823e4a63ca3a560741da7d" # linuxbrew-core
   end
 
   depends_on "cmake" => [:build, :test]

@@ -12,7 +12,7 @@ class AnsibleLint < Formula
     sha256 cellar: :any,                 big_sur:       "4cfaba7e82f10a6933c468b0296345e2a7f104162d7a2720b245dc8b1630af74"
     sha256 cellar: :any,                 catalina:      "b3038eddb68479082de0cdf421b44701521c920e5d0041a8b3ff1ce0cc2d165f"
     sha256 cellar: :any,                 mojave:        "3b53c575a434356dcc6c68ed030d8d207076e9afda60ac7ece7ac5ef838b759d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "540d0eec743ae277d4daf646720adbc6b0bc4855ea0eb51000a53758da14c0fb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "540d0eec743ae277d4daf646720adbc6b0bc4855ea0eb51000a53758da14c0fb" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
