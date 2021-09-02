@@ -1,18 +1,16 @@
 class Datree < Formula
   desc "CLI tool to run policies against Kubernetes manifests YAML files or Helm charts"
   homepage "https://www.datree.io/"
-  url "https://github.com/datreeio/datree/archive/0.7.1.tar.gz"
-  sha256 "5a17495e60e7748d236af16a56485138d2e10bd769b7779033d0eb37e6f90fb7"
+  url "https://github.com/datreeio/datree/archive/0.9.0.tar.gz"
+  sha256 "cb600b941abe0ad007ea32462559c42bfeacc51739d718a769dfc6e21e8f4ca2"
   license "Apache-2.0"
   head "https://github.com/datreeio/datree.git", branch: "staging"
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "03cd690be4f19f8995b8db44af2c65667fc047687dc0a72db80bfb95b452ffc3"
-    sha256 cellar: :any_skip_relocation, big_sur:       "4556847bcbc60fdacc323a8c832a02eeba10b0ab01497adde6bdd15df273fdbe"
-    sha256 cellar: :any_skip_relocation, catalina:      "6d59313778325f28d6858f7e36b578ba8d27c19f2809e9df6f1b2e709010c879"
-    sha256 cellar: :any_skip_relocation, mojave:        "1c00134b785c2204486e3d926f70d959f891e131bbc366ab527d2ee581928618"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9cfb7e62cb37f850c1d607fe91a55dbfc95a615742efeb2909fd827297ff5b1" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8049ceee983148b6bafc700087954a10f99b8a95eef9eea7e636447ccd62c0b4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "c4a0959f1c8da56cde057c5e1424c2ad817d5697803d1d51589a2ed8004cefd9"
+    sha256 cellar: :any_skip_relocation, catalina:      "5fe2c5c822dc48580f97190e50e1e392d49ff34a3bb2566936d7ba376c7ecdb4"
+    sha256 cellar: :any_skip_relocation, mojave:        "24341d1f09991d7e7d115e8897775aa7c5d6602c7036f737b24671e845e2a191"
   end
 
   depends_on "go" => :build
@@ -36,7 +34,7 @@ class Datree < Formula
             targetPort: 9376
     EOS
 
-    assert_match "k8s schema validation error: error while parsing: missing 'apiVersion' key",
+    assert_match "k8s schema validation error: For field (root): Additional property apiversion is not allowed",
       shell_output("#{bin}/datree test #{testpath}/invalidK8sSchema.yaml 2>&1", 1)
 
     assert_equal "#{version}\n", shell_output("#{bin}/datree version")

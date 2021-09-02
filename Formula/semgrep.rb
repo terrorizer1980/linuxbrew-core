@@ -4,8 +4,8 @@ class Semgrep < Formula
   desc "Easily detect and prevent bugs and anti-patterns in your codebase"
   homepage "https://semgrep.dev"
   url "https://github.com/returntocorp/semgrep.git",
-      tag:      "v0.63.0",
-      revision: "ddf6726caf741f676adb93d552384069c4b152e5"
+      tag:      "v0.64.0",
+      revision: "1e4e0d7443faa21df3dd4de49c246c492f209409"
   license "LGPL-2.1-only"
   head "https://github.com/returntocorp/semgrep.git", branch: "develop"
 
@@ -15,11 +15,10 @@ class Semgrep < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "ee8b82f0dc357e757ded92e2142fb9d8e60ff7ed1dff2200b14a84e08bc153e0"
-    sha256 cellar: :any, big_sur:       "64c241fc59830433b218be8769d173032c15506ec9fa9539cb5fcdf8d48b381a"
-    sha256 cellar: :any, catalina:      "2955e861e29a35bd560b7ef108b9a02c8e7fd726ea89caab95fd8d265e5f1c9b"
-    sha256 cellar: :any, mojave:        "919c1875755ead3bf9641708f5e4fc3b65c7d2a4147e2403b0e6e3b8771f5ef7"
-    sha256               x86_64_linux:  "7f634c8c89806b56e3111575dbb1bf952d5a18e4fef7a3250ef77b976f6ad882" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "a3ba9af694c8c0055f5f0498210dc323608da5d6662133265ac79b01fc3d6699"
+    sha256 cellar: :any, big_sur:       "efd82946980dfb38333cf76725e8a2dfc89ee9ee2b1c366f1b5781ec4fc53b7e"
+    sha256 cellar: :any, catalina:      "50aa2b80bd8447d92d39caa4b984bac874dbca8cd8202dcb527d5f728ddadc61"
+    sha256 cellar: :any, mojave:        "fc56768f3922ad89d8643bead957e4bfe11260b788511ced1d08a5064ec7befe"
   end
 
   depends_on "cmake" => :build
@@ -101,8 +100,8 @@ class Semgrep < Formula
   end
 
   resource "ruamel.yaml" do
-    url "https://files.pythonhosted.org/packages/6e/ac/a4c038a2e48a8930a7b04711fec48f779875ed3a3d3941663413454b8fa7/ruamel.yaml-0.17.14.tar.gz"
-    sha256 "4185fcfa9e037fea9ffd0bb6172354a03ec98c21e462355d72e068c74e493512"
+    url "https://files.pythonhosted.org/packages/71/81/f597606e81f53eb69330e3f8287e9b5a3f7ed0481824036d550da705cd82/ruamel.yaml-0.17.16.tar.gz"
+    sha256 "1a771fc92d3823682b7f0893ad56cb5a5c87c48e62b5399d6f42c8759a583b33"
   end
 
   resource "ruamel.yaml.clib" do

@@ -3,20 +3,34 @@ class YtDlp < Formula
 
   desc "Fork of youtube-dl with additional features and fixes"
   homepage "https://github.com/yt-dlp/yt-dlp"
-  url "https://files.pythonhosted.org/packages/ee/59/d763a51fa975639946c327ffbf85e109dbaa87f8aa5cae54a4ee5d09593c/yt-dlp-2021.8.10.tar.gz"
-  sha256 "8da1bf4dc4641d37d137443c4783109ee8393caad5e0d270d9d1d534e8f25240"
+  url "https://files.pythonhosted.org/packages/10/4b/7ac9cced452f67f3d75ea460eb07c8dd377b8cc60337b6ae465e38f6b2d7/yt-dlp-2021.9.2.tar.gz"
+  sha256 "ca7e77cdb055ba2683df5b0807aab1c1e120cbe02c8f35d9d3293d94dbdaea63"
   license "Unlicense"
   head "https://github.com/yt-dlp/yt-dlp.git", branch: "master"
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "ff359d4172f8908f5c280d62b99b82d14b2f8f4e948fb816ce38101d6bd34dd5"
-    sha256 cellar: :any_skip_relocation, big_sur:       "26b0faf7ffd57565adc26830b51226f1ac56c8a15264a01fad1a9b7b2b91042b"
-    sha256 cellar: :any_skip_relocation, catalina:      "26b0faf7ffd57565adc26830b51226f1ac56c8a15264a01fad1a9b7b2b91042b"
-    sha256 cellar: :any_skip_relocation, mojave:        "26b0faf7ffd57565adc26830b51226f1ac56c8a15264a01fad1a9b7b2b91042b"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "59026142e9d7c1187b451f23ecb1ba715454b8cf3378f01f664a21a3e2c9bf01"
+    sha256 cellar: :any_skip_relocation, big_sur:       "a61a7e4cc74d5ee38d0c9b2e72e5f175c0eb870de824dc530306d243fe411f2b"
+    sha256 cellar: :any_skip_relocation, catalina:      "63e21a735a7b36f3ca2feb944e363d127a2cfd77f6326598f2d0b45dc49c0437"
+    sha256 cellar: :any_skip_relocation, mojave:        "ef73eec44092d6a1477c481f8c4f9a29ac045d8cf51763e4bdb3171c7b6df688"
   end
 
   depends_on "python@3.9"
+
+  resource "mutagen" do
+    url "https://files.pythonhosted.org/packages/f3/d9/2232a4cb9a98e2d2501f7e58d193bc49c956ef23756d7423ba1bd87e386d/mutagen-1.45.1.tar.gz"
+    sha256 "6397602efb3c2d7baebd2166ed85731ae1c1d475abca22090b7141ff5034b3e1"
+  end
+
+  resource "pycryptodome" do
+    url "https://files.pythonhosted.org/packages/88/7f/740b99ffb8173ba9d20eb890cc05187677df90219649645aca7e44eb8ff4/pycryptodome-3.10.1.tar.gz"
+    sha256 "3e2e3a06580c5f190df843cdb90ea28d61099cf4924334d5297a995de68e4673"
+  end
+
+  resource "websockets" do
+    url "https://files.pythonhosted.org/packages/0d/bd/5262054455ab2067e51de331bfbc53a1dfa9071af7c424cf7c0793c4349a/websockets-9.1.tar.gz"
+    sha256 "276d2339ebf0df4f45df453923ebd2270b87900eda5dfd4a6b0cfa15f82111c3"
+  end
 
   def install
     virtualenv_install_with_resources
