@@ -11,6 +11,7 @@ class TomcatNative < Formula
     sha256 cellar: :any,                 big_sur:       "41a3d1bd142f9af9709a09ef08fa9c1d4afba8c1df9afcf206680abef9cdc561"
     sha256 cellar: :any,                 catalina:      "49cb291540334f5a2b15ddbd2b597df9993cd958aa55d301b45b36389178c10e"
     sha256 cellar: :any,                 mojave:        "24a026ac8fbbaf58b678c8cb8b8eaaf6d1ffca5774fd761943bc49b1e1179366"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a963eec7a04821345f16c6edbe8f9c6c99af4ac14bb87eb120baf344d1230c6d"
   end
 
   depends_on "libtool" => :build
