@@ -7,6 +7,10 @@ class Uftrace < Formula
   revision 1
   head "https://github.com/namhyung/uftrace.git", branch: "master"
 
+  bottle do
+    sha256 x86_64_linux: "ccd36ce8a0989b639725bbbeb6adc5a56d7b7f0bb5db7f0761d51fbe11fa3409"
+  end
+
   depends_on "pandoc" => :build
   depends_on "pkg-config" => :build
   depends_on "capstone"
