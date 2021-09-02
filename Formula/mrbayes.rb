@@ -16,7 +16,7 @@ class Mrbayes < Formula
     sha256 cellar: :any,                 big_sur:       "e0027c3fc59ebb71bbab154a03976eac6dbae6c97c665355767298d1d03285af"
     sha256 cellar: :any,                 catalina:      "bc54dc6955c86b3d10ddf446cec0c188c3a8db75505efce4d23b66c24a4dd482"
     sha256 cellar: :any,                 mojave:        "2349b14afaa49d436cca2c23e62643fc75b231d2ce1a3e572fb4be90448c5fa7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3e8b911053a2c454c03e97e1f8ac89cdce178e30cebf49165dc1b53f1e1a6cbb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3e8b911053a2c454c03e97e1f8ac89cdce178e30cebf49165dc1b53f1e1a6cbb" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
