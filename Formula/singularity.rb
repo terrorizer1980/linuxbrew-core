@@ -5,6 +5,10 @@ class Singularity < Formula
   sha256 "996611dec402b4d372b8b9456dd9ec1cb43712d08502e455f38521bd199856d3"
   license "BSD-3-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7e28ccfeabd4f1b41096d2183d5e14a9737e7d33e1339950b5f10cb2618160e7"
+  end
+
   depends_on "go" => :build
   depends_on "openssl@1.1" => :build
   depends_on "libarchive"
