@@ -10,6 +10,7 @@ class Phpstan < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4052cfc4bfd7a9e7ac2432fbfad844926c520b936d4c9856ce0ffcae7b3332a1"
     sha256 cellar: :any_skip_relocation, catalina:      "4052cfc4bfd7a9e7ac2432fbfad844926c520b936d4c9856ce0ffcae7b3332a1"
     sha256 cellar: :any_skip_relocation, mojave:        "4052cfc4bfd7a9e7ac2432fbfad844926c520b936d4c9856ce0ffcae7b3332a1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "372a9d4e836a5c71e750b25509693220b241d118fc9e5e33f1fb81e8adb88c31"
   end
 
   depends_on "php" => :test
