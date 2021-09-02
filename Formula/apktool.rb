@@ -5,6 +5,10 @@ class Apktool < Formula
   sha256 "f750a3cd2c1f942f27f5f7fd5d17eada3bdaff0a6643f49db847e842579fdda5"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d013fb48c7494e464257834cd7fa11a3c0ac44a4eebb46dd5c6f1a447915bfd0"
+  end
+
   depends_on arch: :x86_64 # openjdk@8 doesn't support ARM
   depends_on "openjdk@8"
 
