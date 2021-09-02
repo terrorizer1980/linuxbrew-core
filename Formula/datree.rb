@@ -11,6 +11,7 @@ class Datree < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c4a0959f1c8da56cde057c5e1424c2ad817d5697803d1d51589a2ed8004cefd9"
     sha256 cellar: :any_skip_relocation, catalina:      "5fe2c5c822dc48580f97190e50e1e392d49ff34a3bb2566936d7ba376c7ecdb4"
     sha256 cellar: :any_skip_relocation, mojave:        "24341d1f09991d7e7d115e8897775aa7c5d6602c7036f737b24671e845e2a191"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0fca46a8f5d4d01ec05ab2b9ec942e8e7e72d7581104b7de51c1a7390c5e91aa"
   end
 
   depends_on "go" => :build
