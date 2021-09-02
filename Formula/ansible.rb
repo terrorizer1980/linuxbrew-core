@@ -13,7 +13,7 @@ class Ansible < Formula
     sha256 cellar: :any,                 big_sur:       "1a1069566f9223e531a4dd5250cb0945cde0e2874a46619ef46ce5f6044b7478"
     sha256 cellar: :any,                 catalina:      "4aeabaadc22a3d1f6270059e6a3c30353ded13c705856b978cfbe354f98b802e"
     sha256 cellar: :any,                 mojave:        "2116b2e592eca6ce5b3703bb1da6d91b2b917ff7e17a039ce34557eedd63e380"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cc4d3e2331604caae41fabd39f8d15b5f67769d94ebadb2fd527b6d1000b63f9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cc4d3e2331604caae41fabd39f8d15b5f67769d94ebadb2fd527b6d1000b63f9" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

@@ -10,7 +10,7 @@ class NewrelicInfraAgent < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "4106b38ed2037ceebb6e984b9e53b9e4c03353bd306a8db75c2122da6ef8cb41"
     sha256 cellar: :any_skip_relocation, catalina:     "0db6721dc524dbbdfa5a7e27d51dca6691466e7b3be621f46909d55cf1c81fc1"
     sha256 cellar: :any_skip_relocation, mojave:       "0ebf0c24dcf57bf8c872354d924b8076b83b4e771a351527629734d1c896f402"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ce4af1db2709eb9b0679567397919e612090ce7f143473e0039dc1ab3de86a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ce4af1db2709eb9b0679567397919e612090ce7f143473e0039dc1ab3de86a5" # linuxbrew-core
   end
 
   depends_on "go" => :build
