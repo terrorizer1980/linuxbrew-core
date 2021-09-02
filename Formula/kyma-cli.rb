@@ -10,6 +10,7 @@ class KymaCli < Formula
     sha256 cellar: :any_skip_relocation, arm64_big_sur: "f55e4ee54eb0e97812773baa0362c43e12fa75e811323f6e5a19298732b567d4"
     sha256 cellar: :any_skip_relocation, big_sur:       "b5744f6c5b87c2fa0749c3cd754af86fcc5f8b2f0f095852becf7996a1c729ce"
     sha256 cellar: :any_skip_relocation, catalina:      "9d4d836f1f542c7dc48c4f9ace772b756dacfedf0255bc87838d01f15a2bc9a9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c4a6a28b480da61c04993e52d817d20fe5870cf3b4803cb65a8473e06319ef6e"
   end
 
   depends_on "go" => :build
