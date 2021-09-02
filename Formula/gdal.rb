@@ -121,6 +121,7 @@ class Gdal < Formula
       "--without-mysql",
       "--without-perl",
       "--without-python",
+
       # Unsupported backends are either proprietary or have no compatible version
       # in Homebrew. Podofo is disabled because Poppler provides the same
       # functionality and then some.
