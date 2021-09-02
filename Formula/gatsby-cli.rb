@@ -13,6 +13,7 @@ class GatsbyCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1f45b856c78bed97e039b291d811627a1370b64018846235c19b0ad418a37e36"
     sha256 cellar: :any_skip_relocation, catalina:      "1f45b856c78bed97e039b291d811627a1370b64018846235c19b0ad418a37e36"
     sha256 cellar: :any_skip_relocation, mojave:        "1f45b856c78bed97e039b291d811627a1370b64018846235c19b0ad418a37e36"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d881214f61b8aa4b43345483eae467f353942ec24318d6f7772e17d88aa6f6ef"
   end
 
   depends_on "node"
