@@ -16,6 +16,7 @@ class Monero < Formula
     sha256 cellar: :any,                 big_sur:       "bad7e328cceef655c092f5555e16a92c4c8841fc93ad8152058327be3bf8625d"
     sha256 cellar: :any,                 catalina:      "b416b9387fd77c4b8041864c590b233d1dc6645e3a6cca6c23ba7bf233b16d3c"
     sha256 cellar: :any,                 mojave:        "64fa20b4cf46cc810fd8aae3b28adaa346ba0f223a196489311eab03870df2fb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ab684784a6359ea9b1c0221ddd8836630f1a0f17ac2d7acbd3f0435ec3a86ac7"
   end
 
   depends_on "cmake" => :build
