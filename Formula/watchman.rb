@@ -1,17 +1,16 @@
 class Watchman < Formula
   desc "Watch files and take action when they change"
   homepage "https://github.com/facebook/watchman"
-  url "https://github.com/facebook/watchman/archive/v2021.08.23.00.tar.gz"
-  sha256 "6c9d63e281bf438e33484980913323c4d44c5b79e85e942bbe2d9eacc240d47d"
+  url "https://github.com/facebook/watchman/archive/v2021.08.30.00.tar.gz"
+  sha256 "3aa05179b70ef3bace7a8c162a4d9259c92bf78902e753f235c913419aca32e6"
   license "Apache-2.0"
   head "https://github.com/facebook/watchman.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "9363928d2d8095b9711b6553ba948a1616b91759851ce6cb6abc3f30e5aa1200"
-    sha256 cellar: :any, big_sur:       "201b201993203249c81b3f9fc68335ded5e9eb5463bc08dfb547f45892d0f715"
-    sha256 cellar: :any, catalina:      "2fdc3d25d7b265c293dd318e2d380c4a6b61fcf168c9e25a5da7ea68b5ffd605"
-    sha256 cellar: :any, mojave:        "1f1e6aca01ed8009a0fb4bc408d9b693ceaf81cc037aeb1589e441fa145e9057"
-    sha256               x86_64_linux:  "91c9ddc5355a1ee0c623c7b0cf6d2e39856f17853e53ed44c0e62180b7d224bc" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "277fd35266869dfa8fb403126bc73985e15b69f9160d27b341d4790a4cea76b8"
+    sha256 cellar: :any, big_sur:       "c38291066e694048474bfce7ac622a386714c2438d74e06431f13790adb738a2"
+    sha256 cellar: :any, catalina:      "73dfa3ebd93aa788ec7bb4664742d97f58cf5a1aef5e25e984726c46707245a2"
+    sha256 cellar: :any, mojave:        "0a7f877a9f7ba761b32859325eb49e46703081cb532e900ce7570b6fa73f0680"
   end
 
   depends_on "cmake" => :build
