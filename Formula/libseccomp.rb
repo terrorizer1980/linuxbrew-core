@@ -10,6 +10,10 @@ class Libseccomp < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "34c041a4650d145076471743dcb22bbda8ed8edfbeac4b6fde96bc707fdb07fd"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gperf" => :build
