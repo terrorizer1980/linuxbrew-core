@@ -16,6 +16,7 @@ class Vlang < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "19266863aa98b5a45d9b423db1924fd03470453ed9e5b8ca958fc4abecf6f88c"
     sha256 cellar: :any_skip_relocation, catalina:      "60e0f440e473d751fdc8ad1704105f8c1ac870a742740d7f7335e39c47a8929f"
     sha256 cellar: :any_skip_relocation, mojave:        "03d594231e0e381fe454dfde377062e9b1d77f1845e3863896027fc856455829"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a3f86bed7ae7baf1d3f398e98870852a8d6451616f06234ac9b142b4bca768b5"
   end
 
   resource "vc" do
