@@ -19,7 +19,7 @@ class Semgrep < Formula
     sha256 cellar: :any, big_sur:       "efd82946980dfb38333cf76725e8a2dfc89ee9ee2b1c366f1b5781ec4fc53b7e"
     sha256 cellar: :any, catalina:      "50aa2b80bd8447d92d39caa4b984bac874dbca8cd8202dcb527d5f728ddadc61"
     sha256 cellar: :any, mojave:        "fc56768f3922ad89d8643bead957e4bfe11260b788511ced1d08a5064ec7befe"
-    sha256               x86_64_linux:  "5c49ab8cec4cf0a0d38e3417413f5b7d95219518d8801d73c1ac830517c7c55f"
+    sha256               x86_64_linux:  "5c49ab8cec4cf0a0d38e3417413f5b7d95219518d8801d73c1ac830517c7c55f" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
