@@ -10,6 +10,10 @@ class Flank < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "07970c5b6fbd580ea9934dc091107525b2d190bb3003a09d2c0d204b38232ab6"
+  end
+
   depends_on "openjdk"
 
   def install
