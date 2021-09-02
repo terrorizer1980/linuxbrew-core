@@ -11,6 +11,7 @@ class Xplr < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7a18af518650a4d510bad06f46de6377aec55da3f779c2baedccb3efbe2aa89d"
     sha256 cellar: :any_skip_relocation, catalina:      "409296537a2ac732eac8dcb2ceb9ebe62a75a62dee13adc761455e6c20663117"
     sha256 cellar: :any_skip_relocation, mojave:        "facc22aaac659aa12256c3b6eaba69ee8b5f1500cf7f573a6eba31fc4a3b077a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af8398a78ade1cebd0d0f8d77beae67aa0f358a1dc2f932149e9fd0c66444164"
   end
 
   depends_on "rust" => :build
