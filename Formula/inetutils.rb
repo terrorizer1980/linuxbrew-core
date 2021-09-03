@@ -11,7 +11,7 @@ class Inetutils < Formula
     sha256 big_sur:       "4f4ded12f0164096243102d086f95d54ed6def282b758d3b69a88133b3fc2f3d"
     sha256 catalina:      "274d56c19d93ffb4c32f3a896872cf78222a28bee436ae363c35455d279f4ed7"
     sha256 mojave:        "077af2b47b07e9c4d2f3f574561ba6d6c90e879e93a4be0b2454a9e13b7842ea"
-    sha256 x86_64_linux:  "d2ef16a78009201d1b6a594cc44bc8fc44c6a730b91c96e23588f1c71de6d234"
+    sha256 x86_64_linux:  "d2ef16a78009201d1b6a594cc44bc8fc44c6a730b91c96e23588f1c71de6d234" # linuxbrew-core
   end
 
   depends_on "libidn"
