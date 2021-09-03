@@ -12,6 +12,7 @@ class Inform6 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0d546e5f3ad90dec09e480b1be8f6cac0d1cd3a62138444f17b827eb599c169d"
     sha256 cellar: :any_skip_relocation, catalina:      "dd0c1f7bbc4c07025ceca29441fa6dc8b821c6dfc0224a7576d64f714db34a53"
     sha256 cellar: :any_skip_relocation, mojave:        "2cdc7aa7871f147452be33738b78ed671e8006def20cd2774cdea610bda04878"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a3712d8dcc5f3ec6edd340e2d88a5d81949463d08c6bfd5883cccc8f02ad585c"
   end
 
   resource "Adventureland.inf" do
