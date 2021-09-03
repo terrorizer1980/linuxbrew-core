@@ -15,7 +15,7 @@ class Rebar3 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8b2581dc2365f4dff9d2533e1d8e18fdeab6282740caf47fc37d3c97365f90c9"
     sha256 cellar: :any_skip_relocation, catalina:      "7ee16a66ce6d611df47abd8118ed08651a237b15f687824ca5711cb2bb734684"
     sha256 cellar: :any_skip_relocation, mojave:        "311c51419024d8440c99de8c6711964ad329165d4c2bfea02a566549fcc39272"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "207e3705f6cf9aa43b9d372c41dd5b24ff42b27a1f47644dbf72286ab660f5f5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "207e3705f6cf9aa43b9d372c41dd5b24ff42b27a1f47644dbf72286ab660f5f5" # linuxbrew-core
   end
 
   depends_on "erlang"
