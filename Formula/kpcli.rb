@@ -20,6 +20,7 @@ class Kpcli < Formula
     sha256 cellar: :any,                 big_sur:       "8431834a984e31a2bb567913b8bd82ec97e616879f058c10e1b0af77fc9528e8"
     sha256 cellar: :any,                 catalina:      "ef0dcac2509419af4f99407cd40d7072a44d53472cb692afa49bae06bb91fb71"
     sha256 cellar: :any,                 mojave:        "7635208158e7c7a7dd1e7a4e28d51d2c836d6e2bd9f6c329c265cebdf4b69939"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a340307dd0234be2d5db82bfb5a949a5547fd2a83b239766c535aef2237e195"
   end
 
   depends_on "readline"
