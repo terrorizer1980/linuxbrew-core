@@ -6,6 +6,11 @@ class MsgpackCxx < Formula
   license "BSL-1.0"
   head "https://github.com/msgpack/msgpack-c.git", branch: "cpp_master"
 
+  livecheck do
+    url :stable
+    regex(/^cpp[._-]v?(\d+(?:\.\d+)+)$/i)
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
 
