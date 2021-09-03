@@ -11,6 +11,7 @@ class Quill < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "22f64135866f9600feb5495d4a8b58b29ef1f7c02de8edafe50960b2595910aa"
     sha256 cellar: :any_skip_relocation, catalina:      "2112f5965f599db294f9e2c2cfb86acf39b8482120c181cf841ee2a569e7c30e"
     sha256 cellar: :any_skip_relocation, mojave:        "d8a4190b8461b8860363d96a0623e4ad75a1da416a21bcc48a00340f50ce41ea"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3545f994f006676a81c0906868cc6671b1ee0c4645a569c9c411d7ca4f04bb05"
   end
 
   depends_on "cmake" => :build
