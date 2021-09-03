@@ -10,6 +10,7 @@ class Azcopy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3bc608a490bf133bd3cc960a768eb08f3673a8107d562b99629cbd13e446ccea"
     sha256 cellar: :any_skip_relocation, catalina:      "4bb904f6edc4c9065e3f7fa154c907bb81b9da2e4f06f6956ef6e1bfdec4c813"
     sha256 cellar: :any_skip_relocation, mojave:        "840879ad99be0c1faf91054107e23c5a2a7e98abeeafa1bbfb0258c71d12c619"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ccecc6461f131ca79677468e9597304e4179bf8ca9493247ef798ee54768bd4"
   end
 
   depends_on "go" => :build
