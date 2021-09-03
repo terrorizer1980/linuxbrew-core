@@ -22,7 +22,7 @@ class Proftpd < Formula
     sha256 big_sur:       "1a4d0410392d18250ea4f29fe056e3e647345bb940f3b918fae448fe16bb4562"
     sha256 catalina:      "e40fb1eb3c76ff530fbf95275200defdcc38bb16ed3de8dfe90f5bcdf0965ae4"
     sha256 mojave:        "c6143e56532ccfe54ce0ef2889a356656d7c9800c93e18cdafd8d5430be3a43c"
-    sha256 x86_64_linux:  "9539952d41b01326e358bc32ae8aa96297154b992e5359b5ee29e3a4b1f20036"
+    sha256 x86_64_linux:  "9539952d41b01326e358bc32ae8aa96297154b992e5359b5ee29e3a4b1f20036" # linuxbrew-core
   end
 
   def install

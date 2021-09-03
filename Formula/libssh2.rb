@@ -15,7 +15,7 @@ class Libssh2 < Formula
     sha256 cellar: :any,                 big_sur:       "56dd017876fd446d7283c7db7a6a0729eeebd34016094fdbf9f46b6711c0e26d"
     sha256 cellar: :any,                 catalina:      "5b30fe11d2ced21be876b56787e5d6900cb991fdd7e6ad3a6058401aa59ee9d7"
     sha256 cellar: :any,                 mojave:        "70c0928f2cb9034ad07c6242517ebc0e4cfb92b1ab74518f7b510a2ac36e81fe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ff0fe65fb281d51dab44a53b15ef40ebeebf09a7f4d28e86dfc0cc18e49bbc1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ff0fe65fb281d51dab44a53b15ef40ebeebf09a7f4d28e86dfc0cc18e49bbc1" # linuxbrew-core
   end
 
   head do

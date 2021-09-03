@@ -11,7 +11,7 @@ class NestopiaUe < Formula
     sha256 big_sur:       "c3b7a00feb7ccce40ed9edf2dc3a00aaea2c6422912a13917c481cd5389f4838"
     sha256 catalina:      "8a08b57d2e7287b0792d3c0ae3688e563e6efd15a7069525ab62836ba8c6f924"
     sha256 mojave:        "5fb8a05db0ae55c4d2bf0be06a88a825a0c502cdf289119c088eabe660e7eab2"
-    sha256 x86_64_linux:  "e4d3611733b865fb44f3edacf8963bb87a7ea31bc1a1f47b9d08fcd3678a7b43"
+    sha256 x86_64_linux:  "e4d3611733b865fb44f3edacf8963bb87a7ea31bc1a1f47b9d08fcd3678a7b43" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
