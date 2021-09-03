@@ -10,7 +10,7 @@ class Macchina < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ee403cfd5c2525cff26c674910e63c479492eb986375370cd3435c7381424589"
     sha256 cellar: :any_skip_relocation, catalina:      "b0511c19cbb873298a86e479aec549a42334498e0352a9cc8ad4c788257494e1"
     sha256 cellar: :any_skip_relocation, mojave:        "8853c91543ccfa82e5d4d3b6ef1aea32f30c3ff79b308c3288d3c23afc117161"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e4f67925ed9aece2948d7be3e65ebc279c7d6d870854cadddc8326b5b17d6cf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e4f67925ed9aece2948d7be3e65ebc279c7d6d870854cadddc8326b5b17d6cf" # linuxbrew-core
   end
 
   depends_on "rust" => :build

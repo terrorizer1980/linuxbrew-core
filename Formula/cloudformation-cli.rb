@@ -12,7 +12,7 @@ class CloudformationCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "25478ecc94f22e7de7db00c7a7c45b4f18bdcae9b97fb83f51426eea15b0d06f"
     sha256 cellar: :any_skip_relocation, catalina:      "c9f2680bc874bed7c25930028c0196232f94b830cef3e368e316aa59f7553fbc"
     sha256 cellar: :any_skip_relocation, mojave:        "9e1e59d33917c94cce39e427c87a7d4b89bfdab77bdabbdaab46b9bf3084680d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b3f8db7f66cd4d2750768d4b10b4922c1091841a09c9c16bbe50614090a630d0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b3f8db7f66cd4d2750768d4b10b4922c1091841a09c9c16bbe50614090a630d0" # linuxbrew-core
   end
 
   depends_on "go" => :test

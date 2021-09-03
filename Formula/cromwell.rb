@@ -6,7 +6,7 @@ class Cromwell < Formula
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "dbb9905761b9cc5635d656c952079ae462be74e6d9c58b2a8289f31b9d20ef0d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "dbb9905761b9cc5635d656c952079ae462be74e6d9c58b2a8289f31b9d20ef0d" # linuxbrew-core
   end
 
   head do
