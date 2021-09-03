@@ -11,6 +11,10 @@ class MsgpackCxx < Formula
     regex(/^cpp[._-]v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c8db6e9951b0aa8d39453767305fb23351b7420f8d6ba7487dac6740750c0244"
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
 
