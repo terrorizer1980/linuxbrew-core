@@ -5,6 +5,10 @@ class Strace < Formula
   sha256 "901bee6db5e17debad4530dd9ffb4dc9a96c4a656edbe1c3141b7cb307b11e73"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab74131ded479cb7685c0505cd86d60e9ddc9ff10bb8a9c68d710debd7bc54cf"
+  end
+
   head do
     url "https://github.com/strace/strace.git"
     depends_on "autoconf" => :build
