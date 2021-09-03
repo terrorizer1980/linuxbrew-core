@@ -12,6 +12,7 @@ class CubejsCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2680bc78509f246ba9ce34fddd734daafcc109038a190dd26107d941d8361c85"
     sha256 cellar: :any_skip_relocation, catalina:      "2680bc78509f246ba9ce34fddd734daafcc109038a190dd26107d941d8361c85"
     sha256 cellar: :any_skip_relocation, mojave:        "2680bc78509f246ba9ce34fddd734daafcc109038a190dd26107d941d8361c85"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "84a5ec36411b3fd1136c871a69ffd18fe175077dbd845e77c7b7aa4ee5b960d8"
   end
 
   depends_on "node"
