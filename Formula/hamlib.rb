@@ -11,6 +11,7 @@ class Hamlib < Formula
     sha256 cellar: :any,                 big_sur:       "4e6f524ce4c83f681d6a4098d9fff73093a7193db7e31103a49c1372eb715b95"
     sha256 cellar: :any,                 catalina:      "9f88619f95c32128f55924b70ef0048f52a5b42331256e6ee420f447dac5cd8d"
     sha256 cellar: :any,                 mojave:        "230266b1312cdaa6945c42d07058665f89a83c15fafb2f6e303a230eb9b7cf1e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3642c51c88f48864400359603fa5add507636df599d9845d6a17ff0d00815539"
   end
 
   depends_on "autoconf" => :build
